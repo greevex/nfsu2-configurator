@@ -14,6 +14,9 @@ namespace NFSU2CH
         private string[] result = null;
         public Parser(string filename)
         {
+            this.map = null;
+            this.startblock = 0;
+            this.result = null;
             this.io = new io(filename);
         }
         public void setMap(int[] map, int startblock)
@@ -21,6 +24,7 @@ namespace NFSU2CH
             this.map = map;
             this.startblock = startblock;
         }
+       
         public bool parse()
         {
             try
@@ -33,6 +37,7 @@ namespace NFSU2CH
                 {
                     if (i == map[key])
                     {
+                        
                         string s = this.io.getHexByte(); ///
                         if (s == null)
                             return false;

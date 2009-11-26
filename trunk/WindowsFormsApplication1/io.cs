@@ -45,6 +45,10 @@ namespace NFSU2CH
         {
             this.sr.Position = pos;
         }
+        public int getPosition()
+        {
+            return (int)this.sr.Position;
+        }
         public string getHexByte()
         {
             try
