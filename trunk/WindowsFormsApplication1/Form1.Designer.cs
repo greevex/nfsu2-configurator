@@ -664,12 +664,26 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            "фвафывафыва",
+            "фывафыва",
+            "вапр",
+            "вапывапывпы",
+            "впывпывп",
+            "ывапывап"});
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "фвафывафыва",
+            "фывафыва",
+            "вапр",
+            "вапывапывпы",
+            "впывпывп",
+            "ывапывап"});
             this.comboBox2.Location = new System.Drawing.Point(6, 32);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(206, 21);
             this.comboBox2.TabIndex = 1;
-            this.comboBox2.Text = "Выберите машину...";
             // 
             // label4
             // 
@@ -809,36 +823,38 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "фвафывафыва",
+            "фывафыва",
+            "вапр",
+            "вапывапывпы",
+            "впывпывп",
+            "ывапывап"});
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox1.Items.AddRange(new object[] {
-            "asdfasdfasfa",
-            "dfgad",
-            "dsfgdsg",
-            "gdfg",
-            "gdsfgsdfg",
-            "sdfgsdfasdf",
-            "asdf",
-            "asdfasd",
-            "fasdfa",
-            "sdfas",
-            "df"});
+            "вапр",
+            "вапывапывпы",
+            "впывпывп",
+            "фвафывафыва",
+            "фывафыва",
+            "ывапывап"});
             this.comboBox1.Location = new System.Drawing.Point(11, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(272, 21);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.TabStop = false;
+            this.comboBox1.Sorted = true;
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.Tag = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 637);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
