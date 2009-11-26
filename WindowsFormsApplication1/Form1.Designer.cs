@@ -126,6 +126,7 @@
             this.button1.Text = "Загрузить";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -433,7 +434,7 @@
             // 
             this.trackBar3.Location = new System.Drawing.Point(10, 133);
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(176, 42);
+            this.trackBar3.Size = new System.Drawing.Size(176, 45);
             this.trackBar3.TabIndex = 1;
             // 
             // label17
@@ -449,7 +450,7 @@
             // 
             this.trackBar2.Location = new System.Drawing.Point(10, 85);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(176, 42);
+            this.trackBar2.Size = new System.Drawing.Size(176, 45);
             this.trackBar2.TabIndex = 1;
             // 
             // label16
@@ -465,7 +466,7 @@
             // 
             this.trackBar1.Location = new System.Drawing.Point(10, 32);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(176, 42);
+            this.trackBar1.Size = new System.Drawing.Size(176, 45);
             this.trackBar1.TabIndex = 1;
             // 
             // label18
@@ -833,12 +834,37 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "вапр",
-            "вапывапывпы",
-            "впывпывп",
-            "фвафывафыва",
-            "фывафыва",
-            "ывапывап"});
+            "ACURA RSX",
+            "AUDI A3",
+            "AUDI TT",
+            "CADILLAC ESCALADE",
+            "CORSA",
+            "FORD FOCUS",
+            "FORD MUSTANG GT",
+            "HONDA CIVIC",
+            "HUMMER",
+            "HYUNDAI TIBURON",
+            "INFINITI G35",
+            "LEXUS IS300",
+            "LINCOLN NAVIGATOR",
+            "MAZDA MIATA",
+            "MAZDA RX7",
+            "MAZDA RX8",
+            "MITSUBISHI 3000GT",
+            "MITSUBISHI ECLIPSE",
+            "MITSUBISHI LANCER EVO8",
+            "NISSAN 240SX",
+            "NISSAN 350Z",
+            "NISSAN SENTRA",
+            "NISSAN SKYLINE",
+            "PEGOUT 106",
+            "PEUGOT",
+            "PONTIAC GTO",
+            "SUBARU IMPREZA WRX",
+            "TOYOTA CELICA",
+            "TOYOTA COROLLA",
+            "TOYOTA SUPRA",
+            "VOLKSWAGEN GOLF"});
             this.comboBox1.Location = new System.Drawing.Point(11, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(272, 21);

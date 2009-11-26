@@ -56,5 +56,75 @@ namespace NFSU2CH
             0x006dd5d0, //GENERIC HATCHBACK
             0x006dde60, //GENERIC HATCHBACK 02
         };
+        public static int getPosition(string carName)
+        {
+            switch (carName)
+            {
+                case "PEUGOT":
+                    return Properti.CARS[0];
+                case "FORD FOCUS":
+                    return Properti.CARS[1];
+                case "TOYOTA COROLLA":
+                    return Properti.CARS[2];
+                case "NISSAN 240SX":
+                    return Properti.CARS[3];
+                case "MAZDA MIATA":
+                    return Properti.CARS[4];
+                case "HONDA CIVIC":
+                    return Properti.CARS[5];
+                case "PEGOUT 106":
+                    return Properti.CARS[6];
+                case "CORSA":
+                    return Properti.CARS[7];
+                case "HUMMER":
+                    return Properti.CARS[8];
+                case "LINCOLN NAVIGATOR":
+                    return Properti.CARS[9];
+                case "CADILLAC ESCALADE":
+                    return Properti.CARS[10];
+                case "HYUNDAI TIBURON":
+                    return Properti.CARS[11];
+                case "NISSAN SENTRA":
+                    return Properti.CARS[12];
+                case "TOYOTA CELICA":
+                    return Properti.CARS[13];
+                case "LEXUS IS300":
+                    return Properti.CARS[14];
+                case "TOYOTA SUPRA":
+                    return Properti.CARS[15];
+                case "VOLKSWAGEN GOLF":
+                    return Properti.CARS[16];
+                case "AUDI A3":
+                    return Properti.CARS[17];
+                case "ACURA RSX":
+                    return Properti.CARS[18];
+                case "MITSUBISHI ECLIPSE":
+                    return Properti.CARS[19];
+                case "AUDI TT":
+                    return Properti.CARS[20];
+                case "MAZDA RX8":
+                    return Properti.CARS[21];
+                case "NISSAN 350Z":
+                    return Properti.CARS[22];
+                case "INFINITI G35":
+                    return Properti.CARS[23];
+                case "MITSUBISHI 3000GT":
+                    return Properti.CARS[24];
+                case "PONTIAC GTO":
+                    return Properti.CARS[25];
+                case "FORD MUSTANG GT":
+                    return Properti.CARS[26];
+                case "NISSAN SKYLINE":
+                    return Properti.CARS[27];
+                case "MITSUBISHI LANCER EVO8":
+                    return Properti.CARS[28];
+                case "MAZDA RX7":
+                    return Properti.CARS[29];
+                case "SUBARU IMPREZA WRX":
+                    return Properti.CARS[30];
+                default:
+                    return 0;
+            }
+        }
     }
 }
