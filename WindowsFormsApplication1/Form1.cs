@@ -27,7 +27,7 @@ namespace NFSU2CH
         {
             /* Загрузка */
             NFSU2CH.Parser p = new NFSU2CH.Parser(textBox26.Text);
-            int[] map = new int[5] { 771, 772, 775, 776, 779, 780 };
+            int[] map = new int[6]{ 771, 772, 775, 776, 779, 780 };
                 
                 /*
                 /////первое колесо
