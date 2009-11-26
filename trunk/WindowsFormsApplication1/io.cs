@@ -36,7 +36,7 @@ namespace NFSU2CH
                 StreamReader s = new StreamReader(this.filename);
                 this.sr = s.BaseStream;
             }
-            catch (IOException e)
+            catch (Exception e)
             {
                 System.Windows.Forms.MessageBox.Show("Ошибка! " + e.Message);
             }
