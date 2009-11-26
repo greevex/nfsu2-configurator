@@ -23,28 +23,35 @@ namespace NFSU2CH
         }
         public bool parse()
         {
-            this.result = new string[map.Count()];
-            int i = 0;
-            int key = 0;
-            this.io.setPosition(this.startblock);
-            while (i < (map[map.Count() - 1] + 1))
+            try
             {
-                if (i == map[key])
+                this.result = new string[map.Count()];
+                int i = 0;
+                int key = 0;
+                this.io.setPosition(this.startblock);
+                while (i < (map[map.Count() - 1] + 1))
                 {
-                    string s = this.io.getHexByte(); ///
-                    if (s == null)
-                        return false;
-                    this.result[key] = s;
+                    if (i == map[key])
+                    {
+                        string s = this.io.getHexByte(); ///
+                        if (s == null)
+                            return false;
+                        this.result[key] = s;
 
-                    key++;
+                        key++;
+                    }
+                    else
+                    {
+                        this.io.getHexByte();
+                    }
+                    i++;
                 }
-                else
-                {
-                    this.io.getHexByte();
-                }
-                i++;
+                return true;
             }
-            return false;
+            catch (Exception)
+            {
+                return false;
+            }
         }
         public string[] getResult()
         {
