@@ -6,10 +6,10 @@ using System.IO;
 
 namespace NFSU2CH
 {
-    class io
+    public class io
     {
         private string filename;
-        private StreamReader sr;
+        private Stream sr;
         private string[] BYTES =
             new string[256]{
             "00","01","02","03","04","05","06","07","08","09","0A","0B","0C","0D","0E","0F",
@@ -28,20 +28,25 @@ namespace NFSU2CH
             "D0","D1","D2","D3","D4","D5","D6","D7","D8","D9","DA","DB","DC","DD","DE","DF",
             "E0","E1","E2","E3","E4","E5","E6","E7","E8","E9","EA","EB","EC","ED","EE","EF",
             "F0","F1","F2","F3","F4","F5","F6","F7","F8","F9","FA","FB","FC","FD","FE","FF"};
-
         public io(string filename)
         {
             this.filename = filename;
-            this.sr = new StreamReader(this.filename);
+            StreamReader s = new StreamReader(this.filename);
+            this.sr = s.BaseStream;
         }
-
+        public void setPosition(int pos)
+        {
+            this.sr.Position = pos;
+        }
         public string getHexByte()
         {
             try
             {
-                if (sr.EndOfStream)
+                if (sr.Position < 0)
                     return null;
-                int b = sr.Read();
+                int b = sr.ReadByte();
+                if (b == -1)
+                    return null;
                 return BYTES[b];
             }
             catch (Exception)

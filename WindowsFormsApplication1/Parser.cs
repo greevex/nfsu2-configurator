@@ -6,32 +6,31 @@ using System.Windows.Forms;
 
 namespace NFSU2CH
 {
-    class Parser
+    public class Parser
     {
         io io;
         int[] map;
+        int startblock;
         private string[] result = null;
-
         public Parser(string filename)
         {
             this.io = new io(filename);
         }
-
-        public void setMap(int[] map)
+        public void setMap(int[] map, int startblock)
         {
             this.map = map;
+            this.startblock = startblock;
         }
-
         public bool parse()
         {
             this.result = new string[map.Count()];
             int i = 0;
             int key = 0;
-            while (i < map[map.Count() - 1] + 1)
+            this.io.setPosition(this.startblock);
+            while (i < (map[map.Count() - 1] + 1))
             {
                 if (i == map[key])
                 {
-                    MessageBox.Show(key.ToString() + "й байт");
                     string s = this.io.getHexByte(); ///
                     if (s == null)
                         return false;
@@ -47,7 +46,6 @@ namespace NFSU2CH
             }
             return false;
         }
-
         public string[] getResult()
         {
             return this.result;
