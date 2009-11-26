@@ -18,6 +18,8 @@ namespace NFSU2CH
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.openFileDialog1.FileName = "GlobalB.lzc";
+            this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
             openFileDialog1.ShowDialog();
             textBox26.Text = openFileDialog1.FileName.ToString();
 
