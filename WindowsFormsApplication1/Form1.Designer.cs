@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -104,6 +103,7 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -117,20 +117,11 @@
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(272, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Выберите машину...";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(289, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.Size = new System.Drawing.Size(75, 22);
             this.button1.TabIndex = 2;
             this.button1.Text = "Загрузить";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -442,7 +433,7 @@
             // 
             this.trackBar3.Location = new System.Drawing.Point(10, 133);
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(176, 45);
+            this.trackBar3.Size = new System.Drawing.Size(176, 42);
             this.trackBar3.TabIndex = 1;
             // 
             // label17
@@ -458,7 +449,7 @@
             // 
             this.trackBar2.Location = new System.Drawing.Point(10, 85);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(176, 45);
+            this.trackBar2.Size = new System.Drawing.Size(176, 42);
             this.trackBar2.TabIndex = 1;
             // 
             // label16
@@ -474,7 +465,7 @@
             // 
             this.trackBar1.Location = new System.Drawing.Point(10, 32);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(176, 45);
+            this.trackBar1.Size = new System.Drawing.Size(176, 42);
             this.trackBar1.TabIndex = 1;
             // 
             // label18
@@ -816,11 +807,35 @@
             this.textBox28.Size = new System.Drawing.Size(526, 211);
             this.textBox28.TabIndex = 0;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.comboBox1.Items.AddRange(new object[] {
+            "asdfasdfasfa",
+            "dfgad",
+            "dsfgdsg",
+            "gdfg",
+            "gdsfgsdfg",
+            "sdfgsdfasdf",
+            "asdf",
+            "asdfasd",
+            "fasdfa",
+            "sdfas",
+            "df"});
+            this.comboBox1.Location = new System.Drawing.Point(11, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(272, 21);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 637);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -839,10 +854,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Need For Speed Underground 2 Hacker";
+            this.Text = " ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -868,7 +882,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -943,6 +956,7 @@
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
