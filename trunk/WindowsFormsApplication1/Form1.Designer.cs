@@ -121,7 +121,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(289, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
+            this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 2;
             this.button1.Text = "Загрузить";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -434,7 +434,7 @@
             // 
             this.trackBar3.Location = new System.Drawing.Point(10, 133);
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(176, 45);
+            this.trackBar3.Size = new System.Drawing.Size(176, 42);
             this.trackBar3.TabIndex = 1;
             // 
             // label17
@@ -450,7 +450,7 @@
             // 
             this.trackBar2.Location = new System.Drawing.Point(10, 85);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(176, 45);
+            this.trackBar2.Size = new System.Drawing.Size(176, 42);
             this.trackBar2.TabIndex = 1;
             // 
             // label16
@@ -466,7 +466,7 @@
             // 
             this.trackBar1.Location = new System.Drawing.Point(10, 32);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(176, 45);
+            this.trackBar1.Size = new System.Drawing.Size(176, 42);
             this.trackBar1.TabIndex = 1;
             // 
             // label18
