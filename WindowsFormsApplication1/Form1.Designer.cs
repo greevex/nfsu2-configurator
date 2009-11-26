@@ -102,8 +102,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -442,7 +442,7 @@
             // 
             this.trackBar3.Location = new System.Drawing.Point(10, 133);
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(176, 42);
+            this.trackBar3.Size = new System.Drawing.Size(176, 45);
             this.trackBar3.TabIndex = 1;
             // 
             // label17
@@ -458,7 +458,7 @@
             // 
             this.trackBar2.Location = new System.Drawing.Point(10, 85);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(176, 42);
+            this.trackBar2.Size = new System.Drawing.Size(176, 45);
             this.trackBar2.TabIndex = 1;
             // 
             // label16
@@ -474,7 +474,7 @@
             // 
             this.trackBar1.Location = new System.Drawing.Point(10, 32);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(176, 42);
+            this.trackBar1.Size = new System.Drawing.Size(176, 45);
             this.trackBar1.TabIndex = 1;
             // 
             // label18
@@ -728,7 +728,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(555, 373);
+            this.label20.Location = new System.Drawing.Point(553, 373);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(19, 13);
             this.label20.TabIndex = 11;
@@ -737,7 +737,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(571, 373);
+            this.linkLabel1.Location = new System.Drawing.Point(569, 373);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(49, 13);
             this.linkLabel1.TabIndex = 12;
@@ -798,6 +798,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "DEBUG";
             // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(6, 19);
+            this.textBox29.Multiline = true;
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(175, 211);
+            this.textBox29.TabIndex = 0;
+            // 
             // textBox28
             // 
             this.textBox28.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -807,14 +815,6 @@
             this.textBox28.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox28.Size = new System.Drawing.Size(526, 211);
             this.textBox28.TabIndex = 0;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(6, 19);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(175, 211);
-            this.textBox29.TabIndex = 0;
             // 
             // Form1
             // 
