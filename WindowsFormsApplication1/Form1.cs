@@ -40,7 +40,7 @@ namespace NFSU2CH
             /* Загрузка */
             NFSU2CH.Parser p = new NFSU2CH.Parser(textBox26.Text);
 
-            int[] map = new int[191]{ 1, // сука забыл, что отсчет с нуля
+            int[] map = new int[191]{1,
 
                 /////первое колесо
                 //первая строка
@@ -159,21 +159,21 @@ namespace NFSU2CH
 
             /* Обороты */
 
-            textBox1.Text = s[0]; // Максимально
-            textBox2.Text = s[2]; // Переключение
-            textBox3.Text = s[4]; // Нейтралка
+            textBox3.Text = s[149]; // Нейтралка
+            textBox2.Text = s[151]; // Переключение
+            textBox1.Text = s[153]; // Максимально
 
             /* ЭКУ */
 
-            textBox4.Text = ""; // 1
-            textBox5.Text = ""; // 2
-            textBox6.Text = ""; // 3
-            textBox7.Text = ""; // 4
-            textBox8.Text = ""; // 5
-            textBox9.Text = ""; // 6
-            textBox10.Text = ""; // 7
-            textBox11.Text = ""; // 8
-            textBox12.Text = ""; // 9
+            textBox4.Text = s[156]; // 1
+            textBox5.Text = s[158]; // 2
+            textBox6.Text = s[160]; // 3
+            textBox7.Text = s[162]; // 4
+            textBox8.Text = s[164]; // 5
+            textBox9.Text = s[166]; // 6
+            textBox10.Text = s[168]; // 7
+            textBox11.Text = s[170]; // 8
+            textBox12.Text = s[172]; // 9
 
             /* Турбо */
 
