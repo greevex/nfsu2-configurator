@@ -30,9 +30,16 @@ namespace NFSU2CH
             "F0","F1","F2","F3","F4","F5","F6","F7","F8","F9","FA","FB","FC","FD","FE","FF"};
         public io(string filename)
         {
-            this.filename = filename;
-            StreamReader s = new StreamReader(this.filename);
-            this.sr = s.BaseStream;
+            try
+            {
+                this.filename = filename;
+                StreamReader s = new StreamReader(this.filename);
+                this.sr = s.BaseStream;
+            }
+            catch (IOException e)
+            {
+                System.Windows.Forms.MessageBox.Show("Ошибка! " + e.Message);
+            }
         }
         public void setPosition(int pos)
         {
