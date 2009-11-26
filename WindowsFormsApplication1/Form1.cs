@@ -84,7 +84,7 @@ namespace NFSU2CH
             369,370,371,372,
             */
 
-            p.setMap(map, pos); ///PEUGOT
+            p.setMap(map, pos);
 
             p.parse();
 
