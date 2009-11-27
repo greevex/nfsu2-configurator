@@ -150,11 +150,16 @@ namespace NFSU2CH
             };
 
             p.setMap(map, pos);
-
-            p.parse();
+            this.richTextBox1.AppendText("Add map (lenght " + map.Count().ToString() + ") position " + pos.ToString()+"\n");
+            if (p.parse() == false)
+                this.richTextBox1.AppendText("error parse\n");
 
             string[] s = p.getResult();
-
+            this.richTextBox1.AppendText("return result ok, lenght " + s.Count().ToString() + "\n");
+            foreach (string a in s)
+            {
+                this.richTextBox1.AppendText(a + "\n");
+            }
 
 
             /* Обороты */
