@@ -10,6 +10,7 @@ namespace NFSU2CH
     {
         private string filename;
         private Stream sr;
+        private Stream sw;
         private string[] BYTES =
             new string[256]{
             "00","01","02","03","04","05","06","07","08","09","0A","0B","0C","0D","0E","0F",
@@ -64,6 +65,38 @@ namespace NFSU2CH
             {
                 return null;
             }
+        }
+        public void openWrite(string file)
+        {
+            try
+            {
+                StreamWriter s = new StreamWriter(file);
+                this.sw = s.BaseStream;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+        }
+        public void closeWrite()
+        {
+            try
+            {
+                this.sw.Close();
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+        }
+        public void writeByte(int b)
+        {
+            try
+            {
+                this.sw.WriteByte((byte)b);
+            }
+            catch (Exception)
+            { }
         }
     }
 }
