@@ -29,10 +29,11 @@ namespace NFSU2CH
         {
             try
             {
-                this.result = new string[map.Count()];
+                //this.result = new string[map.Count()];
+                this.result = new string[2191];
                 int key = 0;
                 this.io.setPosition(this.startblock);
-                foreach (int current in map)
+                /*foreach (int current in map)
                 {
                     io.setPosition(current);
                     string s = this.io.getHexByte(); ///
@@ -40,6 +41,14 @@ namespace NFSU2CH
                         return false;
                     this.result[key] = s;
                     key++;
+                }
+                return true;*/
+                for (int i = 0; i != 2191; i++)
+                {
+                    string s = this.io.getHexByte(); ///
+                    if (s == null)
+                        return false;
+                    this.result[i] = s;
                 }
                 return true;
             }
