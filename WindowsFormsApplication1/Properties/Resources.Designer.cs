@@ -59,5 +59,12 @@ namespace NFSU2CH.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap fuck_u_by_france_wance {
+            get {
+                object obj = ResourceManager.GetObject("fuck_u_by_france_wance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
