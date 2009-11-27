@@ -178,11 +178,13 @@ namespace NFSU2CH
             /* Обороты */
 
             textBox3.Text = s[149]; // Нейтралка
-            textBox2.Text = s[151]; // Переключение
+            textBox48.Text = s[150];
+
             textBox1.Text = s[153]; // Максимально
-            textBox28.Text = s[150];
+            textBox28.Text = s[154];
+
+            textBox2.Text = s[151]; // Переключение
             textBox29.Text = s[152];
-            textBox48.Text = s[154];
 
             /* ЭКУ */
 
