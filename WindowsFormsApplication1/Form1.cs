@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
+using System.Threading;
 
 namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
+        private string[] s;
+        private Parser p;
+        private Thread t1;
         public Form1()
         {
             InitializeComponent();
@@ -40,141 +44,11 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
-            NFSU2CH.Parser p = new NFSU2CH.Parser(textBox26.Text);
-
-            /**/
-            int[] map = new int[191]{1,
-
-                /////первое колесо
-                //первая строка
-                288,289,290,291, //1-4
-
-                292,293,294,295, //5-8
-
-                296,297,298,299, //9-12
-
-                //вторая строка
-                304,305,306,307, //13-16
-
-                308,309,310,311, //17-20
-
-                312,313,314,315, //21-24
-
-                316,317,318,319, //25-28
-
-                //третья строка
-                320,321,322,323, //29-32
-
-                //// второе колесо
-                
-                //первая строка
-                336,337,338,339, //33-36
-
-                340,341,342,343, //37-40
-
-                344,345,346,347, //41-44
-
-                //вторая строка
-                352,353,354,355, //45-48
-
-                356,357,358,359, //49-52
-
-                360,361,362,363, //53-56
-
-                364,365,366,367, //57-60
-
-                //третья строка
-                368,369,370,371, //61-64
-
-                ////// Третье колесо
-
-                //первая строка
-                384, 385, 386, 387, //65-68
-
-                388, 389, 390, 391, //69-72
-
-                392, 393, 394, 395, //73-76
-
-                //вторая строка
-                400, 401, 402, 403, //77-80
-
-                404, 405, 406, 407, //81-84
-
-                408, 409, 410, 411, //85-88
-
-                412, 413, 414, 415, //89-92
-
-                //третья строка
-                416, 417, 418, 419, //93-96
-
-                ////// Четвертое колесо
-
-                //первая строка
-                432, 433, 434, 435, //97-100
-
-                436, 437, 438, 439, //101-104
-
-                440, 441, 442, 443, //105-108
-
-                //вторая строка
-                448, 449, 450, 451, //109-112
-
-                452, 453, 454, 455, //113-116
-
-                456, 457, 458, 459, //117-120
-
-                460, 461, 462, 463, //121-124
-
-                //третья строка
-                464, 465, 466, 467, //125-128
-
-                ////// Управление
-
-                544, 545, 546, 547, //129-132
-
-                548, 549, 550, 551, //133-136
-
-                552, 553, 554, 555, //137-140
-
-                556, 557, 558, 559, //141-144
-
-                560, 561, 562, 563, //145-148
-
-                ////// Движок
-                770, 771, 774, 775, 778, 779, //149-154
-
-                ////// ЭКУ
-                786, 787, //155
-                790, 791, 
-                794, 795,
-                798, 799, //161
-                802, 803,
-                806, 807,
-                810, 811, //167
-                814, 815,
-                818, 819, //171
-
-                ////// ТУРБО
-                834, 835, //173
-                838, 839, 
-                842, 843,
-                846, 847, //179
-                850, 851,
-                854, 855,
-                858, 859, //185
-                862, 863,
-                866, 867  //189
-            };
-            
-
-            p.setMap(map, pos);
-
+            this.p = new Parser(textBox26.Text);
+            p.setMap(Properti.map, pos);
             p.parse();
-
-            string[] s = p.getResult();
-
-
-
+            this.s = p.getResult();
+            #region добавление в текстбоксы
             /* Обороты */
 
             textBox3.Text = s[149]; // Нейтралка
@@ -241,7 +115,7 @@ namespace NFSU2CH
 
             trackBar4.Value = Int32.Parse(s[91], NumberStyles.HexNumber);
             label10.Text = trackBar4.Value.ToString();
-
+            #endregion
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -287,6 +161,35 @@ namespace NFSU2CH
         private void trackBar1_Scroll_1(object sender, EventArgs e)
         {
             label13.Text = trackBar1.Value.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.progressBar1.Maximum = this.p.Total;
+            this.t1 = new Thread(new ThreadStart(saveT));
+            Thread t = new Thread(new ThreadStart(this.prgs));
+            t1.Start();
+            t.Start();
+        }
+        private void saveT()
+        {
+            this.p.save(textBox26.Text + ".tmp", this.s);
+        }
+        void prgs()
+        {
+            Form2 f2 = new Form2();
+            f2.progressBar1.Minimum = 0;
+            f2.progressBar1.Maximum = this.p.Total;
+            f2.progressBar1.Value = 0;
+            f2.Show();
+            while (this.t1.IsAlive)
+            {
+                f2.progressBar1.Value = this.p.Current;
+                Thread.Sleep(1);
+            }
+            f2.Close();
+            f2.Dispose();
+            GC.Collect();
         }
     }
 }
