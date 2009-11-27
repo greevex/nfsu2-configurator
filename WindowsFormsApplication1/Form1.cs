@@ -178,11 +178,13 @@ namespace NFSU2CH
         }
         void prgs()
         {
+            this.Invoke((MethodInvoker)(() => this.Enabled = false));
             while (t1.IsAlive)
             {
                 progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
                 Thread.Sleep(10);
             }
+            this.Invoke((MethodInvoker)(() => this.Enabled = true));
         }
     }
 }
