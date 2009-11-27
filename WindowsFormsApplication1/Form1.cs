@@ -166,6 +166,7 @@ namespace NFSU2CH
         private void button2_Click(object sender, EventArgs e)
         {
             this.progressBar1.Maximum = this.p.Total;
+            this.progressBar1.Value = 0;
             this.t1 = new Thread(new ThreadStart(saveT));
             Thread t = new Thread(new ThreadStart(this.prgs));
             t1.Start();
@@ -177,19 +178,11 @@ namespace NFSU2CH
         }
         void prgs()
         {
-            Form2 f2 = new Form2();
-            f2.progressBar1.Minimum = 0;
-            f2.progressBar1.Maximum = this.p.Total;
-            f2.progressBar1.Value = 0;
-            f2.Show();
-            while (this.t1.IsAlive)
+            while (t1.IsAlive)
             {
-                f2.progressBar1.Value = this.p.Current;
-                Thread.Sleep(1);
+                progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
+                Thread.Sleep(10);
             }
-            f2.Close();
-            f2.Dispose();
-            GC.Collect();
         }
     }
 }
