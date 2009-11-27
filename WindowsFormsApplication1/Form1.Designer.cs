@@ -101,9 +101,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -434,7 +434,7 @@
             // 
             this.trackBar3.Location = new System.Drawing.Point(10, 133);
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(176, 42);
+            this.trackBar3.Size = new System.Drawing.Size(176, 45);
             this.trackBar3.TabIndex = 1;
             // 
             // label17
@@ -450,7 +450,7 @@
             // 
             this.trackBar2.Location = new System.Drawing.Point(10, 85);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(176, 42);
+            this.trackBar2.Size = new System.Drawing.Size(176, 45);
             this.trackBar2.TabIndex = 1;
             // 
             // label16
@@ -466,7 +466,7 @@
             // 
             this.trackBar1.Location = new System.Drawing.Point(10, 32);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(176, 42);
+            this.trackBar1.Size = new System.Drawing.Size(176, 45);
             this.trackBar1.TabIndex = 1;
             // 
             // label18
@@ -795,7 +795,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox29);
+            this.groupBox6.Controls.Add(this.richTextBox1);
             this.groupBox6.Controls.Add(this.textBox28);
             this.groupBox6.Location = new System.Drawing.Point(13, 389);
             this.groupBox6.Name = "groupBox6";
@@ -803,14 +803,6 @@
             this.groupBox6.TabIndex = 13;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "DEBUG";
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(6, 19);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(175, 211);
-            this.textBox29.TabIndex = 0;
             // 
             // textBox28
             // 
@@ -871,6 +863,14 @@
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Tag = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(7, 19);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(174, 202);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
@@ -996,9 +996,9 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

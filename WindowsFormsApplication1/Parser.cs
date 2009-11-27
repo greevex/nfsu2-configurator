@@ -30,31 +30,22 @@ namespace NFSU2CH
             try
             {
                 this.result = new string[map.Count()];
-                int i = 0;
                 int key = 0;
                 this.io.setPosition(this.startblock);
-                while (i < (map[map.Count() - 1] + 1))
+                foreach (int current in map)
                 {
-                    if (i == map[key])
-                    {
-                        
-                        string s = this.io.getHexByte(); ///
-                        if (s == null)
-                            return false;
-                        this.result[key] = s;
-
-                        key++;
-                    }
-                    else
-                    {
-                        this.io.getHexByte();
-                    }
-                    i++;
+                    io.setPosition(current);
+                    string s = this.io.getHexByte(); ///
+                    if (s == null)
+                        return false;
+                    this.result[key] = s;
+                    key++;
                 }
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                MessageBox.Show(e.Message);
                 return false;
             }
         }
