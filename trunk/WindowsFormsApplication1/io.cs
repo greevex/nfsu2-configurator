@@ -60,8 +60,9 @@ namespace NFSU2CH
                     return null;
                 return BYTES[b];
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show(e.Message);
                 return null;
             }
         }
