@@ -63,43 +63,79 @@ namespace NFSU2CH
             /* ЭКУ */
 
             textBox4.Text = s[155]; // 1
+            trackBar7.Value = Int32.Parse(textBox4.Text, NumberStyles.HexNumber);
+
             textBox5.Text = s[156];
             textBox6.Text = s[157]; // 2
+            trackBar8.Value = Int32.Parse(textBox6.Text, NumberStyles.HexNumber);
+
             textBox7.Text = s[158];
             textBox8.Text = s[159]; // 3
+            trackBar9.Value = Int32.Parse(textBox8.Text, NumberStyles.HexNumber);
+
             textBox9.Text = s[160];
             textBox10.Text = s[161];// 4
+            trackBar10.Value = Int32.Parse(textBox10.Text, NumberStyles.HexNumber);
+
             textBox11.Text = s[162];
             textBox12.Text = s[163];// 5
+            trackBar11.Value = Int32.Parse(textBox12.Text, NumberStyles.HexNumber);
+
             textBox30.Text = s[164];
             textBox31.Text = s[165];// 6
+            trackBar12.Value = Int32.Parse(textBox31.Text, NumberStyles.HexNumber);
+
             textBox32.Text = s[166];
             textBox33.Text = s[167];// 7
+            trackBar13.Value = Int32.Parse(textBox33.Text, NumberStyles.HexNumber);
+
             textBox34.Text = s[168];
             textBox35.Text = s[169];// 8
+            trackBar14.Value = Int32.Parse(textBox35.Text, NumberStyles.HexNumber);
+
             textBox36.Text = s[170];
             textBox37.Text = s[171];// 9
+            trackBar15.Value = Int32.Parse(textBox37.Text, NumberStyles.HexNumber);
+
             textBox38.Text = s[172]; 
 
             /* Турбо */
 
             textBox13.Text = s[173];// 1
+            trackBar16.Value = Int32.Parse(textBox13.Text, NumberStyles.HexNumber);
+
             textBox14.Text = s[174];
             textBox15.Text = s[175];// 2
+            trackBar17.Value = Int32.Parse(textBox15.Text, NumberStyles.HexNumber);
+
             textBox16.Text = s[176];
             textBox17.Text = s[177];// 3
+            trackBar18.Value = Int32.Parse(textBox17.Text, NumberStyles.HexNumber);
+
             textBox18.Text = s[178];
             textBox19.Text = s[179];// 4
+            trackBar19.Value = Int32.Parse(textBox19.Text, NumberStyles.HexNumber);
+
             textBox20.Text = s[180];
             textBox21.Text = s[181];// 5
+            trackBar20.Value = Int32.Parse(textBox21.Text, NumberStyles.HexNumber);
+
             textBox44.Text = s[182];
             textBox46.Text = s[183];// 6
+            trackBar21.Value = Int32.Parse(textBox46.Text, NumberStyles.HexNumber);
+
             textBox42.Text = s[184];
             textBox40.Text = s[185];// 7
+            trackBar22.Value = Int32.Parse(textBox40.Text, NumberStyles.HexNumber);
+
             textBox39.Text = s[186];
             textBox41.Text = s[187];// 8
+            trackBar23.Value = Int32.Parse(textBox41.Text, NumberStyles.HexNumber);
+
             textBox43.Text = s[188];
             textBox45.Text = s[189];// 9
+            trackBar24.Value = Int32.Parse(textBox45.Text, NumberStyles.HexNumber);
+
             textBox47.Text = s[190];
 
             /* Подвеска */
@@ -115,6 +151,7 @@ namespace NFSU2CH
 
             trackBar4.Value = Int32.Parse(s[91], NumberStyles.HexNumber);
             label10.Text = trackBar4.Value.ToString();
+
             #endregion
         }
 
@@ -175,6 +212,7 @@ namespace NFSU2CH
            
         private void saveT()
         {
+            s[149] = textBox3.Text; // Нейтралка
             s[150] = textBox48.Text;
 
             s[153] = textBox1.Text; // Максимально
@@ -238,6 +276,11 @@ namespace NFSU2CH
             }
             this.Invoke((MethodInvoker)(() => this.Enabled = true));
             MessageBox.Show("Изменения сохранены!");
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
