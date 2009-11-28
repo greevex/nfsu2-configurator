@@ -415,7 +415,7 @@ namespace NFSU2CH
             ///if логин/пасс верные
             fa.Close();
             this.Enabled = true;
-
+            this.Activate();
         }
 
     }
