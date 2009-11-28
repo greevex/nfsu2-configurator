@@ -42,42 +42,42 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.trackBar15 = new System.Windows.Forms.TrackBar();
             this.textBox12 = new System.Windows.Forms.TextBox();
+            this.trackBar14 = new System.Windows.Forms.TrackBar();
             this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.trackBar13 = new System.Windows.Forms.TrackBar();
+            this.trackBar12 = new System.Windows.Forms.TrackBar();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.trackBar11 = new System.Windows.Forms.TrackBar();
+            this.trackBar10 = new System.Windows.Forms.TrackBar();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.trackBar9 = new System.Windows.Forms.TrackBar();
             this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.trackBar8 = new System.Windows.Forms.TrackBar();
+            this.trackBar7 = new System.Windows.Forms.TrackBar();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.trackBar24 = new System.Windows.Forms.TrackBar();
+            this.trackBar23 = new System.Windows.Forms.TrackBar();
+            this.trackBar22 = new System.Windows.Forms.TrackBar();
+            this.trackBar21 = new System.Windows.Forms.TrackBar();
+            this.trackBar20 = new System.Windows.Forms.TrackBar();
+            this.trackBar19 = new System.Windows.Forms.TrackBar();
             this.textBox21 = new System.Windows.Forms.TextBox();
+            this.trackBar18 = new System.Windows.Forms.TrackBar();
             this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.trackBar17 = new System.Windows.Forms.TrackBar();
             this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.trackBar16 = new System.Windows.Forms.TrackBar();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -91,7 +91,29 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.trackBar5 = new System.Windows.Forms.TrackBar();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
             this.trackBar6 = new System.Windows.Forms.TrackBar();
@@ -123,57 +145,58 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.trackBar7 = new System.Windows.Forms.TrackBar();
-            this.trackBar8 = new System.Windows.Forms.TrackBar();
-            this.trackBar9 = new System.Windows.Forms.TrackBar();
-            this.trackBar10 = new System.Windows.Forms.TrackBar();
-            this.trackBar11 = new System.Windows.Forms.TrackBar();
-            this.trackBar12 = new System.Windows.Forms.TrackBar();
-            this.trackBar13 = new System.Windows.Forms.TrackBar();
-            this.trackBar14 = new System.Windows.Forms.TrackBar();
-            this.trackBar15 = new System.Windows.Forms.TrackBar();
-            this.trackBar16 = new System.Windows.Forms.TrackBar();
-            this.trackBar17 = new System.Windows.Forms.TrackBar();
-            this.trackBar18 = new System.Windows.Forms.TrackBar();
-            this.trackBar19 = new System.Windows.Forms.TrackBar();
-            this.trackBar20 = new System.Windows.Forms.TrackBar();
-            this.trackBar21 = new System.Windows.Forms.TrackBar();
-            this.trackBar22 = new System.Windows.Forms.TrackBar();
-            this.trackBar23 = new System.Windows.Forms.TrackBar();
-            this.trackBar24 = new System.Windows.Forms.TrackBar();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
@@ -182,26 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -287,42 +290,45 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox38);
+            this.groupBox2.Controls.Add(this.label49);
+            this.groupBox2.Controls.Add(this.comboBox12);
+            this.groupBox2.Controls.Add(this.comboBox11);
+            this.groupBox2.Controls.Add(this.comboBox10);
+            this.groupBox2.Controls.Add(this.comboBox9);
+            this.groupBox2.Controls.Add(this.comboBox8);
+            this.groupBox2.Controls.Add(this.comboBox7);
+            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Controls.Add(this.trackBar15);
             this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.trackBar14);
             this.groupBox2.Controls.Add(this.textBox37);
-            this.groupBox2.Controls.Add(this.textBox11);
             this.groupBox2.Controls.Add(this.trackBar13);
-            this.groupBox2.Controls.Add(this.textBox36);
             this.groupBox2.Controls.Add(this.trackBar12);
             this.groupBox2.Controls.Add(this.textBox10);
             this.groupBox2.Controls.Add(this.textBox35);
             this.groupBox2.Controls.Add(this.trackBar11);
-            this.groupBox2.Controls.Add(this.textBox9);
             this.groupBox2.Controls.Add(this.trackBar10);
-            this.groupBox2.Controls.Add(this.textBox34);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.trackBar9);
             this.groupBox2.Controls.Add(this.textBox33);
             this.groupBox2.Controls.Add(this.trackBar8);
-            this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.trackBar7);
-            this.groupBox2.Controls.Add(this.textBox32);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox31);
-            this.groupBox2.Controls.Add(this.textBox30);
-            this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox4);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // textBox38
+            // trackBar15
             // 
-            this.textBox38.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox38, "textBox38");
-            this.textBox38.Name = "textBox38";
+            resources.ApplyResources(this.trackBar15, "trackBar15");
+            this.trackBar15.Maximum = 255;
+            this.trackBar15.Name = "trackBar15";
+            this.trackBar15.Scroll += new System.EventHandler(this.trackBar15_Scroll);
             // 
             // textBox12
             // 
@@ -330,23 +336,32 @@
             resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.Name = "textBox12";
             // 
+            // trackBar14
+            // 
+            resources.ApplyResources(this.trackBar14, "trackBar14");
+            this.trackBar14.Maximum = 255;
+            this.trackBar14.Name = "trackBar14";
+            this.trackBar14.Scroll += new System.EventHandler(this.trackBar14_Scroll);
+            // 
             // textBox37
             // 
             this.textBox37.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox37, "textBox37");
             this.textBox37.Name = "textBox37";
             // 
-            // textBox11
+            // trackBar13
             // 
-            this.textBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
+            resources.ApplyResources(this.trackBar13, "trackBar13");
+            this.trackBar13.Maximum = 255;
+            this.trackBar13.Name = "trackBar13";
+            this.trackBar13.Scroll += new System.EventHandler(this.trackBar13_Scroll);
             // 
-            // textBox36
+            // trackBar12
             // 
-            this.textBox36.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox36, "textBox36");
-            this.textBox36.Name = "textBox36";
+            resources.ApplyResources(this.trackBar12, "trackBar12");
+            this.trackBar12.Maximum = 255;
+            this.trackBar12.Name = "trackBar12";
+            this.trackBar12.Scroll += new System.EventHandler(this.trackBar12_Scroll);
             // 
             // textBox10
             // 
@@ -360,17 +375,19 @@
             resources.ApplyResources(this.textBox35, "textBox35");
             this.textBox35.Name = "textBox35";
             // 
-            // textBox9
+            // trackBar11
             // 
-            this.textBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
+            resources.ApplyResources(this.trackBar11, "trackBar11");
+            this.trackBar11.Maximum = 255;
+            this.trackBar11.Name = "trackBar11";
+            this.trackBar11.Scroll += new System.EventHandler(this.trackBar11_Scroll);
             // 
-            // textBox34
+            // trackBar10
             // 
-            this.textBox34.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox34, "textBox34");
-            this.textBox34.Name = "textBox34";
+            resources.ApplyResources(this.trackBar10, "trackBar10");
+            this.trackBar10.Maximum = 255;
+            this.trackBar10.Name = "trackBar10";
+            this.trackBar10.Scroll += new System.EventHandler(this.trackBar10_Scroll);
             // 
             // textBox8
             // 
@@ -378,23 +395,32 @@
             resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.Name = "textBox8";
             // 
+            // trackBar9
+            // 
+            resources.ApplyResources(this.trackBar9, "trackBar9");
+            this.trackBar9.Maximum = 255;
+            this.trackBar9.Name = "trackBar9";
+            this.trackBar9.Scroll += new System.EventHandler(this.trackBar9_Scroll);
+            // 
             // textBox33
             // 
             this.textBox33.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox33, "textBox33");
             this.textBox33.Name = "textBox33";
             // 
-            // textBox7
+            // trackBar8
             // 
-            this.textBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.trackBar8, "trackBar8");
+            this.trackBar8.Maximum = 255;
+            this.trackBar8.Name = "trackBar8";
+            this.trackBar8.Scroll += new System.EventHandler(this.trackBar8_Scroll);
             // 
-            // textBox32
+            // trackBar7
             // 
-            this.textBox32.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox32, "textBox32");
-            this.textBox32.Name = "textBox32";
+            resources.ApplyResources(this.trackBar7, "trackBar7");
+            this.trackBar7.Maximum = 255;
+            this.trackBar7.Name = "trackBar7";
+            this.trackBar7.Scroll += new System.EventHandler(this.trackBar7_Scroll);
             // 
             // textBox6
             // 
@@ -408,18 +434,6 @@
             resources.ApplyResources(this.textBox31, "textBox31");
             this.textBox31.Name = "textBox31";
             // 
-            // textBox30
-            // 
-            this.textBox30.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox30, "textBox30");
-            this.textBox30.Name = "textBox30";
-            // 
-            // textBox5
-            // 
-            this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
             // textBox4
             // 
             this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -428,42 +442,79 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label50);
+            this.groupBox3.Controls.Add(this.comboBox21);
+            this.groupBox3.Controls.Add(this.comboBox20);
+            this.groupBox3.Controls.Add(this.comboBox19);
+            this.groupBox3.Controls.Add(this.comboBox18);
+            this.groupBox3.Controls.Add(this.comboBox17);
+            this.groupBox3.Controls.Add(this.comboBox16);
+            this.groupBox3.Controls.Add(this.comboBox15);
+            this.groupBox3.Controls.Add(this.comboBox14);
+            this.groupBox3.Controls.Add(this.comboBox13);
             this.groupBox3.Controls.Add(this.trackBar24);
             this.groupBox3.Controls.Add(this.trackBar23);
             this.groupBox3.Controls.Add(this.trackBar22);
             this.groupBox3.Controls.Add(this.trackBar21);
             this.groupBox3.Controls.Add(this.trackBar20);
-            this.groupBox3.Controls.Add(this.textBox47);
             this.groupBox3.Controls.Add(this.trackBar19);
             this.groupBox3.Controls.Add(this.textBox21);
             this.groupBox3.Controls.Add(this.trackBar18);
             this.groupBox3.Controls.Add(this.textBox46);
-            this.groupBox3.Controls.Add(this.textBox14);
             this.groupBox3.Controls.Add(this.trackBar17);
             this.groupBox3.Controls.Add(this.textBox45);
-            this.groupBox3.Controls.Add(this.textBox20);
             this.groupBox3.Controls.Add(this.trackBar16);
-            this.groupBox3.Controls.Add(this.textBox44);
-            this.groupBox3.Controls.Add(this.textBox43);
             this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox42);
             this.groupBox3.Controls.Add(this.textBox19);
             this.groupBox3.Controls.Add(this.textBox41);
             this.groupBox3.Controls.Add(this.textBox15);
             this.groupBox3.Controls.Add(this.textBox40);
-            this.groupBox3.Controls.Add(this.textBox18);
-            this.groupBox3.Controls.Add(this.textBox39);
-            this.groupBox3.Controls.Add(this.textBox16);
             this.groupBox3.Controls.Add(this.textBox17);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // textBox47
+            // trackBar24
             // 
-            this.textBox47.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox47, "textBox47");
-            this.textBox47.Name = "textBox47";
+            resources.ApplyResources(this.trackBar24, "trackBar24");
+            this.trackBar24.Maximum = 255;
+            this.trackBar24.Name = "trackBar24";
+            this.trackBar24.Scroll += new System.EventHandler(this.trackBar24_Scroll);
+            // 
+            // trackBar23
+            // 
+            resources.ApplyResources(this.trackBar23, "trackBar23");
+            this.trackBar23.Maximum = 255;
+            this.trackBar23.Name = "trackBar23";
+            this.trackBar23.Scroll += new System.EventHandler(this.trackBar23_Scroll);
+            // 
+            // trackBar22
+            // 
+            resources.ApplyResources(this.trackBar22, "trackBar22");
+            this.trackBar22.Maximum = 255;
+            this.trackBar22.Name = "trackBar22";
+            this.trackBar22.Scroll += new System.EventHandler(this.trackBar22_Scroll);
+            // 
+            // trackBar21
+            // 
+            resources.ApplyResources(this.trackBar21, "trackBar21");
+            this.trackBar21.Maximum = 255;
+            this.trackBar21.Name = "trackBar21";
+            this.trackBar21.Scroll += new System.EventHandler(this.trackBar21_Scroll);
+            // 
+            // trackBar20
+            // 
+            resources.ApplyResources(this.trackBar20, "trackBar20");
+            this.trackBar20.Maximum = 255;
+            this.trackBar20.Name = "trackBar20";
+            this.trackBar20.Scroll += new System.EventHandler(this.trackBar20_Scroll);
+            // 
+            // trackBar19
+            // 
+            resources.ApplyResources(this.trackBar19, "trackBar19");
+            this.trackBar19.Maximum = 255;
+            this.trackBar19.Name = "trackBar19";
+            this.trackBar19.Scroll += new System.EventHandler(this.trackBar19_Scroll);
             // 
             // textBox21
             // 
@@ -471,17 +522,25 @@
             resources.ApplyResources(this.textBox21, "textBox21");
             this.textBox21.Name = "textBox21";
             // 
+            // trackBar18
+            // 
+            resources.ApplyResources(this.trackBar18, "trackBar18");
+            this.trackBar18.Maximum = 255;
+            this.trackBar18.Name = "trackBar18";
+            this.trackBar18.Scroll += new System.EventHandler(this.trackBar18_Scroll);
+            // 
             // textBox46
             // 
             this.textBox46.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox46, "textBox46");
             this.textBox46.Name = "textBox46";
             // 
-            // textBox14
+            // trackBar17
             // 
-            this.textBox14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox14, "textBox14");
-            this.textBox14.Name = "textBox14";
+            resources.ApplyResources(this.trackBar17, "trackBar17");
+            this.trackBar17.Maximum = 255;
+            this.trackBar17.Name = "trackBar17";
+            this.trackBar17.Scroll += new System.EventHandler(this.trackBar17_Scroll);
             // 
             // textBox45
             // 
@@ -489,35 +548,18 @@
             resources.ApplyResources(this.textBox45, "textBox45");
             this.textBox45.Name = "textBox45";
             // 
-            // textBox20
+            // trackBar16
             // 
-            this.textBox20.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox20, "textBox20");
-            this.textBox20.Name = "textBox20";
-            // 
-            // textBox44
-            // 
-            this.textBox44.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox44, "textBox44");
-            this.textBox44.Name = "textBox44";
-            // 
-            // textBox43
-            // 
-            this.textBox43.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox43, "textBox43");
-            this.textBox43.Name = "textBox43";
+            resources.ApplyResources(this.trackBar16, "trackBar16");
+            this.trackBar16.Maximum = 255;
+            this.trackBar16.Name = "trackBar16";
+            this.trackBar16.Scroll += new System.EventHandler(this.trackBar16_Scroll);
             // 
             // textBox13
             // 
             this.textBox13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.Name = "textBox13";
-            // 
-            // textBox42
-            // 
-            this.textBox42.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox42, "textBox42");
-            this.textBox42.Name = "textBox42";
             // 
             // textBox19
             // 
@@ -542,24 +584,6 @@
             this.textBox40.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox40, "textBox40");
             this.textBox40.Name = "textBox40";
-            // 
-            // textBox18
-            // 
-            this.textBox18.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox18, "textBox18");
-            this.textBox18.Name = "textBox18";
-            // 
-            // textBox39
-            // 
-            this.textBox39.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox39, "textBox39");
-            this.textBox39.Name = "textBox39";
-            // 
-            // textBox16
-            // 
-            this.textBox16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox16, "textBox16");
-            this.textBox16.Name = "textBox16";
             // 
             // textBox17
             // 
@@ -679,6 +703,76 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label47);
+            this.tabPage3.Controls.Add(this.label46);
+            this.tabPage3.Controls.Add(this.label45);
+            this.tabPage3.Controls.Add(this.label44);
+            this.tabPage3.Controls.Add(this.label43);
+            this.tabPage3.Controls.Add(this.label42);
+            this.tabPage3.Controls.Add(this.label41);
+            this.tabPage3.Controls.Add(this.label40);
+            this.tabPage3.Controls.Add(this.label48);
+            this.tabPage3.Controls.Add(this.label39);
+            this.tabPage3.Controls.Add(this.groupBox1);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Controls.Add(this.groupBox3);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.Name = "label46";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox4);
@@ -720,6 +814,77 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.textBox23);
+            this.groupBox4.Controls.Add(this.textBox25);
+            this.groupBox4.Controls.Add(this.textBox22);
+            this.groupBox4.Controls.Add(this.textBox27);
+            this.groupBox4.Controls.Add(this.textBox24);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.label6);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // textBox23
+            // 
+            this.textBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.textBox23, "textBox23");
+            this.textBox23.Name = "textBox23";
+            // 
+            // textBox25
+            // 
+            this.textBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.textBox25, "textBox25");
+            this.textBox25.Name = "textBox25";
+            // 
+            // textBox22
+            // 
+            this.textBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.textBox22, "textBox22");
+            this.textBox22.Name = "textBox22";
+            // 
+            // textBox27
+            // 
+            this.textBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.textBox27, "textBox27");
+            this.textBox27.Name = "textBox27";
+            // 
+            // textBox24
+            // 
+            this.textBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            resources.ApplyResources(this.textBox24, "textBox24");
+            this.textBox24.Name = "textBox24";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
             // 
             // trackBar5
             // 
@@ -888,26 +1053,6 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
             // button3
             // 
             resources.ApplyResources(this.button3, "button3");
@@ -960,41 +1105,6 @@
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
             // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // textBox24
-            // 
-            this.textBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox24, "textBox24");
-            this.textBox24.Name = "textBox24";
-            // 
-            // textBox27
-            // 
-            this.textBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox27, "textBox27");
-            this.textBox27.Name = "textBox27";
-            // 
-            // textBox22
-            // 
-            this.textBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox22, "textBox22");
-            this.textBox22.Name = "textBox22";
-            // 
-            // textBox25
-            // 
-            this.textBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox25, "textBox25");
-            this.textBox25.Name = "textBox25";
-            // 
-            // textBox23
-            // 
-            this.textBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox23, "textBox23");
-            this.textBox23.Name = "textBox23";
-            // 
             // button4
             // 
             resources.ApplyResources(this.button4, "button4");
@@ -1022,199 +1132,148 @@
             resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
             // 
-            // tabPage3
+            // comboBox3
             // 
-            this.tabPage3.Controls.Add(this.label47);
-            this.tabPage3.Controls.Add(this.label46);
-            this.tabPage3.Controls.Add(this.label45);
-            this.tabPage3.Controls.Add(this.label44);
-            this.tabPage3.Controls.Add(this.label43);
-            this.tabPage3.Controls.Add(this.label42);
-            this.tabPage3.Controls.Add(this.label41);
-            this.tabPage3.Controls.Add(this.label40);
-            this.tabPage3.Controls.Add(this.label48);
-            this.tabPage3.Controls.Add(this.label39);
-            this.tabPage3.Controls.Add(this.groupBox1);
-            this.tabPage3.Controls.Add(this.groupBox2);
-            this.tabPage3.Controls.Add(this.groupBox3);
-            resources.ApplyResources(this.tabPage3, "tabPage3");
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox3, "comboBox3");
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Name = "comboBox3";
             // 
-            // groupBox4
+            // comboBox4
             // 
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.textBox23);
-            this.groupBox4.Controls.Add(this.textBox25);
-            this.groupBox4.Controls.Add(this.textBox22);
-            this.groupBox4.Controls.Add(this.textBox27);
-            this.groupBox4.Controls.Add(this.textBox24);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.label6);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox4, "comboBox4");
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Name = "comboBox4";
             // 
-            // trackBar7
+            // comboBox5
             // 
-            resources.ApplyResources(this.trackBar7, "trackBar7");
-            this.trackBar7.Maximum = 255;
-            this.trackBar7.Name = "trackBar7";
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox5, "comboBox5");
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Name = "comboBox5";
             // 
-            // trackBar8
+            // comboBox6
             // 
-            resources.ApplyResources(this.trackBar8, "trackBar8");
-            this.trackBar8.Maximum = 255;
-            this.trackBar8.Name = "trackBar8";
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox6, "comboBox6");
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Name = "comboBox6";
             // 
-            // trackBar9
+            // comboBox7
             // 
-            resources.ApplyResources(this.trackBar9, "trackBar9");
-            this.trackBar9.Maximum = 255;
-            this.trackBar9.Name = "trackBar9";
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox7, "comboBox7");
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Name = "comboBox7";
             // 
-            // trackBar10
+            // comboBox8
             // 
-            resources.ApplyResources(this.trackBar10, "trackBar10");
-            this.trackBar10.Maximum = 255;
-            this.trackBar10.Name = "trackBar10";
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox8, "comboBox8");
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Name = "comboBox8";
             // 
-            // trackBar11
+            // comboBox9
             // 
-            resources.ApplyResources(this.trackBar11, "trackBar11");
-            this.trackBar11.Maximum = 255;
-            this.trackBar11.Name = "trackBar11";
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox9, "comboBox9");
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Name = "comboBox9";
             // 
-            // trackBar12
+            // comboBox10
             // 
-            resources.ApplyResources(this.trackBar12, "trackBar12");
-            this.trackBar12.Maximum = 255;
-            this.trackBar12.Name = "trackBar12";
+            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox10, "comboBox10");
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Name = "comboBox10";
             // 
-            // trackBar13
+            // comboBox11
             // 
-            resources.ApplyResources(this.trackBar13, "trackBar13");
-            this.trackBar13.Maximum = 255;
-            this.trackBar13.Name = "trackBar13";
+            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox11, "comboBox11");
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Name = "comboBox11";
             // 
-            // trackBar14
+            // comboBox12
             // 
-            resources.ApplyResources(this.trackBar14, "trackBar14");
-            this.trackBar14.Maximum = 255;
-            this.trackBar14.Name = "trackBar14";
+            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox12, "comboBox12");
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Name = "comboBox12";
             // 
-            // trackBar15
+            // comboBox13
             // 
-            resources.ApplyResources(this.trackBar15, "trackBar15");
-            this.trackBar15.Maximum = 255;
-            this.trackBar15.Name = "trackBar15";
+            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox13, "comboBox13");
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Name = "comboBox13";
             // 
-            // trackBar16
+            // comboBox14
             // 
-            resources.ApplyResources(this.trackBar16, "trackBar16");
-            this.trackBar16.Maximum = 255;
-            this.trackBar16.Name = "trackBar16";
+            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox14, "comboBox14");
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Name = "comboBox14";
             // 
-            // trackBar17
+            // comboBox15
             // 
-            resources.ApplyResources(this.trackBar17, "trackBar17");
-            this.trackBar17.Maximum = 255;
-            this.trackBar17.Name = "trackBar17";
+            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox15, "comboBox15");
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Name = "comboBox15";
             // 
-            // trackBar18
+            // comboBox16
             // 
-            resources.ApplyResources(this.trackBar18, "trackBar18");
-            this.trackBar18.Maximum = 255;
-            this.trackBar18.Name = "trackBar18";
+            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox16, "comboBox16");
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Name = "comboBox16";
             // 
-            // trackBar19
+            // comboBox17
             // 
-            resources.ApplyResources(this.trackBar19, "trackBar19");
-            this.trackBar19.Maximum = 255;
-            this.trackBar19.Name = "trackBar19";
+            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox17, "comboBox17");
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Name = "comboBox17";
             // 
-            // trackBar20
+            // comboBox18
             // 
-            resources.ApplyResources(this.trackBar20, "trackBar20");
-            this.trackBar20.Maximum = 255;
-            this.trackBar20.Name = "trackBar20";
+            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox18, "comboBox18");
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Name = "comboBox18";
             // 
-            // trackBar21
+            // comboBox19
             // 
-            resources.ApplyResources(this.trackBar21, "trackBar21");
-            this.trackBar21.Maximum = 255;
-            this.trackBar21.Name = "trackBar21";
+            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox19, "comboBox19");
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Name = "comboBox19";
             // 
-            // trackBar22
+            // comboBox20
             // 
-            resources.ApplyResources(this.trackBar22, "trackBar22");
-            this.trackBar22.Maximum = 255;
-            this.trackBar22.Name = "trackBar22";
+            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox20, "comboBox20");
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Name = "comboBox20";
             // 
-            // trackBar23
+            // comboBox21
             // 
-            resources.ApplyResources(this.trackBar23, "trackBar23");
-            this.trackBar23.Maximum = 255;
-            this.trackBar23.Name = "trackBar23";
+            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox21, "comboBox21");
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Name = "comboBox21";
             // 
-            // trackBar24
+            // label49
             // 
-            resources.ApplyResources(this.trackBar24, "trackBar24");
-            this.trackBar24.Maximum = 255;
-            this.trackBar24.Name = "trackBar24";
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.Name = "label49";
             // 
-            // label39
+            // label50
             // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // label43
-            // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            // 
-            // label45
-            // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            // 
-            // label46
-            // 
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.Name = "label46";
-            // 
-            // label47
-            // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
-            // 
-            // label48
-            // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
+            resources.ApplyResources(this.label50, "label50");
+            this.label50.Name = "label50";
             // 
             // Form1
             // 
@@ -1240,11 +1299,33 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
@@ -1254,28 +1335,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1296,22 +1355,14 @@
         private System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.Label label19;
@@ -1323,24 +1374,14 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox38;
         private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox36;
         private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox34;
         private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox47;
         private System.Windows.Forms.TextBox textBox46;
         private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox42;
         private System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox39;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1423,6 +1464,27 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
     }
 }
 

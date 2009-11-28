@@ -13,7 +13,7 @@ namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private string[] s;
+        private int[] s;
         private Parser p;
         private Thread t1;
         private int currentCar;
@@ -23,13 +23,26 @@ namespace NFSU2CH
             InitializeComponent();
         }
 
+        private void adval(System.Windows.Forms.ComboBox cb, int val)
+        {
+            if (val < 1)
+            {
+                cb.Items.AddRange(new object[1] { val });
+            }
+            else
+            {
+                cb.Items.AddRange(new object[3] { val - 1, val, val + 1 });
+            }
+            cb.Text = val.ToString();
+        }
+
         private void button6_Click(object sender, EventArgs e)
         {
             this.openFileDialog1.FileName = "GlobalB.lzc";
             this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
             openFileDialog1.ShowDialog();
             textBox26.Text = openFileDialog1.FileName.ToString();
-
+            comboBox1.Text = "Теперь выберите машину...";
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,92 +65,92 @@ namespace NFSU2CH
             #region добавление в текстбоксы
             /* Обороты */
 
-            textBox3.Text = s[149]; // Нейтралка
-            textBox48.Text = s[150];
+            textBox3.Text = s[149].ToString(); // Нейтралка
+            textBox48.Text = s[150].ToString();
 
-            textBox1.Text = s[153]; // Максимально
-            textBox28.Text = s[154];
+            textBox1.Text = s[153].ToString(); // Максимально
+            textBox28.Text = s[154].ToString();
 
-            textBox2.Text = s[151]; // Переключение
-            textBox29.Text = s[152];
+            textBox2.Text = s[151].ToString(); // Переключение
+            textBox29.Text = s[152].ToString();
 
             /* ЭКУ */
 
-            textBox4.Text = s[155]; // 1
-            trackBar7.Value = Int32.Parse(textBox4.Text, NumberStyles.HexNumber);
+            textBox4.Text = s[155].ToString(); // 1
+            trackBar7.Value = s[155];
 
-            textBox5.Text = s[156];
-            textBox6.Text = s[157]; // 2
-            trackBar8.Value = Int32.Parse(textBox6.Text, NumberStyles.HexNumber);
+            adval(comboBox3, s[156]);
+            textBox6.Text = s[157].ToString(); // 2
+            trackBar8.Value = s[157];
 
-            textBox7.Text = s[158];
-            textBox8.Text = s[159]; // 3
-            trackBar9.Value = Int32.Parse(textBox8.Text, NumberStyles.HexNumber);
+            adval(comboBox5, s[158]);
+            textBox8.Text = s[159].ToString(); // 3
+            trackBar9.Value = s[159];
 
-            textBox9.Text = s[160];
-            textBox10.Text = s[161];// 4
-            trackBar10.Value = Int32.Parse(textBox10.Text, NumberStyles.HexNumber);
+            adval(comboBox6, s[160]);
+            textBox10.Text = s[161].ToString();// 4
+            trackBar10.Value = s[161];
 
-            textBox11.Text = s[162];
-            textBox12.Text = s[163];// 5
-            trackBar11.Value = Int32.Parse(textBox12.Text, NumberStyles.HexNumber);
+            adval(comboBox7, s[162]);
+            textBox12.Text = s[163].ToString();// 5
+            trackBar11.Value = s[163];
 
-            textBox30.Text = s[164];
-            textBox31.Text = s[165];// 6
-            trackBar12.Value = Int32.Parse(textBox31.Text, NumberStyles.HexNumber);
+            adval(comboBox8, s[164]);
+            textBox31.Text = s[165].ToString();// 6
+            trackBar12.Value = s[165];
 
-            textBox32.Text = s[166];
-            textBox33.Text = s[167];// 7
-            trackBar13.Value = Int32.Parse(textBox33.Text, NumberStyles.HexNumber);
+            adval(comboBox9, s[166]);
+            textBox33.Text = s[167].ToString();// 7
+            trackBar13.Value = s[167];
 
-            textBox34.Text = s[168];
-            textBox35.Text = s[169];// 8
-            trackBar14.Value = Int32.Parse(textBox35.Text, NumberStyles.HexNumber);
+            adval(comboBox10, s[168]);
+            textBox35.Text = s[169].ToString();// 8
+            trackBar14.Value = s[169];
 
-            textBox36.Text = s[170];
-            textBox37.Text = s[171];// 9
-            trackBar15.Value = Int32.Parse(textBox37.Text, NumberStyles.HexNumber);
+            adval(comboBox11, s[170]);
+            textBox37.Text = s[171].ToString();// 9
+            trackBar15.Value = s[171];
 
-            textBox38.Text = s[172]; 
+            adval(comboBox12, s[172]);
 
             /* Турбо */
 
-            textBox13.Text = s[173];// 1
-            trackBar16.Value = Int32.Parse(textBox13.Text, NumberStyles.HexNumber);
+            textBox13.Text = s[173].ToString();// 1
+            trackBar16.Value = s[173];
 
-            textBox14.Text = s[174];
-            textBox15.Text = s[175];// 2
-            trackBar17.Value = Int32.Parse(textBox15.Text, NumberStyles.HexNumber);
+            adval(comboBox13, s[174]);
+            textBox15.Text = s[175].ToString();// 2
+            trackBar17.Value = s[175];
 
-            textBox16.Text = s[176];
-            textBox17.Text = s[177];// 3
-            trackBar18.Value = Int32.Parse(textBox17.Text, NumberStyles.HexNumber);
+            adval(comboBox14, s[176]);
+            textBox17.Text = s[177].ToString();// 3
+            trackBar18.Value = s[177];
 
-            textBox18.Text = s[178];
-            textBox19.Text = s[179];// 4
-            trackBar19.Value = Int32.Parse(textBox19.Text, NumberStyles.HexNumber);
+            adval(comboBox15, s[178]);
+            textBox19.Text = s[179].ToString();// 4
+            trackBar19.Value = s[179];
 
-            textBox20.Text = s[180];
-            textBox21.Text = s[181];// 5
-            trackBar20.Value = Int32.Parse(textBox21.Text, NumberStyles.HexNumber);
+            adval(comboBox16, s[180]);
+            textBox21.Text = s[181].ToString();// 5
+            trackBar20.Value = s[181];
 
-            textBox44.Text = s[182];
-            textBox46.Text = s[183];// 6
-            trackBar21.Value = Int32.Parse(textBox46.Text, NumberStyles.HexNumber);
+            adval(comboBox17, s[182]);
+            textBox46.Text = s[183].ToString();// 6
+            trackBar21.Value = s[183];
 
-            textBox42.Text = s[184];
-            textBox40.Text = s[185];// 7
-            trackBar22.Value = Int32.Parse(textBox40.Text, NumberStyles.HexNumber);
+            adval(comboBox18, s[184]);
+            textBox40.Text = s[185].ToString();// 7
+            trackBar22.Value = s[185];
 
-            textBox39.Text = s[186];
-            textBox41.Text = s[187];// 8
-            trackBar23.Value = Int32.Parse(textBox41.Text, NumberStyles.HexNumber);
+            adval(comboBox19, s[186]);
+            textBox41.Text = s[187].ToString();// 8
+            trackBar23.Value = s[187];
 
-            textBox43.Text = s[188];
-            textBox45.Text = s[189];// 9
-            trackBar24.Value = Int32.Parse(textBox45.Text, NumberStyles.HexNumber);
+            adval(comboBox20, s[188]);
+            textBox45.Text = s[189].ToString();// 9
+            trackBar24.Value = s[189];
 
-            textBox47.Text = s[190];
+            adval(comboBox21, s[190]);
 
             /* Подвеска */
 
@@ -150,8 +163,8 @@ namespace NFSU2CH
 
             /* Управление */
 
-            trackBar4.Value = Int32.Parse(s[91], NumberStyles.HexNumber);
-            label10.Text = trackBar4.Value.ToString();
+            trackBar4.Value = s[91];
+            label10.Text = s[91].ToString();
 
             #endregion
         }
@@ -213,56 +226,56 @@ namespace NFSU2CH
            
         private void saveT()
         {
-            s[149] = textBox3.Text; // Нейтралка
-            s[150] = textBox48.Text;
+            s[149] = Int32.Parse(textBox3.Text); // Нейтралка
+            s[150] = Int32.Parse(textBox48.Text);
 
-            s[153] = textBox1.Text; // Максимально
-            s[154] = textBox28.Text;
+            s[153] = Int32.Parse(textBox1.Text); // Максимально
+            s[154] = Int32.Parse(textBox28.Text);
 
-            s[151] = textBox2.Text; // Переключение
-            s[152] = textBox29.Text;
+            s[151] = Int32.Parse(textBox2.Text); // Переключение
+            s[152] = Int32.Parse(textBox29.Text);
 
             /* ЭКУ */
 
-            s[155] = textBox4.Text; // 1
-            s[156] = textBox5.Text;
-            s[157] = textBox6.Text; // 2
-            s[158] = textBox7.Text;
-            s[159] = textBox8.Text; // 3
-            s[160] = textBox9.Text;
-            s[161] = textBox10.Text;// 4
-            s[162] = textBox11.Text;
-            s[163] = textBox12.Text;// 5
-            s[164] = textBox30.Text;
-            s[165] = textBox31.Text;// 6
-            s[166] = textBox32.Text;
-            s[167] = textBox33.Text;// 7
-            s[168] = textBox34.Text;
-            s[169] = textBox35.Text;// 8
-            s[170] = textBox36.Text;
-            s[171] = textBox37.Text;// 9
-            s[172] = textBox38.Text;
+            s[155] = Int32.Parse(textBox4.Text); // 1
+            s[156] = Int32.Parse(comboBox3.Text);
+            s[157] = Int32.Parse(textBox6.Text); // 2
+            s[158] = Int32.Parse(comboBox5.Text);
+            s[159] = Int32.Parse(textBox8.Text); // 3
+            s[160] = Int32.Parse(comboBox6.Text);
+            s[161] = Int32.Parse(textBox10.Text);// 4
+            s[162] = Int32.Parse(comboBox7.Text);
+            s[163] = Int32.Parse(textBox12.Text);// 5
+            s[164] = Int32.Parse(comboBox8.Text);
+            s[165] = Int32.Parse(textBox31.Text);// 6
+            s[166] = Int32.Parse(comboBox9.Text);
+            s[167] = Int32.Parse(textBox33.Text);// 7
+            s[168] = Int32.Parse(comboBox10.Text);
+            s[169] = Int32.Parse(textBox35.Text);// 8
+            s[170] = Int32.Parse(comboBox11.Text);
+            s[171] = Int32.Parse(textBox37.Text);// 9
+            s[172] = Int32.Parse(comboBox12.Text);
 
             /* Турбо */
 
-            s[173] = textBox13.Text;// 1
-            s[174] = textBox14.Text;
-            s[175] = textBox15.Text;// 2
-            s[176] = textBox16.Text;
-            s[177] = textBox17.Text;// 3
-            s[178] = textBox18.Text;
-            s[179] = textBox19.Text;// 4
-            s[180] = textBox20.Text;
-            s[181] = textBox21.Text;// 5
-            s[182] = textBox44.Text;
-            s[183] = textBox46.Text;// 6
-            s[184] = textBox42.Text;
-            s[185] = textBox40.Text;// 7
-            s[186] = textBox39.Text;
-            s[187] = textBox41.Text;// 8
-            s[188] = textBox43.Text;
-            s[189] = textBox45.Text;// 9
-            s[190] = textBox47.Text;
+            s[173] = Int32.Parse(textBox13.Text);// 1
+            s[174] = Int32.Parse(comboBox13.Text);
+            s[175] = Int32.Parse(textBox15.Text);// 2
+            s[176] = Int32.Parse(comboBox14.Text);
+            s[177] = Int32.Parse(textBox17.Text);// 3
+            s[178] = Int32.Parse(comboBox15.Text);
+            s[179] = Int32.Parse(textBox19.Text);// 4
+            s[180] = Int32.Parse(comboBox16.Text);
+            s[181] = Int32.Parse(textBox21.Text);// 5
+            s[182] = Int32.Parse(comboBox17.Text);
+            s[183] = Int32.Parse(textBox46.Text);// 6
+            s[184] = Int32.Parse(comboBox18.Text);
+            s[185] = Int32.Parse(textBox40.Text);// 7
+            s[186] = Int32.Parse(comboBox19.Text);
+            s[187] = Int32.Parse(textBox41.Text);// 8
+            s[188] = Int32.Parse(comboBox20.Text);
+            s[189] = Int32.Parse(textBox45.Text);// 9
+            s[190] = Int32.Parse(comboBox21.Text);
 
             this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar);
         }
@@ -283,5 +296,96 @@ namespace NFSU2CH
         {
 
         }
+
+        private void trackBar7_Scroll(object sender, EventArgs e)
+        {
+            textBox4.Text = trackBar7.Value.ToString();
+        }
+
+        private void trackBar8_Scroll(object sender, EventArgs e)
+        {
+            textBox6.Text = trackBar8.Value.ToString();
+        }
+
+        private void trackBar9_Scroll(object sender, EventArgs e)
+        {
+            textBox8.Text = trackBar9.Value.ToString();
+        }
+
+        private void trackBar10_Scroll(object sender, EventArgs e)
+        {
+            textBox10.Text = trackBar10.Value.ToString();
+        }
+
+        private void trackBar11_Scroll(object sender, EventArgs e)
+        {
+            textBox12.Text = trackBar11.Value.ToString();
+        }
+
+        private void trackBar12_Scroll(object sender, EventArgs e)
+        {
+            textBox31.Text = trackBar12.Value.ToString();
+        }
+
+        private void trackBar13_Scroll(object sender, EventArgs e)
+        {
+            textBox33.Text = trackBar13.Value.ToString();
+        }
+
+        private void trackBar14_Scroll(object sender, EventArgs e)
+        {
+            textBox35.Text = trackBar14.Value.ToString();
+        }
+
+        private void trackBar15_Scroll(object sender, EventArgs e)
+        {
+            textBox37.Text = trackBar15.Value.ToString();
+        }
+
+        private void trackBar16_Scroll(object sender, EventArgs e)
+        {
+            textBox13.Text = trackBar16.Value.ToString();
+        }
+
+        private void trackBar17_Scroll(object sender, EventArgs e)
+        {
+            textBox15.Text = trackBar17.Value.ToString();
+        }
+
+        private void trackBar18_Scroll(object sender, EventArgs e)
+        {
+            textBox17.Text = trackBar18.Value.ToString();
+        }
+
+        private void trackBar19_Scroll(object sender, EventArgs e)
+        {
+            textBox19.Text = trackBar19.Value.ToString();
+        }
+
+        private void trackBar20_Scroll(object sender, EventArgs e)
+        {
+            textBox21.Text = trackBar20.Value.ToString();
+        }
+
+        private void trackBar21_Scroll(object sender, EventArgs e)
+        {
+            textBox46.Text = trackBar21.Value.ToString();
+        }
+
+        private void trackBar22_Scroll(object sender, EventArgs e)
+        {
+            textBox40.Text = trackBar22.Value.ToString();
+        }
+
+        private void trackBar23_Scroll(object sender, EventArgs e)
+        {
+            textBox41.Text = trackBar23.Value.ToString();
+        }
+
+        private void trackBar24_Scroll(object sender, EventArgs e)
+        {
+            textBox45.Text = trackBar24.Value.ToString();
+        }
+
     }
 }
