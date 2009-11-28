@@ -97,15 +97,18 @@ namespace NFSU2CH
                 string byt = this.io.getHexByte();
                 if (byt == null)
                     break;
-                int j = 0;
-                foreach (int k in this.map)
+                if (this._curr >= this.startblock)
                 {
-                    if (this._curr - this.startblock == k)
+                    int j = 0;
+                    foreach (int k in this.map)
                     {
-                        byt = newconf[j];
-                        break;
+                        if (this._curr - this.startblock == k)
+                        {
+                            byt = newconf[j];
+                            break;
+                        }
+                        j++;
                     }
-                    j++;
                 }
                 this.io.writeByte(Convert.ToInt32(byt, 16));
                 this._curr++;
