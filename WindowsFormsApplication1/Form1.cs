@@ -13,7 +13,7 @@ namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private int[] s;
+        private int[] s = null;
         private Parser p;
         private Thread t1;
         private string LOGIN;
@@ -232,6 +232,11 @@ namespace NFSU2CH
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (s == null)
+            {
+                MessageBox.Show("Сохранять нечего");
+                return;
+            }
             s[149] = Int32.Parse(textBox3.Text); // Нейтралка
             s[150] = Int32.Parse(comboBox24.Text);
 
