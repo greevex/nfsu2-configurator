@@ -29,7 +29,8 @@ namespace NFSU2CH
 
         private void adval(System.Windows.Forms.ComboBox cb, int val)
         {
-            if (val < 1)
+            cb.Items.Clear();
+            if (val == 0)
             {
                 cb.Items.AddRange(new object[1] { val });
             }
