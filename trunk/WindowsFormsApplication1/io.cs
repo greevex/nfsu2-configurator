@@ -8,7 +8,7 @@ namespace NFSU2CH
 {
     public class io
     {
-        private string filename;
+        public string filename;
         private Stream sr;
         private Stream sw;
         private string[] BYTES =
@@ -97,6 +97,10 @@ namespace NFSU2CH
             }
             catch (Exception)
             { }
+        }
+        public void closeRead()
+        {
+            this.sr.Close();
         }
     }
 }
