@@ -287,27 +287,27 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.trackBar24);
             this.groupBox2.Controls.Add(this.textBox38);
-            this.groupBox2.Controls.Add(this.trackBar23);
+            this.groupBox2.Controls.Add(this.trackBar15);
             this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.trackBar22);
+            this.groupBox2.Controls.Add(this.trackBar14);
             this.groupBox2.Controls.Add(this.textBox37);
-            this.groupBox2.Controls.Add(this.trackBar21);
             this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.trackBar20);
+            this.groupBox2.Controls.Add(this.trackBar13);
             this.groupBox2.Controls.Add(this.textBox36);
-            this.groupBox2.Controls.Add(this.trackBar19);
+            this.groupBox2.Controls.Add(this.trackBar12);
             this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.trackBar18);
             this.groupBox2.Controls.Add(this.textBox35);
-            this.groupBox2.Controls.Add(this.trackBar17);
+            this.groupBox2.Controls.Add(this.trackBar11);
             this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.trackBar16);
+            this.groupBox2.Controls.Add(this.trackBar10);
             this.groupBox2.Controls.Add(this.textBox34);
             this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.trackBar9);
             this.groupBox2.Controls.Add(this.textBox33);
+            this.groupBox2.Controls.Add(this.trackBar8);
             this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.trackBar7);
             this.groupBox2.Controls.Add(this.textBox32);
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox31);
@@ -428,21 +428,21 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.trackBar15);
-            this.groupBox3.Controls.Add(this.trackBar14);
-            this.groupBox3.Controls.Add(this.trackBar13);
-            this.groupBox3.Controls.Add(this.trackBar12);
-            this.groupBox3.Controls.Add(this.trackBar11);
-            this.groupBox3.Controls.Add(this.trackBar10);
-            this.groupBox3.Controls.Add(this.trackBar9);
-            this.groupBox3.Controls.Add(this.trackBar8);
-            this.groupBox3.Controls.Add(this.trackBar7);
+            this.groupBox3.Controls.Add(this.trackBar24);
+            this.groupBox3.Controls.Add(this.trackBar23);
+            this.groupBox3.Controls.Add(this.trackBar22);
+            this.groupBox3.Controls.Add(this.trackBar21);
+            this.groupBox3.Controls.Add(this.trackBar20);
             this.groupBox3.Controls.Add(this.textBox47);
+            this.groupBox3.Controls.Add(this.trackBar19);
             this.groupBox3.Controls.Add(this.textBox21);
+            this.groupBox3.Controls.Add(this.trackBar18);
             this.groupBox3.Controls.Add(this.textBox46);
             this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.trackBar17);
             this.groupBox3.Controls.Add(this.textBox45);
             this.groupBox3.Controls.Add(this.textBox20);
+            this.groupBox3.Controls.Add(this.trackBar16);
             this.groupBox3.Controls.Add(this.textBox44);
             this.groupBox3.Controls.Add(this.textBox43);
             this.groupBox3.Controls.Add(this.textBox13);
