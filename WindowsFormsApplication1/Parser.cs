@@ -54,50 +54,59 @@ namespace NFSU2CH
                 stream.Close();
                 return result;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show(e.Message);
                 return null;
             }
         }
         public bool save(string filename, int[] map, int[] newconf, int position)
         {
-            string temp = filename+".tmp";
-            if (File.Exists(temp))
+            try
             {
-                File.Delete(temp);
-            }
-            Stream streamr = new StreamReader(filename).BaseStream;
-            Stream streamw = new StreamWriter(temp).BaseStream;
-            streamr.Position = 0;
-            this._curr = 0;
-            while (true)
-            {
-                int byt = streamr.ReadByte();
-                if (byt == -1)
-                    break;
-                if (this._curr >= position)
+                string temp = filename + ".tmp";
+                if (File.Exists(temp))
                 {
-                    int j = 0;
-                    foreach (int k in map)
-                    {
-                        if (this._curr - position == k)
-                        {
-                            byt = newconf[j];
-                            break;
-                        }
-                        j++;
-                    }
+                    File.Delete(temp);
                 }
-                streamw.WriteByte((byte)byt);
-                this._curr++;
-                
+                Stream streamr = new StreamReader(filename).BaseStream;
+                Stream streamw = new StreamWriter(temp).BaseStream;
+                streamr.Position = 0;
+                this._curr = 0;
+                while (true)
+                {
+                    int byt = streamr.ReadByte();
+                    if (byt == -1)
+                        break;
+                    if (this._curr >= position)
+                    {
+                        int j = 0;
+                        foreach (int k in map)
+                        {
+                            if (this._curr - position == k)
+                            {
+                                byt = newconf[j];
+                                break;
+                            }
+                            j++;
+                        }
+                    }
+                    streamw.WriteByte((byte)byt);
+                    this._curr++;
+
+                }
+                streamr.Close();
+                streamw.Close();
+                File.Delete(filename);
+                File.Move(temp, filename);
+                this._curr = 0;
+                return true;
             }
-            streamr.Close();
-            streamw.Close();
-            File.Delete(filename);
-            File.Move(temp, filename);
-            this._curr = 0;
-            return true;
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                return false;
+            }
         }
     }
 }

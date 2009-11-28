@@ -801,6 +801,7 @@
             resources.GetString("comboBox1.AutoCompleteCustomSource3"),
             resources.GetString("comboBox1.AutoCompleteCustomSource4"),
             resources.GetString("comboBox1.AutoCompleteCustomSource5")});
+            this.comboBox1.DisplayMember = "1";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -839,6 +840,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Sorted = true;
             this.comboBox1.Tag = "";
+            this.comboBox1.ValueMember = "1";
             // 
             // tabControl1
             // 
