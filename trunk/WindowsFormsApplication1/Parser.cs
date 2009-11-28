@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.IO;
 
 namespace NFSU2CH
@@ -28,11 +27,11 @@ namespace NFSU2CH
                 Stream stream = new StreamReader(filename).BaseStream;
                 //устанавливаем позицию чтения
                 stream.Position = startblock;
-                int[] result = new int[map.Count()];
+                int[] result = new int[191];
                 int i = 0;
                 int key = 0;
                 
-                while (i < (map[map.Count() - 1] + 1))
+                while (i < (map[191 - 1] + 1))
                 {
                     if (i == map[key])
                     {
