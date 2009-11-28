@@ -20,6 +20,7 @@ namespace NFSU2CH
         private string PASSWORD;
         private FormAuth fa;
         private int currentCar;
+        private bool authbuttonclick = false;
 
         public Form1()
         {
@@ -403,10 +404,12 @@ namespace NFSU2CH
 
         void fa_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if(this.authbuttonclick == false)
+                Application.Exit();
         }
         private void authclick(object sender, EventArgs e)
         {
+            this.authbuttonclick = true;
             this.LOGIN = fa.textBox1.Text;
             this.PASSWORD = fa.textBox2.Text;
             ///if логин/пасс верные
