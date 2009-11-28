@@ -172,10 +172,62 @@ namespace NFSU2CH
             t1.Start();
             t.Start();
         }
+           
         private void saveT()
         {
+            s[150] = textBox48.Text;
+
+            s[153] = textBox1.Text; // Максимально
+            s[154] = textBox28.Text;
+
+            s[151] = textBox2.Text; // Переключение
+            s[152] = textBox29.Text;
+
+            /* ЭКУ */
+
+            s[155] = textBox4.Text; // 1
+            s[156] = textBox5.Text;
+            s[157] = textBox6.Text; // 2
+            s[158] = textBox7.Text;
+            s[159] = textBox8.Text; // 3
+            s[160] = textBox9.Text;
+            s[161] = textBox10.Text;// 4
+            s[162] = textBox11.Text;
+            s[163] = textBox12.Text;// 5
+            s[164] = textBox30.Text;
+            s[165] = textBox31.Text;// 6
+            s[166] = textBox32.Text;
+            s[167] = textBox33.Text;// 7
+            s[168] = textBox34.Text;
+            s[169] = textBox35.Text;// 8
+            s[170] = textBox36.Text;
+            s[171] = textBox37.Text;// 9
+            s[172] = textBox38.Text;
+
+            /* Турбо */
+
+            s[173] = textBox13.Text;// 1
+            s[174] = textBox14.Text;
+            s[175] = textBox15.Text;// 2
+            s[176] = textBox16.Text;
+            s[177] = textBox17.Text;// 3
+            s[178] = textBox18.Text;
+            s[179] = textBox19.Text;// 4
+            s[180] = textBox20.Text;
+            s[181] = textBox21.Text;// 5
+            s[182] = textBox44.Text;
+            s[183] = textBox46.Text;// 6
+            s[184] = textBox42.Text;
+            s[185] = textBox40.Text;// 7
+            s[186] = textBox39.Text;
+            s[187] = textBox41.Text;// 8
+            s[188] = textBox43.Text;
+            s[189] = textBox45.Text;// 9
+            s[190] = textBox47.Text;
+
             this.p.save(textBox26.Text + ".tmp", this.s);
         }
+
         void prgs()
         {
             this.Invoke((MethodInvoker)(() => this.Enabled = false));
