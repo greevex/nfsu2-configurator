@@ -115,6 +115,9 @@ namespace NFSU2CH
                 
             }
             this.io.closeWrite();
+            this.io.closeRead();
+            System.IO.File.Delete(this.io.filename);
+            System.IO.File.Move(filename, this.io.filename);
             this._curr = 0;
             return true;
         }
