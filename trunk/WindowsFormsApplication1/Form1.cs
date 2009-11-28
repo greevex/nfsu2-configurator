@@ -16,6 +16,8 @@ namespace NFSU2CH
         private string[] s;
         private Parser p;
         private Thread t1;
+        private int currentCar;
+
         public Form1()
         {
             InitializeComponent();
@@ -44,10 +46,9 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
-            this.p = new Parser(textBox26.Text);
-            p.setMap(Properti.map, pos);
-            p.parse();
-            this.s = p.getResult();
+            this.currentCar = pos;
+            this.p = new Parser();
+            this.s = p.parse(this.textBox26.Text, Properti.map, pos);
             #region добавление в текстбоксы
             /* Обороты */
 
@@ -263,7 +264,7 @@ namespace NFSU2CH
             s[189] = textBox45.Text;// 9
             s[190] = textBox47.Text;
 
-            this.p.save(textBox26.Text + ".tmp", this.s);
+            this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar);
         }
 
         void prgs()
