@@ -187,31 +187,37 @@
             // 
             // textBox48
             // 
+            this.textBox48.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox48, "textBox48");
             this.textBox48.Name = "textBox48";
             // 
             // textBox3
             // 
+            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox3, "textBox3");
             this.textBox3.Name = "textBox3";
             // 
             // textBox29
             // 
+            this.textBox29.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox29, "textBox29");
             this.textBox29.Name = "textBox29";
             // 
             // textBox2
             // 
+            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.Name = "textBox2";
             // 
             // textBox28
             // 
+            this.textBox28.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox28, "textBox28");
             this.textBox28.Name = "textBox28";
             // 
             // textBox1
             // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
@@ -256,91 +262,109 @@
             // 
             // textBox38
             // 
+            this.textBox38.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox38, "textBox38");
             this.textBox38.Name = "textBox38";
             // 
             // textBox12
             // 
+            this.textBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.Name = "textBox12";
             // 
             // textBox37
             // 
+            this.textBox37.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox37, "textBox37");
             this.textBox37.Name = "textBox37";
             // 
             // textBox11
             // 
+            this.textBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
             // 
             // textBox36
             // 
+            this.textBox36.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox36, "textBox36");
             this.textBox36.Name = "textBox36";
             // 
             // textBox10
             // 
+            this.textBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox10, "textBox10");
             this.textBox10.Name = "textBox10";
             // 
             // textBox35
             // 
+            this.textBox35.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox35, "textBox35");
             this.textBox35.Name = "textBox35";
             // 
             // textBox9
             // 
+            this.textBox9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox9, "textBox9");
             this.textBox9.Name = "textBox9";
             // 
             // textBox34
             // 
+            this.textBox34.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox34, "textBox34");
             this.textBox34.Name = "textBox34";
             // 
             // textBox8
             // 
+            this.textBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.Name = "textBox8";
             // 
             // textBox33
             // 
+            this.textBox33.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox33, "textBox33");
             this.textBox33.Name = "textBox33";
             // 
             // textBox7
             // 
+            this.textBox7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox7, "textBox7");
             this.textBox7.Name = "textBox7";
             // 
             // textBox32
             // 
+            this.textBox32.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox32, "textBox32");
             this.textBox32.Name = "textBox32";
             // 
             // textBox6
             // 
+            this.textBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox6, "textBox6");
             this.textBox6.Name = "textBox6";
             // 
             // textBox31
             // 
+            this.textBox31.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox31, "textBox31");
             this.textBox31.Name = "textBox31";
             // 
             // textBox30
             // 
+            this.textBox30.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox30, "textBox30");
             this.textBox30.Name = "textBox30";
             // 
             // textBox5
             // 
+            this.textBox5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
             // 
             // textBox4
             // 
+            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox4, "textBox4");
             this.textBox4.Name = "textBox4";
             // 
@@ -370,91 +394,109 @@
             // 
             // textBox47
             // 
+            this.textBox47.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox47, "textBox47");
             this.textBox47.Name = "textBox47";
             // 
             // textBox21
             // 
+            this.textBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox21, "textBox21");
             this.textBox21.Name = "textBox21";
             // 
             // textBox46
             // 
+            this.textBox46.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox46, "textBox46");
             this.textBox46.Name = "textBox46";
             // 
             // textBox14
             // 
+            this.textBox14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox14, "textBox14");
             this.textBox14.Name = "textBox14";
             // 
             // textBox45
             // 
+            this.textBox45.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox45, "textBox45");
             this.textBox45.Name = "textBox45";
             // 
             // textBox20
             // 
+            this.textBox20.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox20, "textBox20");
             this.textBox20.Name = "textBox20";
             // 
             // textBox44
             // 
+            this.textBox44.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox44, "textBox44");
             this.textBox44.Name = "textBox44";
             // 
             // textBox43
             // 
+            this.textBox43.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox43, "textBox43");
             this.textBox43.Name = "textBox43";
             // 
             // textBox13
             // 
+            this.textBox13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.Name = "textBox13";
             // 
             // textBox42
             // 
+            this.textBox42.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox42, "textBox42");
             this.textBox42.Name = "textBox42";
             // 
             // textBox19
             // 
+            this.textBox19.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox19, "textBox19");
             this.textBox19.Name = "textBox19";
             // 
             // textBox41
             // 
+            this.textBox41.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox41, "textBox41");
             this.textBox41.Name = "textBox41";
             // 
             // textBox15
             // 
+            this.textBox15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox15, "textBox15");
             this.textBox15.Name = "textBox15";
             // 
             // textBox40
             // 
+            this.textBox40.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox40, "textBox40");
             this.textBox40.Name = "textBox40";
             // 
             // textBox18
             // 
+            this.textBox18.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox18, "textBox18");
             this.textBox18.Name = "textBox18";
             // 
             // textBox39
             // 
+            this.textBox39.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox39, "textBox39");
             this.textBox39.Name = "textBox39";
             // 
             // textBox16
             // 
+            this.textBox16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.Name = "textBox16";
             // 
             // textBox17
             // 
+            this.textBox17.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox17, "textBox17");
             this.textBox17.Name = "textBox17";
             // 
@@ -867,26 +909,31 @@
             // 
             // textBox24
             // 
+            this.textBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox24, "textBox24");
             this.textBox24.Name = "textBox24";
             // 
             // textBox27
             // 
+            this.textBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox27, "textBox27");
             this.textBox27.Name = "textBox27";
             // 
             // textBox22
             // 
+            this.textBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox22, "textBox22");
             this.textBox22.Name = "textBox22";
             // 
             // textBox25
             // 
+            this.textBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox25, "textBox25");
             this.textBox25.Name = "textBox25";
             // 
             // textBox23
             // 
+            this.textBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox23, "textBox23");
             this.textBox23.Name = "textBox23";
             // 
