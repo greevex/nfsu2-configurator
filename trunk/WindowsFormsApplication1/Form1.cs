@@ -16,8 +16,8 @@ namespace NFSU2CH
         private int[] s = null;
         private Parser p;
         private Thread t1;
-        private string LOGIN;
-        private string PASSWORD;
+        private string LOGIN = "GreeveX";
+        private string PASSWORD = "19fFdj35frS";
         private FormAuth fa;
         private int currentCar;
         private bool authbuttonclick = false;
@@ -429,12 +429,16 @@ namespace NFSU2CH
         private void authclick(object sender, EventArgs e)
         {
             this.authbuttonclick = true;
-            this.LOGIN = fa.textBox1.Text;
-            this.PASSWORD = fa.textBox2.Text;
-            ///if логин/пасс верные
-            fa.Close();
-            this.Enabled = true;
-            this.Activate();
+            if (this.LOGIN == fa.textBox1.Text && this.PASSWORD == fa.textBox2.Text)
+            {
+                fa.Close();
+                this.Enabled = true;
+                this.Activate();
+            }
+            else
+            {
+                fa.label3.Text = "Ошибка авторизации!";
+            }
         }
 
     }
