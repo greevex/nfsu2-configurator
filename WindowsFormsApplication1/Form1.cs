@@ -237,6 +237,7 @@ namespace NFSU2CH
                 MessageBox.Show("Сохранять нечего");
                 return;
             }
+            #region получение настроек юзера
             s[149] = Int32.Parse(textBox3.Text); // Нейтралка
             s[150] = Int32.Parse(comboBox24.Text);
 
@@ -287,7 +288,7 @@ namespace NFSU2CH
             s[188] = Int32.Parse(comboBox20.Text);
             s[189] = Int32.Parse(textBox45.Text);// 9
             s[190] = Int32.Parse(comboBox21.Text);
-
+            #endregion
             this.progressBar1.Maximum = this.p.Total;
             this.progressBar1.Value = 0;
             this.t1 = new Thread(new ThreadStart(saveT));
@@ -428,9 +429,9 @@ namespace NFSU2CH
         }
         private void authclick(object sender, EventArgs e)
         {
-            this.authbuttonclick = true;
             if (this.LOGIN == fa.textBox1.Text && this.PASSWORD == fa.textBox2.Text)
             {
+                this.authbuttonclick = true;
                 fa.Close();
                 this.Enabled = true;
                 this.Activate();
