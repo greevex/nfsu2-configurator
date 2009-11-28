@@ -19,5 +19,15 @@ namespace NFSU2CH
         private void button1_Click(object sender, EventArgs e)
         {
         }
+
+        private void FormAuth_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ну и обломись =)");
+        }
     }
 }
