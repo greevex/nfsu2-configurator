@@ -16,6 +16,9 @@ namespace NFSU2CH
         private int[] s;
         private Parser p;
         private Thread t1;
+        private string LOGIN;
+        private string PASSWORD;
+        private FormAuth fa;
         private int currentCar;
 
         public Form1()
@@ -385,6 +388,22 @@ namespace NFSU2CH
         private void trackBar24_Scroll(object sender, EventArgs e)
         {
             textBox45.Text = trackBar24.Value.ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Enabled = false;
+            this.fa = new FormAuth();
+            fa.button1.Click +=new EventHandler(authclick);
+            fa.Show();
+        }
+        private void authclick(object sender, EventArgs e)
+        {
+            this.LOGIN = fa.textBox1.Text;
+            this.PASSWORD = fa.textBox2.Text;
+            ///if логин/пасс верные
+            fa.Close();
+            this.Enabled = true;
         }
 
     }

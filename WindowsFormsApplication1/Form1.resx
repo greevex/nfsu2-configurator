@@ -701,7 +701,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar15.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -758,7 +758,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar14.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -815,7 +815,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar13.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -842,7 +842,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar12.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -929,7 +929,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar11.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -956,7 +956,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar10.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1013,7 +1013,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar9.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1070,7 +1070,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar8.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1094,7 +1094,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1488,7 +1488,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar24.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1515,7 +1515,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar23.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1542,7 +1542,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar22.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1569,7 +1569,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar21.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1596,7 +1596,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar20.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1623,7 +1623,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar19.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1680,7 +1680,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar18.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1737,7 +1737,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar17.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1794,7 +1794,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 104</value>
+    <value>45, 104</value>
   </data>
   <data name="trackBar16.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2991,7 +2991,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar5.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -3015,7 +3015,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar3.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -3039,7 +3039,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar6.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -3063,7 +3063,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar4.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
@@ -3550,7 +3550,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -3574,7 +3574,7 @@
     <value>Vertical</value>
   </data>
   <data name="trackBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 176</value>
+    <value>45, 176</value>
   </data>
   <data name="trackBar2.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
