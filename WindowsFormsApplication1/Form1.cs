@@ -237,6 +237,7 @@ namespace NFSU2CH
                 Thread.Sleep(10);
             }
             this.Invoke((MethodInvoker)(() => this.Enabled = true));
+            MessageBox.Show("Изменения сохранены!");
         }
     }
 }
