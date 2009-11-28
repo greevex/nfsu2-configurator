@@ -141,6 +141,34 @@
             this.label38 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.trackBar7 = new System.Windows.Forms.TrackBar();
+            this.trackBar8 = new System.Windows.Forms.TrackBar();
+            this.trackBar9 = new System.Windows.Forms.TrackBar();
+            this.trackBar10 = new System.Windows.Forms.TrackBar();
+            this.trackBar11 = new System.Windows.Forms.TrackBar();
+            this.trackBar12 = new System.Windows.Forms.TrackBar();
+            this.trackBar13 = new System.Windows.Forms.TrackBar();
+            this.trackBar14 = new System.Windows.Forms.TrackBar();
+            this.trackBar15 = new System.Windows.Forms.TrackBar();
+            this.trackBar16 = new System.Windows.Forms.TrackBar();
+            this.trackBar17 = new System.Windows.Forms.TrackBar();
+            this.trackBar18 = new System.Windows.Forms.TrackBar();
+            this.trackBar19 = new System.Windows.Forms.TrackBar();
+            this.trackBar20 = new System.Windows.Forms.TrackBar();
+            this.trackBar21 = new System.Windows.Forms.TrackBar();
+            this.trackBar22 = new System.Windows.Forms.TrackBar();
+            this.trackBar23 = new System.Windows.Forms.TrackBar();
+            this.trackBar24 = new System.Windows.Forms.TrackBar();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -154,7 +182,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -240,14 +287,23 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.trackBar24);
             this.groupBox2.Controls.Add(this.textBox38);
+            this.groupBox2.Controls.Add(this.trackBar23);
             this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.trackBar22);
             this.groupBox2.Controls.Add(this.textBox37);
+            this.groupBox2.Controls.Add(this.trackBar21);
             this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.trackBar20);
             this.groupBox2.Controls.Add(this.textBox36);
+            this.groupBox2.Controls.Add(this.trackBar19);
             this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.trackBar18);
             this.groupBox2.Controls.Add(this.textBox35);
+            this.groupBox2.Controls.Add(this.trackBar17);
             this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.trackBar16);
             this.groupBox2.Controls.Add(this.textBox34);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox33);
@@ -372,6 +428,15 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.trackBar15);
+            this.groupBox3.Controls.Add(this.trackBar14);
+            this.groupBox3.Controls.Add(this.trackBar13);
+            this.groupBox3.Controls.Add(this.trackBar12);
+            this.groupBox3.Controls.Add(this.trackBar11);
+            this.groupBox3.Controls.Add(this.trackBar10);
+            this.groupBox3.Controls.Add(this.trackBar9);
+            this.groupBox3.Controls.Add(this.trackBar8);
+            this.groupBox3.Controls.Add(this.trackBar7);
             this.groupBox3.Controls.Add(this.textBox47);
             this.groupBox3.Controls.Add(this.textBox21);
             this.groupBox3.Controls.Add(this.textBox46);
@@ -607,9 +672,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -959,9 +1024,23 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label47);
+            this.tabPage3.Controls.Add(this.label46);
+            this.tabPage3.Controls.Add(this.label45);
+            this.tabPage3.Controls.Add(this.label44);
+            this.tabPage3.Controls.Add(this.label43);
+            this.tabPage3.Controls.Add(this.label42);
+            this.tabPage3.Controls.Add(this.label41);
+            this.tabPage3.Controls.Add(this.label40);
+            this.tabPage3.Controls.Add(this.label48);
+            this.tabPage3.Controls.Add(this.label39);
+            this.tabPage3.Controls.Add(this.groupBox1);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Controls.Add(this.groupBox3);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // groupBox4
             // 
@@ -979,12 +1058,169 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // trackBar7
+            // 
+            resources.ApplyResources(this.trackBar7, "trackBar7");
+            this.trackBar7.Maximum = 255;
+            this.trackBar7.Name = "trackBar7";
+            // 
+            // trackBar8
+            // 
+            resources.ApplyResources(this.trackBar8, "trackBar8");
+            this.trackBar8.Maximum = 255;
+            this.trackBar8.Name = "trackBar8";
+            // 
+            // trackBar9
+            // 
+            resources.ApplyResources(this.trackBar9, "trackBar9");
+            this.trackBar9.Maximum = 255;
+            this.trackBar9.Name = "trackBar9";
+            // 
+            // trackBar10
+            // 
+            resources.ApplyResources(this.trackBar10, "trackBar10");
+            this.trackBar10.Maximum = 255;
+            this.trackBar10.Name = "trackBar10";
+            // 
+            // trackBar11
+            // 
+            resources.ApplyResources(this.trackBar11, "trackBar11");
+            this.trackBar11.Maximum = 255;
+            this.trackBar11.Name = "trackBar11";
+            // 
+            // trackBar12
+            // 
+            resources.ApplyResources(this.trackBar12, "trackBar12");
+            this.trackBar12.Maximum = 255;
+            this.trackBar12.Name = "trackBar12";
+            // 
+            // trackBar13
+            // 
+            resources.ApplyResources(this.trackBar13, "trackBar13");
+            this.trackBar13.Maximum = 255;
+            this.trackBar13.Name = "trackBar13";
+            // 
+            // trackBar14
+            // 
+            resources.ApplyResources(this.trackBar14, "trackBar14");
+            this.trackBar14.Maximum = 255;
+            this.trackBar14.Name = "trackBar14";
+            // 
+            // trackBar15
+            // 
+            resources.ApplyResources(this.trackBar15, "trackBar15");
+            this.trackBar15.Maximum = 255;
+            this.trackBar15.Name = "trackBar15";
+            // 
+            // trackBar16
+            // 
+            resources.ApplyResources(this.trackBar16, "trackBar16");
+            this.trackBar16.Maximum = 255;
+            this.trackBar16.Name = "trackBar16";
+            // 
+            // trackBar17
+            // 
+            resources.ApplyResources(this.trackBar17, "trackBar17");
+            this.trackBar17.Maximum = 255;
+            this.trackBar17.Name = "trackBar17";
+            // 
+            // trackBar18
+            // 
+            resources.ApplyResources(this.trackBar18, "trackBar18");
+            this.trackBar18.Maximum = 255;
+            this.trackBar18.Name = "trackBar18";
+            // 
+            // trackBar19
+            // 
+            resources.ApplyResources(this.trackBar19, "trackBar19");
+            this.trackBar19.Maximum = 255;
+            this.trackBar19.Name = "trackBar19";
+            // 
+            // trackBar20
+            // 
+            resources.ApplyResources(this.trackBar20, "trackBar20");
+            this.trackBar20.Maximum = 255;
+            this.trackBar20.Name = "trackBar20";
+            // 
+            // trackBar21
+            // 
+            resources.ApplyResources(this.trackBar21, "trackBar21");
+            this.trackBar21.Maximum = 255;
+            this.trackBar21.Name = "trackBar21";
+            // 
+            // trackBar22
+            // 
+            resources.ApplyResources(this.trackBar22, "trackBar22");
+            this.trackBar22.Maximum = 255;
+            this.trackBar22.Name = "trackBar22";
+            // 
+            // trackBar23
+            // 
+            resources.ApplyResources(this.trackBar23, "trackBar23");
+            this.trackBar23.Maximum = 255;
+            this.trackBar23.Name = "trackBar23";
+            // 
+            // trackBar24
+            // 
+            resources.ApplyResources(this.trackBar24, "trackBar24");
+            this.trackBar24.Maximum = 255;
+            this.trackBar24.Name = "trackBar24";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // label46
+            // 
+            resources.ApplyResources(this.label46, "label46");
+            this.label46.Name = "label46";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.comboBox1);
@@ -995,8 +1231,6 @@
             this.Controls.Add(this.textBox26);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1020,8 +1254,28 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1141,6 +1395,34 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TrackBar trackBar15;
+        private System.Windows.Forms.TrackBar trackBar14;
+        private System.Windows.Forms.TrackBar trackBar13;
+        private System.Windows.Forms.TrackBar trackBar12;
+        private System.Windows.Forms.TrackBar trackBar11;
+        private System.Windows.Forms.TrackBar trackBar10;
+        private System.Windows.Forms.TrackBar trackBar9;
+        private System.Windows.Forms.TrackBar trackBar8;
+        private System.Windows.Forms.TrackBar trackBar7;
+        private System.Windows.Forms.TrackBar trackBar24;
+        private System.Windows.Forms.TrackBar trackBar23;
+        private System.Windows.Forms.TrackBar trackBar22;
+        private System.Windows.Forms.TrackBar trackBar21;
+        private System.Windows.Forms.TrackBar trackBar20;
+        private System.Windows.Forms.TrackBar trackBar19;
+        private System.Windows.Forms.TrackBar trackBar18;
+        private System.Windows.Forms.TrackBar trackBar17;
+        private System.Windows.Forms.TrackBar trackBar16;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label39;
     }
 }
 
