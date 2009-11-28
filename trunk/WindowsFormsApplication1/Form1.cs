@@ -57,7 +57,11 @@ namespace NFSU2CH
 
         private void button1_Click(object sender, EventArgs e)
         {
-            loadCnf(Properti.getPosition(this.comboBox1.Text));
+            int pos = Properti.getPosition(this.comboBox1.Text);
+            if (pos != 0)
+                loadCnf(pos);
+            else
+                MessageBox.Show("Выберите автомобиль");
         }
 
         private void loadCnf(int pos)
@@ -65,7 +69,15 @@ namespace NFSU2CH
             /* Загрузка */
             this.currentCar = pos;
             this.p = new Parser();
+            string file = this.textBox26.Text;
+            if (file == "")
+            {
+                MessageBox.Show("Выберите файл");
+                return;
+            }
             this.s = p.parse(this.textBox26.Text, Properti.map, pos);
+            if (this.s == null)
+                return;
             #region добавление в текстбоксы
             /* Обороты */
 
@@ -281,7 +293,10 @@ namespace NFSU2CH
            
         private void saveT()
         {
-            this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar);
+            if (this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar) == true)
+                MessageBox.Show("Изменения сохранены!");
+            else
+                MessageBox.Show("Во время сохранения произошла ошибка. Изменения не сохранены!");
         }
 
         void prgs()
@@ -293,7 +308,6 @@ namespace NFSU2CH
                 Thread.Sleep(10);
             }
             this.Invoke((MethodInvoker)(() => this.Enabled = true));
-            MessageBox.Show("Изменения сохранены!");
         }
 
         private void tabPage3_Click(object sender, EventArgs e)
