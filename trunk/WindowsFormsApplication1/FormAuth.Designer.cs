@@ -107,6 +107,9 @@
             this.Text = "Авторизация NFSU2CH";
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.TopLevel = true;
+            
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
         }
 

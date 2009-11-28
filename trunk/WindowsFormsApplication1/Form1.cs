@@ -395,7 +395,15 @@ namespace NFSU2CH
             this.Enabled = false;
             this.fa = new FormAuth();
             fa.button1.Click +=new EventHandler(authclick);
+            fa.FormClosed += new FormClosedEventHandler(fa_FormClosed);
+            //
             fa.Show();
+            fa.Activate();
+        }
+
+        void fa_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
         private void authclick(object sender, EventArgs e)
         {
@@ -404,6 +412,7 @@ namespace NFSU2CH
             ///if логин/пасс верные
             fa.Close();
             this.Enabled = true;
+
         }
 
     }
