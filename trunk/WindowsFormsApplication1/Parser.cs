@@ -20,7 +20,7 @@ namespace NFSU2CH
         {
         }
        
-        public string[] parse(string filename, int[] map, int startblock)
+        public int[] parse(string filename, int[] map, int startblock)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace NFSU2CH
                 Stream stream = new StreamReader(filename).BaseStream;
                 //устанавливаем позицию чтения
                 stream.Position = startblock;
-                string[] result = new string[map.Count()];
+                int[] result = new int[map.Count()];
                 int i = 0;
                 int key = 0;
                 
@@ -36,8 +36,8 @@ namespace NFSU2CH
                 {
                     if (i == map[key])
                     {
-                        string s = stream.ReadByte().ToString("X");
-                        if (s == null)
+                        int s = stream.ReadByte();
+                        if (s == -1)
                         {
                             stream.Close();
                             return null;
@@ -59,7 +59,7 @@ namespace NFSU2CH
                 return null;
             }
         }
-        public bool save(string filename, int[] map, string[] newconf, int position)
+        public bool save(string filename, int[] map, int[] newconf, int position)
         {
             string temp = filename+".tmp";
             if (File.Exists(temp))
@@ -82,7 +82,7 @@ namespace NFSU2CH
                     {
                         if (this._curr - position == k)
                         {
-                            byt = Convert.ToInt32(newconf[j], 16);
+                            byt = newconf[j];
                             break;
                         }
                         j++;
