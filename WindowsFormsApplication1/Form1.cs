@@ -216,16 +216,6 @@ namespace NFSU2CH
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.progressBar1.Maximum = this.p.Total;
-            this.progressBar1.Value = 0;
-            this.t1 = new Thread(new ThreadStart(saveT));
-            Thread t = new Thread(new ThreadStart(this.prgs));
-            t1.Start();
-            t.Start();
-        }
-           
-        private void saveT()
-        {
             s[149] = Int32.Parse(textBox3.Text); // Нейтралка
             s[150] = Int32.Parse(comboBox24.Text);
 
@@ -277,6 +267,16 @@ namespace NFSU2CH
             s[189] = Int32.Parse(textBox45.Text);// 9
             s[190] = Int32.Parse(comboBox21.Text);
 
+            this.progressBar1.Maximum = this.p.Total;
+            this.progressBar1.Value = 0;
+            this.t1 = new Thread(new ThreadStart(saveT));
+            Thread t = new Thread(new ThreadStart(this.prgs));
+            t1.Start();
+            t.Start();
+        }
+           
+        private void saveT()
+        {
             this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar);
         }
 
