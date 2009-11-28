@@ -66,13 +66,13 @@ namespace NFSU2CH
             /* Обороты */
 
             textBox3.Text = s[149].ToString(); // Нейтралка
-            textBox48.Text = s[150].ToString();
+            adval(comboBox24, s[150]);
 
             textBox1.Text = s[153].ToString(); // Максимально
-            textBox28.Text = s[154].ToString();
+            adval(comboBox22, s[154]);
 
             textBox2.Text = s[151].ToString(); // Переключение
-            textBox29.Text = s[152].ToString();
+            adval(comboBox23, s[152]);
 
             /* ЭКУ */
 
@@ -227,13 +227,13 @@ namespace NFSU2CH
         private void saveT()
         {
             s[149] = Int32.Parse(textBox3.Text); // Нейтралка
-            s[150] = Int32.Parse(textBox48.Text);
+            s[150] = Int32.Parse(comboBox24.Text);
 
             s[153] = Int32.Parse(textBox1.Text); // Максимально
-            s[154] = Int32.Parse(textBox28.Text);
+            s[154] = Int32.Parse(comboBox22.Text);
 
             s[151] = Int32.Parse(textBox2.Text); // Переключение
-            s[152] = Int32.Parse(textBox29.Text);
+            s[152] = Int32.Parse(comboBox23.Text);
 
             /* ЭКУ */
 
