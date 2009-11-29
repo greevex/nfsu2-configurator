@@ -125,6 +125,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label61 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -147,9 +148,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.label59 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
@@ -173,10 +178,17 @@
             this.label51 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.trackBar26 = new System.Windows.Forms.TrackBar();
+            this.trackBar25 = new System.Windows.Forms.TrackBar();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
@@ -206,15 +218,7 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.trackBar25 = new System.Windows.Forms.TrackBar();
-            this.trackBar26 = new System.Windows.Forms.TrackBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -250,11 +254,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -985,6 +989,11 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.Name = "label61";
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label17);
@@ -1155,20 +1164,86 @@
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
             // label60
             // 
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label59
             // 
             resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox2.AutoCompleteCustomSource"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource2"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource3"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource4"),
+            resources.GetString("comboBox2.AutoCompleteCustomSource5")});
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6"),
+            resources.GetString("comboBox2.Items7"),
+            resources.GetString("comboBox2.Items8"),
+            resources.GetString("comboBox2.Items9"),
+            resources.GetString("comboBox2.Items10"),
+            resources.GetString("comboBox2.Items11"),
+            resources.GetString("comboBox2.Items12"),
+            resources.GetString("comboBox2.Items13"),
+            resources.GetString("comboBox2.Items14"),
+            resources.GetString("comboBox2.Items15"),
+            resources.GetString("comboBox2.Items16"),
+            resources.GetString("comboBox2.Items17"),
+            resources.GetString("comboBox2.Items18"),
+            resources.GetString("comboBox2.Items19"),
+            resources.GetString("comboBox2.Items20"),
+            resources.GetString("comboBox2.Items21"),
+            resources.GetString("comboBox2.Items22"),
+            resources.GetString("comboBox2.Items23"),
+            resources.GetString("comboBox2.Items24"),
+            resources.GetString("comboBox2.Items25"),
+            resources.GetString("comboBox2.Items26"),
+            resources.GetString("comboBox2.Items27"),
+            resources.GetString("comboBox2.Items28"),
+            resources.GetString("comboBox2.Items29"),
+            resources.GetString("comboBox2.Items30")});
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // label58
             // 
             resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label57
             // 
@@ -1300,77 +1375,74 @@
             this.groupBox4.Controls.Add(this.trackBar25);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.label64);
+            this.groupBox4.Controls.Add(this.label66);
+            this.groupBox4.Controls.Add(this.label63);
             this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label65);
             this.groupBox4.Controls.Add(this.label7);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
-            // label4
+            // label9
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
             // 
-            // button3
+            // trackBar26
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            resources.ApplyResources(this.trackBar26, "trackBar26");
+            this.trackBar26.Maximum = 70;
+            this.trackBar26.Name = "trackBar26";
+            this.trackBar26.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
-            // comboBox2
+            // trackBar25
             // 
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
-            resources.GetString("comboBox2.AutoCompleteCustomSource"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource1"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource2"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource3"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource4"),
-            resources.GetString("comboBox2.AutoCompleteCustomSource5")});
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5"),
-            resources.GetString("comboBox2.Items6"),
-            resources.GetString("comboBox2.Items7"),
-            resources.GetString("comboBox2.Items8"),
-            resources.GetString("comboBox2.Items9"),
-            resources.GetString("comboBox2.Items10"),
-            resources.GetString("comboBox2.Items11"),
-            resources.GetString("comboBox2.Items12"),
-            resources.GetString("comboBox2.Items13"),
-            resources.GetString("comboBox2.Items14"),
-            resources.GetString("comboBox2.Items15"),
-            resources.GetString("comboBox2.Items16"),
-            resources.GetString("comboBox2.Items17"),
-            resources.GetString("comboBox2.Items18"),
-            resources.GetString("comboBox2.Items19"),
-            resources.GetString("comboBox2.Items20"),
-            resources.GetString("comboBox2.Items21"),
-            resources.GetString("comboBox2.Items22"),
-            resources.GetString("comboBox2.Items23"),
-            resources.GetString("comboBox2.Items24"),
-            resources.GetString("comboBox2.Items25"),
-            resources.GetString("comboBox2.Items26"),
-            resources.GetString("comboBox2.Items27"),
-            resources.GetString("comboBox2.Items28"),
-            resources.GetString("comboBox2.Items29"),
-            resources.GetString("comboBox2.Items30")});
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            resources.ApplyResources(this.trackBar25, "trackBar25");
+            this.trackBar25.Maximum = 70;
+            this.trackBar25.Name = "trackBar25";
+            this.trackBar25.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
-            // button4
+            // label6
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label64
+            // 
+            resources.ApplyResources(this.label64, "label64");
+            this.label64.Name = "label64";
+            // 
+            // label63
+            // 
+            resources.ApplyResources(this.label63, "label63");
+            this.label63.Name = "label63";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label65
+            // 
+            resources.ApplyResources(this.label65, "label65");
+            this.label65.Name = "label65";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.Name = "label62";
             // 
             // tabPage2
             // 
@@ -1559,58 +1631,10 @@
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
             // 
-            // trackBar25
+            // label66
             // 
-            resources.ApplyResources(this.trackBar25, "trackBar25");
-            this.trackBar25.Maximum = 70;
-            this.trackBar25.Minimum = 30;
-            this.trackBar25.Name = "trackBar25";
-            this.trackBar25.Value = 50;
-            this.trackBar25.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
-            // 
-            // trackBar26
-            // 
-            resources.ApplyResources(this.trackBar26, "trackBar26");
-            this.trackBar26.Maximum = 70;
-            this.trackBar26.Minimum = 30;
-            this.trackBar26.Name = "trackBar26";
-            this.trackBar26.Value = 50;
-            this.trackBar26.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // label61
-            // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.Name = "label61";
-            // 
-            // label62
-            // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.Name = "label62";
+            resources.ApplyResources(this.label66, "label66");
+            this.label66.Name = "label66";
             // 
             // Form1
             // 
@@ -1681,13 +1705,13 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1881,6 +1905,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
     }
 }
 

@@ -178,7 +178,9 @@ namespace NFSU2CH
             /* Подвеска */
 
             trackBar25.Value = s[12];
+            label63.Text = trackBar25.Value.ToString();
             trackBar26.Value = s[76];
+            label66.Text = trackBar26.Value.ToString();
             
             /* Управление */
 
