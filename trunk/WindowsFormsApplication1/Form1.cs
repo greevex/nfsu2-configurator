@@ -177,13 +177,9 @@ namespace NFSU2CH
 
             /* Подвеска */
 
-            textBox22.Text = s[11].ToString(); // Передняя левая
-            textBox25.Text = s[43].ToString(); // Передняя правая
-            textBox23.Text = s[75].ToString(); // Задняя левая
-            textBox24.Text = s[107].ToString(); // Задняя правая
-
-            textBox27.Text = ""; // Глобальная
-
+            trackBar25.Value = s[12];
+            trackBar26.Value = s[76];
+            
             /* Управление */
 
             maskedTextBox3.Text = s[131].ToString();
@@ -276,15 +272,12 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
-            /* Подвеска */
-            //Передняя
-            s[11] = Int32.Parse(textBox22.Text);
-            s[43] = Int32.Parse(textBox25.Text);
-            //Задняя
-            s[75] = Int32.Parse(textBox23.Text);
-            s[107] = Int32.Parse(textBox24.Text);
 
-            textBox27.Text = ""; // Глобальная
+            /* Подвеска */
+            s[12] = trackBar25.Value;
+            s[44] = s[12];
+            s[76] = trackBar26.Value;
+            s[108] = s[76];
 
             /* Колеса */
             //// Расположение
@@ -520,34 +513,6 @@ namespace NFSU2CH
             {
                 fa.label3.Text = "Ошибка авторизации!";
             }
-        }
-
-        private void textBox25_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox25.Text != "")
-                if (Int32.Parse(textBox25.Text) > 255)
-                    textBox25.Text = "255";
-        }
-
-        private void textBox24_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox24.Text != "")
-                if (Int32.Parse(textBox24.Text) > 255)
-                    textBox24.Text = "255";
-        }
-
-        private void textBox23_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox23.Text != "")
-                if (Int32.Parse(textBox23.Text) > 255)
-                    textBox23.Text = "255";
-        }
-
-        private void textBox22_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox22.Text != "")
-                if (Int32.Parse(textBox22.Text) > 255)
-                    textBox22.Text = "255";
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
