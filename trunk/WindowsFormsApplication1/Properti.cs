@@ -15,7 +15,7 @@ namespace NFSU2CH
             0x006c7f50, //MAZDA MIATA
             0x006c87e0, //HONDA CIVIC
             0x006c9070, //PEGOUT 106
-            0x006c9900, //CORSA (помоему корса это тойота, только там хуйня какая то написана)
+            0x006c9900, //VAUXHAUL CORSA 
             0x006ca190, //HUMMER
             0x006caa20, //LINCOLN NAVIGATOR
             0x006cb2b0, //CADILLAC ESCALADE
@@ -39,6 +39,7 @@ namespace NFSU2CH
             0x006d4cd0, //MITSUBISHI LANCER EVO8
             0x006d5560, //MAZDA RX7
             0x006d5df0, //SUBARU IMPREZA WRX
+
             0x006d6680, //GENERIC TAXI
             0x006d6f10, //GENERIC SEDAN 4DR
             0x006d77a0, //GENERIC AMBULANCE
