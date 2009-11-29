@@ -581,5 +581,15 @@ namespace NFSU2CH
             if (this.minis == null)
                 return;
         }
+
+        private void trackBar25_Scroll(object sender, EventArgs e)
+        {
+            label63.Text = trackBar25.Value.ToString();
+        }
+
+        private void trackBar26_Scroll(object sender, EventArgs e)
+        {
+            label66.Text = trackBar26.Value.ToString();
+        }
     }
 }
