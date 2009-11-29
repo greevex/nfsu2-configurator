@@ -208,6 +208,13 @@
             this.label56 = new System.Windows.Forms.Label();
             this.trackBar25 = new System.Windows.Forms.TrackBar();
             this.trackBar26 = new System.Windows.Forms.TrackBar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -967,14 +974,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label61);
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.comboBox2);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.label62);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1120,9 +1125,13 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.label4);
             this.groupBox7.Controls.Add(this.label60);
+            this.groupBox7.Controls.Add(this.button4);
             this.groupBox7.Controls.Add(this.label59);
+            this.groupBox7.Controls.Add(this.comboBox2);
             this.groupBox7.Controls.Add(this.label58);
+            this.groupBox7.Controls.Add(this.button3);
             this.groupBox7.Controls.Add(this.label57);
             this.groupBox7.Controls.Add(this.label16);
             this.groupBox7.Controls.Add(this.maskedTextBox7);
@@ -1286,8 +1295,13 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.trackBar26);
             this.groupBox4.Controls.Add(this.trackBar25);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label7);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
@@ -1563,6 +1577,41 @@
             this.trackBar26.Value = 50;
             this.trackBar26.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.Name = "label61";
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.Name = "label62";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1825,6 +1874,13 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TrackBar trackBar26;
         private System.Windows.Forms.TrackBar trackBar25;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
     }
 }
 
