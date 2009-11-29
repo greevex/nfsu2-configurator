@@ -59,7 +59,7 @@ namespace NFSU2CH
             string file = this.textBox26.Text;
             if (file == "")
             {
-                MessageBox.Show("Выберите файл");
+                MessageBox.Show("Не выбран файл настроек! Выберите файл, нажав пункт Меню -> Открыть файл настроек...!");
                 return;
             }
             this.s = p.parse(this.textBox26.Text, Properti.map, pos);
@@ -221,7 +221,7 @@ namespace NFSU2CH
         {
             if (s == null)
             {
-                MessageBox.Show("Сохранять нечего");
+                MessageBox.Show("Сохранять нечего!");
                 return;
             }
 
@@ -490,12 +490,14 @@ namespace NFSU2CH
             this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
             openFileDialog1.ShowDialog();
             textBox26.Text = openFileDialog1.FileName.ToString();
+            label54.Text = "Файл ОК! Выберите машину!";
             comboBox1.Text = "Теперь выберите машину...";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int pos = Properti.getPosition(this.comboBox1.Text);
+            this.loadCnf(pos);
         }
     }
 }

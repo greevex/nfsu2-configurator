@@ -200,6 +200,7 @@
             this.создателиИКонтактыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -821,7 +822,6 @@
             resources.GetString("comboBox1.AutoCompleteCustomSource3"),
             resources.GetString("comboBox1.AutoCompleteCustomSource4"),
             resources.GetString("comboBox1.AutoCompleteCustomSource5")});
-            this.comboBox1.DisplayMember = "1";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -860,7 +860,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Sorted = true;
             this.comboBox1.Tag = "";
-            this.comboBox1.ValueMember = "1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // tabControl1
@@ -1497,10 +1496,17 @@
             resources.ApplyResources(this.label54, "label54");
             this.label54.Name = "label54";
             // 
+            // label55
+            // 
+            resources.ApplyResources(this.label55, "label55");
+            this.label55.Name = "label55";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.label54);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -1509,7 +1515,6 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.label54);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button2);
@@ -1743,6 +1748,7 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьФайлНатсроекToolStripMenuItem;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
     }
 }
 
