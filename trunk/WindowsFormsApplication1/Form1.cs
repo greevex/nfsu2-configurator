@@ -12,8 +12,8 @@ namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private int[] s = null;
-        private Parser p;
+        private int[] s,minis = null;
+        private Parser p, minip;
         private Thread t1;
         private string LOGIN = "GreeveX";
         private string PASSWORD = "";
@@ -62,7 +62,7 @@ namespace NFSU2CH
                 MessageBox.Show("Не выбран файл настроек! Выберите файл, нажав пункт Меню -> Открыть файл настроек...!");
                 return;
             }
-            this.s = p.parse(this.textBox26.Text, Properti.map, pos);
+            this.s = p.parse(file, Properti.map, pos);
             if (this.s == null)
                 return;
             #region добавление в текстбоксы
@@ -563,12 +563,36 @@ namespace NFSU2CH
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("НЕДОСТУПНО! Но скоро будет! =)");
+            maskedTextBox3.Text = minis[1].ToString();
+            maskedTextBox4.Text = minis[2].ToString();
+
+            maskedTextBox7.Text = minis[3].ToString();
+            maskedTextBox8.Text = minis[4].ToString();
+
+            maskedTextBox11.Text = minis[5].ToString();
+            maskedTextBox12.Text = minis[6].ToString();
+
+            maskedTextBox15.Text = minis[7].ToString();
+            maskedTextBox16.Text = minis[8].ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("НЕДОСТУПНО! Но скоро будет! =)");
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.minip = new Parser();
+            string file = this.textBox26.Text;
+            if (file == "")
+            {
+                MessageBox.Show("Не выбран файл настроек! Выберите файл, нажав пункт Меню -> Открыть файл настроек...!");
+                return;
+            }
+            this.minis = minip.parse(file, Properti.minimap, Properti.getPosition(this.comboBox2.Text));
+            if (this.minis == null)
+                return;
         }
     }
 }
