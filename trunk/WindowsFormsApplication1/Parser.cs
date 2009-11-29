@@ -26,6 +26,11 @@ namespace NFSU2CH
                 //открываем поток
                 Stream stream = new StreamReader(filename).BaseStream;
                 //устанавливаем позицию чтения
+                if (stream.Length < 8008064)
+                {
+                    System.Windows.Forms.MessageBox.Show("Не верный GlobalB.lzc!");
+                    return null;
+                }
                 stream.Position = startblock;
                 int[] result = new int[map.Length];
                 int i = 0;
