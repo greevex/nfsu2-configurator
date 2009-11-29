@@ -69,10 +69,20 @@ namespace NFSU2CH
             /* Колеса */
 
             //// Расположение колес
-            trackBar3.Value = s[27]; // Передние
-            trackBar5.Value = s[91]; // Задние
+            //Передние
+            trackBar3.Value = s[27];
+            label12.Text = trackBar3.Value.ToString();
+            //Задние
+            trackBar5.Value = s[91];
+            label29.Text = trackBar5.Value.ToString();
 
             //// Ширина колеса
+            //Передние
+            trackBar4.Value = s[19];
+            label10.Text = trackBar4.Value.ToString();
+            //Задние
+            trackBar6.Value = s[83];
+            label36.Text = trackBar6.Value.ToString();
             
 
 
@@ -176,33 +186,17 @@ namespace NFSU2CH
 
             /* Управление */
 
-            maskedTextBox1.Text = s[129].ToString();
-            maskedTextBox2.Text = s[130].ToString();
             maskedTextBox3.Text = s[131].ToString();
             maskedTextBox4.Text = s[132].ToString();
 
-            maskedTextBox5.Text = s[133].ToString();
-            maskedTextBox6.Text = s[134].ToString();
             maskedTextBox7.Text = s[135].ToString();
             maskedTextBox8.Text = s[136].ToString();
 
-            maskedTextBox9.Text = s[137].ToString();
-            maskedTextBox10.Text = s[138].ToString();
             maskedTextBox11.Text = s[139].ToString();
             maskedTextBox12.Text = s[140].ToString();
 
-            maskedTextBox13.Text = s[141].ToString();
-            maskedTextBox14.Text = s[142].ToString();
             maskedTextBox15.Text = s[143].ToString();
             maskedTextBox16.Text = s[144].ToString();
-
-            maskedTextBox17.Text = s[145].ToString();
-            maskedTextBox18.Text = s[146].ToString();
-            maskedTextBox19.Text = s[147].ToString();
-            maskedTextBox20.Text = s[148].ToString();
-
-            trackBar4.Value = s[91];
-            label10.Text = s[91].ToString();
 
             #endregion
         }
@@ -283,42 +277,37 @@ namespace NFSU2CH
 
             #region получение настроек юзера
             /* Колеса */
-
+            //// Расположение
+            //Передние
             s[27] = trackBar3.Value;
-
             s[59] = s[27];
-
+            //Задние
             s[91] = trackBar5.Value;
-
             s[123] = s[91];
 
-            /* Управление */
+            //// Ширина колеса
+            //Передние
+            s[19] = trackBar4.Value;
+            s[51] = s[19];
+            //Задние
+            s[83] = trackBar6.Value;
+            s[115] = s[83];
 
-            s[129] = Int32.Parse(maskedTextBox1.Text);
-            s[130] = Int32.Parse(maskedTextBox2.Text);
+            /* Управление */
+            //@ToDo: узнать как именно реагируют настройки....
             s[131] = Int32.Parse(maskedTextBox3.Text);
             s[132] = Int32.Parse(maskedTextBox4.Text);
 
-            s[133] = Int32.Parse(maskedTextBox5.Text);
-            s[134] = Int32.Parse(maskedTextBox6.Text);
             s[135] = Int32.Parse(maskedTextBox7.Text);
             s[136] = Int32.Parse(maskedTextBox8.Text);
 
-            s[137] = Int32.Parse(maskedTextBox9.Text);
-            s[138] = Int32.Parse(maskedTextBox10.Text);
             s[139] = Int32.Parse(maskedTextBox11.Text);
             s[140] = Int32.Parse(maskedTextBox12.Text);
 
-            s[141] = Int32.Parse(maskedTextBox13.Text);
-            s[142] = Int32.Parse(maskedTextBox14.Text);
             s[143] = Int32.Parse(maskedTextBox15.Text);
             s[144] = Int32.Parse(maskedTextBox16.Text);
 
-            s[145] = Int32.Parse(maskedTextBox17.Text);
-            s[146] = Int32.Parse(maskedTextBox18.Text);
-            s[147] = Int32.Parse(maskedTextBox19.Text);
-            s[148] = Int32.Parse(maskedTextBox20.Text);
-
+            /* Обороты */
             s[149] = Int32.Parse(TextBox3.Text); // Нейтралка
             s[150] = Int32.Parse(comboBox24.Text);
 
@@ -570,6 +559,16 @@ namespace NFSU2CH
         {
             int pos = Properti.getPosition(this.comboBox1.Text);
             this.loadCnf(pos);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("НЕДОСТУПНО! Но скоро будет! =)");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("НЕДОСТУПНО! Но скоро будет! =)");
         }
     }
 }

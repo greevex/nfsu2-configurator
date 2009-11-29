@@ -3341,371 +3341,53 @@
   <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="maskedTextBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 110</value>
+  <data name="&gt;&gt;label60.Name" xml:space="preserve">
+    <value>label60</value>
   </data>
-  <data name="maskedTextBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+  <data name="&gt;&gt;label60.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="maskedTextBox18.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;label60.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox18.Name" xml:space="preserve">
-    <value>maskedTextBox18</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox18.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox18.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="maskedTextBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 110</value>
+  <data name="&gt;&gt;label59.Name" xml:space="preserve">
+    <value>label59</value>
   </data>
-  <data name="maskedTextBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="maskedTextBox17.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox17.Name" xml:space="preserve">
-    <value>maskedTextBox17</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox17.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox17.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="maskedTextBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>815, 58</value>
+  <data name="&gt;&gt;label58.Name" xml:space="preserve">
+    <value>label58</value>
   </data>
-  <data name="maskedTextBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+  <data name="&gt;&gt;label58.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="maskedTextBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox12.Name" xml:space="preserve">
-    <value>maskedTextBox12</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox12.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox12.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="maskedTextBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 58</value>
+  <data name="&gt;&gt;label57.Name" xml:space="preserve">
+    <value>label57</value>
   </data>
-  <data name="maskedTextBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
+  <data name="&gt;&gt;label57.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="maskedTextBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;label57.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox11.Name" xml:space="preserve">
-    <value>maskedTextBox11</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox11.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox11.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="maskedTextBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>815, 84</value>
-  </data>
-  <data name="maskedTextBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox16.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox16.Name" xml:space="preserve">
-    <value>maskedTextBox16</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox16.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox16.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="maskedTextBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 32</value>
-  </data>
-  <data name="maskedTextBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox6.Name" xml:space="preserve">
-    <value>maskedTextBox6</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox6.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox6.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="maskedTextBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 58</value>
-  </data>
-  <data name="maskedTextBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox10.Name" xml:space="preserve">
-    <value>maskedTextBox10</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox10.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox10.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="maskedTextBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 84</value>
-  </data>
-  <data name="maskedTextBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox15.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox15.Name" xml:space="preserve">
-    <value>maskedTextBox15</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox15.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox15.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="maskedTextBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 32</value>
-  </data>
-  <data name="maskedTextBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox5.Name" xml:space="preserve">
-    <value>maskedTextBox5</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox5.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox5.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="maskedTextBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>815, 110</value>
-  </data>
-  <data name="maskedTextBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox20.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox20.Name" xml:space="preserve">
-    <value>maskedTextBox20</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox20.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox20.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="maskedTextBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 58</value>
-  </data>
-  <data name="maskedTextBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox9.Name" xml:space="preserve">
-    <value>maskedTextBox9</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox9.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox9.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="maskedTextBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 84</value>
-  </data>
-  <data name="maskedTextBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox14.Name" xml:space="preserve">
-    <value>maskedTextBox14</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox14.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox14.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="maskedTextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>815, 6</value>
-  </data>
-  <data name="maskedTextBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox4.Name" xml:space="preserve">
-    <value>maskedTextBox4</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox4.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox4.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="maskedTextBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 110</value>
-  </data>
-  <data name="maskedTextBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox19.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox19.Name" xml:space="preserve">
-    <value>maskedTextBox19</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox19.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox19.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="maskedTextBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>815, 32</value>
-  </data>
-  <data name="maskedTextBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox8.Name" xml:space="preserve">
-    <value>maskedTextBox8</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox8.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox8.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="maskedTextBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 84</value>
-  </data>
-  <data name="maskedTextBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox13.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox13.Name" xml:space="preserve">
-    <value>maskedTextBox13</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox13.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox13.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="maskedTextBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 6</value>
-  </data>
-  <data name="maskedTextBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox3.Name" xml:space="preserve">
-    <value>maskedTextBox3</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox3.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox3.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="maskedTextBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 32</value>
-  </data>
-  <data name="maskedTextBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
   </data>
   <data name="&gt;&gt;maskedTextBox7.Name" xml:space="preserve">
     <value>maskedTextBox7</value>
@@ -3714,52 +3396,118 @@
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;maskedTextBox7.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+    <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox7.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>4</value>
   </data>
-  <data name="maskedTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 6</value>
+  <data name="&gt;&gt;maskedTextBox12.Name" xml:space="preserve">
+    <value>maskedTextBox12</value>
   </data>
-  <data name="maskedTextBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox2.Name" xml:space="preserve">
-    <value>maskedTextBox2</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox2.Type" xml:space="preserve">
+  <data name="&gt;&gt;maskedTextBox12.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox2.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;maskedTextBox12.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox2.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;maskedTextBox12.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="maskedTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 6</value>
+  <data name="&gt;&gt;maskedTextBox3.Name" xml:space="preserve">
+    <value>maskedTextBox3</value>
   </data>
-  <data name="maskedTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 20</value>
-  </data>
-  <data name="maskedTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox1.Name" xml:space="preserve">
-    <value>maskedTextBox1</value>
-  </data>
-  <data name="&gt;&gt;maskedTextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;maskedTextBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;maskedTextBox3.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Name" xml:space="preserve">
+    <value>maskedTextBox11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Name" xml:space="preserve">
+    <value>maskedTextBox8</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Name" xml:space="preserve">
+    <value>maskedTextBox16</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Name" xml:space="preserve">
+    <value>maskedTextBox4</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Name" xml:space="preserve">
+    <value>maskedTextBox15</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 61</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>434, 58</value>
+  </data>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;maskedTextBox1.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label51.Name" xml:space="preserve">
     <value>label51</value>
@@ -3807,7 +3555,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -3951,7 +3699,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>2</value>
   </data>
   <data name="trackBar5.Location" type="System.Drawing.Point, System.Drawing">
     <value>579, 222</value>
@@ -3975,7 +3723,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar5.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>3</value>
   </data>
   <data name="trackBar3.Location" type="System.Drawing.Point, System.Drawing">
     <value>491, 222</value>
@@ -3999,7 +3747,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar3.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>4</value>
   </data>
   <data name="trackBar6.Location" type="System.Drawing.Point, System.Drawing">
     <value>761, 223</value>
@@ -4023,7 +3771,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar6.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>5</value>
   </data>
   <data name="trackBar4.Location" type="System.Drawing.Point, System.Drawing">
     <value>668, 223</value>
@@ -4047,7 +3795,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar4.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>6</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4075,7 +3823,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>7</value>
   </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4103,7 +3851,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>8</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4130,7 +3878,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>9</value>
   </data>
   <data name="label37.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4158,7 +3906,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>10</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4186,7 +3934,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>11</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4213,7 +3961,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>12</value>
   </data>
   <data name="label36.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4240,7 +3988,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>13</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4267,7 +4015,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>14</value>
   </data>
   <data name="label35.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4294,7 +4042,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>15</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4321,7 +4069,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>16</value>
   </data>
   <data name="label33.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4348,7 +4096,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>17</value>
   </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4375,7 +4123,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>18</value>
   </data>
   <data name="label31.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4402,7 +4150,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>19</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4429,7 +4177,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>20</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4456,7 +4204,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>21</value>
   </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4483,7 +4231,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>22</value>
   </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4510,7 +4258,10 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>23</value>
+  </data>
+  <data name="trackBar1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 222</value>
@@ -4534,7 +4285,10 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>24</value>
+  </data>
+  <data name="trackBar2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="trackBar2.Location" type="System.Drawing.Point, System.Drawing">
     <value>398, 222</value>
@@ -4558,7 +4312,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;trackBar2.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>25</value>
   </data>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4585,7 +4339,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>26</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4612,7 +4366,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>27</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4639,7 +4393,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>28</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4666,7 +4420,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>29</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4693,7 +4447,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>30</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4720,7 +4474,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>31</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4747,7 +4501,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>32</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4774,7 +4528,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>33</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 61</value>
@@ -4798,7 +4552,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>34</value>
   </data>
   <data name="comboBox2.AutoCompleteCustomSource" xml:space="preserve">
     <value>фвафывафыва</value>
@@ -4930,7 +4684,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>35</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 61</value>
@@ -4954,7 +4708,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>36</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -5425,6 +5179,174 @@
   </data>
   <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="maskedTextBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 32</value>
+  </data>
+  <data name="maskedTextBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Name" xml:space="preserve">
+    <value>maskedTextBox12</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="maskedTextBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 32</value>
+  </data>
+  <data name="maskedTextBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Name" xml:space="preserve">
+    <value>maskedTextBox11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="maskedTextBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 32</value>
+  </data>
+  <data name="maskedTextBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Name" xml:space="preserve">
+    <value>maskedTextBox16</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="maskedTextBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 32</value>
+  </data>
+  <data name="maskedTextBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Name" xml:space="preserve">
+    <value>maskedTextBox15</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="maskedTextBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 32</value>
+  </data>
+  <data name="maskedTextBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Name" xml:space="preserve">
+    <value>maskedTextBox4</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="maskedTextBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 32</value>
+  </data>
+  <data name="maskedTextBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Name" xml:space="preserve">
+    <value>maskedTextBox8</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="maskedTextBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 32</value>
+  </data>
+  <data name="maskedTextBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox3.Name" xml:space="preserve">
+    <value>maskedTextBox3</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox3.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="maskedTextBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 32</value>
+  </data>
+  <data name="maskedTextBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Name" xml:space="preserve">
+    <value>maskedTextBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label51.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6065,6 +5987,123 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label57.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label57.Name" xml:space="preserve">
+    <value>label57</value>
+  </data>
+  <data name="&gt;&gt;label57.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label57.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label58.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label58.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 16</value>
+  </data>
+  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label58.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label58.Name" xml:space="preserve">
+    <value>label58</value>
+  </data>
+  <data name="&gt;&gt;label58.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label58.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label58.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 16</value>
+  </data>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label59.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label59.Name" xml:space="preserve">
+    <value>label59</value>
+  </data>
+  <data name="&gt;&gt;label59.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label59.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label60.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label60.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 16</value>
+  </data>
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="label60.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label60.Name" xml:space="preserve">
+    <value>label60</value>
+  </data>
+  <data name="&gt;&gt;label60.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label60.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;label60.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
