@@ -591,5 +591,12 @@ namespace NFSU2CH
         {
             label66.Text = trackBar26.Value.ToString();
         }
+
+        private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            006d3f70:91 c2 75 3c 57 0e 4d 3f 01 00 00 3e ce cc 4c 3d    ‘Вu<W.M?...>ОМL=
+            006d3f80:ce cc 4c 3d ce cc 4c 3d ce cc 4c 3d ce cc 4c 3d    ОМL=ОМL=ОМL=ОМL=
+        }
     }
 }
