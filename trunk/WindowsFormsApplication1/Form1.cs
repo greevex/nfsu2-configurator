@@ -66,6 +66,16 @@ namespace NFSU2CH
             if (this.s == null)
                 return;
             #region добавление в текстбоксы
+            /* Колеса */
+
+            //// Расположение колес
+            trackBar3.Value = s[27]; // Передние
+            trackBar5.Value = s[91]; // Задние
+
+            //// Ширина колеса
+            
+
+
             /* Обороты */
 
             TextBox3.Text = s[149].ToString(); // Нейтралка
@@ -272,6 +282,16 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
+            /* Колеса */
+
+            s[27] = trackBar3.Value;
+
+            s[59] = s[27];
+
+            s[91] = trackBar5.Value;
+
+            s[123] = s[91];
+
             /* Управление */
 
             s[129] = Int32.Parse(maskedTextBox1.Text);

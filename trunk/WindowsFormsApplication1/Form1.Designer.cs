@@ -125,6 +125,26 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox16 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox15 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label51 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
@@ -202,26 +222,6 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox15 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox16 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -1038,6 +1038,106 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // maskedTextBox18
+            // 
+            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
+            this.maskedTextBox18.Name = "maskedTextBox18";
+            // 
+            // maskedTextBox17
+            // 
+            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
+            this.maskedTextBox17.Name = "maskedTextBox17";
+            // 
+            // maskedTextBox12
+            // 
+            resources.ApplyResources(this.maskedTextBox12, "maskedTextBox12");
+            this.maskedTextBox12.Name = "maskedTextBox12";
+            // 
+            // maskedTextBox11
+            // 
+            resources.ApplyResources(this.maskedTextBox11, "maskedTextBox11");
+            this.maskedTextBox11.Name = "maskedTextBox11";
+            // 
+            // maskedTextBox16
+            // 
+            resources.ApplyResources(this.maskedTextBox16, "maskedTextBox16");
+            this.maskedTextBox16.Name = "maskedTextBox16";
+            // 
+            // maskedTextBox6
+            // 
+            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            // 
+            // maskedTextBox10
+            // 
+            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
+            this.maskedTextBox10.Name = "maskedTextBox10";
+            // 
+            // maskedTextBox15
+            // 
+            resources.ApplyResources(this.maskedTextBox15, "maskedTextBox15");
+            this.maskedTextBox15.Name = "maskedTextBox15";
+            // 
+            // maskedTextBox5
+            // 
+            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            // 
+            // maskedTextBox20
+            // 
+            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
+            this.maskedTextBox20.Name = "maskedTextBox20";
+            // 
+            // maskedTextBox9
+            // 
+            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
+            this.maskedTextBox9.Name = "maskedTextBox9";
+            // 
+            // maskedTextBox14
+            // 
+            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
+            this.maskedTextBox14.Name = "maskedTextBox14";
+            // 
+            // maskedTextBox4
+            // 
+            resources.ApplyResources(this.maskedTextBox4, "maskedTextBox4");
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            // 
+            // maskedTextBox19
+            // 
+            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
+            this.maskedTextBox19.Name = "maskedTextBox19";
+            // 
+            // maskedTextBox8
+            // 
+            resources.ApplyResources(this.maskedTextBox8, "maskedTextBox8");
+            this.maskedTextBox8.Name = "maskedTextBox8";
+            // 
+            // maskedTextBox13
+            // 
+            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
+            this.maskedTextBox13.Name = "maskedTextBox13";
+            // 
+            // maskedTextBox3
+            // 
+            resources.ApplyResources(this.maskedTextBox3, "maskedTextBox3");
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            // 
+            // maskedTextBox7
+            // 
+            resources.ApplyResources(this.maskedTextBox7, "maskedTextBox7");
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            // 
+            // maskedTextBox2
+            // 
+            resources.ApplyResources(this.maskedTextBox2, "maskedTextBox2");
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            // 
+            // maskedTextBox1
+            // 
+            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label51);
@@ -1140,15 +1240,19 @@
             // trackBar5
             // 
             resources.ApplyResources(this.trackBar5, "trackBar5");
-            this.trackBar5.Maximum = 255;
+            this.trackBar5.Maximum = 180;
+            this.trackBar5.Minimum = 50;
             this.trackBar5.Name = "trackBar5";
+            this.trackBar5.Value = 50;
             this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll);
             // 
             // trackBar3
             // 
             resources.ApplyResources(this.trackBar3, "trackBar3");
-            this.trackBar3.Maximum = 255;
+            this.trackBar3.Maximum = 180;
+            this.trackBar3.Minimum = 50;
             this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Value = 50;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
             // trackBar6
@@ -1548,106 +1652,6 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
-            // 
-            // maskedTextBox1
-            // 
-            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            // 
-            // maskedTextBox2
-            // 
-            resources.ApplyResources(this.maskedTextBox2, "maskedTextBox2");
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            // 
-            // maskedTextBox3
-            // 
-            resources.ApplyResources(this.maskedTextBox3, "maskedTextBox3");
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            // 
-            // maskedTextBox4
-            // 
-            resources.ApplyResources(this.maskedTextBox4, "maskedTextBox4");
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            // 
-            // maskedTextBox5
-            // 
-            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            // 
-            // maskedTextBox6
-            // 
-            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            // 
-            // maskedTextBox7
-            // 
-            resources.ApplyResources(this.maskedTextBox7, "maskedTextBox7");
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            // 
-            // maskedTextBox8
-            // 
-            resources.ApplyResources(this.maskedTextBox8, "maskedTextBox8");
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            // 
-            // maskedTextBox9
-            // 
-            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            // 
-            // maskedTextBox10
-            // 
-            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
-            this.maskedTextBox10.Name = "maskedTextBox10";
-            // 
-            // maskedTextBox11
-            // 
-            resources.ApplyResources(this.maskedTextBox11, "maskedTextBox11");
-            this.maskedTextBox11.Name = "maskedTextBox11";
-            // 
-            // maskedTextBox12
-            // 
-            resources.ApplyResources(this.maskedTextBox12, "maskedTextBox12");
-            this.maskedTextBox12.Name = "maskedTextBox12";
-            // 
-            // maskedTextBox13
-            // 
-            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
-            this.maskedTextBox13.Name = "maskedTextBox13";
-            // 
-            // maskedTextBox14
-            // 
-            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
-            this.maskedTextBox14.Name = "maskedTextBox14";
-            // 
-            // maskedTextBox15
-            // 
-            resources.ApplyResources(this.maskedTextBox15, "maskedTextBox15");
-            this.maskedTextBox15.Name = "maskedTextBox15";
-            // 
-            // maskedTextBox16
-            // 
-            resources.ApplyResources(this.maskedTextBox16, "maskedTextBox16");
-            this.maskedTextBox16.Name = "maskedTextBox16";
-            // 
-            // maskedTextBox17
-            // 
-            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
-            this.maskedTextBox17.Name = "maskedTextBox17";
-            // 
-            // maskedTextBox18
-            // 
-            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
-            this.maskedTextBox18.Name = "maskedTextBox18";
-            // 
-            // maskedTextBox19
-            // 
-            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
-            this.maskedTextBox19.Name = "maskedTextBox19";
-            // 
-            // maskedTextBox20
-            // 
-            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
-            this.maskedTextBox20.Name = "maskedTextBox20";
             // 
             // Form1
             // 
