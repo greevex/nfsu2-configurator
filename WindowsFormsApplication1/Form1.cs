@@ -177,10 +177,10 @@ namespace NFSU2CH
 
             /* Подвеска */
 
-            textBox22.Text = ""; // Передняя левая
-            textBox25.Text = ""; // Передняя правая
-            textBox23.Text = ""; // Задняя левая
-            textBox24.Text = ""; // Задняя правая
+            textBox22.Text = s[11].ToString(); // Передняя левая
+            textBox25.Text = s[43].ToString(); // Передняя правая
+            textBox23.Text = s[75].ToString(); // Задняя левая
+            textBox24.Text = s[107].ToString(); // Задняя правая
 
             textBox27.Text = ""; // Глобальная
 
@@ -276,6 +276,16 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
+            /* Подвеска */
+            //Передняя
+            s[11] = Int32.Parse(textBox22.Text);
+            s[43] = Int32.Parse(textBox25.Text);
+            //Задняя
+            s[75] = Int32.Parse(textBox23.Text);
+            s[107] = Int32.Parse(textBox24.Text);
+
+            textBox27.Text = ""; // Глобальная
+
             /* Колеса */
             //// Расположение
             //Передние
@@ -499,7 +509,7 @@ namespace NFSU2CH
         }
         private void authclick(object sender, EventArgs e)
         {
-            if (this.LOGIN == fa.textBox1.Text && this.PASSWORD == fa.textBox2.Text)
+            if (this.LOGIN == fa.textBox2.Text && this.PASSWORD == fa.textBox1.Text)
             {
                 this.authbuttonclick = true;
                 fa.Close();
@@ -578,7 +588,17 @@ namespace NFSU2CH
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("НЕДОСТУПНО! Но скоро будет! =)");
+            maskedTextBox3.Text = s[131].ToString();
+            maskedTextBox4.Text = s[132].ToString();
+
+            maskedTextBox7.Text = s[135].ToString();
+            maskedTextBox8.Text = s[136].ToString();
+
+            maskedTextBox11.Text = s[139].ToString();
+            maskedTextBox12.Text = s[140].ToString();
+
+            maskedTextBox15.Text = s[143].ToString();
+            maskedTextBox16.Text = s[144].ToString();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

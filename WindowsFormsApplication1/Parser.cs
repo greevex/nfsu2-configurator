@@ -8,7 +8,7 @@ namespace NFSU2CH
         private int _total = 8008064;
         private int _curr = 0;
         public int Total
-        {
+        { 
             get { return _total; }
         }
         public int Current
@@ -27,11 +27,11 @@ namespace NFSU2CH
                 Stream stream = new StreamReader(filename).BaseStream;
                 //устанавливаем позицию чтения
                 stream.Position = startblock;
-                int[] result = new int[191];
+                int[] result = new int[map.Length];
                 int i = 0;
                 int key = 0;
                 
-                while (i < (map[191 - 1] + 1))
+                while (i < (map[map.Length - 1] + 1))
                 {
                     if (i == map[key])
                     {
