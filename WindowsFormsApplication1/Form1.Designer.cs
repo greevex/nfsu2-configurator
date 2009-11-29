@@ -215,6 +215,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -252,6 +253,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -971,39 +973,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.trackBar5);
-            this.tabPage1.Controls.Add(this.trackBar3);
-            this.tabPage1.Controls.Add(this.trackBar6);
-            this.tabPage1.Controls.Add(this.trackBar4);
-            this.tabPage1.Controls.Add(this.label24);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label29);
-            this.tabPage1.Controls.Add(this.label37);
-            this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label36);
-            this.tabPage1.Controls.Add(this.label26);
-            this.tabPage1.Controls.Add(this.label35);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label33);
-            this.tabPage1.Controls.Add(this.label32);
-            this.tabPage1.Controls.Add(this.label31);
-            this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Controls.Add(this.label27);
-            this.tabPage1.Controls.Add(this.label30);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.trackBar1);
-            this.tabPage1.Controls.Add(this.trackBar2);
-            this.tabPage1.Controls.Add(this.label23);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label25);
-            this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.comboBox2);
@@ -1375,6 +1348,7 @@
             resources.GetString("comboBox2.Items30")});
             resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // button4
             // 
@@ -1576,14 +1550,24 @@
             this.groupBox7.Controls.Add(this.label59);
             this.groupBox7.Controls.Add(this.label58);
             this.groupBox7.Controls.Add(this.label57);
+            this.groupBox7.Controls.Add(this.label16);
             this.groupBox7.Controls.Add(this.maskedTextBox7);
+            this.groupBox7.Controls.Add(this.trackBar1);
+            this.groupBox7.Controls.Add(this.trackBar2);
             this.groupBox7.Controls.Add(this.maskedTextBox12);
+            this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.Controls.Add(this.maskedTextBox3);
+            this.groupBox7.Controls.Add(this.label18);
             this.groupBox7.Controls.Add(this.maskedTextBox11);
+            this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.maskedTextBox8);
+            this.groupBox7.Controls.Add(this.label25);
             this.groupBox7.Controls.Add(this.maskedTextBox16);
+            this.groupBox7.Controls.Add(this.label15);
             this.groupBox7.Controls.Add(this.maskedTextBox4);
+            this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.Controls.Add(this.maskedTextBox15);
+            this.groupBox7.Controls.Add(this.label11);
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
@@ -1607,6 +1591,32 @@
             // 
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.label30);
+            this.groupBox8.Controls.Add(this.label27);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.trackBar5);
+            this.groupBox8.Controls.Add(this.label31);
+            this.groupBox8.Controls.Add(this.trackBar3);
+            this.groupBox8.Controls.Add(this.label32);
+            this.groupBox8.Controls.Add(this.trackBar6);
+            this.groupBox8.Controls.Add(this.label33);
+            this.groupBox8.Controls.Add(this.trackBar4);
+            this.groupBox8.Controls.Add(this.label10);
+            this.groupBox8.Controls.Add(this.label24);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.label26);
+            this.groupBox8.Controls.Add(this.label29);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.label12);
+            this.groupBox8.Controls.Add(this.label28);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
             // 
             // Form1
             // 
@@ -1680,6 +1690,8 @@
             this.menuStrip1.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1873,6 +1885,7 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.GroupBox groupBox8;
     }
 }
 
