@@ -3342,7 +3342,7 @@
     <value>0</value>
   </data>
   <data name="maskedTextBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 119</value>
+    <value>719, 110</value>
   </data>
   <data name="maskedTextBox18.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3363,7 +3363,7 @@
     <value>0</value>
   </data>
   <data name="maskedTextBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 119</value>
+    <value>671, 110</value>
   </data>
   <data name="maskedTextBox17.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3384,7 +3384,7 @@
     <value>1</value>
   </data>
   <data name="maskedTextBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 67</value>
+    <value>815, 58</value>
   </data>
   <data name="maskedTextBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3405,7 +3405,7 @@
     <value>2</value>
   </data>
   <data name="maskedTextBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 67</value>
+    <value>767, 58</value>
   </data>
   <data name="maskedTextBox11.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3426,7 +3426,7 @@
     <value>3</value>
   </data>
   <data name="maskedTextBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 93</value>
+    <value>815, 84</value>
   </data>
   <data name="maskedTextBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3447,7 +3447,7 @@
     <value>4</value>
   </data>
   <data name="maskedTextBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 41</value>
+    <value>719, 32</value>
   </data>
   <data name="maskedTextBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3468,7 +3468,7 @@
     <value>5</value>
   </data>
   <data name="maskedTextBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 67</value>
+    <value>719, 58</value>
   </data>
   <data name="maskedTextBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3489,7 +3489,7 @@
     <value>6</value>
   </data>
   <data name="maskedTextBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 93</value>
+    <value>767, 84</value>
   </data>
   <data name="maskedTextBox15.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3510,7 +3510,7 @@
     <value>7</value>
   </data>
   <data name="maskedTextBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 41</value>
+    <value>671, 32</value>
   </data>
   <data name="maskedTextBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3531,7 +3531,7 @@
     <value>8</value>
   </data>
   <data name="maskedTextBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 119</value>
+    <value>815, 110</value>
   </data>
   <data name="maskedTextBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3552,7 +3552,7 @@
     <value>9</value>
   </data>
   <data name="maskedTextBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 67</value>
+    <value>671, 58</value>
   </data>
   <data name="maskedTextBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3573,7 +3573,7 @@
     <value>10</value>
   </data>
   <data name="maskedTextBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 93</value>
+    <value>719, 84</value>
   </data>
   <data name="maskedTextBox14.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3594,7 +3594,7 @@
     <value>11</value>
   </data>
   <data name="maskedTextBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 15</value>
+    <value>815, 6</value>
   </data>
   <data name="maskedTextBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3615,7 +3615,7 @@
     <value>12</value>
   </data>
   <data name="maskedTextBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 119</value>
+    <value>767, 110</value>
   </data>
   <data name="maskedTextBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3636,7 +3636,7 @@
     <value>13</value>
   </data>
   <data name="maskedTextBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 41</value>
+    <value>815, 32</value>
   </data>
   <data name="maskedTextBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3657,7 +3657,7 @@
     <value>14</value>
   </data>
   <data name="maskedTextBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 93</value>
+    <value>671, 84</value>
   </data>
   <data name="maskedTextBox13.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3678,7 +3678,7 @@
     <value>15</value>
   </data>
   <data name="maskedTextBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 15</value>
+    <value>767, 6</value>
   </data>
   <data name="maskedTextBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3699,7 +3699,7 @@
     <value>16</value>
   </data>
   <data name="maskedTextBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>544, 41</value>
+    <value>767, 32</value>
   </data>
   <data name="maskedTextBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3720,7 +3720,7 @@
     <value>17</value>
   </data>
   <data name="maskedTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 15</value>
+    <value>719, 6</value>
   </data>
   <data name="maskedTextBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
@@ -3741,7 +3741,7 @@
     <value>18</value>
   </data>
   <data name="maskedTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 15</value>
+    <value>671, 6</value>
   </data>
   <data name="maskedTextBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 20</value>
