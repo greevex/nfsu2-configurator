@@ -43,26 +43,12 @@ namespace NFSU2CH
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.openFileDialog1.FileName = "GlobalB.lzc";
-            this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
-            openFileDialog1.ShowDialog();
-            textBox26.Text = openFileDialog1.FileName.ToString();
-            comboBox1.Text = "Теперь выберите машину...";
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             this.loadCnf(Properti.CARS[0]);
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int pos = Properti.getPosition(this.comboBox1.Text);
-            if (pos != 0)
-                loadCnf(pos);
-            else
-                MessageBox.Show("Выберите автомобиль");
         }
 
         private void loadCnf(int pos)
@@ -82,13 +68,13 @@ namespace NFSU2CH
             #region добавление в текстбоксы
             /* Обороты */
 
-            textBox3.Text = s[149].ToString(); // Нейтралка
+            TextBox3.Text = s[149].ToString(); // Нейтралка
             adval(comboBox24, s[150]);
 
-            textBox1.Text = s[153].ToString(); // Максимально
+            TextBox1.Text = s[153].ToString(); // Максимально
             adval(comboBox22, s[154]);
 
-            textBox2.Text = s[151].ToString(); // Переключение
+            TextBox2.Text = s[151].ToString(); // Переключение
             adval(comboBox23, s[152]);
 
             /* ЭКУ */
@@ -238,14 +224,36 @@ namespace NFSU2CH
                 MessageBox.Show("Сохранять нечего");
                 return;
             }
+
+            #region Проверка данных
+            if (TextBox3.Text != "")
+            {
+                if (Int32.Parse(TextBox3.Text) > 255)
+                    TextBox3.Text = "255";
+            } else TextBox3.Text = "0";
+
+            if (TextBox2.Text != "")
+            {
+                if (Int32.Parse(TextBox2.Text) > 255)
+                    TextBox2.Text = "255";
+            } else TextBox2.Text = "0";
+
+            if (TextBox1.Text != "")
+            {
+                if (Int32.Parse(TextBox1.Text) > 255)
+                    TextBox1.Text = "255";
+            }
+            else TextBox1.Text = "0";
+            #endregion
+
             #region получение настроек юзера
-            s[149] = Int32.Parse(textBox3.Text); // Нейтралка
+            s[149] = Int32.Parse(TextBox3.Text); // Нейтралка
             s[150] = Int32.Parse(comboBox24.Text);
 
-            s[153] = Int32.Parse(textBox1.Text); // Максимально
+            s[153] = Int32.Parse(TextBox1.Text); // Максимально
             s[154] = Int32.Parse(comboBox22.Text);
 
-            s[151] = Int32.Parse(textBox2.Text); // Переключение
+            s[151] = Int32.Parse(TextBox2.Text); // Переключение
             s[152] = Int32.Parse(comboBox23.Text);
 
             /* ЭКУ */
@@ -443,5 +451,51 @@ namespace NFSU2CH
             }
         }
 
+        private void textBox25_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox25.Text != "")
+                if (Int32.Parse(textBox25.Text) > 255)
+                    textBox25.Text = "255";
+        }
+
+        private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox24.Text != "")
+                if (Int32.Parse(textBox24.Text) > 255)
+                    textBox24.Text = "255";
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox23.Text != "")
+                if (Int32.Parse(textBox23.Text) > 255)
+                    textBox23.Text = "255";
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox22.Text != "")
+                if (Int32.Parse(textBox22.Text) > 255)
+                    textBox22.Text = "255";
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void открытьФайлНатсроекToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.openFileDialog1.FileName = "GlobalB.lzc";
+            this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
+            openFileDialog1.ShowDialog();
+            textBox26.Text = openFileDialog1.FileName.ToString();
+            comboBox1.Text = "Теперь выберите машину...";
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int pos = Properti.getPosition(this.comboBox1.Text);
+        }
     }
 }

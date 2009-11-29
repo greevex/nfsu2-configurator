@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.TextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.TextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label52 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -108,11 +108,12 @@
             this.label21 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label22 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label53 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
@@ -124,6 +125,9 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -172,6 +176,30 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.открытьФайлНатсроекToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.изФайлаGlobalBlzcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.изФайлаНастроекcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.какПолныйФайлGlobalBlzcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.какФайлРасширенияcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.помщьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проверитьОбновленияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.создателиИКонтактыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label54 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -195,7 +223,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar16)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
@@ -205,14 +235,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -223,9 +247,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TextBox3);
+            this.groupBox1.Controls.Add(this.TextBox2);
+            this.groupBox1.Controls.Add(this.TextBox1);
+            this.groupBox1.Controls.Add(this.label52);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -237,23 +262,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox3
+            // TextBox3
             // 
-            this.textBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            resources.ApplyResources(this.TextBox3, "TextBox3");
+            this.TextBox3.Name = "TextBox3";
             // 
-            // textBox2
+            // TextBox2
             // 
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.TextBox2, "TextBox2");
+            this.TextBox2.Name = "TextBox2";
             // 
-            // textBox1
+            // TextBox1
             // 
-            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.TextBox1, "TextBox1");
+            this.TextBox1.Name = "TextBox1";
+            // 
+            // label52
+            // 
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Name = "label52";
             // 
             // label3
             // 
@@ -781,13 +808,6 @@
             resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
             // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -841,6 +861,7 @@
             this.comboBox1.Sorted = true;
             this.comboBox1.Tag = "";
             this.comboBox1.ValueMember = "1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // tabControl1
             // 
@@ -853,6 +874,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox6);
             this.tabPage3.Controls.Add(this.label47);
             this.tabPage3.Controls.Add(this.label46);
             this.tabPage3.Controls.Add(this.label45);
@@ -870,6 +892,18 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label53);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
             // 
             // label47
             // 
@@ -923,6 +957,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.trackBar5);
             this.tabPage1.Controls.Add(this.trackBar3);
@@ -963,6 +998,30 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label51);
+            this.groupBox5.Controls.Add(this.comboBox25);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // comboBox25
+            // 
+            this.comboBox25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Items.AddRange(new object[] {
+            resources.GetString("comboBox25.Items"),
+            resources.GetString("comboBox25.Items1"),
+            resources.GetString("comboBox25.Items2")});
+            resources.ApplyResources(this.comboBox25, "comboBox25");
+            this.comboBox25.Name = "comboBox25";
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label9);
@@ -989,18 +1048,21 @@
             this.textBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox23, "textBox23");
             this.textBox23.Name = "textBox23";
+            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
             // 
             // textBox25
             // 
             this.textBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox25, "textBox25");
             this.textBox25.Name = "textBox25";
+            this.textBox25.TextChanged += new System.EventHandler(this.textBox25_TextChanged);
             // 
             // textBox22
             // 
             this.textBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox22, "textBox22");
             this.textBox22.Name = "textBox22";
+            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
             // 
             // textBox27
             // 
@@ -1013,6 +1075,7 @@
             this.textBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             resources.ApplyResources(this.textBox24, "textBox24");
             this.textBox24.Name = "textBox24";
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
             // 
             // label8
             // 
@@ -1280,6 +1343,160 @@
             resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.менюToolStripMenuItem,
+            this.параметрыToolStripMenuItem,
+            this.помщьToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            // 
+            // менюToolStripMenuItem
+            // 
+            this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.открытьФайлНатсроекToolStripMenuItem,
+            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem,
+            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem,
+            this.сменитьПользователяToolStripMenuItem,
+            this.выходToolStripMenuItem});
+            this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
+            resources.ApplyResources(this.менюToolStripMenuItem, "менюToolStripMenuItem");
+            // 
+            // открытьФайлНатсроекToolStripMenuItem
+            // 
+            this.открытьФайлНатсроекToolStripMenuItem.Name = "открытьФайлНатсроекToolStripMenuItem";
+            resources.ApplyResources(this.открытьФайлНатсроекToolStripMenuItem, "открытьФайлНатсроекToolStripMenuItem");
+            this.открытьФайлНатсроекToolStripMenuItem.Click += new System.EventHandler(this.открытьФайлНатсроекToolStripMenuItem_Click);
+            // 
+            // загрузитьНастройкуДляТекущейМашиныToolStripMenuItem
+            // 
+            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.изФайлаGlobalBlzcToolStripMenuItem,
+            this.изФайлаНастроекcarToolStripMenuItem,
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem});
+            resources.ApplyResources(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem, "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem");
+            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Name = "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem";
+            // 
+            // изФайлаGlobalBlzcToolStripMenuItem
+            // 
+            resources.ApplyResources(this.изФайлаGlobalBlzcToolStripMenuItem, "изФайлаGlobalBlzcToolStripMenuItem");
+            this.изФайлаGlobalBlzcToolStripMenuItem.Name = "изФайлаGlobalBlzcToolStripMenuItem";
+            // 
+            // изФайлаНастроекcarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.изФайлаНастроекcarToolStripMenuItem, "изФайлаНастроекcarToolStripMenuItem");
+            this.изФайлаНастроекcarToolStripMenuItem.Name = "изФайлаНастроекcarToolStripMenuItem";
+            // 
+            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem
+            // 
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem";
+            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem");
+            // 
+            // сохранитьНастройкуТекущейМашиныToolStripMenuItem
+            // 
+            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.какПолныйФайлGlobalBlzcToolStripMenuItem,
+            this.какФайлРасширенияcarToolStripMenuItem,
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1});
+            resources.ApplyResources(this.сохранитьНастройкуТекущейМашиныToolStripMenuItem, "сохранитьНастройкуТекущейМашиныToolStripMenuItem");
+            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem.Name = "сохранитьНастройкуТекущейМашиныToolStripMenuItem";
+            // 
+            // какПолныйФайлGlobalBlzcToolStripMenuItem
+            // 
+            resources.ApplyResources(this.какПолныйФайлGlobalBlzcToolStripMenuItem, "какПолныйФайлGlobalBlzcToolStripMenuItem");
+            this.какПолныйФайлGlobalBlzcToolStripMenuItem.Name = "какПолныйФайлGlobalBlzcToolStripMenuItem";
+            // 
+            // какФайлРасширенияcarToolStripMenuItem
+            // 
+            resources.ApplyResources(this.какФайлРасширенияcarToolStripMenuItem, "какФайлРасширенияcarToolStripMenuItem");
+            this.какФайлРасширенияcarToolStripMenuItem.Name = "какФайлРасширенияcarToolStripMenuItem";
+            // 
+            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1
+            // 
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1";
+            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1");
+            // 
+            // сменитьПользователяToolStripMenuItem
+            // 
+            this.сменитьПользователяToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2});
+            this.сменитьПользователяToolStripMenuItem.Name = "сменитьПользователяToolStripMenuItem";
+            resources.ApplyResources(this.сменитьПользователяToolStripMenuItem, "сменитьПользователяToolStripMenuItem");
+            // 
+            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2
+            // 
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2";
+            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2");
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            resources.ApplyResources(this.выходToolStripMenuItem, "выходToolStripMenuItem");
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // параметрыToolStripMenuItem
+            // 
+            this.параметрыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиToolStripMenuItem});
+            this.параметрыToolStripMenuItem.Name = "параметрыToolStripMenuItem";
+            resources.ApplyResources(this.параметрыToolStripMenuItem, "параметрыToolStripMenuItem");
+            // 
+            // настройкиToolStripMenuItem
+            // 
+            this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3});
+            this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
+            resources.ApplyResources(this.настройкиToolStripMenuItem, "настройкиToolStripMenuItem");
+            // 
+            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3
+            // 
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3";
+            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3");
+            // 
+            // помщьToolStripMenuItem
+            // 
+            resources.ApplyResources(this.помщьToolStripMenuItem, "помщьToolStripMenuItem");
+            this.помщьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПрограммеToolStripMenuItem,
+            this.проверитьОбновленияToolStripMenuItem,
+            this.создателиИКонтактыToolStripMenuItem,
+            this.справкаToolStripMenuItem});
+            this.помщьToolStripMenuItem.Name = "помщьToolStripMenuItem";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            resources.ApplyResources(this.оПрограммеToolStripMenuItem, "оПрограммеToolStripMenuItem");
+            // 
+            // проверитьОбновленияToolStripMenuItem
+            // 
+            this.проверитьОбновленияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4});
+            this.проверитьОбновленияToolStripMenuItem.Name = "проверитьОбновленияToolStripMenuItem";
+            resources.ApplyResources(this.проверитьОбновленияToolStripMenuItem, "проверитьОбновленияToolStripMenuItem");
+            // 
+            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4
+            // 
+            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4";
+            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4");
+            // 
+            // создателиИКонтактыToolStripMenuItem
+            // 
+            this.создателиИКонтактыToolStripMenuItem.Name = "создателиИКонтактыToolStripMenuItem";
+            resources.ApplyResources(this.создателиИКонтактыToolStripMenuItem, "создателиИКонтактыToolStripMenuItem");
+            // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            resources.ApplyResources(this.справкаToolStripMenuItem, "справкаToolStripMenuItem");
+            // 
+            // label54
+            // 
+            resources.ApplyResources(this.label54, "label54");
+            this.label54.Name = "label54";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1291,13 +1508,14 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.label54);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Shown += new System.EventHandler(this.Form1_Load);
@@ -1328,8 +1546,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
@@ -1341,6 +1563,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1348,12 +1572,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -1377,7 +1597,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox37;
@@ -1491,6 +1710,39 @@
         private System.Windows.Forms.ComboBox comboBox22;
         private System.Windows.Forms.ComboBox comboBox24;
         private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.MaskedTextBox TextBox3;
+        private System.Windows.Forms.MaskedTextBox TextBox2;
+        private System.Windows.Forms.MaskedTextBox TextBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сменитьПользователяToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem загрузитьНастройкуДляТекущейМашиныToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сохранитьНастройкуТекущейМашиныToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem параметрыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem помщьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem проверитьОбновленияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem создателиИКонтактыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem изФайлаGlobalBlzcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem изФайлаНастроекcarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem какПолныйФайлGlobalBlzcToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem какФайлРасширенияcarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem открытьФайлНатсроекToolStripMenuItem;
+        private System.Windows.Forms.Label label54;
     }
 }
 
