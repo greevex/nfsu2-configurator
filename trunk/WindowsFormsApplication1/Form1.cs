@@ -16,7 +16,7 @@ namespace NFSU2CH
         private Parser p;
         private Thread t1;
         private string LOGIN = "GreeveX";
-        private string PASSWORD = "19fFdj35frS";
+        private string PASSWORD = "";
         private FormAuth fa;
         private int currentCar;
         private bool authbuttonclick = false;
@@ -32,6 +32,7 @@ namespace NFSU2CH
             if (val == 0)
             {
                 cb.Items.AddRange(new object[1] { val });
+                cb.DropDownStyle = ComboBoxStyle.DropDown;
             }
             else
             {
