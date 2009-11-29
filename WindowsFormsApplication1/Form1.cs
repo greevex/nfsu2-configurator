@@ -234,16 +234,6 @@ namespace NFSU2CH
             label12.Text = trackBar3.Value.ToString();
         }
 
-        private void trackBar2_Scroll_1(object sender, EventArgs e)
-        {
-            label11.Text = trackBar2.Value.ToString();
-        }
-
-        private void trackBar1_Scroll_1(object sender, EventArgs e)
-        {
-            label13.Text = trackBar1.Value.ToString();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (s == null)
@@ -594,9 +584,63 @@ namespace NFSU2CH
 
         private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            006d3f70:91 c2 75 3c 57 0e 4d 3f 01 00 00 3e ce cc 4c 3d    ‘Вu<W.M?...>ОМL=
-            006d3f80:ce cc 4c 3d ce cc 4c 3d ce cc 4c 3d ce cc 4c 3d    ОМL=ОМL=ОМL=ОМL=
+            if (comboBox25.Text == "Задний привод")
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0x57;
+                s[196] = 0x0e;
+                s[197] = 0x4d;
+                s[198] = 0x3f;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0xce;
+                s[204] = 0xcc;
+                s[205] = 0x4c;
+                s[206] = 0x3d;
+            }
+            else if (comboBox25.Text == "Передний привод")
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0xa9;
+                s[196] = 0xc6;
+                s[197] = 0x4b;
+                s[198] = 0x3e;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0x91;
+                s[204] = 0xc2;
+                s[205] = 0x75;
+                s[206] = 0x3d;
+            }
+            else
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0x9b;
+                s[196] = 0x99;
+                s[197] = 0x19;
+                s[198] = 0x3f;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0x91;
+                s[204] = 0xc2;
+                s[205] = 0x75;
+                s[206] = 0x3d;
+            }
         }
     }
 }
