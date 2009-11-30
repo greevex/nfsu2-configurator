@@ -374,8 +374,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Contact";
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Контакты";
             this.Load += new System.EventHandler(this.Contact_Load);
             this.Shown += new System.EventHandler(this.Contact_Shown);
