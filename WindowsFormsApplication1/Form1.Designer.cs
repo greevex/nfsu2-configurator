@@ -169,6 +169,8 @@
             this.label51 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.trackBar26 = new System.Windows.Forms.TrackBar();
+            this.trackBar25 = new System.Windows.Forms.TrackBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -180,6 +182,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label38 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -208,9 +211,6 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.trackBar25 = new System.Windows.Forms.TrackBar();
-            this.trackBar26 = new System.Windows.Forms.TrackBar();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -244,11 +244,11 @@
             this.groupBox7.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -1319,6 +1319,20 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // trackBar26
+            // 
+            resources.ApplyResources(this.trackBar26, "trackBar26");
+            this.trackBar26.Maximum = 70;
+            this.trackBar26.Name = "trackBar26";
+            this.trackBar26.Scroll += new System.EventHandler(this.trackBar26_Scroll);
+            // 
+            // trackBar25
+            // 
+            resources.ApplyResources(this.trackBar25, "trackBar25");
+            this.trackBar25.Maximum = 70;
+            this.trackBar25.Name = "trackBar25";
+            this.trackBar25.Scroll += new System.EventHandler(this.trackBar25_Scroll);
+            // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
@@ -1378,6 +1392,11 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
             // 
             // pictureBox1
             // 
@@ -1517,6 +1536,7 @@
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
             resources.ApplyResources(this.оПрограммеToolStripMenuItem, "оПрограммеToolStripMenuItem");
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
             // проверитьОбновленияToolStripMenuItem
             // 
@@ -1534,6 +1554,7 @@
             // 
             this.создателиИКонтактыToolStripMenuItem.Name = "создателиИКонтактыToolStripMenuItem";
             resources.ApplyResources(this.создателиИКонтактыToolStripMenuItem, "создателиИКонтактыToolStripMenuItem");
+            this.создателиИКонтактыToolStripMenuItem.Click += new System.EventHandler(this.создателиИКонтактыToolStripMenuItem_Click);
             // 
             // справкаToolStripMenuItem
             // 
@@ -1556,25 +1577,6 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
-            // 
-            // trackBar25
-            // 
-            resources.ApplyResources(this.trackBar25, "trackBar25");
-            this.trackBar25.Maximum = 70;
-            this.trackBar25.Name = "trackBar25";
-            this.trackBar25.Scroll += new System.EventHandler(this.trackBar25_Scroll);
-            // 
-            // trackBar26
-            // 
-            resources.ApplyResources(this.trackBar26, "trackBar26");
-            this.trackBar26.Maximum = 70;
-            this.trackBar26.Name = "trackBar26";
-            this.trackBar26.Scroll += new System.EventHandler(this.trackBar26_Scroll);
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
             // 
             // Form1
             // 
@@ -1643,13 +1645,13 @@
             this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar26)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

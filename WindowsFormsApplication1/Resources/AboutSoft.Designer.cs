@@ -64,11 +64,18 @@
             this.MinimizeBox = false;
             this.Name = "AboutSoft";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
+            this.Shown += new System.EventHandler(this.AboutSoft_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
+        }
+
+        void AboutSoft_Shown(object sender, System.EventArgs e)
+        {
+            this.Activate();
         }
 
         #endregion
