@@ -353,6 +353,65 @@ namespace NFSU2CH
             s[188] = Int32.Parse(comboBox20.Text);
             s[189] = Int32.Parse(textBox45.Text);// 9
             s[190] = Int32.Parse(comboBox21.Text);
+
+            if (comboBox25.Text == "Задний привод")
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0x57;
+                s[196] = 0x0e;
+                s[197] = 0x4d;
+                s[198] = 0x3f;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0xce;
+                s[204] = 0xcc;
+                s[205] = 0x4c;
+                s[206] = 0x3d;
+            }
+            else if (comboBox25.Text == "Передний привод")
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0xa9;
+                s[196] = 0xc6;
+                s[197] = 0x4b;
+                s[198] = 0x3e;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0x91;
+                s[204] = 0xc2;
+                s[205] = 0x75;
+                s[206] = 0x3d;
+            }
+            else
+            {
+                s[191] = 0x91;
+                s[192] = 0xc2;
+                s[193] = 0x75;
+                s[194] = 0x3c;
+                s[195] = 0x9b;
+                s[196] = 0x99;
+                s[197] = 0x19;
+                s[198] = 0x3f;
+                s[199] = 0x01;
+                s[200] = 0x00;
+                s[201] = 0x00;
+                s[202] = 0x3e;
+                s[203] = 0x91;
+                s[204] = 0xc2;
+                s[205] = 0x75;
+                s[206] = 0x3d;
+            }
+
             #endregion
             this.progressBar1.Maximum = this.p.Total;
             this.progressBar1.Value = 0;
@@ -584,63 +643,7 @@ namespace NFSU2CH
 
         private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox25.Text == "Задний привод")
-            {
-                s[191] = 0x91;
-                s[192] = 0xc2;
-                s[193] = 0x75;
-                s[194] = 0x3c;
-                s[195] = 0x57;
-                s[196] = 0x0e;
-                s[197] = 0x4d;
-                s[198] = 0x3f;
-                s[199] = 0x01;
-                s[200] = 0x00;
-                s[201] = 0x00;
-                s[202] = 0x3e;
-                s[203] = 0xce;
-                s[204] = 0xcc;
-                s[205] = 0x4c;
-                s[206] = 0x3d;
-            }
-            else if (comboBox25.Text == "Передний привод")
-            {
-                s[191] = 0x91;
-                s[192] = 0xc2;
-                s[193] = 0x75;
-                s[194] = 0x3c;
-                s[195] = 0xa9;
-                s[196] = 0xc6;
-                s[197] = 0x4b;
-                s[198] = 0x3e;
-                s[199] = 0x01;
-                s[200] = 0x00;
-                s[201] = 0x00;
-                s[202] = 0x3e;
-                s[203] = 0x91;
-                s[204] = 0xc2;
-                s[205] = 0x75;
-                s[206] = 0x3d;
-            }
-            else
-            {
-                s[191] = 0x91;
-                s[192] = 0xc2;
-                s[193] = 0x75;
-                s[194] = 0x3c;
-                s[195] = 0x9b;
-                s[196] = 0x99;
-                s[197] = 0x19;
-                s[198] = 0x3f;
-                s[199] = 0x01;
-                s[200] = 0x00;
-                s[201] = 0x00;
-                s[202] = 0x3e;
-                s[203] = 0x91;
-                s[204] = 0xc2;
-                s[205] = 0x75;
-                s[206] = 0x3d;
-            }
+
         }
     }
 }
