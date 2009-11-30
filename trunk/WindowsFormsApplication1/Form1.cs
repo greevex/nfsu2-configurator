@@ -645,5 +645,17 @@ namespace NFSU2CH
         {
 
         }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Resources.AboutSoft absoft = new NFSU2CH.Resources.AboutSoft();
+            absoft.Show();
+        }
+
+        private void создателиИКонтактыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Resources.Contact cont = new NFSU2CH.Resources.Contact();
+            cont.Show();
+        }
     }
 }
