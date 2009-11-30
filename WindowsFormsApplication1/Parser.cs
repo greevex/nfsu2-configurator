@@ -24,12 +24,34 @@ namespace NFSU2CH
             try
             {
                 //открываем поток
-                Stream stream = new StreamReader(filename).BaseStream;
+                Stream stream;
+                stream = new StreamReader(filename).BaseStream;
                 //устанавливаем позицию чтения
                 if (stream.Length < 8008064)
                 {
-                    System.Windows.Forms.MessageBox.Show("Не верный GlobalB.lzc!");
-                    return null;
+                    stream.Close();
+                    if (File.Exists(Directory.GetParent(filename) + "GLOBALB.BUN"))
+                    {
+                        stream = new StreamReader(Directory.GetParent(filename) + "GLOBALB.BUN").BaseStream;
+                        if (stream.Length < 8008064)
+                        {
+                            stream.Close();
+                            System.Windows.Forms.MessageBox.Show("Не верный GlobalB.lzc!");
+                            return null;
+                        }
+                        else
+                        {
+                            File.Delete(filename);
+                            File.Copy(Directory.GetParent(filename) + "GLOBALB.BUN", filename);
+                            return this.parse(filename, map, startblock);
+                        }
+                    }
+                    else
+                    {
+                        stream.Close();
+                        System.Windows.Forms.MessageBox.Show("Не верный GlobalB.lzc!");
+                        return null;
+                    }
                 }
                 stream.Position = startblock;
                 int[] result = new int[map.Length];
