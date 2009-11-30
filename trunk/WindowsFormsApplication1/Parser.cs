@@ -41,6 +41,7 @@ namespace NFSU2CH
                         }
                         else
                         {
+                            stream.Close();
                             File.Delete(filename);
                             File.Copy(Directory.GetParent(filename) + "GLOBALB.BUN", filename);
                             return this.parse(filename, map, startblock);
@@ -48,7 +49,6 @@ namespace NFSU2CH
                     }
                     else
                     {
-                        stream.Close();
                         System.Windows.Forms.MessageBox.Show("Не верный GlobalB.lzc!");
                         return null;
                     }
