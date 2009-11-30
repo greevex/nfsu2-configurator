@@ -14,5 +14,11 @@ namespace NFSU2CH.Resources
         {
             InitializeComponent();
         }
+
+        private void AboutSoft_Load(object sender, EventArgs e)
+        {
+            label6.Text = this.ProductVersion;
+            label5.Text = this.ProductVersion;
+        }
     }
 }
