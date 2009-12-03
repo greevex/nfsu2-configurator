@@ -176,9 +176,10 @@ namespace NFSU2CH
             adval(comboBox21, s[190]);
 
             /* Подвеска */
-
+            maskedTextBox1.Text = s[11].ToString();
             trackBar25.Value = s[12];
             label63.Text = trackBar25.Value.ToString();
+            maskedTextBox2.Text = s[75].ToString();
             trackBar26.Value = s[76];
             label66.Text = trackBar26.Value.ToString();
             
@@ -266,9 +267,14 @@ namespace NFSU2CH
             #region получение настроек юзера
 
             /* Подвеска */
+            s[11] = Int32.Parse(maskedTextBox1.Text);
             s[12] = trackBar25.Value;
+            s[43] = s[11];
             s[44] = s[12];
+
+            s[75] = Int32.Parse(maskedTextBox2.Text);
             s[76] = trackBar26.Value;
+            s[107] = s[75];
             s[108] = s[76];
 
             /* Колеса */
