@@ -86,6 +86,25 @@ namespace NFSU2CH
                 return null;
             }
         }
+
+        public bool saveConfig(string filename, int[] config)
+        {
+            try
+            {
+                Stream streamw = new StreamWriter(filename).BaseStream;
+                foreach ( int b in config ) {
+                    streamw.WriteByte((byte)b);
+                }
+                streamw.Close();
+                return true;
+            }            
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                return false;
+            }
+        }
+
         public bool save(string filename, int[] map, int[] newconf, int position)
         {
             try
