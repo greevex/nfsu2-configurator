@@ -140,6 +140,7 @@
             this.linkLabel5.TabIndex = 5;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "http://www.youtube.com/user/greevexful";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // label6
             // 
@@ -159,6 +160,7 @@
             this.linkLabel2.TabIndex = 3;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "greevex@gmail.com";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label2
             // 
@@ -178,6 +180,7 @@
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "http://greevex.ru";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // groupBox2
             // 
@@ -239,10 +242,11 @@
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Location = new System.Drawing.Point(66, 29);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(96, 13);
+            this.linkLabel4.Size = new System.Drawing.Size(79, 13);
             this.linkLabel4.TabIndex = 3;
             this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "popsul@gmail.com";
+            this.linkLabel4.Text = "popsul@mail.ru";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // label4
             // 
