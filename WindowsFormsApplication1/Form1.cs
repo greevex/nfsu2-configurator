@@ -7,12 +7,14 @@ using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
+using System.IO;
 
 namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private int[] s,minis = null;
+        private int[] s, minis = null;
+        private int[] loaded = new int[Properti.map.Length];
         private Parser p, minip;
         private Thread t1;
         private string LOGIN = "GreeveX";
@@ -20,6 +22,7 @@ namespace NFSU2CH
         private FormAuth fa;
         private int currentCar;
         private bool authbuttonclick = false;
+        OpenFileDialog openFileDialog2 = new OpenFileDialog();
 
         public Form1()
         {
@@ -65,143 +68,160 @@ namespace NFSU2CH
             this.s = p.parse(file, Properti.map, pos);
             if (this.s == null)
                 return;
-
-            // Теперь можно сохранять
+            loadCfg(s);
+            // Теперь можно сохранять и загружать
             сохранитьНастройкуТекущейМашиныToolStripMenuItem.Enabled = true;
-
-            #region добавление в текстбоксы
-            /* Колеса */
-
-            //// Расположение колес
-            //Передние
-            trackBar3.Value = s[27];
-            label12.Text = trackBar3.Value.ToString();
-            //Задние
-            trackBar5.Value = s[91];
-            label29.Text = trackBar5.Value.ToString();
-
-            //// Ширина колеса
-            //Передние
-            trackBar4.Value = s[19];
-            label10.Text = trackBar4.Value.ToString();
-            //Задние
-            trackBar6.Value = s[83];
-            label36.Text = trackBar6.Value.ToString();
-            
+            загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Enabled = true;
 
 
-            /* Обороты */
+        }
 
-            TextBox3.Text = s[149].ToString(); // Нейтралка
-            adval(comboBox24, s[150]);
+        private bool loadCfg(int[] cfLoad)
+        {
+            try
+            {
+                #region добавление в текстбоксы
+                /* Колеса */
 
-            TextBox1.Text = s[153].ToString(); // Максимально
-            adval(comboBox22, s[154]);
+                //// Расположение колес
+                //Передние
+                trackBar3.Value = cfLoad[27];
+                label12.Text = trackBar3.Value.ToString();
+                //Задние
+                trackBar5.Value = cfLoad[91];
+                label29.Text = trackBar5.Value.ToString();
 
-            TextBox2.Text = s[151].ToString(); // Переключение
-            adval(comboBox23, s[152]);
+                //// Ширина колеса
+                //Передние
+                trackBar4.Value = cfLoad[19];
+                label10.Text = trackBar4.Value.ToString();
+                //Задние
+                trackBar6.Value = cfLoad[83];
+                label36.Text = trackBar6.Value.ToString();
 
-            /* ЭКУ */
 
-            textBox4.Text = s[155].ToString(); // 1
-            trackBar7.Value = s[155];
 
-            adval(comboBox3, s[156]);
-            textBox6.Text = s[157].ToString(); // 2
-            trackBar8.Value = s[157];
+                /* Обороты */
 
-            adval(comboBox5, s[158]);
-            textBox8.Text = s[159].ToString(); // 3
-            trackBar9.Value = s[159];
+                TextBox3.Text = cfLoad[149].ToString(); // Нейтралка
+                adval(comboBox24, cfLoad[150]);
 
-            adval(comboBox6, s[160]);
-            textBox10.Text = s[161].ToString();// 4
-            trackBar10.Value = s[161];
+                TextBox1.Text = cfLoad[153].ToString(); // Максимально
+                adval(comboBox22, cfLoad[154]);
 
-            adval(comboBox7, s[162]);
-            textBox12.Text = s[163].ToString();// 5
-            trackBar11.Value = s[163];
+                TextBox2.Text = cfLoad[151].ToString(); // Переключение
+                adval(comboBox23, cfLoad[152]);
 
-            adval(comboBox8, s[164]);
-            textBox31.Text = s[165].ToString();// 6
-            trackBar12.Value = s[165];
+                /* ЭКУ */
 
-            adval(comboBox9, s[166]);
-            textBox33.Text = s[167].ToString();// 7
-            trackBar13.Value = s[167];
+                textBox4.Text = cfLoad[155].ToString(); // 1
+                trackBar7.Value = cfLoad[155];
 
-            adval(comboBox10, s[168]);
-            textBox35.Text = s[169].ToString();// 8
-            trackBar14.Value = s[169];
+                adval(comboBox3, cfLoad[156]);
+                textBox6.Text = cfLoad[157].ToString(); // 2
+                trackBar8.Value = cfLoad[157];
 
-            adval(comboBox11, s[170]);
-            textBox37.Text = s[171].ToString();// 9
-            trackBar15.Value = s[171];
+                adval(comboBox5, cfLoad[158]);
+                textBox8.Text = cfLoad[159].ToString(); // 3
+                trackBar9.Value = cfLoad[159];
 
-            adval(comboBox12, s[172]);
+                adval(comboBox6, cfLoad[160]);
+                textBox10.Text = cfLoad[161].ToString();// 4
+                trackBar10.Value = cfLoad[161];
 
-            /* Турбо */
+                adval(comboBox7, cfLoad[162]);
+                textBox12.Text = cfLoad[163].ToString();// 5
+                trackBar11.Value = cfLoad[163];
 
-            textBox13.Text = s[173].ToString();// 1
-            trackBar16.Value = s[173];
+                adval(comboBox8, cfLoad[164]);
+                textBox31.Text = cfLoad[165].ToString();// 6
+                trackBar12.Value = cfLoad[165];
 
-            adval(comboBox13, s[174]);
-            textBox15.Text = s[175].ToString();// 2
-            trackBar17.Value = s[175];
+                adval(comboBox9, cfLoad[166]);
+                textBox33.Text = cfLoad[167].ToString();// 7
+                trackBar13.Value = cfLoad[167];
 
-            adval(comboBox14, s[176]);
-            textBox17.Text = s[177].ToString();// 3
-            trackBar18.Value = s[177];
+                adval(comboBox10, cfLoad[168]);
+                textBox35.Text = cfLoad[169].ToString();// 8
+                trackBar14.Value = cfLoad[169];
 
-            adval(comboBox15, s[178]);
-            textBox19.Text = s[179].ToString();// 4
-            trackBar19.Value = s[179];
+                adval(comboBox11, cfLoad[170]);
+                textBox37.Text = cfLoad[171].ToString();// 9
+                trackBar15.Value = cfLoad[171];
 
-            adval(comboBox16, s[180]);
-            textBox21.Text = s[181].ToString();// 5
-            trackBar20.Value = s[181];
+                adval(comboBox12, cfLoad[172]);
 
-            adval(comboBox17, s[182]);
-            textBox46.Text = s[183].ToString();// 6
-            trackBar21.Value = s[183];
+                /* Турбо */
 
-            adval(comboBox18, s[184]);
-            textBox40.Text = s[185].ToString();// 7
-            trackBar22.Value = s[185];
+                textBox13.Text = cfLoad[173].ToString();// 1
+                trackBar16.Value = cfLoad[173];
 
-            adval(comboBox19, s[186]);
-            textBox41.Text = s[187].ToString();// 8
-            trackBar23.Value = s[187];
+                adval(comboBox13, cfLoad[174]);
+                textBox15.Text = cfLoad[175].ToString();// 2
+                trackBar17.Value = cfLoad[175];
 
-            adval(comboBox20, s[188]);
-            textBox45.Text = s[189].ToString();// 9
-            trackBar24.Value = s[189];
+                adval(comboBox14, cfLoad[176]);
+                textBox17.Text = cfLoad[177].ToString();// 3
+                trackBar18.Value = cfLoad[177];
 
-            adval(comboBox21, s[190]);
+                adval(comboBox15, cfLoad[178]);
+                textBox19.Text = cfLoad[179].ToString();// 4
+                trackBar19.Value = cfLoad[179];
 
-            /* Подвеска */
-            maskedTextBox1.Text = s[11].ToString();
-            trackBar25.Value = s[12];
-            label63.Text = trackBar25.Value.ToString();
-            maskedTextBox2.Text = s[75].ToString();
-            trackBar26.Value = s[76];
-            label66.Text = trackBar26.Value.ToString();
-            
-            /* Управление */
+                adval(comboBox16, cfLoad[180]);
+                textBox21.Text = cfLoad[181].ToString();// 5
+                trackBar20.Value = cfLoad[181];
 
-            maskedTextBox3.Text = s[131].ToString();
-            maskedTextBox4.Text = s[132].ToString();
+                adval(comboBox17, cfLoad[182]);
+                textBox46.Text = cfLoad[183].ToString();// 6
+                trackBar21.Value = cfLoad[183];
 
-            maskedTextBox7.Text = s[135].ToString();
-            maskedTextBox8.Text = s[136].ToString();
+                adval(comboBox18, cfLoad[184]);
+                textBox40.Text = cfLoad[185].ToString();// 7
+                trackBar22.Value = cfLoad[185];
 
-            maskedTextBox11.Text = s[139].ToString();
-            maskedTextBox12.Text = s[140].ToString();
+                adval(comboBox19, cfLoad[186]);
+                textBox41.Text = cfLoad[187].ToString();// 8
+                trackBar23.Value = cfLoad[187];
 
-            maskedTextBox15.Text = s[143].ToString();
-            maskedTextBox16.Text = s[144].ToString();
+                adval(comboBox20, cfLoad[188]);
+                textBox45.Text = cfLoad[189].ToString();// 9
+                trackBar24.Value = cfLoad[189];
 
-            #endregion
+                adval(comboBox21, cfLoad[190]);
+
+                /* Подвеска */
+                maskedTextBox1.Text = cfLoad[11].ToString();
+                trackBar25.Value = cfLoad[12];
+                label63.Text = trackBar25.Value.ToString();
+                maskedTextBox2.Text = cfLoad[75].ToString();
+                trackBar26.Value = cfLoad[76];
+                label66.Text = trackBar26.Value.ToString();
+
+                /* Управление */
+
+                maskedTextBox3.Text = cfLoad[131].ToString();
+                maskedTextBox4.Text = cfLoad[132].ToString();
+
+                maskedTextBox7.Text = cfLoad[135].ToString();
+                maskedTextBox8.Text = cfLoad[136].ToString();
+
+                maskedTextBox11.Text = cfLoad[139].ToString();
+                maskedTextBox12.Text = cfLoad[140].ToString();
+
+                maskedTextBox15.Text = cfLoad[143].ToString();
+                maskedTextBox16.Text = cfLoad[144].ToString();
+
+                #endregion
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                return false;
+            }
+        
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -219,17 +239,17 @@ namespace NFSU2CH
 
         }
 
-        private void trackBar4_Scroll_1(object sender, EventArgs e)
+        private void trackBar4_Scroll(object sender, EventArgs e)
         {
             label10.Text = trackBar4.Value.ToString();
         }
 
-        private void trackBar6_Scroll(object sender, EventArgs e)
+        private void trackBar6_Scroll_1(object sender, EventArgs e)
         {
             label36.Text = trackBar6.Value.ToString();
         }
 
-        private void trackBar5_Scroll(object sender, EventArgs e)
+        private void trackBar5_Scroll_1(object sender, EventArgs e)
         {
             label29.Text = trackBar5.Value.ToString();
         }
@@ -404,23 +424,30 @@ namespace NFSU2CH
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //if (s == getUserConfigForCurrentCar())
+                this.Close();
+            //else MessageBox.Show("Изменения сделаны, но не сохранены, вы уверены, что желаете выйти без сохранения изменений?", "Выход без сохранения изменений", MessageBoxButtons.YesNo);
         }
 
         private void открытьФайлНатсроекToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.openFileDialog1.FileName = "GlobalB.lzc";
-            this.openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
+            openFileDialog1.FileName = "GlobalB.lzc";
+            openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
+            openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog1.ShowDialog();
-            if (this.openFileDialog1.FileName == "GlobalB.lzc")
-            {
-                MessageBox.Show("Вы должны выбрать файл GlobalB.lzc !");
-            }
-            else
+        }
+
+        void  openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            try
             {
                 textBox26.Text = openFileDialog1.FileName.ToString();
                 label54.Text = "Файл ОК! Выберите машину!";
                 comboBox1.Text = "Теперь выберите машину...";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -505,14 +532,26 @@ namespace NFSU2CH
         {
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.DefaultExt = "car";
+            saveFileDialog1.FileName = comboBox1.Text + "_" +
+                DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year + "_" +
+                DateTime.Now.Hour + "." + DateTime.Now.Minute;
             saveFileDialog1.Filter = "Файлы машин nfsu2ch (*.car)|*.car";
-            saveFileDialog1.Title = "Сохранение хак-нас троек машины...";
+            saveFileDialog1.Title = "Сохранение настроек машины...";
+            saveFileDialog1.FileOk += new CancelEventHandler(saveFileDialog1_FileOk);
             saveFileDialog1.ShowDialog();
-            if (saveFileDialog1.FileName != "" && saveFileDialog1.FileName != null)
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            try
             {
                 Parser pp = new Parser();
                 pp.saveConfig(saveFileDialog1.FileName, getUserConfigForCurrentCar());
                 MessageBox.Show("Файл " + saveFileDialog1.FileName + " сохранен!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -542,163 +581,209 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
-            
-            int[] cf = s;
-
-            /* Подвеска */
-            cf[11] = Int32.Parse(maskedTextBox1.Text);
-            cf[12] = trackBar25.Value;
-            cf[43] = cf[11];
-            cf[44] = cf[12];
-
-            cf[75] = Int32.Parse(maskedTextBox2.Text);
-            cf[76] = trackBar26.Value;
-            cf[107] = cf[75];
-            cf[108] = cf[76];
-
-            /* Колеса */
-            //// Расположение
-            //Передние
-            cf[27] = trackBar3.Value;
-            cf[59] = cf[27];
-            //Задние
-            cf[91] = trackBar5.Value;
-            cf[123] = cf[91];
-
-            //// Ширина колеса
-            //Передние
-            cf[19] = trackBar4.Value;
-            cf[51] = cf[19];
-            //Задние
-            cf[83] = trackBar6.Value;
-            cf[115] = cf[83];
-
-            /* Управление */
-            //@ToDo: узнать как именно реагируют настройки....
-            cf[131] = Int32.Parse(maskedTextBox3.Text);
-            cf[132] = Int32.Parse(maskedTextBox4.Text);
-
-            cf[135] = Int32.Parse(maskedTextBox7.Text);
-            cf[136] = Int32.Parse(maskedTextBox8.Text);
-
-            cf[139] = Int32.Parse(maskedTextBox11.Text);
-            cf[140] = Int32.Parse(maskedTextBox12.Text);
-
-            cf[143] = Int32.Parse(maskedTextBox15.Text);
-            cf[144] = Int32.Parse(maskedTextBox16.Text);
-
-            /* Обороты */
-            cf[149] = Int32.Parse(TextBox3.Text); // Нейтралка
-            cf[150] = Int32.Parse(comboBox24.Text);
-
-            cf[153] = Int32.Parse(TextBox1.Text); // Максимально
-            cf[154] = Int32.Parse(comboBox22.Text);
-
-            cf[151] = Int32.Parse(TextBox2.Text); // Переключение
-            cf[152] = Int32.Parse(comboBox23.Text);
-
-            /* ЭКУ */
-
-            cf[155] = Int32.Parse(textBox4.Text); // 1
-            cf[156] = Int32.Parse(comboBox3.Text);
-            cf[157] = Int32.Parse(textBox6.Text); // 2
-            cf[158] = Int32.Parse(comboBox5.Text);
-            cf[159] = Int32.Parse(textBox8.Text); // 3
-            cf[160] = Int32.Parse(comboBox6.Text);
-            cf[161] = Int32.Parse(textBox10.Text);// 4
-            cf[162] = Int32.Parse(comboBox7.Text);
-            cf[163] = Int32.Parse(textBox12.Text);// 5
-            cf[164] = Int32.Parse(comboBox8.Text);
-            cf[165] = Int32.Parse(textBox31.Text);// 6
-            cf[166] = Int32.Parse(comboBox9.Text);
-            cf[167] = Int32.Parse(textBox33.Text);// 7
-            cf[168] = Int32.Parse(comboBox10.Text);
-            cf[169] = Int32.Parse(textBox35.Text);// 8
-            cf[170] = Int32.Parse(comboBox11.Text);
-            cf[171] = Int32.Parse(textBox37.Text);// 9
-            cf[172] = Int32.Parse(comboBox12.Text);
-
-            /* Турбо */
-
-            cf[173] = Int32.Parse(textBox13.Text);// 1
-            cf[174] = Int32.Parse(comboBox13.Text);
-            cf[175] = Int32.Parse(textBox15.Text);// 2
-            cf[176] = Int32.Parse(comboBox14.Text);
-            cf[177] = Int32.Parse(textBox17.Text);// 3
-            cf[178] = Int32.Parse(comboBox15.Text);
-            cf[179] = Int32.Parse(textBox19.Text);// 4
-            cf[180] = Int32.Parse(comboBox16.Text);
-            cf[181] = Int32.Parse(textBox21.Text);// 5
-            cf[182] = Int32.Parse(comboBox17.Text);
-            cf[183] = Int32.Parse(textBox46.Text);// 6
-            cf[184] = Int32.Parse(comboBox18.Text);
-            cf[185] = Int32.Parse(textBox40.Text);// 7
-            cf[186] = Int32.Parse(comboBox19.Text);
-            cf[187] = Int32.Parse(textBox41.Text);// 8
-            cf[188] = Int32.Parse(comboBox20.Text);
-            cf[189] = Int32.Parse(textBox45.Text);// 9
-            cf[190] = Int32.Parse(comboBox21.Text);
-
-            if (comboBox25.Text == "Задний привод")
+            if (s != null)
             {
-                cf[191] = 0x91;
-                cf[192] = 0xc2;
-                cf[193] = 0x75;
-                cf[194] = 0x3c;
-                cf[195] = 0x57;
-                cf[196] = 0x0e;
-                cf[197] = 0x4d;
-                cf[198] = 0x3f;
-                cf[199] = 0x01;
-                cf[200] = 0x00;
-                cf[201] = 0x00;
-                cf[202] = 0x3e;
-                cf[203] = 0xce;
-                cf[204] = 0xcc;
-                cf[205] = 0x4c;
-                cf[206] = 0x3d;
-            }
-            else if (comboBox25.Text == "Передний привод")
-            {
-                cf[191] = 0x91;
-                cf[192] = 0xc2;
-                cf[193] = 0x75;
-                cf[194] = 0x3c;
-                cf[195] = 0xa9;
-                cf[196] = 0xc6;
-                cf[197] = 0x4b;
-                cf[198] = 0x3e;
-                cf[199] = 0x01;
-                cf[200] = 0x00;
-                cf[201] = 0x00;
-                cf[202] = 0x3e;
-                cf[203] = 0x91;
-                cf[204] = 0xc2;
-                cf[205] = 0x75;
-                cf[206] = 0x3d;
-            }
-            else
-            {
-                cf[191] = 0x91;
-                cf[192] = 0xc2;
-                cf[193] = 0x75;
-                cf[194] = 0x3c;
-                cf[195] = 0x9b;
-                cf[196] = 0x99;
-                cf[197] = 0x19;
-                cf[198] = 0x3f;
-                cf[199] = 0x01;
-                cf[200] = 0x00;
-                cf[201] = 0x00;
-                cf[202] = 0x3e;
-                cf[203] = 0x91;
-                cf[204] = 0xc2;
-                cf[205] = 0x75;
-                cf[206] = 0x3d;
-            }
+                int[] cf = s;
+
+                /* Подвеска */
+                cf[11] = Int32.Parse(maskedTextBox1.Text);
+                cf[12] = trackBar25.Value;
+                cf[43] = cf[11];
+                cf[44] = cf[12];
+
+                cf[75] = Int32.Parse(maskedTextBox2.Text);
+                cf[76] = trackBar26.Value;
+                cf[107] = cf[75];
+                cf[108] = cf[76];
+
+                /* Колеса */
+                //// Расположение
+                //Передние
+                cf[27] = trackBar3.Value;
+                cf[59] = cf[27];
+                //Задние
+                cf[91] = trackBar5.Value;
+                cf[123] = cf[91];
+
+                //// Ширина колеса
+                //Передние
+                cf[19] = trackBar4.Value;
+                cf[51] = cf[19];
+                //Задние
+                cf[83] = trackBar6.Value;
+                cf[115] = cf[83];
+
+                /* Управление */
+                //@ToDo: узнать как именно реагируют настройки....
+                cf[131] = Int32.Parse(maskedTextBox3.Text);
+                cf[132] = Int32.Parse(maskedTextBox4.Text);
+
+                cf[135] = Int32.Parse(maskedTextBox7.Text);
+                cf[136] = Int32.Parse(maskedTextBox8.Text);
+
+                cf[139] = Int32.Parse(maskedTextBox11.Text);
+                cf[140] = Int32.Parse(maskedTextBox12.Text);
+
+                cf[143] = Int32.Parse(maskedTextBox15.Text);
+                cf[144] = Int32.Parse(maskedTextBox16.Text);
+
+                /* Обороты */
+                cf[149] = Int32.Parse(TextBox3.Text); // Нейтралка
+                cf[150] = Int32.Parse(comboBox24.Text);
+
+                cf[153] = Int32.Parse(TextBox1.Text); // Максимально
+                cf[154] = Int32.Parse(comboBox22.Text);
+
+                cf[151] = Int32.Parse(TextBox2.Text); // Переключение
+                cf[152] = Int32.Parse(comboBox23.Text);
+
+                /* ЭКУ */
+
+                cf[155] = Int32.Parse(textBox4.Text); // 1
+                cf[156] = Int32.Parse(comboBox3.Text);
+                cf[157] = Int32.Parse(textBox6.Text); // 2
+                cf[158] = Int32.Parse(comboBox5.Text);
+                cf[159] = Int32.Parse(textBox8.Text); // 3
+                cf[160] = Int32.Parse(comboBox6.Text);
+                cf[161] = Int32.Parse(textBox10.Text);// 4
+                cf[162] = Int32.Parse(comboBox7.Text);
+                cf[163] = Int32.Parse(textBox12.Text);// 5
+                cf[164] = Int32.Parse(comboBox8.Text);
+                cf[165] = Int32.Parse(textBox31.Text);// 6
+                cf[166] = Int32.Parse(comboBox9.Text);
+                cf[167] = Int32.Parse(textBox33.Text);// 7
+                cf[168] = Int32.Parse(comboBox10.Text);
+                cf[169] = Int32.Parse(textBox35.Text);// 8
+                cf[170] = Int32.Parse(comboBox11.Text);
+                cf[171] = Int32.Parse(textBox37.Text);// 9
+                cf[172] = Int32.Parse(comboBox12.Text);
+
+                /* Турбо */
+
+                cf[173] = Int32.Parse(textBox13.Text);// 1
+                cf[174] = Int32.Parse(comboBox13.Text);
+                cf[175] = Int32.Parse(textBox15.Text);// 2
+                cf[176] = Int32.Parse(comboBox14.Text);
+                cf[177] = Int32.Parse(textBox17.Text);// 3
+                cf[178] = Int32.Parse(comboBox15.Text);
+                cf[179] = Int32.Parse(textBox19.Text);// 4
+                cf[180] = Int32.Parse(comboBox16.Text);
+                cf[181] = Int32.Parse(textBox21.Text);// 5
+                cf[182] = Int32.Parse(comboBox17.Text);
+                cf[183] = Int32.Parse(textBox46.Text);// 6
+                cf[184] = Int32.Parse(comboBox18.Text);
+                cf[185] = Int32.Parse(textBox40.Text);// 7
+                cf[186] = Int32.Parse(comboBox19.Text);
+                cf[187] = Int32.Parse(textBox41.Text);// 8
+                cf[188] = Int32.Parse(comboBox20.Text);
+                cf[189] = Int32.Parse(textBox45.Text);// 9
+                cf[190] = Int32.Parse(comboBox21.Text);
+
+                if (comboBox25.Text == "Задний привод")
+                {
+                    cf[191] = 0x91;
+                    cf[192] = 0xc2;
+                    cf[193] = 0x75;
+                    cf[194] = 0x3c;
+                    cf[195] = 0x57;
+                    cf[196] = 0x0e;
+                    cf[197] = 0x4d;
+                    cf[198] = 0x3f;
+                    cf[199] = 0x01;
+                    cf[200] = 0x00;
+                    cf[201] = 0x00;
+                    cf[202] = 0x3e;
+                    cf[203] = 0xce;
+                    cf[204] = 0xcc;
+                    cf[205] = 0x4c;
+                    cf[206] = 0x3d;
+                }
+                else if (comboBox25.Text == "Передний привод")
+                {
+                    cf[191] = 0x91;
+                    cf[192] = 0xc2;
+                    cf[193] = 0x75;
+                    cf[194] = 0x3c;
+                    cf[195] = 0xa9;
+                    cf[196] = 0xc6;
+                    cf[197] = 0x4b;
+                    cf[198] = 0x3e;
+                    cf[199] = 0x01;
+                    cf[200] = 0x00;
+                    cf[201] = 0x00;
+                    cf[202] = 0x3e;
+                    cf[203] = 0x91;
+                    cf[204] = 0xc2;
+                    cf[205] = 0x75;
+                    cf[206] = 0x3d;
+                }
+                else
+                {
+                    cf[191] = 0x91;
+                    cf[192] = 0xc2;
+                    cf[193] = 0x75;
+                    cf[194] = 0x3c;
+                    cf[195] = 0x9b;
+                    cf[196] = 0x99;
+                    cf[197] = 0x19;
+                    cf[198] = 0x3f;
+                    cf[199] = 0x01;
+                    cf[200] = 0x00;
+                    cf[201] = 0x00;
+                    cf[202] = 0x3e;
+                    cf[203] = 0x91;
+                    cf[204] = 0xc2;
+                    cf[205] = 0x75;
+                    cf[206] = 0x3d;
+                }
 
             #endregion
-            return cf;
+                return cf;
+            }
+            else return null;
+        }
+
+        private void изФайлаНастроекcarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.Title = "Загрузить настройку для текущей машины...";
+            openFileDialog2.Filter = "Файлы машин nfsu2ch (*.car)|*.car";
+            //openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
+            openFileDialog2.ShowDialog();
+            int key = 0;
+            Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
+            while (true)
+            {
+                int rb = fr.ReadByte();
+                if (rb == -1)
+                    break;
+                loaded[key] = rb;
+                key++;
+            }
+            if (loadCfg(loaded))
+                MessageBox.Show("Файл " + openFileDialog2.FileName + " успешно загружен!");
+            else MessageBox.Show("Ошибка при загрузке файла " + openFileDialog2.FileName + " !");
+        }
+
+        private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
+        {
+            int key = 0;
+            Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
+            while (true)
+            {
+                int rb = fr.ReadByte();
+                if (rb == -1)
+                    break;
+                loaded[key] = rb;
+                key++;
+            }
+            if (loadCfg(loaded))
+                MessageBox.Show("Файл " + openFileDialog2.FileName + " успешно загружен!");
+            else MessageBox.Show("Ошибка при загрузке файла " + openFileDialog2.FileName + " !");
+        }
+
+        private void загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
