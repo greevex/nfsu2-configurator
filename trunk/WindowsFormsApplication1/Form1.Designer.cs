@@ -170,7 +170,6 @@
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изФайлаGlobalBlzcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изФайлаНастроекcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьНастройкуТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -1304,10 +1303,10 @@
             // 
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.изФайлаGlobalBlzcToolStripMenuItem,
-            this.изФайлаНастроекcarToolStripMenuItem,
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem});
+            this.изФайлаНастроекcarToolStripMenuItem});
             resources.ApplyResources(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem, "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem");
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Name = "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem";
+            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Click += new System.EventHandler(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click);
             // 
             // изФайлаGlobalBlzcToolStripMenuItem
             // 
@@ -1316,13 +1315,9 @@
             // 
             // изФайлаНастроекcarToolStripMenuItem
             // 
-            resources.ApplyResources(this.изФайлаНастроекcarToolStripMenuItem, "изФайлаНастроекcarToolStripMenuItem");
             this.изФайлаНастроекcarToolStripMenuItem.Name = "изФайлаНастроекcarToolStripMenuItem";
-            // 
-            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem
-            // 
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem";
-            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem");
+            resources.ApplyResources(this.изФайлаНастроекcarToolStripMenuItem, "изФайлаНастроекcarToolStripMenuItem");
+            this.изФайлаНастроекcarToolStripMenuItem.Click += new System.EventHandler(this.изФайлаНастроекcarToolStripMenuItem_Click);
             // 
             // сохранитьНастройкуТекущейМашиныToolStripMenuItem
             // 
@@ -1484,6 +1479,7 @@
             this.trackBar5.Minimum = 50;
             this.trackBar5.Name = "trackBar5";
             this.trackBar5.Value = 50;
+            this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll_1);
             // 
             // label31
             // 
@@ -1497,6 +1493,7 @@
             this.trackBar3.Minimum = 50;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Value = 50;
+            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
             // 
             // label32
             // 
@@ -1508,6 +1505,7 @@
             resources.ApplyResources(this.trackBar6, "trackBar6");
             this.trackBar6.Maximum = 255;
             this.trackBar6.Name = "trackBar6";
+            this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll_1);
             // 
             // label33
             // 
@@ -1519,6 +1517,7 @@
             resources.ApplyResources(this.trackBar4, "trackBar4");
             this.trackBar4.Maximum = 255;
             this.trackBar4.Name = "trackBar4";
+            this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
             // 
             // label10
             // 
@@ -1773,7 +1772,6 @@
         public System.Windows.Forms.ToolStripMenuItem создателиИКонтактыToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem изФайлаGlobalBlzcToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem изФайлаНастроекcarToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2;
         public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4;
         public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3;
