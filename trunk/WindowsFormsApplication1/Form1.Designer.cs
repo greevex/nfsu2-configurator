@@ -211,6 +211,8 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -1304,6 +1306,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.maskedTextBox2);
+            this.groupBox4.Controls.Add(this.maskedTextBox1);
             this.groupBox4.Controls.Add(this.trackBar26);
             this.groupBox4.Controls.Add(this.trackBar25);
             this.groupBox4.Controls.Add(this.label9);
@@ -1322,14 +1326,14 @@
             // trackBar26
             // 
             resources.ApplyResources(this.trackBar26, "trackBar26");
-            this.trackBar26.Maximum = 70;
+            this.trackBar26.Maximum = 63;
             this.trackBar26.Name = "trackBar26";
             this.trackBar26.Scroll += new System.EventHandler(this.trackBar26_Scroll);
             // 
             // trackBar25
             // 
             resources.ApplyResources(this.trackBar25, "trackBar25");
-            this.trackBar25.Maximum = 70;
+            this.trackBar25.Maximum = 63;
             this.trackBar25.Name = "trackBar25";
             this.trackBar25.Scroll += new System.EventHandler(this.trackBar25_Scroll);
             // 
@@ -1577,6 +1581,16 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
+            // 
+            // maskedTextBox1
+            // 
+            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            // 
+            // maskedTextBox2
+            // 
+            resources.ApplyResources(this.maskedTextBox2, "maskedTextBox2");
+            this.maskedTextBox2.Name = "maskedTextBox2";
             // 
             // Form1
             // 
@@ -1841,6 +1855,8 @@
         private System.Windows.Forms.TrackBar trackBar26;
         private System.Windows.Forms.TrackBar trackBar25;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
 
