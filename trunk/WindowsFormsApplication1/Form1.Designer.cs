@@ -125,28 +125,6 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label61 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
-            this.label31 = new System.Windows.Forms.Label();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.label32 = new System.Windows.Forms.Label();
-            this.trackBar6 = new System.Windows.Forms.TrackBar();
-            this.label33 = new System.Windows.Forms.Label();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
@@ -169,6 +147,8 @@
             this.label51 = new System.Windows.Forms.Label();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.trackBar26 = new System.Windows.Forms.TrackBar();
             this.trackBar25 = new System.Windows.Forms.TrackBar();
             this.label9 = new System.Windows.Forms.Label();
@@ -180,7 +160,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -193,9 +172,6 @@
             this.изФайлаНастроекcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьНастройкуТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.какПолныйФайлGlobalBlzcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.какФайлРасширенияcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -211,8 +187,30 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.trackBar5 = new System.Windows.Forms.TrackBar();
+            this.label31 = new System.Windows.Forms.Label();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.label32 = new System.Windows.Forms.Label();
+            this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.label33 = new System.Windows.Forms.Label();
+            this.trackBar4 = new System.Windows.Forms.TrackBar();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -238,11 +236,6 @@
             this.tabPage3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -251,6 +244,12 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -880,6 +879,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage2);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
@@ -970,159 +970,13 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label61);
-            this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
-            this.tabPage1.Controls.Add(this.label62);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // label61
-            // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.Name = "label61";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Controls.Add(this.label30);
-            this.groupBox8.Controls.Add(this.label27);
-            this.groupBox8.Controls.Add(this.label34);
-            this.groupBox8.Controls.Add(this.trackBar5);
-            this.groupBox8.Controls.Add(this.label31);
-            this.groupBox8.Controls.Add(this.trackBar3);
-            this.groupBox8.Controls.Add(this.label32);
-            this.groupBox8.Controls.Add(this.trackBar6);
-            this.groupBox8.Controls.Add(this.label33);
-            this.groupBox8.Controls.Add(this.trackBar4);
-            this.groupBox8.Controls.Add(this.label10);
-            this.groupBox8.Controls.Add(this.label24);
-            this.groupBox8.Controls.Add(this.label35);
-            this.groupBox8.Controls.Add(this.label26);
-            this.groupBox8.Controls.Add(this.label29);
-            this.groupBox8.Controls.Add(this.label36);
-            this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Controls.Add(this.label12);
-            this.groupBox8.Controls.Add(this.label28);
-            resources.ApplyResources(this.groupBox8, "groupBox8");
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.TabStop = false;
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // label27
-            // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.Name = "label27";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // trackBar5
-            // 
-            resources.ApplyResources(this.trackBar5, "trackBar5");
-            this.trackBar5.Maximum = 180;
-            this.trackBar5.Minimum = 50;
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Value = 50;
-            this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll);
-            // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            // 
-            // trackBar3
-            // 
-            resources.ApplyResources(this.trackBar3, "trackBar3");
-            this.trackBar3.Maximum = 180;
-            this.trackBar3.Minimum = 50;
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Value = 50;
-            this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
-            // 
-            // label32
-            // 
-            resources.ApplyResources(this.label32, "label32");
-            this.label32.Name = "label32";
-            // 
-            // trackBar6
-            // 
-            resources.ApplyResources(this.trackBar6, "trackBar6");
-            this.trackBar6.Maximum = 255;
-            this.trackBar6.Name = "trackBar6";
-            this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll);
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
-            // trackBar4
-            // 
-            resources.ApplyResources(this.trackBar4, "trackBar4");
-            this.trackBar4.Maximum = 255;
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll_1);
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
-            // 
-            // label24
-            // 
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
-            // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
-            // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            // 
-            // label37
-            // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.Name = "label28";
             // 
             // groupBox7
             // 
@@ -1323,6 +1177,16 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // maskedTextBox2
+            // 
+            resources.ApplyResources(this.maskedTextBox2, "maskedTextBox2");
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            // 
+            // maskedTextBox1
+            // 
+            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            // 
             // trackBar26
             // 
             resources.ApplyResources(this.trackBar26, "trackBar26");
@@ -1381,11 +1245,6 @@
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            // 
-            // label62
-            // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.Name = "label62";
             // 
             // tabPage2
             // 
@@ -1467,27 +1326,9 @@
             // 
             // сохранитьНастройкуТекущейМашиныToolStripMenuItem
             // 
-            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.какПолныйФайлGlobalBlzcToolStripMenuItem,
-            this.какФайлРасширенияcarToolStripMenuItem,
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1});
             resources.ApplyResources(this.сохранитьНастройкуТекущейМашиныToolStripMenuItem, "сохранитьНастройкуТекущейМашиныToolStripMenuItem");
             this.сохранитьНастройкуТекущейМашиныToolStripMenuItem.Name = "сохранитьНастройкуТекущейМашиныToolStripMenuItem";
-            // 
-            // какПолныйФайлGlobalBlzcToolStripMenuItem
-            // 
-            resources.ApplyResources(this.какПолныйФайлGlobalBlzcToolStripMenuItem, "какПолныйФайлGlobalBlzcToolStripMenuItem");
-            this.какПолныйФайлGlobalBlzcToolStripMenuItem.Name = "какПолныйФайлGlobalBlzcToolStripMenuItem";
-            // 
-            // какФайлРасширенияcarToolStripMenuItem
-            // 
-            resources.ApplyResources(this.какФайлРасширенияcarToolStripMenuItem, "какФайлРасширенияcarToolStripMenuItem");
-            this.какФайлРасширенияcarToolStripMenuItem.Name = "какФайлРасширенияcarToolStripMenuItem";
-            // 
-            // будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1
-            // 
-            this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1.Name = "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1";
-            resources.ApplyResources(this.будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1, "будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1");
+            this.сохранитьНастройкуТекущейМашиныToolStripMenuItem.Click += new System.EventHandler(this.сохранитьНастройкуТекущейМашиныToolStripMenuItem_Click);
             // 
             // сменитьПользователяToolStripMenuItem
             // 
@@ -1582,15 +1423,152 @@
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
             // 
-            // maskedTextBox1
+            // tabPage4
             // 
-            resources.ApplyResources(this.maskedTextBox1, "maskedTextBox1");
-            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.tabPage4.Controls.Add(this.groupBox8);
+            resources.ApplyResources(this.tabPage4, "tabPage4");
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox2
+            // groupBox8
             // 
-            resources.ApplyResources(this.maskedTextBox2, "maskedTextBox2");
-            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.groupBox8.Controls.Add(this.label61);
+            this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.label30);
+            this.groupBox8.Controls.Add(this.label27);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.trackBar5);
+            this.groupBox8.Controls.Add(this.label31);
+            this.groupBox8.Controls.Add(this.trackBar3);
+            this.groupBox8.Controls.Add(this.label32);
+            this.groupBox8.Controls.Add(this.trackBar6);
+            this.groupBox8.Controls.Add(this.label33);
+            this.groupBox8.Controls.Add(this.trackBar4);
+            this.groupBox8.Controls.Add(this.label10);
+            this.groupBox8.Controls.Add(this.label24);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.label26);
+            this.groupBox8.Controls.Add(this.label29);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.label12);
+            this.groupBox8.Controls.Add(this.label28);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // trackBar5
+            // 
+            resources.ApplyResources(this.trackBar5, "trackBar5");
+            this.trackBar5.Maximum = 180;
+            this.trackBar5.Minimum = 50;
+            this.trackBar5.Name = "trackBar5";
+            this.trackBar5.Value = 50;
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
+            // trackBar3
+            // 
+            resources.ApplyResources(this.trackBar3, "trackBar3");
+            this.trackBar3.Maximum = 180;
+            this.trackBar3.Minimum = 50;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Value = 50;
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // trackBar6
+            // 
+            resources.ApplyResources(this.trackBar6, "trackBar6");
+            this.trackBar6.Maximum = 255;
+            this.trackBar6.Name = "trackBar6";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // trackBar4
+            // 
+            resources.ApplyResources(this.trackBar4, "trackBar4");
+            this.trackBar4.Maximum = 255;
+            this.trackBar4.Name = "trackBar4";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.Name = "label61";
             // 
             // Form1
             // 
@@ -1646,13 +1624,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -1666,6 +1637,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1673,190 +1651,188 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TrackBar trackBar5;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.TrackBar trackBar6;
-        private System.Windows.Forms.TrackBar trackBar4;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TrackBar trackBar15;
-        private System.Windows.Forms.TrackBar trackBar14;
-        private System.Windows.Forms.TrackBar trackBar13;
-        private System.Windows.Forms.TrackBar trackBar12;
-        private System.Windows.Forms.TrackBar trackBar11;
-        private System.Windows.Forms.TrackBar trackBar10;
-        private System.Windows.Forms.TrackBar trackBar9;
-        private System.Windows.Forms.TrackBar trackBar8;
-        private System.Windows.Forms.TrackBar trackBar7;
-        private System.Windows.Forms.TrackBar trackBar24;
-        private System.Windows.Forms.TrackBar trackBar23;
-        private System.Windows.Forms.TrackBar trackBar22;
-        private System.Windows.Forms.TrackBar trackBar21;
-        private System.Windows.Forms.TrackBar trackBar20;
-        private System.Windows.Forms.TrackBar trackBar19;
-        private System.Windows.Forms.TrackBar trackBar18;
-        private System.Windows.Forms.TrackBar trackBar17;
-        private System.Windows.Forms.TrackBar trackBar16;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox18;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.MaskedTextBox TextBox3;
-        private System.Windows.Forms.MaskedTextBox TextBox2;
-        private System.Windows.Forms.MaskedTextBox TextBox1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сменитьПользователяToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem загрузитьНастройкуДляТекущейМашиныToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сохранитьНастройкуТекущейМашиныToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem параметрыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem помщьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem проверитьОбновленияToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem создателиИКонтактыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem изФайлаGlobalBlzcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem изФайлаНастроекcarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem какПолныйФайлGlobalBlzcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem какФайлРасширенияcarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem открытьФайлНатсроекToolStripMenuItem;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox12;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox16;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox15;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox7;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TrackBar trackBar26;
-        private System.Windows.Forms.TrackBar trackBar25;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.GroupBox groupBox2;
+        public System.Windows.Forms.GroupBox groupBox3;
+        public System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBox21;
+        public System.Windows.Forms.TextBox textBox13;
+        public System.Windows.Forms.TextBox textBox19;
+        public System.Windows.Forms.TextBox textBox15;
+        public System.Windows.Forms.TextBox textBox17;
+        public System.Windows.Forms.TextBox textBox26;
+        public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.Label label21;
+        public System.Windows.Forms.LinkLabel linkLabel2;
+        public System.Windows.Forms.Label label22;
+        public System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.TextBox textBox37;
+        public System.Windows.Forms.TextBox textBox35;
+        public System.Windows.Forms.TextBox textBox33;
+        public System.Windows.Forms.TextBox textBox31;
+        public System.Windows.Forms.TextBox textBox46;
+        public System.Windows.Forms.TextBox textBox45;
+        public System.Windows.Forms.TextBox textBox41;
+        public System.Windows.Forms.TextBox textBox40;
+        public System.Windows.Forms.TabControl tabControl1;
+        public System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.TabPage tabPage3;
+        public System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Label label38;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.GroupBox groupBox4;
+        public System.Windows.Forms.TrackBar trackBar15;
+        public System.Windows.Forms.TrackBar trackBar14;
+        public System.Windows.Forms.TrackBar trackBar13;
+        public System.Windows.Forms.TrackBar trackBar12;
+        public System.Windows.Forms.TrackBar trackBar11;
+        public System.Windows.Forms.TrackBar trackBar10;
+        public System.Windows.Forms.TrackBar trackBar9;
+        public System.Windows.Forms.TrackBar trackBar8;
+        public System.Windows.Forms.TrackBar trackBar7;
+        public System.Windows.Forms.TrackBar trackBar24;
+        public System.Windows.Forms.TrackBar trackBar23;
+        public System.Windows.Forms.TrackBar trackBar22;
+        public System.Windows.Forms.TrackBar trackBar21;
+        public System.Windows.Forms.TrackBar trackBar20;
+        public System.Windows.Forms.TrackBar trackBar19;
+        public System.Windows.Forms.TrackBar trackBar18;
+        public System.Windows.Forms.TrackBar trackBar17;
+        public System.Windows.Forms.TrackBar trackBar16;
+        public System.Windows.Forms.Label label47;
+        public System.Windows.Forms.Label label46;
+        public System.Windows.Forms.Label label45;
+        public System.Windows.Forms.Label label44;
+        public System.Windows.Forms.Label label43;
+        public System.Windows.Forms.Label label42;
+        public System.Windows.Forms.Label label41;
+        public System.Windows.Forms.Label label40;
+        public System.Windows.Forms.Label label48;
+        public System.Windows.Forms.Label label39;
+        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.ComboBox comboBox12;
+        public System.Windows.Forms.ComboBox comboBox11;
+        public System.Windows.Forms.ComboBox comboBox10;
+        public System.Windows.Forms.ComboBox comboBox9;
+        public System.Windows.Forms.ComboBox comboBox8;
+        public System.Windows.Forms.ComboBox comboBox7;
+        public System.Windows.Forms.ComboBox comboBox6;
+        public System.Windows.Forms.ComboBox comboBox5;
+        public System.Windows.Forms.ComboBox comboBox4;
+        public System.Windows.Forms.ComboBox comboBox21;
+        public System.Windows.Forms.ComboBox comboBox20;
+        public System.Windows.Forms.ComboBox comboBox19;
+        public System.Windows.Forms.ComboBox comboBox18;
+        public System.Windows.Forms.ComboBox comboBox17;
+        public System.Windows.Forms.ComboBox comboBox16;
+        public System.Windows.Forms.ComboBox comboBox15;
+        public System.Windows.Forms.ComboBox comboBox14;
+        public System.Windows.Forms.ComboBox comboBox13;
+        public System.Windows.Forms.Label label49;
+        public System.Windows.Forms.Label label50;
+        public System.Windows.Forms.ComboBox comboBox22;
+        public System.Windows.Forms.ComboBox comboBox24;
+        public System.Windows.Forms.ComboBox comboBox23;
+        public System.Windows.Forms.GroupBox groupBox5;
+        public System.Windows.Forms.Label label51;
+        public System.Windows.Forms.ComboBox comboBox25;
+        public System.Windows.Forms.Label label52;
+        public System.Windows.Forms.GroupBox groupBox6;
+        public System.Windows.Forms.Label label53;
+        public System.Windows.Forms.MaskedTextBox TextBox3;
+        public System.Windows.Forms.MaskedTextBox TextBox2;
+        public System.Windows.Forms.MaskedTextBox TextBox1;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem сменитьПользователяToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem загрузитьНастройкуДляТекущейМашиныToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem сохранитьНастройкуТекущейМашиныToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem параметрыToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem помщьToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem проверитьОбновленияToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem создателиИКонтактыToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem изФайлаGlobalBlzcToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem изФайлаНастроекcarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2;
+        public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4;
+        public System.Windows.Forms.ToolStripMenuItem будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem3;
+        public System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem открытьФайлНатсроекToolStripMenuItem;
+        public System.Windows.Forms.Label label54;
+        public System.Windows.Forms.Label label55;
+        public System.Windows.Forms.Label label56;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox12;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox11;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox16;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox15;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox4;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox8;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox7;
+        public System.Windows.Forms.GroupBox groupBox7;
+        public System.Windows.Forms.Label label60;
+        public System.Windows.Forms.Label label59;
+        public System.Windows.Forms.Label label58;
+        public System.Windows.Forms.Label label57;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label64;
+        public System.Windows.Forms.Label label63;
+        public System.Windows.Forms.Label label65;
+        public System.Windows.Forms.Label label66;
+        public System.Windows.Forms.TrackBar trackBar26;
+        public System.Windows.Forms.TrackBar trackBar25;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        public System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        public System.Windows.Forms.TabPage tabPage4;
+        public System.Windows.Forms.GroupBox groupBox8;
+        public System.Windows.Forms.Label label61;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label label30;
+        public System.Windows.Forms.Label label27;
+        public System.Windows.Forms.Label label34;
+        public System.Windows.Forms.TrackBar trackBar5;
+        public System.Windows.Forms.Label label31;
+        public System.Windows.Forms.TrackBar trackBar3;
+        public System.Windows.Forms.Label label32;
+        public System.Windows.Forms.TrackBar trackBar6;
+        public System.Windows.Forms.Label label33;
+        public System.Windows.Forms.TrackBar trackBar4;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label24;
+        public System.Windows.Forms.Label label35;
+        public System.Windows.Forms.Label label26;
+        public System.Windows.Forms.Label label29;
+        public System.Windows.Forms.Label label36;
+        public System.Windows.Forms.Label label37;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label28;
+        public System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
