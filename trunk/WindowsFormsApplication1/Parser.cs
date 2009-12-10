@@ -53,32 +53,35 @@ namespace NFSU2CH
                         return null;
                     }
                 }
-                stream.Position = startblock;
-                int[] result = new int[map.Length];
-                int i = 0;
-                int key = 0;
-                
-                while (i < (map[map.Length - 1] + 1))
+                else
                 {
-                    if (i == map[key])
+                    stream.Position = startblock;
+                    int[] result = new int[map.Length];
+                    int i = 0;
+                    int key = 0;
+
+                    while (i < (map[map.Length - 1] + 1))
                     {
-                        int s = stream.ReadByte();
-                        if (s == -1)
+                        if (i == map[key])
                         {
-                            stream.Close();
-                            return null;
+                            int s = stream.ReadByte();
+                            if (s == -1)
+                            {
+                                stream.Close();
+                                return null;
+                            }
+                            result[key] = s;
+                            key++;
                         }
-                        result[key] = s;
-                        key++;
+                        else
+                        {
+                            stream.ReadByte();
+                        }
+                        i++;
                     }
-                    else
-                    {
-                        stream.ReadByte();
-                    }
-                    i++;
+                    stream.Close();
+                    return result;
                 }
-                stream.Close();
-                return result;
             }
             catch (Exception e)
             {
