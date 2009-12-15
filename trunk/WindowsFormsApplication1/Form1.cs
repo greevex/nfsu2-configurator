@@ -400,6 +400,7 @@ namespace NFSU2CH
             //
             fa.Show();
             fa.Activate();
+            
         }
 
         void fa_FormClosed(object sender, FormClosedEventArgs e)
@@ -415,6 +416,7 @@ namespace NFSU2CH
                 fa.Close();
                 this.Enabled = true;
                 this.Activate();
+                openNewFileAndCheckIt();
             }
             else
             {
@@ -429,35 +431,46 @@ namespace NFSU2CH
             //else MessageBox.Show("Изменения сделаны, но не сохранены, вы уверены, что желаете выйти без сохранения изменений?", "Выход без сохранения изменений", MessageBoxButtons.YesNo);
         }
 
-        private void открытьФайлНатсроекToolStripMenuItem_Click(object sender, EventArgs e)
+        private void checkFile(string filename)
+        {
+            //Проверка файла
+            if (File.Exists(filename))
+            {
+                FileInfo file = new FileInfo(filename);
+                if (file.Length < 8008064)
+                {
+                    if (File.Exists(Directory.GetParent(filename) + "\\GLOBALB.BUN"))
+                    {
+                        FileInfo file2 = new FileInfo(Directory.GetParent(filename) + "\\GLOBALB.BUN");
+                        if (file2.Length < 8008064)
+                        {
+                            System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
+                        }
+                        else
+                        {
+                            File.Delete(filename);
+                            File.Copy(Directory.GetParent(filename) + "\\GLOBALB.BUN", filename);
+                            System.Windows.Forms.MessageBox.Show("У вас был неверный файл GlobalB.lzc!\nМы исправили его, теперь можно пользоваться программой! =)");
+                        }
+                    }
+                    else System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
+                }
+                else System.Windows.Forms.MessageBox.Show("Файл успешно загружен!");
+            }
+        }
+
+        private void openNewFileAndCheckIt()
         {
             openFileDialog1.FileName = "GlobalB.lzc";
             openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
             openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog1.ShowDialog();
-            
-            string filename = openFileDialog1.FileName;
-            //Проверка файла
-            FileInfo file = new FileInfo(filename);
-             if (file.Length < 8008064)
-             {
-                 if (File.Exists(Directory.GetParent(filename) + "\\GLOBALB.BUN"))
-                 {
-                     FileInfo file2 = new FileInfo(Directory.GetParent(filename) + "\\GLOBALB.BUN");
-                     if (file2.Length < 8008064)
-                     {
-                         System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
-                     }
-                     else
-                     {
-                         File.Delete(filename);
-                         File.Copy(Directory.GetParent(filename) + "\\GLOBALB.BUN", filename);
-                         System.Windows.Forms.MessageBox.Show("У вас был неверный файл GlobalB.lzc!\nМы исправили его, теперь можно пользоваться программой! =)");
-                     }
-                 }
-                 else System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
-             }
-             else System.Windows.Forms.MessageBox.Show("Файл успешно загружен!");
+            checkFile(openFileDialog1.FileName);
+        }
+
+        private void открытьФайлНатсроекToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openNewFileAndCheckIt();
         }
 
         void  openFileDialog1_FileOk(object sender, CancelEventArgs e)
