@@ -70,5 +70,10 @@ namespace NFSU2CH.Resources
             LinkLabel lbl = sender as LinkLabel;
             Process.Start("mailto://"+lbl.Text);
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
