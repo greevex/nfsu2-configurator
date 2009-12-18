@@ -9,13 +9,17 @@ namespace NFSU2CH
     {
         public static string[] getLng()
         {
-            return Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "/lng", "*.lng");
+            return Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + "\\lng", "*.lng");
         }
         public static string[] getLngStr(string lang)
         {
-            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "/lng/" + lang + ".lng");
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\lng/" + lang + ".lng");
             string lng = sr.ReadToEnd();
             return lng.Split('\n');
+        }
+        public void applyLanguage(string[] language)
+        {
+            
         }
     }
 }

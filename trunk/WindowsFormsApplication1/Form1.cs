@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Threading;
 using System.IO;
+using System.Resources;
 
 namespace NFSU2CH
 {
@@ -820,6 +821,23 @@ namespace NFSU2CH
         private void загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+            ResourceManager LocRM = new ResourceManager("NFSU2CH.WinFormStrings", typeof(Form1).Assembly);
+        }
+
+        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+            ResourceManager LocRM = new ResourceManager("NFSU2CH.WinFormStrings", typeof(Form1).Assembly);
         }
     }
 }

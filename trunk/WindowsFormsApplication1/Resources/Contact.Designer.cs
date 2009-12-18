@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -56,13 +55,20 @@
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -70,9 +76,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Сайт:";
+            this.label1.Text = "Web-site:";
             // 
             // groupBox1
             // 
@@ -273,18 +279,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Сайт:";
+            this.label3.Text = "Web-Site:";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.linkLabel6);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox3.Location = new System.Drawing.Point(6, 19);
+            this.groupBox3.Location = new System.Drawing.Point(10, 103);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(294, 39);
+            this.groupBox3.Size = new System.Drawing.Size(319, 39);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "NPRxSadProxy";
@@ -306,17 +312,17 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(7, 16);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(34, 13);
+            this.label14.Size = new System.Drawing.Size(54, 13);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Сайт:";
+            this.label14.Text = "Web-Site:";
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox4.Location = new System.Drawing.Point(6, 64);
+            this.groupBox4.Location = new System.Drawing.Point(10, 148);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(294, 44);
+            this.groupBox4.Size = new System.Drawing.Size(319, 40);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "MDTxValo";
@@ -326,9 +332,9 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(6, 16);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(161, 13);
+            this.label15.Size = new System.Drawing.Size(183, 13);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Кому будет нужен - тот найдёт";
+            this.label15.Text = "No contacts, only thanks for testing :)";
             // 
             // groupBox5
             // 
@@ -341,37 +347,102 @@
             this.groupBox5.Size = new System.Drawing.Size(316, 194);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Разработчики";
+            this.groupBox5.Text = "Developers";
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label16);
             this.groupBox6.Controls.Add(this.groupBox3);
+            this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Controls.Add(this.groupBox4);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox6.ForeColor = System.Drawing.Color.DarkRed;
+            this.groupBox6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.groupBox6.Location = new System.Drawing.Point(336, 13);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(306, 194);
+            this.groupBox6.Size = new System.Drawing.Size(344, 194);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Тестеры";
+            this.groupBox6.Text = "Testers";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.linkLabel7);
+            this.groupBox7.Controls.Add(this.label16);
+            this.groupBox7.Controls.Add(this.label19);
+            this.groupBox7.Controls.Add(this.label17);
+            this.groupBox7.Controls.Add(this.linkLabel8);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox7.Location = new System.Drawing.Point(10, 19);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(319, 78);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Andreaschris";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(7, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(54, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Web-Site:";
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(66, 16);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(242, 13);
+            this.linkLabel7.TabIndex = 1;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "http://www.youtube.com/user/andreas16101985";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(7, 115);
+            this.label16.Location = new System.Drawing.Point(7, 55);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(256, 65);
-            this.label16.TabIndex = 5;
-            this.label16.Text = resources.GetString("label16.Text");
+            this.label16.Size = new System.Drawing.Size(191, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Biggest thanks for help with translation!";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(450, 210);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(230, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "And some other, who don\'t wants to be here.. ;)";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(7, 35);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(39, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "E-Mail:";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Location = new System.Drawing.Point(66, 35);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(164, 13);
+            this.linkLabel8.TabIndex = 3;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "andreas_chris5289@hotmail.com";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 222);
+            this.ClientSize = new System.Drawing.Size(692, 227);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -381,7 +452,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Контакты";
+            this.Text = "Contacts";
             this.Load += new System.EventHandler(this.Contact_Load);
             this.Shown += new System.EventHandler(this.Contact_Shown);
             this.groupBox1.ResumeLayout(false);
@@ -394,8 +465,10 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -433,6 +506,12 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.LinkLabel linkLabel7;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.LinkLabel linkLabel8;
     }
 }
