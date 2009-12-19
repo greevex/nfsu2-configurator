@@ -224,6 +224,22 @@
             this.maskedTextBox24 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox25 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox26 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox28 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox29 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox30 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox31 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox32 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox33 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox34 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox35 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox36 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox37 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox38 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox39 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox40 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox41 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox42 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -1441,20 +1457,36 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.maskedTextBox42);
+            this.tabPage5.Controls.Add(this.maskedTextBox34);
             this.tabPage5.Controls.Add(this.maskedTextBox26);
             this.tabPage5.Controls.Add(this.maskedTextBox18);
+            this.tabPage5.Controls.Add(this.maskedTextBox41);
+            this.tabPage5.Controls.Add(this.maskedTextBox33);
             this.tabPage5.Controls.Add(this.maskedTextBox25);
             this.tabPage5.Controls.Add(this.maskedTextBox17);
+            this.tabPage5.Controls.Add(this.maskedTextBox40);
+            this.tabPage5.Controls.Add(this.maskedTextBox32);
             this.tabPage5.Controls.Add(this.maskedTextBox24);
             this.tabPage5.Controls.Add(this.maskedTextBox14);
+            this.tabPage5.Controls.Add(this.maskedTextBox39);
+            this.tabPage5.Controls.Add(this.maskedTextBox31);
             this.tabPage5.Controls.Add(this.maskedTextBox23);
             this.tabPage5.Controls.Add(this.maskedTextBox13);
+            this.tabPage5.Controls.Add(this.maskedTextBox38);
+            this.tabPage5.Controls.Add(this.maskedTextBox30);
             this.tabPage5.Controls.Add(this.maskedTextBox22);
             this.tabPage5.Controls.Add(this.maskedTextBox10);
+            this.tabPage5.Controls.Add(this.maskedTextBox37);
+            this.tabPage5.Controls.Add(this.maskedTextBox29);
             this.tabPage5.Controls.Add(this.maskedTextBox21);
             this.tabPage5.Controls.Add(this.maskedTextBox9);
+            this.tabPage5.Controls.Add(this.maskedTextBox36);
+            this.tabPage5.Controls.Add(this.maskedTextBox28);
             this.tabPage5.Controls.Add(this.maskedTextBox20);
             this.tabPage5.Controls.Add(this.maskedTextBox6);
+            this.tabPage5.Controls.Add(this.maskedTextBox35);
+            this.tabPage5.Controls.Add(this.maskedTextBox27);
             this.tabPage5.Controls.Add(this.maskedTextBox19);
             this.tabPage5.Controls.Add(this.maskedTextBox5);
             resources.ApplyResources(this.tabPage5, "tabPage5");
@@ -1666,6 +1698,86 @@
             // 
             resources.ApplyResources(this.maskedTextBox26, "maskedTextBox26");
             this.maskedTextBox26.Name = "maskedTextBox26";
+            // 
+            // maskedTextBox27
+            // 
+            resources.ApplyResources(this.maskedTextBox27, "maskedTextBox27");
+            this.maskedTextBox27.Name = "maskedTextBox27";
+            // 
+            // maskedTextBox28
+            // 
+            resources.ApplyResources(this.maskedTextBox28, "maskedTextBox28");
+            this.maskedTextBox28.Name = "maskedTextBox28";
+            // 
+            // maskedTextBox29
+            // 
+            resources.ApplyResources(this.maskedTextBox29, "maskedTextBox29");
+            this.maskedTextBox29.Name = "maskedTextBox29";
+            // 
+            // maskedTextBox30
+            // 
+            resources.ApplyResources(this.maskedTextBox30, "maskedTextBox30");
+            this.maskedTextBox30.Name = "maskedTextBox30";
+            // 
+            // maskedTextBox31
+            // 
+            resources.ApplyResources(this.maskedTextBox31, "maskedTextBox31");
+            this.maskedTextBox31.Name = "maskedTextBox31";
+            // 
+            // maskedTextBox32
+            // 
+            resources.ApplyResources(this.maskedTextBox32, "maskedTextBox32");
+            this.maskedTextBox32.Name = "maskedTextBox32";
+            // 
+            // maskedTextBox33
+            // 
+            resources.ApplyResources(this.maskedTextBox33, "maskedTextBox33");
+            this.maskedTextBox33.Name = "maskedTextBox33";
+            // 
+            // maskedTextBox34
+            // 
+            resources.ApplyResources(this.maskedTextBox34, "maskedTextBox34");
+            this.maskedTextBox34.Name = "maskedTextBox34";
+            // 
+            // maskedTextBox35
+            // 
+            resources.ApplyResources(this.maskedTextBox35, "maskedTextBox35");
+            this.maskedTextBox35.Name = "maskedTextBox35";
+            // 
+            // maskedTextBox36
+            // 
+            resources.ApplyResources(this.maskedTextBox36, "maskedTextBox36");
+            this.maskedTextBox36.Name = "maskedTextBox36";
+            // 
+            // maskedTextBox37
+            // 
+            resources.ApplyResources(this.maskedTextBox37, "maskedTextBox37");
+            this.maskedTextBox37.Name = "maskedTextBox37";
+            // 
+            // maskedTextBox38
+            // 
+            resources.ApplyResources(this.maskedTextBox38, "maskedTextBox38");
+            this.maskedTextBox38.Name = "maskedTextBox38";
+            // 
+            // maskedTextBox39
+            // 
+            resources.ApplyResources(this.maskedTextBox39, "maskedTextBox39");
+            this.maskedTextBox39.Name = "maskedTextBox39";
+            // 
+            // maskedTextBox40
+            // 
+            resources.ApplyResources(this.maskedTextBox40, "maskedTextBox40");
+            this.maskedTextBox40.Name = "maskedTextBox40";
+            // 
+            // maskedTextBox41
+            // 
+            resources.ApplyResources(this.maskedTextBox41, "maskedTextBox41");
+            this.maskedTextBox41.Name = "maskedTextBox41";
+            // 
+            // maskedTextBox42
+            // 
+            resources.ApplyResources(this.maskedTextBox42, "maskedTextBox42");
+            this.maskedTextBox42.Name = "maskedTextBox42";
             // 
             // Form1
             // 
@@ -1946,6 +2058,22 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox9;
         private System.Windows.Forms.MaskedTextBox maskedTextBox20;
         private System.Windows.Forms.MaskedTextBox maskedTextBox19;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox42;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox34;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox41;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox33;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox40;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox32;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox39;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox31;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox38;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox30;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox37;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox29;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox36;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox28;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox35;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox27;
     }
 }
 

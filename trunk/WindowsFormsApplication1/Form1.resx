@@ -2245,8 +2245,26 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>18, 16</value>
+  </metadata>
+  <data name="comboBox1.AutoCompleteCustomSource" xml:space="preserve">
+    <value>фвафывафыва</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>фывафыва</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>вапр</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>вапывапывпы</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>впывпывп</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>ывапывап</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
     <value>ACURA RSX</value>
@@ -2855,6 +2873,24 @@ from the list and press to "Apply"</value>
   </data>
   <data name="&gt;&gt;label59.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource" xml:space="preserve">
+    <value>фвафывафыва</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>фывафыва</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>вапр</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>вапывапывпы</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>впывпывп</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>ывапывап</value>
   </data>
   <data name="comboBox2.Items" xml:space="preserve">
     <value>ACURA RSX</value>
@@ -4594,8 +4630,50 @@ Width</value>
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="maskedTextBox42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 307</value>
+  </data>
+  <data name="maskedTextBox42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox42.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox42.Name" xml:space="preserve">
+    <value>maskedTextBox42</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox42.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox42.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="maskedTextBox34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 224</value>
+  </data>
+  <data name="maskedTextBox34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox34.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox34.Name" xml:space="preserve">
+    <value>maskedTextBox34</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox34.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox34.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="maskedTextBox26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 58</value>
+    <value>250, 141</value>
   </data>
   <data name="maskedTextBox26.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4613,7 +4691,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox26.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="maskedTextBox18.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 58</value>
@@ -4634,10 +4712,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox18.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
+  </data>
+  <data name="maskedTextBox41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 281</value>
+  </data>
+  <data name="maskedTextBox41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox41.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox41.Name" xml:space="preserve">
+    <value>maskedTextBox41</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox41.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox41.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="maskedTextBox33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 198</value>
+  </data>
+  <data name="maskedTextBox33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox33.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox33.Name" xml:space="preserve">
+    <value>maskedTextBox33</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox33.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox33.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="maskedTextBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 32</value>
+    <value>250, 115</value>
   </data>
   <data name="maskedTextBox25.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4655,7 +4775,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox25.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="maskedTextBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>250, 32</value>
@@ -4676,10 +4796,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox17.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
+  </data>
+  <data name="maskedTextBox40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 307</value>
+  </data>
+  <data name="maskedTextBox40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox40.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox40.Name" xml:space="preserve">
+    <value>maskedTextBox40</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox40.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox40.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="maskedTextBox32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 224</value>
+  </data>
+  <data name="maskedTextBox32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox32.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox32.Name" xml:space="preserve">
+    <value>maskedTextBox32</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox32.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox32.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="maskedTextBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 58</value>
+    <value>182, 141</value>
   </data>
   <data name="maskedTextBox24.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4697,7 +4859,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox24.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="maskedTextBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 58</value>
@@ -4718,10 +4880,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox14.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
+  </data>
+  <data name="maskedTextBox39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 281</value>
+  </data>
+  <data name="maskedTextBox39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox39.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox39.Name" xml:space="preserve">
+    <value>maskedTextBox39</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox39.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox39.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="maskedTextBox31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 198</value>
+  </data>
+  <data name="maskedTextBox31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox31.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox31.Name" xml:space="preserve">
+    <value>maskedTextBox31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox31.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox31.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="maskedTextBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 32</value>
+    <value>182, 115</value>
   </data>
   <data name="maskedTextBox23.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4739,7 +4943,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox23.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="maskedTextBox13.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 32</value>
@@ -4760,10 +4964,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox13.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
+  </data>
+  <data name="maskedTextBox38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 307</value>
+  </data>
+  <data name="maskedTextBox38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox38.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox38.Name" xml:space="preserve">
+    <value>maskedTextBox38</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox38.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox38.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="maskedTextBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 224</value>
+  </data>
+  <data name="maskedTextBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox30.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox30.Name" xml:space="preserve">
+    <value>maskedTextBox30</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox30.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox30.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="maskedTextBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 58</value>
+    <value>114, 141</value>
   </data>
   <data name="maskedTextBox22.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4781,7 +5027,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox22.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>18</value>
   </data>
   <data name="maskedTextBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 58</value>
@@ -4802,10 +5048,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox10.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>19</value>
+  </data>
+  <data name="maskedTextBox37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 281</value>
+  </data>
+  <data name="maskedTextBox37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox37.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox37.Name" xml:space="preserve">
+    <value>maskedTextBox37</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox37.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox37.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="maskedTextBox29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 198</value>
+  </data>
+  <data name="maskedTextBox29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox29.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox29.Name" xml:space="preserve">
+    <value>maskedTextBox29</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox29.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox29.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="maskedTextBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 32</value>
+    <value>114, 115</value>
   </data>
   <data name="maskedTextBox21.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4823,7 +5111,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox21.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>22</value>
   </data>
   <data name="maskedTextBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 32</value>
@@ -4844,10 +5132,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox9.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>23</value>
+  </data>
+  <data name="maskedTextBox36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 307</value>
+  </data>
+  <data name="maskedTextBox36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox36.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox36.Name" xml:space="preserve">
+    <value>maskedTextBox36</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox36.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox36.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="maskedTextBox28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 224</value>
+  </data>
+  <data name="maskedTextBox28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox28.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox28.Name" xml:space="preserve">
+    <value>maskedTextBox28</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox28.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox28.ZOrder" xml:space="preserve">
+    <value>25</value>
   </data>
   <data name="maskedTextBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 58</value>
+    <value>46, 141</value>
   </data>
   <data name="maskedTextBox20.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4865,7 +5195,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox20.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>26</value>
   </data>
   <data name="maskedTextBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 58</value>
@@ -4886,10 +5216,52 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox6.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>27</value>
+  </data>
+  <data name="maskedTextBox35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 281</value>
+  </data>
+  <data name="maskedTextBox35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox35.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox35.Name" xml:space="preserve">
+    <value>maskedTextBox35</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox35.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox35.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="maskedTextBox27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 198</value>
+  </data>
+  <data name="maskedTextBox27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="maskedTextBox27.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox27.Name" xml:space="preserve">
+    <value>maskedTextBox27</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox27.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox27.ZOrder" xml:space="preserve">
+    <value>29</value>
   </data>
   <data name="maskedTextBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 32</value>
+    <value>46, 115</value>
   </data>
   <data name="maskedTextBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -4907,7 +5279,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox19.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>30</value>
   </data>
   <data name="maskedTextBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>46, 32</value>
@@ -4928,7 +5300,7 @@ Width</value>
     <value>tabPage5</value>
   </data>
   <data name="&gt;&gt;maskedTextBox5.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>31</value>
   </data>
   <data name="tabPage5.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -4975,9 +5347,9 @@ Width</value>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>0, 0</value>
-  </data>
+  </metadata>
   <data name="открытьФайлНатсроекToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 22</value>
   </data>
@@ -5021,7 +5393,7 @@ Width</value>
     <value>317, 22</value>
   </data>
   <data name="будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Don't work now</value>
+    <value>Будет доступно в новых версиях программы.</value>
   </data>
   <data name="сменитьПользователяToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 22</value>
@@ -5054,7 +5426,7 @@ Width</value>
     <value>317, 22</value>
   </data>
   <data name="будетДоступноВНовыхВерсияхПрограммыToolStripMenuItem4.Text" xml:space="preserve">
-    <value>Don't work now</value>
+    <value>Будет доступно в новых версиях программы.</value>
   </data>
   <data name="проверитьОбновленияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 22</value>
@@ -5194,15 +5566,15 @@ Width</value>
   <data name="&gt;&gt;label56.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>148, 16</value>
-  </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
-  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>59</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -5475,59 +5847,5 @@ Width</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="authError" xml:space="preserve">
-    <value>Error!</value>
-  </data>
-  <data name="badGlobalb" xml:space="preserve">
-    <value>Bad GlobalB file, and we can't to repair it, try to search in the internet or ask friends for original GLOBALB.BUN and GlobalB.lzc files.</value>
-  </data>
-  <data name="carFileOpen" xml:space="preserve">
-    <value>Load settings for current car</value>
-  </data>
-  <data name="file" xml:space="preserve">
-    <value>File</value>
-  </data>
-  <data name="fileLoadError" xml:space="preserve">
-    <value>Error while loading file!</value>
-  </data>
-  <data name="fileLoadOk" xml:space="preserve">
-    <value>File load ok!</value>
-  </data>
-  <data name="fileNotSelected" xml:space="preserve">
-    <value>Select file first by Menu-&gt;Open file... in GLOBAL folder of NFSU2 directory.</value>
-  </data>
-  <data name="globalbRepaired" xml:space="preserve">
-    <value>У вас был неверный файл GlobalB.lzc! Мы исправили его, теперь можно пользоваться программой! =)</value>
-  </data>
-  <data name="loaded" xml:space="preserve">
-    <value>loaded!</value>
-  </data>
-  <data name="loadedThenSelectCar" xml:space="preserve">
-    <value>Select car now.</value>
-  </data>
-  <data name="nothingToSave" xml:space="preserve">
-    <value>Nothing to save!</value>
-  </data>
-  <data name="openFileDialogFilter" xml:space="preserve">
-    <value>NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc</value>
-  </data>
-  <data name="saved" xml:space="preserve">
-    <value>saved!</value>
-  </data>
-  <data name="saveError" xml:space="preserve">
-    <value>Save file error!</value>
-  </data>
-  <data name="saveFileDialogFilter" xml:space="preserve">
-    <value>NFSU2CH car files (*.car)|*.car</value>
-  </data>
-  <data name="saveFileDialogTitle" xml:space="preserve">
-    <value>Save current car settings...</value>
-  </data>
-  <data name="saveOk" xml:space="preserve">
-    <value>File save ok!</value>
-  </data>
-  <data name="selectCar" xml:space="preserve">
-    <value>Select car...</value>
   </data>
 </root>
