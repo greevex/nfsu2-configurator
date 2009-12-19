@@ -78,6 +78,19 @@ namespace NFSU2CH
             }
         }
 
+        public int[] mapCreate(int start, int end)
+        {
+            int len = end - start + 1;
+            int[] map = new int[len];
+            int i = 0;
+            foreach (int x in map)
+            {
+                map[i] = start;
+                start++;
+            }
+            return map;
+        }
+
         public bool save(string filename, int[] map, int[] newconf, int position)
         {
             try
