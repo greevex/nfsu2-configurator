@@ -35,6 +35,7 @@ namespace NFSU2CH
                 foreach (byte b in result)
                 {
                     r[i] = Convert.ToInt32(b);
+                    i++;
                 }
                 stream = null;
                 result = null;
@@ -91,7 +92,7 @@ namespace NFSU2CH
             return main;
         }
 
-        public bool save(string filename, int[] map, int[] newconf, int position)
+        public bool save(string filename, int[] newconf, int position)
         {
             try
             {
@@ -99,6 +100,13 @@ namespace NFSU2CH
                 if (File.Exists(temp))
                 {
                     File.Delete(temp);
+                }
+                int i = 0;
+                byte[] conf = new byte[newconf.Length];
+                foreach (int b in newconf)
+                {
+                    conf[i] = Convert.ToByte(b);
+                    i++;
                 }
                 Stream streamr = new StreamReader(filename).BaseStream;
                 Stream streamw = new StreamWriter(temp).BaseStream;
@@ -109,20 +117,14 @@ namespace NFSU2CH
                     int byt = streamr.ReadByte();
                     if (byt == -1)
                         break;
-                    if (this._curr >= position)
+                    if (this._curr == position)
                     {
-                        int j = 0;
-                        foreach (int k in map)
-                        {
-                            if (this._curr - position == k)
-                            {
-                                byt = newconf[j];
-                                break;
-                            }
-                            j++;
-                        }
+                        streamw.Write(conf, 0, conf.Length);
                     }
-                    streamw.WriteByte((byte)byt);
+                    else
+                    {
+                        streamw.WriteByte((byte)byt);
+                    }
                     this._curr++;
 
                 }
