@@ -1211,7 +1211,6 @@
             resources.GetString("comboBox25.Items2")});
             resources.ApplyResources(this.comboBox25, "comboBox25");
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.SelectedIndexChanged += new System.EventHandler(this.comboBox25_SelectedIndexChanged);
             // 
             // groupBox4
             // 

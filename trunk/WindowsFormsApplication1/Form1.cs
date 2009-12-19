@@ -113,6 +113,27 @@ namespace NFSU2CH
                 label13.Text = cfLoad[3].ToString();
                 label14.Text = cfLoad[67].ToString();
 
+                maskedTextBox5.Text = cfLoad[29].ToString();
+                maskedTextBox6.Text = cfLoad[30].ToString();
+                maskedTextBox9.Text = cfLoad[31].ToString();
+                maskedTextBox10.Text = cfLoad[32].ToString();
+
+                maskedTextBox19.Text = cfLoad[61].ToString();
+                maskedTextBox20.Text = cfLoad[62].ToString();
+                maskedTextBox21.Text = cfLoad[63].ToString();
+                maskedTextBox22.Text = cfLoad[64].ToString();
+
+                maskedTextBox27.Text = cfLoad[96].ToString();
+                maskedTextBox28.Text = cfLoad[97].ToString();
+                maskedTextBox29.Text = cfLoad[98].ToString();
+                maskedTextBox30.Text = cfLoad[99].ToString();
+
+                maskedTextBox35.Text = cfLoad[125].ToString();
+                maskedTextBox36.Text = cfLoad[126].ToString();
+                maskedTextBox37.Text = cfLoad[127].ToString();
+                maskedTextBox38.Text = cfLoad[128].ToString();
+
+
                 /* Обороты */
 
                 TextBox3.Text = cfLoad[149].ToString(); // Нейтралка
@@ -571,11 +592,6 @@ namespace NFSU2CH
             label66.Text = trackBar26.Value.ToString();
         }
 
-        private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Resources.AboutSoft absoft = new NFSU2CH.Resources.AboutSoft();
@@ -654,6 +670,26 @@ namespace NFSU2CH
                 cf[47] = trackBar27.Value;
                 cf[79] = trackBar28.Value;
                 cf[111] = trackBar28.Value;
+
+                cf[29] = Int32.Parse(maskedTextBox5.Text);
+                cf[30] = Int32.Parse(maskedTextBox6.Text);
+                cf[31] = Int32.Parse(maskedTextBox9.Text);
+                cf[32] = Int32.Parse(maskedTextBox10.Text);
+
+                cf[61] = Int32.Parse(maskedTextBox19.Text);
+                cf[62] = Int32.Parse(maskedTextBox20.Text);
+                cf[63] = Int32.Parse(maskedTextBox21.Text);
+                cf[64] = Int32.Parse(maskedTextBox22.Text);
+
+                cf[96] = Int32.Parse(maskedTextBox27.Text);
+                cf[97] = Int32.Parse(maskedTextBox28.Text);
+                cf[98] = Int32.Parse(maskedTextBox29.Text);
+                cf[99] = Int32.Parse(maskedTextBox30.Text);
+
+                cf[125] = Int32.Parse(maskedTextBox35.Text);
+                cf[126] = Int32.Parse(maskedTextBox36.Text);
+                cf[127] = Int32.Parse(maskedTextBox37.Text);
+                cf[128] = Int32.Parse(maskedTextBox38.Text);
 
                 /* Подвеска */
                 cf[11] = Int32.Parse(maskedTextBox1.Text);
