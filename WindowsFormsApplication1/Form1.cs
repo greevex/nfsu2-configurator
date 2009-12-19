@@ -24,6 +24,7 @@ namespace NFSU2CH
         private int currentCar;
         private bool authbuttonclick = false;
         OpenFileDialog openFileDialog2 = new OpenFileDialog();
+        ResourceManager resourceManager = new ResourceManager(typeof(Form1));
 
         public Form1()
         {
@@ -63,7 +64,7 @@ namespace NFSU2CH
             string file = this.textBox26.Text;
             if (file == "")
             {
-                MessageBox.Show("Не выбран файл настроек! Выберите файл, нажав пункт Меню -> Открыть файл настроек...!");
+                MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
             this.s = p.parse(file, Properti.map, pos);
@@ -264,7 +265,7 @@ namespace NFSU2CH
         {
             if (s == null)
             {
-                MessageBox.Show("Сохранять нечего!");
+                MessageBox.Show(resourceManager.GetString("nothingToSave"));
                 return;
             }
 
@@ -281,9 +282,12 @@ namespace NFSU2CH
         private void saveT()
         {
             if (this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar) == true)
-                MessageBox.Show("Изменения сохранены!");
+            {
+                MessageBox.Show(resourceManager.GetString("saveOk"));
+            }
             else
-                MessageBox.Show("Во время сохранения произошла ошибка. Изменения не сохранены!");
+                MessageBox.Show(resourceManager.GetString("saveError"));
+            this.Invoke((MethodInvoker)(() => this.Activate()));
         }
 
         void prgs()
@@ -401,7 +405,6 @@ namespace NFSU2CH
             //
             fa.Show();
             fa.Activate();
-            
         }
 
         void fa_FormClosed(object sender, FormClosedEventArgs e)
@@ -421,7 +424,7 @@ namespace NFSU2CH
             }
             else
             {
-                fa.label3.Text = "Ошибка авторизации!";
+                fa.label3.Text = resourceManager.GetString("authError");
             }
         }
 
@@ -445,25 +448,25 @@ namespace NFSU2CH
                         FileInfo file2 = new FileInfo(Directory.GetParent(filename) + "\\GLOBALB.BUN");
                         if (file2.Length < 8008064)
                         {
-                            System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
+                            System.Windows.Forms.MessageBox.Show(resourceManager.GetString("badGlobalb"));
                         }
                         else
                         {
                             File.Delete(filename);
                             File.Copy(Directory.GetParent(filename) + "\\GLOBALB.BUN", filename);
-                            System.Windows.Forms.MessageBox.Show("У вас был неверный файл GlobalB.lzc!\nМы исправили его, теперь можно пользоваться программой! =)");
+                            System.Windows.Forms.MessageBox.Show(resourceManager.GetString("globalbRepaired"));
                         }
                     }
-                    else System.Windows.Forms.MessageBox.Show("Неверный GlobalB.lzc!\nНевозможно починить, попробуйте поспрашивать у друзей или поискать в интернете.\nОригинальный файл должен весить больше 7 мб!");
+                    else System.Windows.Forms.MessageBox.Show(resourceManager.GetString("badGlobalb"));
                 }
-                else System.Windows.Forms.MessageBox.Show("Файл успешно загружен!");
+                else System.Windows.Forms.MessageBox.Show(resourceManager.GetString("fileLoadOk"));
             }
         }
 
         private void openNewFileAndCheckIt()
         {
             openFileDialog1.FileName = "GlobalB.lzc";
-            openFileDialog1.Filter = "Файл настроек NFSU2|GlobalB.lzc";
+            openFileDialog1.Filter = resourceManager.GetString("openFileDialogFilter");
             openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog1.ShowDialog();
             checkFile(openFileDialog1.FileName);
@@ -479,8 +482,8 @@ namespace NFSU2CH
             try
             {
                 textBox26.Text = openFileDialog1.FileName.ToString();
-                label54.Text = "Файл ОК! Выберите машину!";
-                comboBox1.Text = "Теперь выберите машину...";
+                label54.Text = resourceManager.GetString("loadedThenSelectCar");
+                comboBox1.Text = resourceManager.GetString("selectCar");
             }
             catch (Exception ex)
             {
@@ -530,7 +533,7 @@ namespace NFSU2CH
             string file = this.textBox26.Text;
             if (file == "")
             {
-                MessageBox.Show("Не выбран файл настроек! Выберите файл, нажав пункт Меню -> Открыть файл настроек...!");
+                MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
             this.minis = minip.parse(file, Properti.minimap, Properti.getPosition(this.comboBox2.Text));
@@ -570,10 +573,9 @@ namespace NFSU2CH
             saveFileDialog1.AddExtension = true;
             saveFileDialog1.DefaultExt = "car";
             saveFileDialog1.FileName = comboBox1.Text + "_" +
-                DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year + "_" +
-                DateTime.Now.Hour + "." + DateTime.Now.Minute;
-            saveFileDialog1.Filter = "Файлы машин nfsu2ch (*.car)|*.car";
-            saveFileDialog1.Title = "Сохранение настроек машины...";
+                DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year;
+            saveFileDialog1.Filter = resourceManager.GetString("saveFileDialogFilter");
+            saveFileDialog1.Title = resourceManager.GetString("saveFileDialogTitle");
             saveFileDialog1.FileOk += new CancelEventHandler(saveFileDialog1_FileOk);
             saveFileDialog1.ShowDialog();
         }
@@ -584,7 +586,7 @@ namespace NFSU2CH
             {
                 Parser pp = new Parser();
                 pp.saveConfig(saveFileDialog1.FileName, getUserConfigForCurrentCar());
-                MessageBox.Show("Файл " + saveFileDialog1.FileName + " сохранен!");
+                MessageBox.Show(resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
             catch (Exception ex)
             {
@@ -782,23 +784,10 @@ namespace NFSU2CH
 
         private void изФайлаНастроекcarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openFileDialog2.Title = "Загрузить настройку для текущей машины...";
-            openFileDialog2.Filter = "Файлы машин nfsu2ch (*.car)|*.car";
-            //openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
+            openFileDialog2.Title = resourceManager.GetString("carFileOpen");
+            openFileDialog2.Filter = resourceManager.GetString("saveFileDialogFilter");
+            openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
             openFileDialog2.ShowDialog();
-            int key = 0;
-            Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
-            while (true)
-            {
-                int rb = fr.ReadByte();
-                if (rb == -1)
-                    break;
-                loaded[key] = rb;
-                key++;
-            }
-            if (loadCfg(loaded))
-                MessageBox.Show("Файл " + openFileDialog2.FileName + " успешно загружен!");
-            else MessageBox.Show("Ошибка при загрузке файла " + openFileDialog2.FileName + " !");
         }
 
         private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
@@ -813,9 +802,8 @@ namespace NFSU2CH
                 loaded[key] = rb;
                 key++;
             }
-            if (loadCfg(loaded))
-                MessageBox.Show("Файл " + openFileDialog2.FileName + " успешно загружен!");
-            else MessageBox.Show("Ошибка при загрузке файла " + openFileDialog2.FileName + " !");
+            if (!loadCfg(loaded))
+                MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !");
         }
 
         private void загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click(object sender, EventArgs e)
@@ -823,21 +811,9 @@ namespace NFSU2CH
 
         }
 
-        private void label54_Click(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
-            ResourceManager LocRM = new ResourceManager("NFSU2CH.WinFormStrings", typeof(Form1).Assembly);
-        }
-
-        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
-            ResourceManager LocRM = new ResourceManager("NFSU2CH.WinFormStrings", typeof(Form1).Assembly);
         }
     }
 }

@@ -122,87 +122,66 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Engine RPM</value>
+    <value>Сохранить</value>
   </data>
   <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 91</value>
-  </data>
   <data name="label52.Text" xml:space="preserve">
-    <value>Here you can adjust engine's rpm's,
-having specified in what rpm's there
-will be a switching of gears,
-what rpm's of the engine
-should be on neutral gear,
-and the maximum gears of the
-engine for the current car.</value>
+    <value>Здесь можно настроить на каких
+оборотах будет происходить
+переключение, какие обороты
+должны быть на нейтралке, при
+отпущенной педали газа, а так же
+максимальные обороты двигателя
+для текущей машины.</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Neutral</value>
+    <value>Нейтралка</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 13</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Best gear up</value>
+    <value>Переключение</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 13</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Maximum</value>
+    <value>Максимально</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Ecu</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Обороты</value>
   </data>
   <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>533, 26</value>
-  </data>
   <data name="label49.Text" xml:space="preserve">
-    <value>Change the adjustment ECU with the help ScrollBars (TrackBars). The value choice over ScrollBars (TrackBars)
-allows to increase strongly capacity of giving of fuel that is not recommended so u can make your car stronger.</value>
+    <value>Скроллами (ползунками) изменяете тонкую настройку ЭКУ.
+А выбор над ползунком позволяет сильно увеличить мощность подачи топлива, что не рекомендуется.</value>
   </data>
   <data name="trackBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Turbo</value>
-  </data>
-  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 13</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Эку</value>
   </data>
   <data name="label50.Text" xml:space="preserve">
-    <value>Change the adjustment Turbo like ECU. It's simply, like in Dyno tuning.</value>
+    <value>Настройка ТУРБО аналогична настройке ЭКУ.
+Для более подробной информации обращайтесь к справке, которой пока что нет в программе %)))</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Турбо</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>651, 13</value>
-  </data>
   <data name="label19.Text" xml:space="preserve">
-    <value>First you need to select file GlobalB.lzc from GLOBALB folder in the NFSU2 directory, then u can select car and change car performance.</value>
+    <value>Выберите файл настроек машин, затем выберите машину, которую желаете отредактировать. Как закончите редактирование машины сохраните изменения.</value>
   </data>
   <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -219,64 +198,88 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
   <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Engine</value>
+  <data name="comboBox1.AutoCompleteCustomSource" xml:space="preserve">
+    <value>фвафывафыва</value>
   </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>ATTENTION!</value>
+  <data name="comboBox1.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>фывафыва</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>вапр</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>вапывапывпы</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>впывпывп</value>
+  </data>
+  <data name="comboBox1.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>ывапывап</value>
   </data>
   <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 78</value>
-  </data>
   <data name="label53.Text" xml:space="preserve">
-    <value>The fields intended for manual editing,
-that is that field where you can enter
-values, should contain
-ONLY NUMBERS FROM 0 TO 255.
-Letters and other signs will be ignored.
-As well as it is more than number 255.</value>
+    <value>Поля, предназначенные для
+ручного редактирования, то есть
+те поля, где вы можете сами
+вписывать значения, должны
+содержать ТОЛЬКО ЧИСЛА
+ОТ 0 ДО 255.
+Буквы и другие знаки будут
+игнорироваться. Так же как и
+числа больше 255.</value>
   </data>
-  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 18</value>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
   </data>
   <data name="label48.Text" xml:space="preserve">
-    <value>Engine, ECU and Turbo</value>
+    <value>ОБОРОТЫ ДВИГАТЕЛЯ, ЭКУ И ТУРБО</value>
   </data>
   <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Handling</value>
-  </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>Handling</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Движок</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 52</value>
-  </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>It is possible to "take" handling
-from any other car from game,
-for this purpose choose it
-from the list and press to "Apply"</value>
+    <value>Можно "взять" управление
+от любой другой машины из игры,
+для этого выберите ее из списка
+и нажмите "Применить"</value>
   </data>
   <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button4.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Сбросить</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource" xml:space="preserve">
+    <value>фвафывафыва</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource1" xml:space="preserve">
+    <value>фывафыва</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource2" xml:space="preserve">
+    <value>вапр</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>вапывапывпы</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>впывпывп</value>
+  </data>
+  <data name="comboBox2.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>ывапывап</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
-    <value>Load</value>
+    <value>Применить</value>
   </data>
   <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -284,36 +287,39 @@ from the list and press to "Apply"</value>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 52</value>
-  </data>
   <data name="label16.Text" xml:space="preserve">
-    <value>In the next versions of the program to regulate values it will not be necessary manually.
-There will be a simple adjustment with help TrackBars and/or pictures, like in game.
-If you have any ideas for this program, write to us,
-our contacts and e-mail you will find in the "Help" section.</value>
+    <value>Позже регулировать, изменяя значения вручную не придется,
+в будущей версии программы планируется сделать простую регулироваку
+ползунками для всего, что есть. Если у вас имеются какие-либо предложения,
+пишите нам, контакты найдете в разделе "Помощь".</value>
   </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>Wheels Drive</value>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Управление</value>
   </data>
   <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 104</value>
-  </data>
   <data name="label51.Text" xml:space="preserve">
-    <value>The car drive defines a leading axis
-at the current car, at a full upgrade (3 level).
-For example, if it is the drag-car
-it is necessary to put a back drive(RWD),
-for drift, back(RWD) or full(4WD).
-Though in Underground2 drift
-on a forward drive(FWD) goes well,
-though in a real life it is silly and it is almost unreal.</value>
+    <value>Ведущий привод определяет ведущую ось
+у текущей машины, при полном апгрейде
+(3 уровень). Например, если машина создается
+для драга, то следует ставить задний привод,
+если же для дрифта, то так же задний,
+либо полный. Хотя в андерграунде 2 дрифт на
+переднем приводе идет хорошо, несмотря, что
+в реальной жизни это глупо и почти нереально.</value>
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Suspension</value>
+  <data name="comboBox25.Items" xml:space="preserve">
+    <value>Передний привод</value>
+  </data>
+  <data name="comboBox25.Items1" xml:space="preserve">
+    <value>Полный привод</value>
+  </data>
+  <data name="comboBox25.Items2" xml:space="preserve">
+    <value>Задний привод</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Ведущий привод</value>
   </data>
   <data name="trackBar26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -321,163 +327,103 @@ though in a real life it is silly and it is almost unreal.</value>
   <data name="trackBar25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 104</value>
-  </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>The car suspension bracket very
-strongly influences on handling.
-Too high suspension bracket
-will disturb on turns, but any
-noob player can do wheelie :D
-Do not put too low suspension
-bracket, differently the car
-will disappear!</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 13</value>
+    <value>Изменения высоты подвески
+очень сильно влияет на
+управление машиной. Слишком
+высокая подвеска будет мешать
+при поворотах, за то любой нуб
+встанет на козла в драге, или
+даже в простой гонке.
+Сильное различие высот передней
+и задней подвесок приведет к
+поломке вида машины в меню,
+но в игре всё будет так,
+как вы задумали!</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Rear</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 13</value>
+    <value>Задняя</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Front</value>
-  </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
+    <value>Передняя</value>
   </data>
   <data name="label64.Text" xml:space="preserve">
-    <value>Higher</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
+    <value>Выше</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Higher</value>
-  </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>Выше</value>
   </data>
   <data name="label65.Text" xml:space="preserve">
-    <value>Lower</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>Ниже</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Lower</value>
+    <value>Ниже</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Wheels settings</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Высота подвески</value>
   </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>Wheels</value>
-  </data>
-  <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 267</value>
-  </data>
-  <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 78</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Управление</value>
   </data>
   <data name="label61.Text" xml:space="preserve">
-    <value>Wheels width influences
- coupling with road.
-Wheels position influences
- handling and stability at driving.
-Try to avoid too wide
- and a narrow position.</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 26</value>
+    <value>Ширина колес влияет на сцепление
+с дорогой, а расположение колес на
+управление и стабильность при вождении.
+Старайтесь избегать слишком широкого
+и узкого расположения, для хорошего
+управления.</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
-    <value>Front wheels
-position</value>
-  </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>Расположение
+предних колес</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
-    <value>Wider</value>
-  </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>Шире</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Wider</value>
-  </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>Шире</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
-    <value>Wider</value>
-  </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>Шире</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Narrower</value>
-  </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>Уже</value>
   </data>
   <data name="label32.Text" xml:space="preserve">
-    <value>Narrower</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>Уже</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>Narrower</value>
-  </data>
-  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 26</value>
+    <value>Уже</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>Rear wheels
-position</value>
-  </data>
-  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>Расположение
+задних колес</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Narrower</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+    <value>Уже</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>Wider</value>
-  </data>
-  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 26</value>
+    <value>Шире</value>
   </data>
   <data name="label37.Text" xml:space="preserve">
-    <value>Rear wheels
-Width
-</value>
-  </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 26</value>
+    <value>Ширина
+задних колес</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
-    <value>Forward wheels
-Width</value>
+    <value>Ширина
+передних колес</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Bubkes*</value>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Колеса</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Расстановка колес</value>
   </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 13</value>
-  </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>* this tab is obligatory, though it is useless :D</value>
+    <value>* вкладка обязательна, хоть и бесполезна :D</value>
   </data>
   <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -485,53 +431,57 @@ Width</value>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
-  </data>
-  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
-    <value>Menu</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Шиш*</value>
   </data>
   <data name="открытьФайлНатсроекToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open file...</value>
-  </data>
-  <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 22</value>
+    <value>Открыть файл настроек...</value>
   </data>
   <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open settings for current car...</value>
+    <value>Загрузить настройку для текущей машины</value>
   </data>
-  <data name="помщьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 20</value>
+  <data name="сохранитьНастройкуТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить настройку текущей машины</value>
+  </data>
+  <data name="сменитьПользователяToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сменить пользователя</value>
+  </data>
+  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе...</value>
+  </data>
+  <data name="проверитьОбновленияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Проверить обновления</value>
+  </data>
+  <data name="создателиИКонтактыToolStripMenuItem.Text" xml:space="preserve">
+    <value>Создатели и контакты</value>
+  </data>
+  <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Справка</value>
   </data>
   <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="languageЯзыкToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 20</value>
+    <value>Помощь</value>
   </data>
   <data name="languageЯзыкToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language \ Язык</value>
+    <value>Language\Язык</value>
   </data>
   <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
-  </data>
   <data name="label54.Text" xml:space="preserve">
-    <value>Select file GlobalB.lzc first!</value>
-  </data>
-  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>Не выбран файл настроек!</value>
   </data>
   <data name="label55.Text" xml:space="preserve">
-    <value>Status:</value>
+    <value>Статус:</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 13</value>
+    <value>626, 13</value>
   </data>
   <data name="label56.Text" xml:space="preserve">
-    <value>Attention! If you select another car without save settings you will lost all your changes!</value>
+    <value>Внимание! Если выбрать другую машину из списка, не сохранив сделанные изменения, все изменения будут потеряны!!</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -688,5 +638,65 @@ Width</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="authError" xml:space="preserve">
+    <value>Ошибка!</value>
+  </data>
+  <data name="badGlobalb" xml:space="preserve">
+    <value>Неверный GlobalB.lzc! Невозможно починить, попробуйте поспрашивать у друзей или поискать в интернете. Оригинальный файл должен весить больше 7 мб!</value>
+  </data>
+  <data name="carFileOpen" xml:space="preserve">
+    <value>Загрузить настройку для текущей машины...</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="fileLoadError" xml:space="preserve">
+    <value>Ошибка при загрузке файла</value>
+  </data>
+  <data name="fileLoadOk" xml:space="preserve">
+    <value>Файл успешно загружен!</value>
+  </data>
+  <data name="fileNotSelected" xml:space="preserve">
+    <value>Не выбран файл настроек! Выберите файл, нажав пункт Меню -&gt; Открыть файл настроек...!</value>
+  </data>
+  <data name="globalbRepaired" xml:space="preserve">
+    <value>У вас был неверный файл GlobalB.lzc! Мы исправили его, теперь можно пользоваться программой! =)</value>
+  </data>
+  <data name="loaded" xml:space="preserve">
+    <value>успешно загружен!</value>
+  </data>
+  <data name="loadedThenSelectCar" xml:space="preserve">
+    <value>Теперь выберите машину.</value>
+  </data>
+  <data name="nothingToSave" xml:space="preserve">
+    <value>Нечего сохранять!</value>
+  </data>
+  <data name="openFileDialogFilter" xml:space="preserve">
+    <value>NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc</value>
+  </data>
+  <data name="saved" xml:space="preserve">
+    <value>сохранен!</value>
+  </data>
+  <data name="saveError" xml:space="preserve">
+    <value>Ошибка сохранения файла!</value>
+  </data>
+  <data name="saveFileDialogFilter" xml:space="preserve">
+    <value>Машины NFSU2CH (*.car)|*.car</value>
+  </data>
+  <data name="saveFileDialogTitle" xml:space="preserve">
+    <value>Сохранить настройки машины...</value>
+  </data>
+  <data name="saveOk" xml:space="preserve">
+    <value>Файл сохранен!</value>
+  </data>
+  <data name="selectCar" xml:space="preserve">
+    <value>Выберите машину..</value>
+  </data>
+  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
   </data>
 </root>
