@@ -67,11 +67,9 @@ namespace NFSU2CH
                 MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
-            this.s = p.parse(file, Properti.map, pos);
-            this.privod = p.parse(file, p.mapCreate(992, 1055), pos);
-            this.privodfull = p.parse(file, p.mapCreate(960, 1119), pos);
+            this.s = p.parse(file, pos);
 
-            if (this.s == null || this.privod == null || this.privodfull == null)
+            if (this.s == null)
                 return;
             loadCfg(s);
             // Теперь можно сохранять и загружать
