@@ -104,45 +104,14 @@ namespace NFSU2CH
                 //// Положение колес (вперед-назад)
                 //Передние
                 trackBar1.Value = cfLoad[3];
-                label13.Text = cfLoad[3].ToString();
-
-                maskedTextBox6.Text = cfLoad[4].ToString();
-                maskedTextBox9.Text = cfLoad[7].ToString();
-                maskedTextBox10.Text = cfLoad[8].ToString();
-                maskedTextBox13.Text = cfLoad[23].ToString();
-                maskedTextBox14.Text = cfLoad[24].ToString();
-                maskedTextBox17.Text = cfLoad[15].ToString();
-                maskedTextBox18.Text = cfLoad[16].ToString();
-
-                maskedTextBox19.Text = cfLoad[35].ToString();
-                maskedTextBox20.Text = cfLoad[36].ToString();
-                maskedTextBox21.Text = cfLoad[39].ToString();
-                maskedTextBox22.Text = cfLoad[40].ToString();
-                maskedTextBox23.Text = cfLoad[55].ToString();
-                maskedTextBox24.Text = cfLoad[56].ToString();
-                maskedTextBox25.Text = cfLoad[47].ToString();
-                maskedTextBox26.Text = cfLoad[48].ToString();
-
-                //Задние
                 trackBar2.Value = cfLoad[67];
+                trackBar27.Value = cfLoad[47] = cfLoad[15];
+                label72.Text = trackBar27.Value.ToString();
+                trackBar28.Value = cfLoad[111] = cfLoad[79];
+                label70.Text = trackBar28.Value.ToString();
+
+                label13.Text = cfLoad[3].ToString();
                 label14.Text = cfLoad[67].ToString();
-
-                maskedTextBox28.Text = cfLoad[68].ToString();
-                maskedTextBox29.Text = cfLoad[71].ToString();
-                maskedTextBox30.Text = cfLoad[72].ToString();
-                maskedTextBox31.Text = cfLoad[87].ToString();
-                maskedTextBox32.Text = cfLoad[88].ToString();
-                maskedTextBox33.Text = cfLoad[79].ToString();
-                maskedTextBox34.Text = cfLoad[80].ToString();
-
-                maskedTextBox35.Text = cfLoad[99].ToString();
-                maskedTextBox36.Text = cfLoad[100].ToString();
-                maskedTextBox37.Text = cfLoad[103].ToString();
-                maskedTextBox38.Text = cfLoad[104].ToString();
-                maskedTextBox39.Text = cfLoad[119].ToString();
-                maskedTextBox40.Text = cfLoad[120].ToString();
-                maskedTextBox41.Text = cfLoad[111].ToString();
-                maskedTextBox42.Text = cfLoad[112].ToString();
 
                 /* Обороты */
 
@@ -679,42 +648,12 @@ namespace NFSU2CH
 
                 cf[3] = trackBar1.Value;
                 cf[35] = cf[3];
-
-                cf[4] = Int32.Parse(maskedTextBox6.Text);
-
-                cf[8] = Int32.Parse(maskedTextBox10.Text);
-                cf[23] = Int32.Parse(maskedTextBox13.Text);
-                cf[24] = Int32.Parse(maskedTextBox14.Text);
-                cf[15] = Int32.Parse(maskedTextBox17.Text);
-                cf[16] = Int32.Parse(maskedTextBox18.Text);
-
-                cf[36] = Int32.Parse(maskedTextBox20.Text);
-
-                cf[40] = Int32.Parse(maskedTextBox22.Text);
-                cf[55] = Int32.Parse(maskedTextBox23.Text);
-                cf[56] = Int32.Parse(maskedTextBox24.Text);
-                cf[47] = Int32.Parse(maskedTextBox25.Text);
-                cf[48] = Int32.Parse(maskedTextBox26.Text);
-
                 cf[67] = trackBar2.Value;
                 cf[99] = cf[67];
-
-                cf[68] = Int32.Parse(maskedTextBox28.Text);
-
-                cf[72] = Int32.Parse(maskedTextBox30.Text);
-                cf[87] = Int32.Parse(maskedTextBox31.Text);
-                cf[88] = Int32.Parse(maskedTextBox32.Text);
-                cf[79] = Int32.Parse(maskedTextBox33.Text);
-                cf[80] = Int32.Parse(maskedTextBox34.Text);
-
-                cf[100] = Int32.Parse(maskedTextBox36.Text);
-
-                cf[104] = Int32.Parse(maskedTextBox38.Text);
-                cf[119] = Int32.Parse(maskedTextBox39.Text);
-                cf[120] = Int32.Parse(maskedTextBox40.Text);
-                cf[111] = Int32.Parse(maskedTextBox41.Text);
-                cf[112] = Int32.Parse(maskedTextBox42.Text);
-
+                cf[15] = trackBar27.Value;
+                cf[47] = trackBar27.Value;
+                cf[79] = trackBar28.Value;
+                cf[111] = trackBar28.Value;
 
                 /* Подвеска */
                 cf[11] = Int32.Parse(maskedTextBox1.Text);
