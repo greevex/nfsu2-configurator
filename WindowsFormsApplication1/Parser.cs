@@ -19,39 +19,26 @@ namespace NFSU2CH
         {
         }
 
-        public int[] parse(string filename, int[] map, int startblock)
+        public int[] parse(string filename, int startblock)
         {
             try
             {
                 //открываем поток
                 Stream stream;
                 stream = new StreamReader(filename).BaseStream;
-                    stream.Position = startblock;
-                    int[] result = new int[map.Length];
-                    int i = 0;
-                    int key = 0;
-
-                    while (i < (map[map.Length - 1] + 1))
-                    {
-                        if (i == map[key])
-                        {
-                            int s = stream.ReadByte();
-                            if (s == -1)
-                            {
-                                stream.Close();
-                                return null;
-                            }
-                            result[key] = s;
-                            key++;
-                        }
-                        else
-                        {
-                            stream.ReadByte();
-                        }
-                        i++;
-                    }
-                    stream.Close();
-                    return result;
+                stream.Position = startblock;
+                byte[] result = new byte[2192];
+                int[] r = new int[2192];
+                stream.Read(result, 0, result.Length);
+                stream.Close();
+                int i = 0;
+                foreach (byte b in result)
+                {
+                    r[i] = Convert.ToInt32(b);
+                }
+                stream = null;
+                result = null;
+                return r;
             }
             catch (Exception e)
             {
