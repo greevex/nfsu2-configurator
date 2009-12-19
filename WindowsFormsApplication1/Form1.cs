@@ -101,6 +101,27 @@ namespace NFSU2CH
                 trackBar6.Value = cfLoad[83];
                 label36.Text = trackBar6.Value.ToString();
 
+                //// Положение колес (вперед-назад)
+                //Передние
+                maskedTextBox5.Text = "";
+                maskedTextBox6.Text = "";
+                maskedTextBox9.Text = "";
+                maskedTextBox10.Text = "";
+                maskedTextBox13.Text = "";
+                maskedTextBox14.Text = "";
+                maskedTextBox17.Text = "";
+                maskedTextBox18.Text = "";
+                maskedTextBox19.Text = "";
+                maskedTextBox20.Text = "";
+                maskedTextBox21.Text = "";
+                maskedTextBox22.Text = "";
+                maskedTextBox23.Text = "";
+                maskedTextBox24.Text = "";
+                maskedTextBox25.Text = "";
+                maskedTextBox26.Text = "";
+
+                //Задние
+
 
 
                 /* Обороты */
