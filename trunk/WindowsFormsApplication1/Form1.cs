@@ -103,7 +103,9 @@ namespace NFSU2CH
 
                 //// Положение колес (вперед-назад)
                 //Передние
-                maskedTextBox5.Text = cfLoad[3].ToString();
+                trackBar1.Value = cfLoad[3];
+                label13.Text = cfLoad[3].ToString();
+
                 maskedTextBox6.Text = cfLoad[4].ToString();
                 maskedTextBox9.Text = cfLoad[7].ToString();
                 maskedTextBox10.Text = cfLoad[8].ToString();
@@ -122,8 +124,9 @@ namespace NFSU2CH
                 maskedTextBox26.Text = cfLoad[48].ToString();
 
                 //Задние
+                trackBar2.Value = cfLoad[67];
+                label14.Text = cfLoad[67].ToString();
 
-                maskedTextBox27.Text = cfLoad[67].ToString();
                 maskedTextBox28.Text = cfLoad[68].ToString();
                 maskedTextBox29.Text = cfLoad[71].ToString();
                 maskedTextBox30.Text = cfLoad[72].ToString();
@@ -297,6 +300,16 @@ namespace NFSU2CH
         private void trackBar3_Scroll_1(object sender, EventArgs e)
         {
             label12.Text = trackBar3.Value.ToString();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label13.Text = trackBar1.Value.ToString();
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            label14.Text = trackBar1.Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -664,36 +677,38 @@ namespace NFSU2CH
 
                 /* Пыщ! */
 
-                cf[3] = Int32.Parse(maskedTextBox5.Text);
+                cf[3] = trackBar1.Value;
+                cf[35] = cf[3];
+
                 cf[4] = Int32.Parse(maskedTextBox6.Text);
-                cf[7] = Int32.Parse(maskedTextBox9.Text);
+
                 cf[8] = Int32.Parse(maskedTextBox10.Text);
                 cf[23] = Int32.Parse(maskedTextBox13.Text);
                 cf[24] = Int32.Parse(maskedTextBox14.Text);
                 cf[15] = Int32.Parse(maskedTextBox17.Text);
                 cf[16] = Int32.Parse(maskedTextBox18.Text);
 
-                cf[35] = Int32.Parse(maskedTextBox19.Text);
                 cf[36] = Int32.Parse(maskedTextBox20.Text);
-                cf[39] = Int32.Parse(maskedTextBox21.Text);
+
                 cf[40] = Int32.Parse(maskedTextBox22.Text);
                 cf[55] = Int32.Parse(maskedTextBox23.Text);
                 cf[56] = Int32.Parse(maskedTextBox24.Text);
                 cf[47] = Int32.Parse(maskedTextBox25.Text);
                 cf[48] = Int32.Parse(maskedTextBox26.Text);
 
-                cf[67] = Int32.Parse(maskedTextBox27.Text);
+                cf[67] = trackBar2.Value;
+                cf[99] = cf[67];
+
                 cf[68] = Int32.Parse(maskedTextBox28.Text);
-                cf[71] = Int32.Parse(maskedTextBox29.Text);
+
                 cf[72] = Int32.Parse(maskedTextBox30.Text);
                 cf[87] = Int32.Parse(maskedTextBox31.Text);
                 cf[88] = Int32.Parse(maskedTextBox32.Text);
                 cf[79] = Int32.Parse(maskedTextBox33.Text);
                 cf[80] = Int32.Parse(maskedTextBox34.Text);
 
-                cf[99] = Int32.Parse(maskedTextBox35.Text);
                 cf[100] = Int32.Parse(maskedTextBox36.Text);
-                cf[103] = Int32.Parse(maskedTextBox37.Text);
+
                 cf[104] = Int32.Parse(maskedTextBox38.Text);
                 cf[119] = Int32.Parse(maskedTextBox39.Text);
                 cf[120] = Int32.Parse(maskedTextBox40.Text);
@@ -717,9 +732,24 @@ namespace NFSU2CH
                 //Передние
                 cf[27] = trackBar3.Value;
                 cf[59] = cf[27];
+                int cf_temp;
+                if (cf[27] >= 30)
+                {
+                    cf_temp = cf[27] - 30;
+                }
+                else cf_temp = cf[27];
+                cf[7] = cf_temp;
+                cf[39] = cf_temp;
                 //Задние
                 cf[91] = trackBar5.Value;
                 cf[123] = cf[91];
+                if (cf[91] >= 30)
+                {
+                    cf_temp = cf[91] - 30;
+                }
+                else cf_temp = cf[91];
+                cf[71] = cf_temp;
+                cf[103] = cf_temp;
 
                 //// Ширина колеса
                 //Передние
@@ -891,6 +921,16 @@ namespace NFSU2CH
         private void Form1_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void trackBar27_Scroll(object sender, EventArgs e)
+        {
+            label72.Text = trackBar27.Value.ToString(); ;
+        }
+
+        private void trackBar28_Scroll(object sender, EventArgs e)
+        {
+            label70.Text = trackBar28.Value.ToString();
         }
     }
 }

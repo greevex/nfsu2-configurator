@@ -163,31 +163,83 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label61 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.label74 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.trackBar5 = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.label31 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.trackBar3 = new System.Windows.Forms.TrackBar();
             this.label32 = new System.Windows.Forms.Label();
+            this.trackBar28 = new System.Windows.Forms.TrackBar();
             this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.label73 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.trackBar27 = new System.Windows.Forms.TrackBar();
             this.trackBar4 = new System.Windows.Forms.TrackBar();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox42 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox34 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox26 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox41 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox33 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox25 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox40 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox32 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox24 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox39 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox31 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox23 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox38 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox30 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox22 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox37 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox29 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox21 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox36 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox28 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox35 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьФайлНатсроекToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -208,38 +260,6 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox21 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox22 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox23 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox24 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox25 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox26 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox27 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox28 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox29 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox30 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox31 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox32 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox33 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox34 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox35 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox36 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox37 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox38 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox39 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox40 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox41 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox42 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -272,9 +292,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar25)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1287,39 +1311,77 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.label61);
+            this.groupBox8.Controls.Add(this.label67);
             this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.label62);
+            this.groupBox8.Controls.Add(this.label75);
             this.groupBox8.Controls.Add(this.label30);
             this.groupBox8.Controls.Add(this.label27);
+            this.groupBox8.Controls.Add(this.trackBar2);
+            this.groupBox8.Controls.Add(this.label74);
             this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.trackBar5);
+            this.groupBox8.Controls.Add(this.trackBar1);
             this.groupBox8.Controls.Add(this.label31);
+            this.groupBox8.Controls.Add(this.label23);
             this.groupBox8.Controls.Add(this.trackBar3);
             this.groupBox8.Controls.Add(this.label32);
+            this.groupBox8.Controls.Add(this.trackBar28);
             this.groupBox8.Controls.Add(this.trackBar6);
+            this.groupBox8.Controls.Add(this.label73);
             this.groupBox8.Controls.Add(this.label33);
+            this.groupBox8.Controls.Add(this.trackBar27);
             this.groupBox8.Controls.Add(this.trackBar4);
+            this.groupBox8.Controls.Add(this.label18);
+            this.groupBox8.Controls.Add(this.label72);
             this.groupBox8.Controls.Add(this.label10);
             this.groupBox8.Controls.Add(this.label24);
+            this.groupBox8.Controls.Add(this.label15);
+            this.groupBox8.Controls.Add(this.label71);
             this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.label14);
             this.groupBox8.Controls.Add(this.label26);
             this.groupBox8.Controls.Add(this.label29);
+            this.groupBox8.Controls.Add(this.label70);
             this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label13);
+            this.groupBox8.Controls.Add(this.label69);
             this.groupBox8.Controls.Add(this.label37);
             this.groupBox8.Controls.Add(this.label12);
+            this.groupBox8.Controls.Add(this.label68);
             this.groupBox8.Controls.Add(this.label28);
             resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
+            this.groupBox8.Enter += new System.EventHandler(this.groupBox8_Enter);
             // 
             // label61
             // 
             resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
             // 
+            // label67
+            // 
+            resources.ApplyResources(this.label67, "label67");
+            this.label67.ForeColor = System.Drawing.Color.Maroon;
+            this.label67.Name = "label67";
+            // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.Maroon;
             this.label17.Name = "label17";
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.Name = "label62";
+            // 
+            // label75
+            // 
+            resources.ApplyResources(this.label75, "label75");
+            this.label75.Name = "label75";
             // 
             // label30
             // 
@@ -1331,10 +1393,27 @@
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
             // 
+            // trackBar2
+            // 
+            resources.ApplyResources(this.trackBar2, "trackBar2");
+            this.trackBar2.Maximum = 255;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // label74
+            // 
+            resources.ApplyResources(this.label74, "label74");
+            this.label74.Name = "label74";
+            // 
             // label34
             // 
             resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
             // 
             // trackBar5
             // 
@@ -1345,10 +1424,22 @@
             this.trackBar5.Value = 50;
             this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll_1);
             // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.Maximum = 255;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
             // label31
             // 
             resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
             // 
             // trackBar3
             // 
@@ -1364,6 +1455,13 @@
             resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
             // 
+            // trackBar28
+            // 
+            resources.ApplyResources(this.trackBar28, "trackBar28");
+            this.trackBar28.Maximum = 255;
+            this.trackBar28.Name = "trackBar28";
+            this.trackBar28.Scroll += new System.EventHandler(this.trackBar28_Scroll);
+            // 
             // trackBar6
             // 
             resources.ApplyResources(this.trackBar6, "trackBar6");
@@ -1371,10 +1469,22 @@
             this.trackBar6.Name = "trackBar6";
             this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll_1);
             // 
+            // label73
+            // 
+            resources.ApplyResources(this.label73, "label73");
+            this.label73.Name = "label73";
+            // 
             // label33
             // 
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
+            // 
+            // trackBar27
+            // 
+            resources.ApplyResources(this.trackBar27, "trackBar27");
+            this.trackBar27.Maximum = 255;
+            this.trackBar27.Name = "trackBar27";
+            this.trackBar27.Scroll += new System.EventHandler(this.trackBar27_Scroll);
             // 
             // trackBar4
             // 
@@ -1382,6 +1492,17 @@
             this.trackBar4.Maximum = 255;
             this.trackBar4.Name = "trackBar4";
             this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.ForeColor = System.Drawing.Color.Maroon;
+            this.label18.Name = "label18";
+            // 
+            // label72
+            // 
+            resources.ApplyResources(this.label72, "label72");
+            this.label72.Name = "label72";
             // 
             // label10
             // 
@@ -1391,12 +1512,28 @@
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
+            this.label24.ForeColor = System.Drawing.Color.Maroon;
             this.label24.Name = "label24";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label71
+            // 
+            resources.ApplyResources(this.label71, "label71");
+            this.label71.Name = "label71";
             // 
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
             // 
             // label26
             // 
@@ -1408,14 +1545,31 @@
             resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
             // 
+            // label70
+            // 
+            resources.ApplyResources(this.label70, "label70");
+            this.label70.Name = "label70";
+            // 
             // label36
             // 
             resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
             // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label69
+            // 
+            resources.ApplyResources(this.label69, "label69");
+            this.label69.ForeColor = System.Drawing.Color.Maroon;
+            this.label69.Name = "label69";
+            // 
             // label37
             // 
             resources.ApplyResources(this.label37, "label37");
+            this.label37.ForeColor = System.Drawing.Color.Maroon;
             this.label37.Name = "label37";
             // 
             // label12
@@ -1423,9 +1577,16 @@
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
             // 
+            // label68
+            // 
+            resources.ApplyResources(this.label68, "label68");
+            this.label68.ForeColor = System.Drawing.Color.Maroon;
+            this.label68.Name = "label68";
+            // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
+            this.label28.ForeColor = System.Drawing.Color.Maroon;
             this.label28.Name = "label28";
             // 
             // tabPage2
@@ -1492,6 +1653,166 @@
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox42
+            // 
+            resources.ApplyResources(this.maskedTextBox42, "maskedTextBox42");
+            this.maskedTextBox42.Name = "maskedTextBox42";
+            // 
+            // maskedTextBox34
+            // 
+            resources.ApplyResources(this.maskedTextBox34, "maskedTextBox34");
+            this.maskedTextBox34.Name = "maskedTextBox34";
+            // 
+            // maskedTextBox26
+            // 
+            resources.ApplyResources(this.maskedTextBox26, "maskedTextBox26");
+            this.maskedTextBox26.Name = "maskedTextBox26";
+            // 
+            // maskedTextBox18
+            // 
+            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
+            this.maskedTextBox18.Name = "maskedTextBox18";
+            // 
+            // maskedTextBox41
+            // 
+            resources.ApplyResources(this.maskedTextBox41, "maskedTextBox41");
+            this.maskedTextBox41.Name = "maskedTextBox41";
+            // 
+            // maskedTextBox33
+            // 
+            resources.ApplyResources(this.maskedTextBox33, "maskedTextBox33");
+            this.maskedTextBox33.Name = "maskedTextBox33";
+            // 
+            // maskedTextBox25
+            // 
+            resources.ApplyResources(this.maskedTextBox25, "maskedTextBox25");
+            this.maskedTextBox25.Name = "maskedTextBox25";
+            // 
+            // maskedTextBox17
+            // 
+            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
+            this.maskedTextBox17.Name = "maskedTextBox17";
+            // 
+            // maskedTextBox40
+            // 
+            resources.ApplyResources(this.maskedTextBox40, "maskedTextBox40");
+            this.maskedTextBox40.Name = "maskedTextBox40";
+            // 
+            // maskedTextBox32
+            // 
+            resources.ApplyResources(this.maskedTextBox32, "maskedTextBox32");
+            this.maskedTextBox32.Name = "maskedTextBox32";
+            // 
+            // maskedTextBox24
+            // 
+            resources.ApplyResources(this.maskedTextBox24, "maskedTextBox24");
+            this.maskedTextBox24.Name = "maskedTextBox24";
+            // 
+            // maskedTextBox14
+            // 
+            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
+            this.maskedTextBox14.Name = "maskedTextBox14";
+            // 
+            // maskedTextBox39
+            // 
+            resources.ApplyResources(this.maskedTextBox39, "maskedTextBox39");
+            this.maskedTextBox39.Name = "maskedTextBox39";
+            // 
+            // maskedTextBox31
+            // 
+            resources.ApplyResources(this.maskedTextBox31, "maskedTextBox31");
+            this.maskedTextBox31.Name = "maskedTextBox31";
+            // 
+            // maskedTextBox23
+            // 
+            resources.ApplyResources(this.maskedTextBox23, "maskedTextBox23");
+            this.maskedTextBox23.Name = "maskedTextBox23";
+            // 
+            // maskedTextBox13
+            // 
+            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
+            this.maskedTextBox13.Name = "maskedTextBox13";
+            // 
+            // maskedTextBox38
+            // 
+            resources.ApplyResources(this.maskedTextBox38, "maskedTextBox38");
+            this.maskedTextBox38.Name = "maskedTextBox38";
+            // 
+            // maskedTextBox30
+            // 
+            resources.ApplyResources(this.maskedTextBox30, "maskedTextBox30");
+            this.maskedTextBox30.Name = "maskedTextBox30";
+            // 
+            // maskedTextBox22
+            // 
+            resources.ApplyResources(this.maskedTextBox22, "maskedTextBox22");
+            this.maskedTextBox22.Name = "maskedTextBox22";
+            // 
+            // maskedTextBox10
+            // 
+            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
+            this.maskedTextBox10.Name = "maskedTextBox10";
+            // 
+            // maskedTextBox37
+            // 
+            resources.ApplyResources(this.maskedTextBox37, "maskedTextBox37");
+            this.maskedTextBox37.Name = "maskedTextBox37";
+            // 
+            // maskedTextBox29
+            // 
+            resources.ApplyResources(this.maskedTextBox29, "maskedTextBox29");
+            this.maskedTextBox29.Name = "maskedTextBox29";
+            // 
+            // maskedTextBox21
+            // 
+            resources.ApplyResources(this.maskedTextBox21, "maskedTextBox21");
+            this.maskedTextBox21.Name = "maskedTextBox21";
+            // 
+            // maskedTextBox9
+            // 
+            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
+            this.maskedTextBox9.Name = "maskedTextBox9";
+            // 
+            // maskedTextBox36
+            // 
+            resources.ApplyResources(this.maskedTextBox36, "maskedTextBox36");
+            this.maskedTextBox36.Name = "maskedTextBox36";
+            // 
+            // maskedTextBox28
+            // 
+            resources.ApplyResources(this.maskedTextBox28, "maskedTextBox28");
+            this.maskedTextBox28.Name = "maskedTextBox28";
+            // 
+            // maskedTextBox20
+            // 
+            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
+            this.maskedTextBox20.Name = "maskedTextBox20";
+            // 
+            // maskedTextBox6
+            // 
+            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            // 
+            // maskedTextBox35
+            // 
+            resources.ApplyResources(this.maskedTextBox35, "maskedTextBox35");
+            this.maskedTextBox35.Name = "maskedTextBox35";
+            // 
+            // maskedTextBox27
+            // 
+            resources.ApplyResources(this.maskedTextBox27, "maskedTextBox27");
+            this.maskedTextBox27.Name = "maskedTextBox27";
+            // 
+            // maskedTextBox19
+            // 
+            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
+            this.maskedTextBox19.Name = "maskedTextBox19";
+            // 
+            // maskedTextBox5
+            // 
+            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
+            this.maskedTextBox5.Name = "maskedTextBox5";
             // 
             // menuStrip1
             // 
@@ -1619,166 +1940,6 @@
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
             // 
-            // maskedTextBox5
-            // 
-            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            // 
-            // maskedTextBox6
-            // 
-            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            // 
-            // maskedTextBox9
-            // 
-            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            // 
-            // maskedTextBox10
-            // 
-            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
-            this.maskedTextBox10.Name = "maskedTextBox10";
-            // 
-            // maskedTextBox13
-            // 
-            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
-            this.maskedTextBox13.Name = "maskedTextBox13";
-            // 
-            // maskedTextBox14
-            // 
-            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
-            this.maskedTextBox14.Name = "maskedTextBox14";
-            // 
-            // maskedTextBox17
-            // 
-            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
-            this.maskedTextBox17.Name = "maskedTextBox17";
-            // 
-            // maskedTextBox18
-            // 
-            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
-            this.maskedTextBox18.Name = "maskedTextBox18";
-            // 
-            // maskedTextBox19
-            // 
-            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
-            this.maskedTextBox19.Name = "maskedTextBox19";
-            // 
-            // maskedTextBox20
-            // 
-            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
-            this.maskedTextBox20.Name = "maskedTextBox20";
-            // 
-            // maskedTextBox21
-            // 
-            resources.ApplyResources(this.maskedTextBox21, "maskedTextBox21");
-            this.maskedTextBox21.Name = "maskedTextBox21";
-            // 
-            // maskedTextBox22
-            // 
-            resources.ApplyResources(this.maskedTextBox22, "maskedTextBox22");
-            this.maskedTextBox22.Name = "maskedTextBox22";
-            // 
-            // maskedTextBox23
-            // 
-            resources.ApplyResources(this.maskedTextBox23, "maskedTextBox23");
-            this.maskedTextBox23.Name = "maskedTextBox23";
-            // 
-            // maskedTextBox24
-            // 
-            resources.ApplyResources(this.maskedTextBox24, "maskedTextBox24");
-            this.maskedTextBox24.Name = "maskedTextBox24";
-            // 
-            // maskedTextBox25
-            // 
-            resources.ApplyResources(this.maskedTextBox25, "maskedTextBox25");
-            this.maskedTextBox25.Name = "maskedTextBox25";
-            // 
-            // maskedTextBox26
-            // 
-            resources.ApplyResources(this.maskedTextBox26, "maskedTextBox26");
-            this.maskedTextBox26.Name = "maskedTextBox26";
-            // 
-            // maskedTextBox27
-            // 
-            resources.ApplyResources(this.maskedTextBox27, "maskedTextBox27");
-            this.maskedTextBox27.Name = "maskedTextBox27";
-            // 
-            // maskedTextBox28
-            // 
-            resources.ApplyResources(this.maskedTextBox28, "maskedTextBox28");
-            this.maskedTextBox28.Name = "maskedTextBox28";
-            // 
-            // maskedTextBox29
-            // 
-            resources.ApplyResources(this.maskedTextBox29, "maskedTextBox29");
-            this.maskedTextBox29.Name = "maskedTextBox29";
-            // 
-            // maskedTextBox30
-            // 
-            resources.ApplyResources(this.maskedTextBox30, "maskedTextBox30");
-            this.maskedTextBox30.Name = "maskedTextBox30";
-            // 
-            // maskedTextBox31
-            // 
-            resources.ApplyResources(this.maskedTextBox31, "maskedTextBox31");
-            this.maskedTextBox31.Name = "maskedTextBox31";
-            // 
-            // maskedTextBox32
-            // 
-            resources.ApplyResources(this.maskedTextBox32, "maskedTextBox32");
-            this.maskedTextBox32.Name = "maskedTextBox32";
-            // 
-            // maskedTextBox33
-            // 
-            resources.ApplyResources(this.maskedTextBox33, "maskedTextBox33");
-            this.maskedTextBox33.Name = "maskedTextBox33";
-            // 
-            // maskedTextBox34
-            // 
-            resources.ApplyResources(this.maskedTextBox34, "maskedTextBox34");
-            this.maskedTextBox34.Name = "maskedTextBox34";
-            // 
-            // maskedTextBox35
-            // 
-            resources.ApplyResources(this.maskedTextBox35, "maskedTextBox35");
-            this.maskedTextBox35.Name = "maskedTextBox35";
-            // 
-            // maskedTextBox36
-            // 
-            resources.ApplyResources(this.maskedTextBox36, "maskedTextBox36");
-            this.maskedTextBox36.Name = "maskedTextBox36";
-            // 
-            // maskedTextBox37
-            // 
-            resources.ApplyResources(this.maskedTextBox37, "maskedTextBox37");
-            this.maskedTextBox37.Name = "maskedTextBox37";
-            // 
-            // maskedTextBox38
-            // 
-            resources.ApplyResources(this.maskedTextBox38, "maskedTextBox38");
-            this.maskedTextBox38.Name = "maskedTextBox38";
-            // 
-            // maskedTextBox39
-            // 
-            resources.ApplyResources(this.maskedTextBox39, "maskedTextBox39");
-            this.maskedTextBox39.Name = "maskedTextBox39";
-            // 
-            // maskedTextBox40
-            // 
-            resources.ApplyResources(this.maskedTextBox40, "maskedTextBox40");
-            this.maskedTextBox40.Name = "maskedTextBox40";
-            // 
-            // maskedTextBox41
-            // 
-            resources.ApplyResources(this.maskedTextBox41, "maskedTextBox41");
-            this.maskedTextBox41.Name = "maskedTextBox41";
-            // 
-            // maskedTextBox42
-            // 
-            resources.ApplyResources(this.maskedTextBox42, "maskedTextBox42");
-            this.maskedTextBox42.Name = "maskedTextBox42";
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1845,9 +2006,13 @@
             this.tabPage4.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -2074,6 +2239,26 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox28;
         private System.Windows.Forms.MaskedTextBox maskedTextBox35;
         private System.Windows.Forms.MaskedTextBox maskedTextBox27;
+        public System.Windows.Forms.Label label67;
+        public System.Windows.Forms.Label label62;
+        public System.Windows.Forms.TrackBar trackBar2;
+        public System.Windows.Forms.Label label25;
+        public System.Windows.Forms.TrackBar trackBar1;
+        public System.Windows.Forms.Label label23;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label75;
+        public System.Windows.Forms.Label label74;
+        public System.Windows.Forms.TrackBar trackBar28;
+        public System.Windows.Forms.Label label73;
+        public System.Windows.Forms.TrackBar trackBar27;
+        public System.Windows.Forms.Label label72;
+        public System.Windows.Forms.Label label71;
+        public System.Windows.Forms.Label label70;
+        public System.Windows.Forms.Label label69;
+        public System.Windows.Forms.Label label68;
     }
 }
 
