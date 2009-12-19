@@ -87,8 +87,21 @@ namespace NFSU2CH
             {
                 map[i] = start;
                 start++;
+                i++;
             }
             return map;
+        }
+
+        public int[] mapAssign(int[] main, int[] values, int start)
+        {
+            int i=0;
+            foreach (int x in values)
+            {
+                main[start] = values[i];
+                start++;
+                i++;
+            }
+            return main;
         }
 
         public bool save(string filename, int[] map, int[] newconf, int position)

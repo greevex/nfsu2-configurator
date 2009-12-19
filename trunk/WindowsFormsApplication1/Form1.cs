@@ -14,7 +14,7 @@ namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private int[] s, minis = null;
+        private int[] privod, privodfull, s, minis, rwd = null;
         private int[] loaded = new int[Properti.map.Length];
         private Parser p, minip;
         private Thread t1;
@@ -68,7 +68,10 @@ namespace NFSU2CH
                 return;
             }
             this.s = p.parse(file, Properti.map, pos);
-            if (this.s == null)
+            this.privod = p.parse(file, p.mapCreate(992, 1055), pos);
+            this.privodfull = p.parse(file, p.mapCreate(960, 1119), pos);
+
+            if (this.s == null || this.privod == null || this.privodfull == null)
                 return;
             loadCfg(s);
             // Теперь можно сохранять и загружать
@@ -78,12 +81,64 @@ namespace NFSU2CH
 
         }
 
+        private string wd(string pr)
+        {
+            if(pr ==     "1451941176015515325631006214519411761" ||
+                   pr == "1451941176087147763100622062047661" ||
+                   pr == "145194117601551532563100622062047661")
+                return "4wd";
+            else if(pr == "145194117601691987562100622062047661" ||
+               pr ==      "1451941176016919875621006214519411761")
+                return "fwd";
+            else return "rwd";
+        }
+
+        private string loadWD(int[] privod)
+        {
+            string sdsd = "";
+            try
+            {
+                int i = 0;
+                int y = 0;
+                foreach( int x in privod ) {
+                    sdsd += "rwd[" + i + "] = " + x.ToString() + ";\n";
+                    i++;
+                    /*
+                    if (i == 4)
+                    {
+                        i = 0;
+                        y++;
+                        sdsd += " ";
+                    }
+                    if (y == 4)
+                    {
+                        y = 0;
+                        sdsd += "\n";
+                    }
+                    */
+                }
+                StreamWriter s = new StreamWriter("C:\\hex\\" + comboBox1.Text + ".txt");
+                s.Write(sdsd);
+                s.Close();
+                return sdsd;
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                return "Error";
+            }
+        }
+
         private bool loadCfg(int[] cfLoad)
         {
             try
             {
+                loadWD(this.privod);
                 #region добавление в текстбоксы
+
                 /* Колеса */
+
+                /*MessageBox.Show(wd(loadWD(this.privod)));*/
 
                 //// Расположение колес
                 //Передние
@@ -658,7 +713,9 @@ namespace NFSU2CH
             #region получение настроек юзера
             if (s != null)
             {
-                int[] cf = s;
+                int[] cf = null;
+                cf = new int[1055];
+                cf = s;
 
                 /* Пыщ! */
 
@@ -800,64 +857,74 @@ namespace NFSU2CH
                 cf[189] = Int32.Parse(textBox45.Text);// 9
                 cf[190] = Int32.Parse(comboBox21.Text);
 
-                if (comboBox25.Text == "Задний привод")
-                {
-                    cf[191] = 0x91;
-                    cf[192] = 0xc2;
-                    cf[193] = 0x75;
-                    cf[194] = 0x3c;
-                    cf[195] = 0x57;
-                    cf[196] = 0x0e;
-                    cf[197] = 0x4d;
-                    cf[198] = 0x3f;
-                    cf[199] = 0x01;
-                    cf[200] = 0x00;
-                    cf[201] = 0x00;
-                    cf[202] = 0x3e;
-                    cf[203] = 0xce;
-                    cf[204] = 0xcc;
-                    cf[205] = 0x4c;
-                    cf[206] = 0x3d;
-                }
-                else if (comboBox25.Text == "Передний привод")
-                {
-                    cf[191] = 0x91;
-                    cf[192] = 0xc2;
-                    cf[193] = 0x75;
-                    cf[194] = 0x3c;
-                    cf[195] = 0xa9;
-                    cf[196] = 0xc6;
-                    cf[197] = 0x4b;
-                    cf[198] = 0x3e;
-                    cf[199] = 0x01;
-                    cf[200] = 0x00;
-                    cf[201] = 0x00;
-                    cf[202] = 0x3e;
-                    cf[203] = 0x91;
-                    cf[204] = 0xc2;
-                    cf[205] = 0x75;
-                    cf[206] = 0x3d;
-                }
-                else
-                {
-                    cf[191] = 0x91;
-                    cf[192] = 0xc2;
-                    cf[193] = 0x75;
-                    cf[194] = 0x3c;
-                    cf[195] = 0x9b;
-                    cf[196] = 0x99;
-                    cf[197] = 0x19;
-                    cf[198] = 0x3f;
-                    cf[199] = 0x01;
-                    cf[200] = 0x00;
-                    cf[201] = 0x00;
-                    cf[202] = 0x3e;
-                    cf[203] = 0x91;
-                    cf[204] = 0xc2;
-                    cf[205] = 0x75;
-                    cf[206] = 0x3d;
-                }
+                rwd = new int[64];
 
+                rwd[0] = 119;
+                rwd[1] = 2;
+                rwd[2] = 26;
+                rwd[3] = 60;
+                rwd[4] = 51;
+                rwd[5] = 8;
+                rwd[6] = 44;
+                rwd[7] = 60;
+                rwd[8] = 93;
+                rwd[9] = 177;
+                rwd[10] = 63;
+                rwd[11] = 60;
+                rwd[12] = 64;
+                rwd[13] = 232;
+                rwd[14] = 89;
+                rwd[15] = 60;
+                rwd[16] = 67;
+                rwd[17] = 96;
+                rwd[18] = 101;
+                rwd[19] = 60;
+                rwd[20] = 181;
+                rwd[21] = 123;
+                rwd[22] = 114;
+                rwd[23] = 60;
+                rwd[24] = 70;
+                rwd[25] = 216;
+                rwd[26] = 112;
+                rwd[27] = 60;
+                rwd[28] = 93;
+                rwd[29] = 177;
+                rwd[30] = 63;
+                rwd[31] = 60;
+                rwd[32] = 47;
+                rwd[33] = 144;
+                rwd[34] = 32;
+                rwd[35] = 60;
+                rwd[36] = 119;
+                rwd[37] = 2;
+                rwd[38] = 26;
+                rwd[39] = 60;
+                rwd[40] = 51;
+                rwd[41] = 8;
+                rwd[42] = 44;
+                rwd[43] = 60;
+                rwd[44] = 93;
+                rwd[45] = 177;
+                rwd[46] = 63;
+                rwd[47] = 60;
+                rwd[48] = 64;
+                rwd[49] = 232;
+                rwd[50] = 89;
+                rwd[51] = 60;
+                rwd[52] = 67;
+                rwd[53] = 96;
+                rwd[54] = 101;
+                rwd[55] = 60;
+                rwd[56] = 181;
+                rwd[57] = 123;
+                rwd[58] = 114;
+                rwd[59] = 60;
+                rwd[60] = 70;
+                rwd[61] = 216;
+                rwd[62] = 112;
+                rwd[63] = 60;
+
+                cf = p.mapAssign(cf, rwd, 992);
             #endregion
                 return cf;
             }
