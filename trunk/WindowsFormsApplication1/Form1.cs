@@ -713,9 +713,7 @@ namespace NFSU2CH
             #region получение настроек юзера
             if (s != null)
             {
-                int[] cf = null;
-                cf = new int[1055];
-                cf = s;
+                int[] cf = s;
 
                 /* Пыщ! */
 
