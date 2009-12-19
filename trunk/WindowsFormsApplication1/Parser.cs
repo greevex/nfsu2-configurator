@@ -120,12 +120,13 @@ namespace NFSU2CH
                     if (this._curr == position)
                     {
                         streamw.Write(conf, 0, conf.Length);
+                        this._curr += conf.Length;
                     }
                     else
                     {
                         streamw.WriteByte((byte)byt);
+                        this._curr++;
                     }
-                    this._curr++;
 
                 }
                 streamr.Close();
