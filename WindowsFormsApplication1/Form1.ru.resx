@@ -198,24 +198,6 @@
   <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="comboBox1.AutoCompleteCustomSource" xml:space="preserve">
-    <value>фвафывафыва</value>
-  </data>
-  <data name="comboBox1.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>фывафыва</value>
-  </data>
-  <data name="comboBox1.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>вапр</value>
-  </data>
-  <data name="comboBox1.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>вапывапывпы</value>
-  </data>
-  <data name="comboBox1.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>впывпывп</value>
-  </data>
-  <data name="comboBox1.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>ывапывап</value>
-  </data>
   <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -256,24 +238,6 @@
   </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Сбросить</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource" xml:space="preserve">
-    <value>фвафывафыва</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource1" xml:space="preserve">
-    <value>фывафыва</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource2" xml:space="preserve">
-    <value>вапр</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource3" xml:space="preserve">
-    <value>вапывапывпы</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource4" xml:space="preserve">
-    <value>впывпывп</value>
-  </data>
-  <data name="comboBox2.AutoCompleteCustomSource5" xml:space="preserve">
-    <value>ывапывап</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
