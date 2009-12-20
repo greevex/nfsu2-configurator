@@ -51,48 +51,20 @@ namespace NFSU2CH
                 return null;
             }
         }
-
-        public int[] getByMap(int[] map)
-        {
-            int i = 0;
-            int[] ret = new int[map.Length];
-            foreach (int m in map)
-            {
-                ret[i] = this.main[m];
-                i++;
-            }
-            return ret;
-        }
-
-        public bool setByMap(int[] map, int[] values)
-        {
-            //try
-            //{
-                int i = 0;
-                foreach (int m in map)
-                {
-                    this.main[m] = values[i];
-                    i++;
-                }
-                if (save(this._curr))
-                    return true;
-                else return false;
-            //}
-            //catch (Exception e)
-            //{
-               // System.Windows.Forms.MessageBox.Show(e.Message);
-               // return false;
-            //}
-        }
-
-        public bool saveConfig()
+        public bool saveConfig(string file, int[] conf)
         {
             try
             {
-                Stream streamw = new StreamWriter(this.filename).BaseStream;
-                foreach ( int b in this.main ) {
-                    streamw.WriteByte((byte)b);
+                byte[] b = new byte[conf.Length];
+                int i = 0;
+                foreach (byte a in b)
+                {
+                    b[i] = (byte)conf[i];
+                    i++;
                 }
+                conf = null;
+                Stream streamw = new StreamWriter(file).BaseStream;
+                streamw.Write(b, 0, b.Length);
                 streamw.Close();
                 return true;
             }            
@@ -103,33 +75,7 @@ namespace NFSU2CH
             }
         }
 
-        public int[] mapCreate(int start, int end)
-        {
-            int len = end - start + 1;
-            int[] map = new int[len];
-            int i = 0;
-            foreach (int x in map)
-            {
-                map[i] = start;
-                start++;
-                i++;
-            }
-            return map;
-        }
-
-        public int[] mapAssign(int[] values, int start)
-        {
-            int i=0;
-            foreach (int x in values)
-            {
-                this.main[start] = values[i];
-                start++;
-                i++;
-            }
-            return this.main;
-        }
-
-        private bool save(int position)
+        public bool save(int position, int[] newconf)
         {
             try
             {
@@ -140,7 +86,7 @@ namespace NFSU2CH
                 }
                 int i = 0;
                 byte[] conf = new byte[this.main.Length];
-                foreach (int b in this.main)
+                foreach (int b in newconf)
                 {
                     conf[i] = Convert.ToByte(b);
                     i++;
