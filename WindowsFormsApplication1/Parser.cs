@@ -66,8 +66,8 @@ namespace NFSU2CH
 
         public bool setByMap(int[] map, int[] values)
         {
-            try
-            {
+            //try
+            //{
                 int i = 0;
                 foreach (int m in map)
                 {
@@ -77,12 +77,12 @@ namespace NFSU2CH
                 if (save(this._curr))
                     return true;
                 else return false;
-            }
-            catch (Exception e)
-            {
-                System.Windows.Forms.MessageBox.Show(e.Message);
-                return false;
-            }
+            //}
+            //catch (Exception e)
+            //{
+               // System.Windows.Forms.MessageBox.Show(e.Message);
+               // return false;
+            //}
         }
 
         public bool saveConfig()
@@ -133,7 +133,7 @@ namespace NFSU2CH
         {
             try
             {
-                string temp = filename + ".tmp";
+                string temp = Environment.GetEnvironmentVariable("TEMP") + "/GlobalB.tmp";
                 if (File.Exists(temp))
                 {
                     File.Delete(temp);
@@ -158,6 +158,7 @@ namespace NFSU2CH
                     {
                         streamw.Write(conf, 0, conf.Length);
                         this._curr += conf.Length;
+                        streamr.Position = this._curr;
                     }
                     else
                     {
