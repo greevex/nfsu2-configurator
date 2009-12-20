@@ -284,13 +284,13 @@ namespace NFSU2CH
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (s == null)
+            if (p.main == null)
             {
                 MessageBox.Show(resourceManager.GetString("nothingToSave"));
                 return;
             }
 
-            s = getUserConfigForCurrentCar();
+            this.s = getUserConfigForCurrentCar();
 
             this.progressBar1.Maximum = this.p.Total;
             this.progressBar1.Value = 0;
@@ -776,75 +776,6 @@ namespace NFSU2CH
                 cf[188] = Int32.Parse(comboBox20.Text);
                 cf[189] = Int32.Parse(textBox45.Text);// 9
                 cf[190] = Int32.Parse(comboBox21.Text);
-
-                rwd = new int[64];
-
-                rwd[0] = 119;
-                rwd[1] = 2;
-                rwd[2] = 26;
-                rwd[3] = 60;
-                rwd[4] = 51;
-                rwd[5] = 8;
-                rwd[6] = 44;
-                rwd[7] = 60;
-                rwd[8] = 93;
-                rwd[9] = 177;
-                rwd[10] = 63;
-                rwd[11] = 60;
-                rwd[12] = 64;
-                rwd[13] = 232;
-                rwd[14] = 89;
-                rwd[15] = 60;
-                rwd[16] = 67;
-                rwd[17] = 96;
-                rwd[18] = 101;
-                rwd[19] = 60;
-                rwd[20] = 181;
-                rwd[21] = 123;
-                rwd[22] = 114;
-                rwd[23] = 60;
-                rwd[24] = 70;
-                rwd[25] = 216;
-                rwd[26] = 112;
-                rwd[27] = 60;
-                rwd[28] = 93;
-                rwd[29] = 177;
-                rwd[30] = 63;
-                rwd[31] = 60;
-                rwd[32] = 47;
-                rwd[33] = 144;
-                rwd[34] = 32;
-                rwd[35] = 60;
-                rwd[36] = 119;
-                rwd[37] = 2;
-                rwd[38] = 26;
-                rwd[39] = 60;
-                rwd[40] = 51;
-                rwd[41] = 8;
-                rwd[42] = 44;
-                rwd[43] = 60;
-                rwd[44] = 93;
-                rwd[45] = 177;
-                rwd[46] = 63;
-                rwd[47] = 60;
-                rwd[48] = 64;
-                rwd[49] = 232;
-                rwd[50] = 89;
-                rwd[51] = 60;
-                rwd[52] = 67;
-                rwd[53] = 96;
-                rwd[54] = 101;
-                rwd[55] = 60;
-                rwd[56] = 181;
-                rwd[57] = 123;
-                rwd[58] = 114;
-                rwd[59] = 60;
-                rwd[60] = 70;
-                rwd[61] = 216;
-                rwd[62] = 112;
-                rwd[63] = 60;
-
-                cf = p.mapAssign(rwd, 992);
             #endregion
                 return cf;
             }

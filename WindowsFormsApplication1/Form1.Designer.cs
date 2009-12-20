@@ -1027,6 +1027,7 @@
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox5);
             this.tabPage1.Controls.Add(this.groupBox4);
+            this.tabPage1.Controls.Add(this.label16);
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1041,7 +1042,6 @@
             this.groupBox7.Controls.Add(this.label58);
             this.groupBox7.Controls.Add(this.button3);
             this.groupBox7.Controls.Add(this.label57);
-            this.groupBox7.Controls.Add(this.label16);
             this.groupBox7.Controls.Add(this.maskedTextBox7);
             this.groupBox7.Controls.Add(this.maskedTextBox12);
             this.groupBox7.Controls.Add(this.maskedTextBox3);
@@ -1989,6 +1989,7 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox5.ResumeLayout(false);
