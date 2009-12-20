@@ -134,7 +134,6 @@
             this.label58 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
@@ -160,6 +159,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label61 = new System.Windows.Forms.Label();
@@ -260,6 +260,9 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.startGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startWindowedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -1140,12 +1143,6 @@
             resources.ApplyResources(this.label57, "label57");
             this.label57.Name = "label57";
             // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Name = "label16";
-            // 
             // maskedTextBox7
             // 
             resources.ApplyResources(this.maskedTextBox7, "maskedTextBox7");
@@ -1297,6 +1294,12 @@
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.Color.Red;
+            this.label16.Name = "label16";
             // 
             // tabPage4
             // 
@@ -1813,7 +1816,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.менюToolStripMenuItem,
-            this.помщьToolStripMenuItem});
+            this.помщьToolStripMenuItem,
+            this.startGameToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -1933,6 +1937,26 @@
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.ForeColor = System.Drawing.Color.Red;
             this.label56.Name = "label56";
+            // 
+            // startGameToolStripMenuItem
+            // 
+            this.startGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startToolStripMenuItem,
+            this.startWindowedToolStripMenuItem});
+            this.startGameToolStripMenuItem.Name = "startGameToolStripMenuItem";
+            resources.ApplyResources(this.startGameToolStripMenuItem, "startGameToolStripMenuItem");
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
+            // 
+            // startWindowedToolStripMenuItem
+            // 
+            this.startWindowedToolStripMenuItem.Name = "startWindowedToolStripMenuItem";
+            resources.ApplyResources(this.startWindowedToolStripMenuItem, "startWindowedToolStripMenuItem");
+            this.startWindowedToolStripMenuItem.Click += new System.EventHandler(this.startWindowedToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -2254,6 +2278,9 @@
         public System.Windows.Forms.Label label70;
         public System.Windows.Forms.Label label69;
         public System.Windows.Forms.Label label68;
+        private System.Windows.Forms.ToolStripMenuItem startGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem startWindowedToolStripMenuItem;
     }
 }
 

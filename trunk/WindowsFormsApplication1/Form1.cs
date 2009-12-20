@@ -9,6 +9,7 @@ using System.Globalization;
 using System.Threading;
 using System.IO;
 using System.Resources;
+using System.Diagnostics;
 
 namespace NFSU2CH
 {
@@ -814,6 +815,16 @@ namespace NFSU2CH
         private void trackBar28_Scroll(object sender, EventArgs e)
         {
             label70.Text = trackBar28.Value.ToString();
+        }
+
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(Directory.GetParent(Directory.GetParent(p.filename).FullName).FullName + "\\speed2.exe");
+        }
+
+        private void startWindowedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start(Directory.GetParent(Directory.GetParent(p.filename).FullName).FullName + "\\Launcher.exe");
         }
     }
 }
