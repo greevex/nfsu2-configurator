@@ -7,7 +7,7 @@ namespace NFSU2CH
     {
         private int _total = 8008064;
         private int _curr = 0;
-        private string filename = "";
+        public string filename = "";
         public int[] main = null;
         public int Total
         { 
@@ -31,6 +31,7 @@ namespace NFSU2CH
                 Stream stream;
                 stream = new StreamReader(this.filename).BaseStream;
                 stream.Position = startblock;
+                this._curr = startblock;
                 byte[] result = new byte[2192];
                 stream.Read(result, 0, result.Length);
                 stream.Close();
@@ -54,12 +55,13 @@ namespace NFSU2CH
         public int[] getByMap(int[] map)
         {
             int i = 0;
+            int[] ret = new int[map.Length];
             foreach (int m in map)
             {
-                map[i] = this.main[m];
+                ret[i] = this.main[m];
                 i++;
             }
-            return map;
+            return ret;
         }
 
         public bool setByMap(int[] map, int[] values)
@@ -72,8 +74,9 @@ namespace NFSU2CH
                     this.main[m] = values[i];
                     i++;
                 }
-                return true;
-                save(this.Current);
+                if (save(this.Current))
+                    return true;
+                else return false;
             }
             catch (Exception e)
             {

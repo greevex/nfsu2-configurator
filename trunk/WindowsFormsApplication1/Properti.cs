@@ -128,7 +128,7 @@ namespace NFSU2CH
         }
 
         /* МАП ОСНОВНОЙ */
-        public static int[] map = new int[206] {
+        public static int[] map = new int[207] {1,
 
                 /////первое колесо
                 //первая строка
@@ -258,7 +258,7 @@ namespace NFSU2CH
             };
 
         /* МАП НЕ ОСНОВНОЙ! хД */
-        public static int[] minimap = new int[8]{
+        public static int[] minimap = new int[9]{1,
                 ////// Управление
 
                 546, 547, //1-2

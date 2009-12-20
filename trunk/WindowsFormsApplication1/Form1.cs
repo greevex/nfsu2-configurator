@@ -54,18 +54,17 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
-            string file = this.textBox26.Text;
-            if (file == "")
+            if (this.textBox26.Text == "")
             {
                 MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
             this.currentCar = pos;
-            this.p = new Parser(file);
-            this.s = p.parse(pos);
+            this.p = new Parser(this.textBox26.Text);
+            p.parse(pos);
 
-            if (this.s == null) return;
-            
+            if (p.main == null) return;
+
             loadCfg(p.getByMap(Properti.map));
 
             // Теперь можно сохранять и загружать
@@ -80,8 +79,6 @@ namespace NFSU2CH
                 #region добавление в текстбоксы
 
                 /* Колеса */
-
-                /*MessageBox.Show(wd(loadWD(this.privod)));*/
 
                 //// Расположение колес
                 //Передние
