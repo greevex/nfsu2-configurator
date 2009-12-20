@@ -61,18 +61,14 @@ namespace NFSU2CH
             }
             this.currentCar = pos;
             this.p = new Parser(this.textBox26.Text);
-            p.parse(pos);
-
-            if (p.main == null) return;
-
-            loadCfg(p.getByMap(Properti.map));
-
+            this.s = p.parse(pos);
+            AddValToForm();
             // Теперь можно сохранять и загружать
             сохранитьНастройкуТекущейМашиныToolStripMenuItem.Enabled = true;
             загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Enabled = true;
         }
 
-        private bool loadCfg(int[] cfLoad)
+        private bool AddValToForm()
         {
             try
             {
@@ -82,163 +78,161 @@ namespace NFSU2CH
 
                 //// Расположение колес
                 //Передние
-                trackBar3.Value = cfLoad[27];
+                trackBar3.Value = this.s[318];
                 label12.Text = trackBar3.Value.ToString();
                 //Задние
-                trackBar5.Value = cfLoad[91];
+                trackBar5.Value = this.s[414];
                 label29.Text = trackBar5.Value.ToString();
 
                 //// Ширина колеса
                 //Передние
-                trackBar4.Value = cfLoad[19];
+                trackBar4.Value = s[310];
                 label10.Text = trackBar4.Value.ToString();
                 //Задние
-                trackBar6.Value = cfLoad[83];
+                trackBar6.Value = s[406];
                 label36.Text = trackBar6.Value.ToString();
 
                 //// Положение колес (вперед-назад)
                 //Передние
-                trackBar1.Value = cfLoad[3];
-                trackBar2.Value = cfLoad[67];
-                trackBar27.Value = cfLoad[47] = cfLoad[15];
+                trackBar1.Value = s[290];
+                trackBar2.Value = s[386];
+                trackBar27.Value = s[354] = s[306];
                 label72.Text = trackBar27.Value.ToString();
-                trackBar28.Value = cfLoad[111] = cfLoad[79];
+                trackBar28.Value = s[450] = s[402];
                 label70.Text = trackBar28.Value.ToString();
 
-                label13.Text = cfLoad[3].ToString();
-                label14.Text = cfLoad[67].ToString();
+                label13.Text = s[290].ToString();
+                label14.Text = s[386].ToString();
 
-                maskedTextBox5.Text = cfLoad[29].ToString();
-                maskedTextBox6.Text = cfLoad[30].ToString();
-                maskedTextBox9.Text = cfLoad[31].ToString();
-                maskedTextBox10.Text = cfLoad[32].ToString();
+                maskedTextBox5.Text = s[320].ToString();
+                maskedTextBox6.Text = s[321].ToString();
+                maskedTextBox9.Text = s[322].ToString();
+                maskedTextBox10.Text = s[323].ToString();
 
-                maskedTextBox19.Text = cfLoad[61].ToString();
-                maskedTextBox20.Text = cfLoad[62].ToString();
-                maskedTextBox21.Text = cfLoad[63].ToString();
-                maskedTextBox22.Text = cfLoad[64].ToString();
+                maskedTextBox19.Text = s[368].ToString();
+                maskedTextBox20.Text = s[369].ToString();
+                maskedTextBox21.Text = s[370].ToString();
+                maskedTextBox22.Text = s[371].ToString();
 
-                maskedTextBox27.Text = cfLoad[96].ToString();
-                maskedTextBox28.Text = cfLoad[97].ToString();
-                maskedTextBox29.Text = cfLoad[98].ToString();
-                maskedTextBox30.Text = cfLoad[99].ToString();
+                maskedTextBox27.Text = s[419].ToString();
+                maskedTextBox28.Text = s[432].ToString();
+                maskedTextBox29.Text = s[433].ToString();
+                maskedTextBox30.Text = s[434].ToString();
 
-                maskedTextBox35.Text = cfLoad[125].ToString();
-                maskedTextBox36.Text = cfLoad[126].ToString();
-                maskedTextBox37.Text = cfLoad[127].ToString();
-                maskedTextBox38.Text = cfLoad[128].ToString();
+                maskedTextBox35.Text = s[464].ToString();
+                maskedTextBox36.Text = s[465].ToString();
+                maskedTextBox37.Text = s[466].ToString();
+                maskedTextBox38.Text = s[467].ToString();
 
 
                 /* Обороты */
 
-                TextBox3.Text = cfLoad[149].ToString(); // Нейтралка
-                adval(comboBox24, cfLoad[150]);
+                TextBox3.Text = s[770].ToString(); // Нейтралка
+                adval(comboBox24, s[771]);
 
-                TextBox1.Text = cfLoad[153].ToString(); // Максимально
-                adval(comboBox22, cfLoad[154]);
+                TextBox1.Text = s[778].ToString(); // Максимально
+                adval(comboBox22, s[779]);
 
-                TextBox2.Text = cfLoad[151].ToString(); // Переключение
-                adval(comboBox23, cfLoad[152]);
+                TextBox2.Text = s[774].ToString(); // Переключение
+                adval(comboBox23, s[775]);
 
                 /* ЭКУ */
 
-                textBox4.Text = cfLoad[155].ToString(); // 1
-                trackBar7.Value = cfLoad[155];
+                textBox4.Text = s[786].ToString(); // 1
+                trackBar7.Value = s[786];
+                adval(comboBox3, s[787]);
 
-                adval(comboBox3, cfLoad[156]);
-                textBox6.Text = cfLoad[157].ToString(); // 2
-                trackBar8.Value = cfLoad[157];
+                textBox6.Text = s[790].ToString(); // 2
+                trackBar8.Value = s[790];
+                adval(comboBox5, s[791]);
 
-                adval(comboBox5, cfLoad[158]);
-                textBox8.Text = cfLoad[159].ToString(); // 3
-                trackBar9.Value = cfLoad[159];
+                textBox8.Text = s[794].ToString(); // 3
+                trackBar9.Value = s[794];
+                adval(comboBox6, s[795]);
 
-                adval(comboBox6, cfLoad[160]);
-                textBox10.Text = cfLoad[161].ToString();// 4
-                trackBar10.Value = cfLoad[161];
+                textBox10.Text = s[798].ToString();// 4
+                trackBar10.Value = s[798];
+                adval(comboBox7, s[799]);
 
-                adval(comboBox7, cfLoad[162]);
-                textBox12.Text = cfLoad[163].ToString();// 5
-                trackBar11.Value = cfLoad[163];
+                textBox12.Text = s[802].ToString();// 5
+                trackBar11.Value = s[802];
+                adval(comboBox8, s[803]);
 
-                adval(comboBox8, cfLoad[164]);
-                textBox31.Text = cfLoad[165].ToString();// 6
-                trackBar12.Value = cfLoad[165];
+                textBox31.Text = s[806].ToString();// 6
+                trackBar12.Value = s[806];
+                adval(comboBox9, s[807]);
 
-                adval(comboBox9, cfLoad[166]);
-                textBox33.Text = cfLoad[167].ToString();// 7
-                trackBar13.Value = cfLoad[167];
+                textBox33.Text = s[810].ToString();// 7
+                trackBar13.Value = s[810];
+                adval(comboBox10, s[811]);
 
-                adval(comboBox10, cfLoad[168]);
-                textBox35.Text = cfLoad[169].ToString();// 8
-                trackBar14.Value = cfLoad[169];
+                textBox35.Text = s[814].ToString();// 8
+                trackBar14.Value = s[814];
+                adval(comboBox11, s[815]);
 
-                adval(comboBox11, cfLoad[170]);
-                textBox37.Text = cfLoad[171].ToString();// 9
-                trackBar15.Value = cfLoad[171];
-
-                adval(comboBox12, cfLoad[172]);
+                textBox37.Text = s[818].ToString();// 9
+                trackBar15.Value = s[818];
+                adval(comboBox12, s[819]);
 
                 /* Турбо */
 
-                textBox13.Text = cfLoad[173].ToString();// 1
-                trackBar16.Value = cfLoad[173];
+                textBox13.Text = s[834].ToString();// 1
+                trackBar16.Value = s[834];
+                adval(comboBox13, s[835]);
 
-                adval(comboBox13, cfLoad[174]);
-                textBox15.Text = cfLoad[175].ToString();// 2
-                trackBar17.Value = cfLoad[175];
+                textBox15.Text = s[838].ToString();// 2
+                trackBar17.Value = s[838];
+                adval(comboBox14, s[839]);
 
-                adval(comboBox14, cfLoad[176]);
-                textBox17.Text = cfLoad[177].ToString();// 3
-                trackBar18.Value = cfLoad[177];
+                textBox17.Text = s[842].ToString();// 3
+                trackBar18.Value = s[842];
+                adval(comboBox15, s[843]);
 
-                adval(comboBox15, cfLoad[178]);
-                textBox19.Text = cfLoad[179].ToString();// 4
-                trackBar19.Value = cfLoad[179];
+                textBox19.Text = s[846].ToString();// 4
+                trackBar19.Value = s[846];
+                adval(comboBox16, s[847]);
 
-                adval(comboBox16, cfLoad[180]);
-                textBox21.Text = cfLoad[181].ToString();// 5
-                trackBar20.Value = cfLoad[181];
+                textBox21.Text = s[850].ToString();// 5
+                trackBar20.Value = s[850];
+                adval(comboBox17, s[851]);
 
-                adval(comboBox17, cfLoad[182]);
-                textBox46.Text = cfLoad[183].ToString();// 6
-                trackBar21.Value = cfLoad[183];
+                textBox46.Text = s[854].ToString();// 6
+                trackBar21.Value = s[854];
+                adval(comboBox18, s[855]);
 
-                adval(comboBox18, cfLoad[184]);
-                textBox40.Text = cfLoad[185].ToString();// 7
-                trackBar22.Value = cfLoad[185];
+                textBox40.Text = s[858].ToString();// 7
+                trackBar22.Value = s[858];
+                adval(comboBox19, s[859]);
 
-                adval(comboBox19, cfLoad[186]);
-                textBox41.Text = cfLoad[187].ToString();// 8
-                trackBar23.Value = cfLoad[187];
+                textBox41.Text = s[862].ToString();// 8
+                trackBar23.Value = s[862];
+                adval(comboBox20, s[863]);
 
-                adval(comboBox20, cfLoad[188]);
-                textBox45.Text = cfLoad[189].ToString();// 9
-                trackBar24.Value = cfLoad[189];
-
-                adval(comboBox21, cfLoad[190]);
+                textBox45.Text = s[866].ToString();// 9
+                trackBar24.Value = s[866];
+                adval(comboBox21, s[867]);
 
                 /* Подвеска */
-                maskedTextBox1.Text = cfLoad[11].ToString();
-                trackBar25.Value = cfLoad[12];
+                maskedTextBox1.Text = s[298].ToString();
+                trackBar25.Value = s[299];
                 label63.Text = trackBar25.Value.ToString();
-                maskedTextBox2.Text = cfLoad[75].ToString();
-                trackBar26.Value = cfLoad[76];
+                maskedTextBox2.Text = s[394].ToString();
+                trackBar26.Value = s[395];
                 label66.Text = trackBar26.Value.ToString();
 
                 /* Управление */
 
-                maskedTextBox3.Text = cfLoad[131].ToString();
-                maskedTextBox4.Text = cfLoad[132].ToString();
+                maskedTextBox3.Text = s[546].ToString();
+                maskedTextBox4.Text = s[547].ToString();
 
-                maskedTextBox7.Text = cfLoad[135].ToString();
-                maskedTextBox8.Text = cfLoad[136].ToString();
+                maskedTextBox7.Text = s[550].ToString();
+                maskedTextBox8.Text = s[551].ToString();
 
-                maskedTextBox11.Text = cfLoad[139].ToString();
-                maskedTextBox12.Text = cfLoad[140].ToString();
+                maskedTextBox11.Text = s[554].ToString();
+                maskedTextBox12.Text = s[555].ToString();
 
-                maskedTextBox15.Text = cfLoad[143].ToString();
-                maskedTextBox16.Text = cfLoad[144].ToString();
+                maskedTextBox15.Text = s[558].ToString();
+                maskedTextBox16.Text = s[559].ToString();
 
                 #endregion
 
@@ -289,8 +283,8 @@ namespace NFSU2CH
                 MessageBox.Show(resourceManager.GetString("nothingToSave"));
                 return;
             }
-
-            this.s = getUserConfigForCurrentCar();
+            //обновление int[] this.s
+            getUserConfigForCurrentCar();
 
             this.progressBar1.Maximum = this.p.Total;
             this.progressBar1.Value = 0;
@@ -302,7 +296,7 @@ namespace NFSU2CH
         #endregion
         private void saveT()
         {
-            if (this.p.setByMap(Properti.map, this.s) == true)
+            if (this.p.save(this.currentCar, this.s))
             {
                 MessageBox.Show(resourceManager.GetString("saveOk"));
             }
@@ -598,7 +592,7 @@ namespace NFSU2CH
         {
             try
             {
-                p.saveConfig();
+                p.saveConfig(this.saveFileDialog1.FileName, this.s);
                 MessageBox.Show(resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
             catch (Exception ex)
@@ -607,7 +601,7 @@ namespace NFSU2CH
             }
         }
 
-        public int[] getUserConfigForCurrentCar()
+        public void getUserConfigForCurrentCar()
         {
             #region Проверка данных
             if (TextBox3.Text != "")
@@ -633,153 +627,147 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
-            if (this.p.main != null)
-            {
-                int[] cf = p.main;
 
                 /* Пыщ! */
 
-                cf[3] = trackBar1.Value;
-                cf[35] = cf[3];
-                cf[67] = trackBar2.Value;
-                cf[99] = cf[67];
-                cf[15] = trackBar27.Value;
-                cf[47] = trackBar27.Value;
-                cf[79] = trackBar28.Value;
-                cf[111] = trackBar28.Value;
+                s[290] = trackBar1.Value;
+                //s[338] = s[290];
+                s[386] = trackBar2.Value;
+                //s[434] = s[386];
+                s[354] = trackBar27.Value;
+                s[306] = trackBar27.Value;
+                s[450] = trackBar28.Value;
+                s[402] = trackBar28.Value;
 
-                cf[29] = Int32.Parse(maskedTextBox5.Text);
-                cf[30] = Int32.Parse(maskedTextBox6.Text);
-                cf[31] = Int32.Parse(maskedTextBox9.Text);
-                cf[32] = Int32.Parse(maskedTextBox10.Text);
+                s[320] = Int32.Parse(maskedTextBox5.Text);
+                s[321] = Int32.Parse(maskedTextBox6.Text);
+                s[322] = Int32.Parse(maskedTextBox9.Text);
+                s[323] = Int32.Parse(maskedTextBox10.Text);
 
-                cf[61] = Int32.Parse(maskedTextBox19.Text);
-                cf[62] = Int32.Parse(maskedTextBox20.Text);
-                cf[63] = Int32.Parse(maskedTextBox21.Text);
-                cf[64] = Int32.Parse(maskedTextBox22.Text);
+                s[368] = Int32.Parse(maskedTextBox19.Text);
+                s[369] = Int32.Parse(maskedTextBox20.Text);
+                s[370] = Int32.Parse(maskedTextBox21.Text);
+                s[371] = Int32.Parse(maskedTextBox22.Text);
 
-                cf[96] = Int32.Parse(maskedTextBox27.Text);
-                cf[97] = Int32.Parse(maskedTextBox28.Text);
-                cf[98] = Int32.Parse(maskedTextBox29.Text);
-                cf[99] = Int32.Parse(maskedTextBox30.Text);
+                s[419] = Int32.Parse(maskedTextBox27.Text);
+                s[420] = Int32.Parse(maskedTextBox28.Text);
+                s[421] = Int32.Parse(maskedTextBox29.Text);
+                s[422] = Int32.Parse(maskedTextBox30.Text);
 
-                cf[125] = Int32.Parse(maskedTextBox35.Text);
-                cf[126] = Int32.Parse(maskedTextBox36.Text);
-                cf[127] = Int32.Parse(maskedTextBox37.Text);
-                cf[128] = Int32.Parse(maskedTextBox38.Text);
+                s[464] = Int32.Parse(maskedTextBox35.Text);
+                s[465] = Int32.Parse(maskedTextBox36.Text);
+                s[466] = Int32.Parse(maskedTextBox37.Text);
+                s[467] = Int32.Parse(maskedTextBox38.Text);
 
                 /* Подвеска */
-                cf[11] = Int32.Parse(maskedTextBox1.Text);
-                cf[12] = trackBar25.Value;
-                cf[43] = cf[11];
-                cf[44] = cf[12];
+                s[298] = Int32.Parse(maskedTextBox1.Text);
+                s[299] = trackBar25.Value;
+                s[346] = s[298];
+                s[347] = s[299];
 
-                cf[75] = Int32.Parse(maskedTextBox2.Text);
-                cf[76] = trackBar26.Value;
-                cf[107] = cf[75];
-                cf[108] = cf[76];
+                s[394] = Int32.Parse(maskedTextBox2.Text);
+                s[395] = trackBar26.Value;
+                s[442] = s[394];
+                s[443] = s[395];
 
                 /* Колеса */
                 //// Расположение
                 //Передние
-                cf[27] = trackBar3.Value;
-                cf[59] = cf[27];
+                s[318] = trackBar3.Value;
+                s[366] = s[318];
                 int cf_temp;
-                if (cf[27] >= 30)
+                if (s[318] >= 30)
                 {
-                    cf_temp = cf[27] - 30;
+                    cf_temp = s[318] - 30;
                 }
-                else cf_temp = cf[27];
-                cf[7] = cf_temp;
-                cf[39] = cf_temp;
+                else cf_temp = s[318];
+                s[294] = cf_temp;
+                s[342] = cf_temp;
                 //Задние
-                cf[91] = trackBar5.Value;
-                cf[123] = cf[91];
-                if (cf[91] >= 30)
+                s[414] = trackBar5.Value;
+                s[462] = s[414];
+                if (s[414] >= 30)
                 {
-                    cf_temp = cf[91] - 30;
+                    cf_temp = s[414] - 30;
                 }
-                else cf_temp = cf[91];
-                cf[71] = cf_temp;
-                cf[103] = cf_temp;
+                else cf_temp = s[414];
+                s[390] = cf_temp;
+                s[438] = cf_temp;
 
                 //// Ширина колеса
                 //Передние
-                cf[19] = trackBar4.Value;
-                cf[51] = cf[19];
+                s[310] = trackBar4.Value;
+                s[358] = s[310];
                 //Задние
-                cf[83] = trackBar6.Value;
-                cf[115] = cf[83];
+                s[406] = trackBar6.Value;
+                s[454] = s[406];
 
                 /* Управление */
                 //@ToDo: узнать как именно реагируют настройки....
-                cf[131] = Int32.Parse(maskedTextBox3.Text);
-                cf[132] = Int32.Parse(maskedTextBox4.Text);
+                s[546] = Int32.Parse(maskedTextBox3.Text);
+                s[547] = Int32.Parse(maskedTextBox4.Text);
 
-                cf[135] = Int32.Parse(maskedTextBox7.Text);
-                cf[136] = Int32.Parse(maskedTextBox8.Text);
+                s[550] = Int32.Parse(maskedTextBox7.Text);
+                s[551] = Int32.Parse(maskedTextBox8.Text);
 
-                cf[139] = Int32.Parse(maskedTextBox11.Text);
-                cf[140] = Int32.Parse(maskedTextBox12.Text);
+                s[554] = Int32.Parse(maskedTextBox11.Text);
+                s[555] = Int32.Parse(maskedTextBox12.Text);
 
-                cf[143] = Int32.Parse(maskedTextBox15.Text);
-                cf[144] = Int32.Parse(maskedTextBox16.Text);
+                s[558] = Int32.Parse(maskedTextBox15.Text);
+                s[559] = Int32.Parse(maskedTextBox16.Text);
 
                 /* Обороты */
-                cf[149] = Int32.Parse(TextBox3.Text); // Нейтралка
-                cf[150] = Int32.Parse(comboBox24.Text);
+                s[770] = Int32.Parse(TextBox3.Text); // Нейтралка
+                s[771] = Int32.Parse(comboBox24.Text);
 
-                cf[153] = Int32.Parse(TextBox1.Text); // Максимально
-                cf[154] = Int32.Parse(comboBox22.Text);
+                s[778] = Int32.Parse(TextBox1.Text); // Максимально
+                s[779] = Int32.Parse(comboBox22.Text);
 
-                cf[151] = Int32.Parse(TextBox2.Text); // Переключение
-                cf[152] = Int32.Parse(comboBox23.Text);
+                s[774] = Int32.Parse(TextBox2.Text); // Переключение
+                s[775] = Int32.Parse(comboBox23.Text);
 
                 /* ЭКУ */
 
-                cf[155] = Int32.Parse(textBox4.Text); // 1
-                cf[156] = Int32.Parse(comboBox3.Text);
-                cf[157] = Int32.Parse(textBox6.Text); // 2
-                cf[158] = Int32.Parse(comboBox5.Text);
-                cf[159] = Int32.Parse(textBox8.Text); // 3
-                cf[160] = Int32.Parse(comboBox6.Text);
-                cf[161] = Int32.Parse(textBox10.Text);// 4
-                cf[162] = Int32.Parse(comboBox7.Text);
-                cf[163] = Int32.Parse(textBox12.Text);// 5
-                cf[164] = Int32.Parse(comboBox8.Text);
-                cf[165] = Int32.Parse(textBox31.Text);// 6
-                cf[166] = Int32.Parse(comboBox9.Text);
-                cf[167] = Int32.Parse(textBox33.Text);// 7
-                cf[168] = Int32.Parse(comboBox10.Text);
-                cf[169] = Int32.Parse(textBox35.Text);// 8
-                cf[170] = Int32.Parse(comboBox11.Text);
-                cf[171] = Int32.Parse(textBox37.Text);// 9
-                cf[172] = Int32.Parse(comboBox12.Text);
+                s[786] = Int32.Parse(textBox4.Text); // 1
+                s[787] = Int32.Parse(comboBox3.Text);
+                s[790] = Int32.Parse(textBox6.Text); // 2
+                s[791] = Int32.Parse(comboBox5.Text);
+                s[794] = Int32.Parse(textBox8.Text); // 3
+                s[795] = Int32.Parse(comboBox6.Text);
+                s[798] = Int32.Parse(textBox10.Text);// 4
+                s[799] = Int32.Parse(comboBox7.Text);
+                s[802] = Int32.Parse(textBox12.Text);// 5
+                s[803] = Int32.Parse(comboBox8.Text);
+                s[806] = Int32.Parse(textBox31.Text);// 6
+                s[807] = Int32.Parse(comboBox9.Text);
+                s[810] = Int32.Parse(textBox33.Text);// 7
+                s[811] = Int32.Parse(comboBox10.Text);
+                s[814] = Int32.Parse(textBox35.Text);// 8
+                s[815] = Int32.Parse(comboBox11.Text);
+                s[818] = Int32.Parse(textBox37.Text);// 9
+                s[819] = Int32.Parse(comboBox12.Text);
 
                 /* Турбо */
 
-                cf[173] = Int32.Parse(textBox13.Text);// 1
-                cf[174] = Int32.Parse(comboBox13.Text);
-                cf[175] = Int32.Parse(textBox15.Text);// 2
-                cf[176] = Int32.Parse(comboBox14.Text);
-                cf[177] = Int32.Parse(textBox17.Text);// 3
-                cf[178] = Int32.Parse(comboBox15.Text);
-                cf[179] = Int32.Parse(textBox19.Text);// 4
-                cf[180] = Int32.Parse(comboBox16.Text);
-                cf[181] = Int32.Parse(textBox21.Text);// 5
-                cf[182] = Int32.Parse(comboBox17.Text);
-                cf[183] = Int32.Parse(textBox46.Text);// 6
-                cf[184] = Int32.Parse(comboBox18.Text);
-                cf[185] = Int32.Parse(textBox40.Text);// 7
-                cf[186] = Int32.Parse(comboBox19.Text);
-                cf[187] = Int32.Parse(textBox41.Text);// 8
-                cf[188] = Int32.Parse(comboBox20.Text);
-                cf[189] = Int32.Parse(textBox45.Text);// 9
-                cf[190] = Int32.Parse(comboBox21.Text);
+                s[834] = Int32.Parse(textBox13.Text);// 1
+                s[835] = Int32.Parse(comboBox13.Text);
+                s[838] = Int32.Parse(textBox15.Text);// 2
+                s[839] = Int32.Parse(comboBox14.Text);
+                s[842] = Int32.Parse(textBox17.Text);// 3
+                s[843] = Int32.Parse(comboBox15.Text);
+                s[846] = Int32.Parse(textBox19.Text);// 4
+                s[847] = Int32.Parse(comboBox16.Text);
+                s[850] = Int32.Parse(textBox21.Text);// 5
+                s[851] = Int32.Parse(comboBox17.Text);
+                s[854] = Int32.Parse(textBox46.Text);// 6
+                s[855] = Int32.Parse(comboBox18.Text);
+                s[858] = Int32.Parse(textBox40.Text);// 7
+                s[859] = Int32.Parse(comboBox19.Text);
+                s[862] = Int32.Parse(textBox41.Text);// 8
+                s[863] = Int32.Parse(comboBox20.Text);
+                s[866] = Int32.Parse(textBox45.Text);// 9
+                s[867] = Int32.Parse(comboBox21.Text);
             #endregion
-                return cf;
-            }
-            else return null;
         }
 
         private void изФайлаНастроекcarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -799,10 +787,10 @@ namespace NFSU2CH
                 int rb = fr.ReadByte();
                 if (rb == -1)
                     break;
-                loaded[key] = rb;
+                s[key] = rb;
                 key++;
             }
-            if (!loadCfg(loaded))
+            if (!AddValToForm())
                 MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !");
         }
 
