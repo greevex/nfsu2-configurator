@@ -592,6 +592,7 @@ namespace NFSU2CH
         {
             try
             {
+                getUserConfigForCurrentCar();
                 p.saveConfig(this.saveFileDialog1.FileName, this.s);
                 MessageBox.Show(resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
@@ -780,18 +781,24 @@ namespace NFSU2CH
 
         private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
         {
-            int key = 0;
-            Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
-            while (true)
+            try
             {
-                int rb = fr.ReadByte();
-                if (rb == -1)
-                    break;
-                s[key] = rb;
-                key++;
+                int key = 0;
+                Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
+                while (true)
+                {
+                    int rb = fr.ReadByte();
+                    if (rb == -1)
+                        break;
+                    s[key] = rb;
+                    key++;
+                }
+                AddValToForm();
             }
-            if (!AddValToForm())
-                MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !");
+            catch (Exception ex)
+            {
+                MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !\n"+ex.Message);
+            }
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
