@@ -249,9 +249,9 @@ namespace NFSU2CH
                 System.Windows.Forms.MessageBox.Show(e.Message);
                 return false;
             }
-        
-        }
 
+        }
+        #region event handlers
         private void trackBar4_Scroll(object sender, EventArgs e)
         {
             label10.Text = trackBar4.Value.ToString();
@@ -299,7 +299,7 @@ namespace NFSU2CH
             t1.Start();
             t.Start();
         }
-           
+        #endregion
         private void saveT()
         {
             if (this.p.setByMap(Properti.map, this.s) == true)
@@ -633,9 +633,9 @@ namespace NFSU2CH
             #endregion
 
             #region получение настроек юзера
-            if (s != null)
+            if (this.p.main != null)
             {
-                int[] cf = s;
+                int[] cf = p.main;
 
                 /* Пыщ! */
 
