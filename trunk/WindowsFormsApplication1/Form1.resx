@@ -3087,36 +3087,6 @@ from the list and press to "Apply"</value>
   <data name="&gt;&gt;label57.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 72</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 52</value>
-  </data>
-  <data name="label16.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>In the next versions of the program to regulate values it will not be necessary manually.
-There will be a simple adjustment with help TrackBars and/or pictures, like in game.
-If you have any ideas for this program, write to us,
-our contacts and e-mail you will find in the "Help" section.</value>
-  </data>
-  <data name="&gt;&gt;label16.Name" xml:space="preserve">
-    <value>label16</value>
-  </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>groupBox7</value>
-  </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="maskedTextBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>330, 32</value>
   </data>
@@ -3139,7 +3109,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox7.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="maskedTextBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 32</value>
@@ -3163,7 +3133,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox12.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="maskedTextBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 32</value>
@@ -3187,7 +3157,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="maskedTextBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 32</value>
@@ -3211,7 +3181,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox11.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="maskedTextBox8.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 32</value>
@@ -3235,7 +3205,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox8.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="maskedTextBox16.Location" type="System.Drawing.Point, System.Drawing">
     <value>591, 32</value>
@@ -3259,7 +3229,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox16.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="maskedTextBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>269, 32</value>
@@ -3283,7 +3253,7 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="maskedTextBox15.Location" type="System.Drawing.Point, System.Drawing">
     <value>543, 32</value>
@@ -3307,13 +3277,13 @@ our contacts and e-mail you will find in the "Help" section.</value>
     <value>groupBox7</value>
   </data>
   <data name="&gt;&gt;maskedTextBox15.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 6</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 137</value>
+    <value>650, 227</value>
   </data>
   <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -3398,7 +3368,7 @@ though in a real life it is silly and it is almost unreal.</value>
     <value>1</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 145</value>
+    <value>9, 239</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>258, 159</value>
@@ -3823,6 +3793,38 @@ will disappear!</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 239</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 78</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>In the next versions of the program to regulate values
+it will not be necessary manually.
+There will be a simple adjustment with help
+TrackBars and/or pictures, like in game.
+If you have any ideas for this program, write to us,
+our contacts and e-mail you will find in the "Help" section.</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -5934,7 +5936,7 @@ Width</value>
     <value>3</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>286, 14</value>
+    <value>263, 24</value>
   </metadata>
   <data name="открытьФайлНатсроекToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 22</value>

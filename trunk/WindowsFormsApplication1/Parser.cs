@@ -74,12 +74,13 @@ namespace NFSU2CH
                     this.main[m] = values[i];
                     i++;
                 }
-                if (save(this.Current))
+                if (save(this._curr))
                     return true;
                 else return false;
             }
             catch (Exception e)
             {
+                System.Windows.Forms.MessageBox.Show(e.Message);
                 return false;
             }
         }
