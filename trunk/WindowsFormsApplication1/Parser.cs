@@ -66,7 +66,7 @@ namespace NFSU2CH
         {
             try
             {
-                int i = 1;
+                int i = 0;
                 foreach (int m in map)
                 {
                     this.main[m] = values[i];
