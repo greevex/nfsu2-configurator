@@ -7,6 +7,8 @@ namespace NFSU2CH
     {
         private int _total = 8008064;
         private int _curr = 0;
+        private string filename = "";
+        public int[] main = null;
         public int Total
         { 
             get { return _total; }
@@ -15,31 +17,32 @@ namespace NFSU2CH
         {
             get { return _curr; }
         }
-        public Parser()
+        public Parser(string filename)
         {
+            main = new int[2192];
+            this.filename = filename;
         }
 
-        public int[] parse(string filename, int startblock)
+        public int[] parse(int startblock)
         {
             try
             {
                 //открываем поток
                 Stream stream;
-                stream = new StreamReader(filename).BaseStream;
+                stream = new StreamReader(this.filename).BaseStream;
                 stream.Position = startblock;
                 byte[] result = new byte[2192];
-                int[] r = new int[2192];
                 stream.Read(result, 0, result.Length);
                 stream.Close();
                 int i = 0;
                 foreach (byte b in result)
                 {
-                    r[i] = Convert.ToInt32(b);
+                    this.main[i] = Convert.ToInt32(b);
                     i++;
                 }
                 stream = null;
                 result = null;
-                return r;
+                return this.main;
             }
             catch (Exception e)
             {
@@ -48,12 +51,42 @@ namespace NFSU2CH
             }
         }
 
-        public bool saveConfig(string filename, int[] config)
+        public int[] getByMap(int[] map)
+        {
+            int i = 0;
+            foreach (int m in map)
+            {
+                map[i] = this.main[m];
+                i++;
+            }
+            return map;
+        }
+
+        public bool setByMap(int[] map, int[] values)
         {
             try
             {
-                Stream streamw = new StreamWriter(filename).BaseStream;
-                foreach ( int b in config ) {
+                int i = 1;
+                foreach (int m in map)
+                {
+                    this.main[m] = values[i];
+                    i++;
+                }
+                return true;
+                save(this.Current);
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+
+        public bool saveConfig()
+        {
+            try
+            {
+                Stream streamw = new StreamWriter(this.filename).BaseStream;
+                foreach ( int b in this.main ) {
                     streamw.WriteByte((byte)b);
                 }
                 streamw.Close();
@@ -80,19 +113,19 @@ namespace NFSU2CH
             return map;
         }
 
-        public int[] mapAssign(int[] main, int[] values, int start)
+        public int[] mapAssign(int[] values, int start)
         {
             int i=0;
             foreach (int x in values)
             {
-                main[start] = values[i];
+                this.main[start] = values[i];
                 start++;
                 i++;
             }
-            return main;
+            return this.main;
         }
 
-        public bool save(string filename, int[] newconf, int position)
+        private bool save(int position)
         {
             try
             {
@@ -102,8 +135,8 @@ namespace NFSU2CH
                     File.Delete(temp);
                 }
                 int i = 0;
-                byte[] conf = new byte[newconf.Length];
-                foreach (int b in newconf)
+                byte[] conf = new byte[this.main.Length];
+                foreach (int b in this.main)
                 {
                     conf[i] = Convert.ToByte(b);
                     i++;

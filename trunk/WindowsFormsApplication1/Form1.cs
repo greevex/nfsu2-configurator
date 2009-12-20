@@ -46,11 +46,6 @@ namespace NFSU2CH
             cb.Text = val.ToString();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             this.loadCnf(Properti.CARS[0]);
@@ -59,79 +54,29 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
-            this.currentCar = pos;
-            this.p = new Parser();
             string file = this.textBox26.Text;
             if (file == "")
             {
                 MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
-            this.s = p.parse(file, pos);
+            this.currentCar = pos;
+            this.p = new Parser(file);
+            this.s = p.parse(pos);
 
-            if (this.s == null)
-                return;
-            loadCfg(s);
+            if (this.s == null) return;
+            
+            loadCfg(p.getByMap(Properti.map));
+
             // Теперь можно сохранять и загружать
             сохранитьНастройкуТекущейМашиныToolStripMenuItem.Enabled = true;
             загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Enabled = true;
-
-
-        }
-
-        private string wd(string pr)
-        {
-            if(pr ==     "1451941176015515325631006214519411761" ||
-                   pr == "1451941176087147763100622062047661" ||
-                   pr == "145194117601551532563100622062047661")
-                return "4wd";
-            else if(pr == "145194117601691987562100622062047661" ||
-               pr ==      "1451941176016919875621006214519411761")
-                return "fwd";
-            else return "rwd";
-        }
-
-        private string loadWD(int[] privod)
-        {
-            string sdsd = "";
-            try
-            {
-                int i = 0;
-                int y = 0;
-                foreach( int x in privod ) {
-                    sdsd += "rwd[" + i + "] = " + x.ToString() + ";\n";
-                    i++;
-                    /*
-                    if (i == 4)
-                    {
-                        i = 0;
-                        y++;
-                        sdsd += " ";
-                    }
-                    if (y == 4)
-                    {
-                        y = 0;
-                        sdsd += "\n";
-                    }
-                    */
-                }
-                StreamWriter s = new StreamWriter("C:\\hex\\" + comboBox1.Text + ".txt");
-                s.Write(sdsd);
-                s.Close();
-                return sdsd;
-            }
-            catch (Exception e)
-            {
-                System.Windows.Forms.MessageBox.Show(e.Message);
-                return "Error";
-            }
         }
 
         private bool loadCfg(int[] cfLoad)
         {
             try
             {
-                loadWD(this.privod);
                 #region добавление в текстбоксы
 
                 /* Колеса */
@@ -310,21 +255,6 @@ namespace NFSU2CH
         
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void trackBar4_Scroll(object sender, EventArgs e)
         {
             label10.Text = trackBar4.Value.ToString();
@@ -375,7 +305,7 @@ namespace NFSU2CH
            
         private void saveT()
         {
-            if (this.p.save(this.textBox26.Text, Properti.map, this.s, this.currentCar) == true)
+            if (this.p.setByMap(Properti.map, this.s) == true)
             {
                 MessageBox.Show(resourceManager.GetString("saveOk"));
             }
@@ -623,14 +553,12 @@ namespace NFSU2CH
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.minip = new Parser();
-            string file = this.textBox26.Text;
-            if (file == "")
+            if (textBox26.Text == "")
             {
                 MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
-            this.minis = minip.parse(file, Properti.minimap, Properti.getPosition(this.comboBox2.Text));
+            this.minis = p.parse(Properti.getPosition(this.comboBox2.Text));
             if (this.minis == null)
                 return;
         }
@@ -673,8 +601,7 @@ namespace NFSU2CH
         {
             try
             {
-                Parser pp = new Parser();
-                pp.saveConfig(saveFileDialog1.FileName, getUserConfigForCurrentCar());
+                p.saveConfig();
                 MessageBox.Show(resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
             catch (Exception ex)
@@ -920,7 +847,7 @@ namespace NFSU2CH
                 rwd[62] = 112;
                 rwd[63] = 60;
 
-                cf = p.mapAssign(cf, rwd, 992);
+                cf = p.mapAssign(rwd, 992);
             #endregion
                 return cf;
             }
@@ -949,11 +876,6 @@ namespace NFSU2CH
             }
             if (!loadCfg(loaded))
                 MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !");
-        }
-
-        private void загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Load_1(object sender, EventArgs e)

@@ -328,7 +328,6 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // TextBox3
             // 
@@ -1031,7 +1030,6 @@
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // groupBox7
             // 
@@ -1595,7 +1593,6 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // label11
             // 
@@ -1845,7 +1842,6 @@
             this.изФайлаНастроекcarToolStripMenuItem});
             resources.ApplyResources(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem, "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem");
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Name = "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem";
-            this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Click += new System.EventHandler(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem_Click);
             // 
             // изФайлаGlobalBlzcToolStripMenuItem
             // 
