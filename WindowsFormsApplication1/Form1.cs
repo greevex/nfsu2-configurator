@@ -15,9 +15,9 @@ namespace NFSU2CH
 {
     public partial class Form1 : Form
     {
-        private int[] privod, privodfull, s, minis, rwd = null;
+        private int[] s, minis = null;
         private int[] loaded = new int[Properti.map.Length];
-        private Parser p, minip;
+        private Parser p;
         private Thread t1;
         private string LOGIN = "GreeveX";
         private string PASSWORD = "";
@@ -139,77 +139,77 @@ namespace NFSU2CH
 
                 /* ЭКУ */
 
-                textBox4.Text = s[786].ToString(); // 1
+                // 1
                 trackBar7.Value = s[786];
                 adval(comboBox3, s[787]);
 
-                textBox6.Text = s[790].ToString(); // 2
+                // 2
                 trackBar8.Value = s[790];
                 adval(comboBox5, s[791]);
 
-                textBox8.Text = s[794].ToString(); // 3
+                // 3
                 trackBar9.Value = s[794];
                 adval(comboBox6, s[795]);
 
-                textBox10.Text = s[798].ToString();// 4
+                // 4
                 trackBar10.Value = s[798];
                 adval(comboBox7, s[799]);
 
-                textBox12.Text = s[802].ToString();// 5
+                // 5
                 trackBar11.Value = s[802];
                 adval(comboBox8, s[803]);
 
-                textBox31.Text = s[806].ToString();// 6
+                // 6
                 trackBar12.Value = s[806];
                 adval(comboBox9, s[807]);
 
-                textBox33.Text = s[810].ToString();// 7
+                // 7
                 trackBar13.Value = s[810];
                 adval(comboBox10, s[811]);
 
-                textBox35.Text = s[814].ToString();// 8
+                // 8
                 trackBar14.Value = s[814];
                 adval(comboBox11, s[815]);
 
-                textBox37.Text = s[818].ToString();// 9
+                // 9
                 trackBar15.Value = s[818];
                 adval(comboBox12, s[819]);
 
                 /* Турбо */
 
-                textBox13.Text = s[834].ToString();// 1
+                // 1
                 trackBar16.Value = s[834];
                 adval(comboBox13, s[835]);
 
-                textBox15.Text = s[838].ToString();// 2
+                // 2
                 trackBar17.Value = s[838];
                 adval(comboBox14, s[839]);
 
-                textBox17.Text = s[842].ToString();// 3
+                // 3
                 trackBar18.Value = s[842];
                 adval(comboBox15, s[843]);
 
-                textBox19.Text = s[846].ToString();// 4
+                // 4
                 trackBar19.Value = s[846];
                 adval(comboBox16, s[847]);
 
-                textBox21.Text = s[850].ToString();// 5
+                // 5
                 trackBar20.Value = s[850];
                 adval(comboBox17, s[851]);
 
-                textBox46.Text = s[854].ToString();// 6
+                // 6
                 trackBar21.Value = s[854];
                 adval(comboBox18, s[855]);
 
-                textBox40.Text = s[858].ToString();// 7
+                // 7
                 trackBar22.Value = s[858];
                 adval(comboBox19, s[859]);
 
-                textBox41.Text = s[862].ToString();// 8
+                // 8
                 trackBar23.Value = s[862];
                 adval(comboBox20, s[863]);
 
-                textBox45.Text = s[866].ToString();// 9
+                // 9
                 trackBar24.Value = s[866];
                 adval(comboBox21, s[867]);
 
@@ -277,95 +277,6 @@ namespace NFSU2CH
             label14.Text = trackBar1.Value.ToString();
         }
 
-        private void trackBar7_Scroll(object sender, EventArgs e)
-        {
-            textBox4.Text = trackBar7.Value.ToString();
-        }
-
-        private void trackBar8_Scroll(object sender, EventArgs e)
-        {
-            textBox6.Text = trackBar8.Value.ToString();
-        }
-
-        private void trackBar9_Scroll(object sender, EventArgs e)
-        {
-            textBox8.Text = trackBar9.Value.ToString();
-        }
-
-        private void trackBar10_Scroll(object sender, EventArgs e)
-        {
-            textBox10.Text = trackBar10.Value.ToString();
-        }
-
-        private void trackBar11_Scroll(object sender, EventArgs e)
-        {
-            textBox12.Text = trackBar11.Value.ToString();
-        }
-
-        private void trackBar12_Scroll(object sender, EventArgs e)
-        {
-            textBox31.Text = trackBar12.Value.ToString();
-        }
-
-        private void trackBar13_Scroll(object sender, EventArgs e)
-        {
-            textBox33.Text = trackBar13.Value.ToString();
-        }
-
-        private void trackBar14_Scroll(object sender, EventArgs e)
-        {
-            textBox35.Text = trackBar14.Value.ToString();
-        }
-
-        private void trackBar15_Scroll(object sender, EventArgs e)
-        {
-            textBox37.Text = trackBar15.Value.ToString();
-        }
-
-        private void trackBar16_Scroll(object sender, EventArgs e)
-        {
-            textBox13.Text = trackBar16.Value.ToString();
-        }
-
-        private void trackBar17_Scroll(object sender, EventArgs e)
-        {
-            textBox15.Text = trackBar17.Value.ToString();
-        }
-
-        private void trackBar18_Scroll(object sender, EventArgs e)
-        {
-            textBox17.Text = trackBar18.Value.ToString();
-        }
-
-        private void trackBar19_Scroll(object sender, EventArgs e)
-        {
-            textBox19.Text = trackBar19.Value.ToString();
-        }
-
-        private void trackBar20_Scroll(object sender, EventArgs e)
-        {
-            textBox21.Text = trackBar20.Value.ToString();
-        }
-
-        private void trackBar21_Scroll(object sender, EventArgs e)
-        {
-            textBox46.Text = trackBar21.Value.ToString();
-        }
-
-        private void trackBar22_Scroll(object sender, EventArgs e)
-        {
-            textBox40.Text = trackBar22.Value.ToString();
-        }
-
-        private void trackBar23_Scroll(object sender, EventArgs e)
-        {
-            textBox41.Text = trackBar23.Value.ToString();
-        }
-
-        private void trackBar24_Scroll(object sender, EventArgs e)
-        {
-            textBox45.Text = trackBar24.Value.ToString();
-        }
         private void trackBar25_Scroll(object sender, EventArgs e)
         {
             label63.Text = trackBar25.Value.ToString();
@@ -551,32 +462,44 @@ namespace NFSU2CH
 
         private void button3_Click(object sender, EventArgs e)
         {
-            trackBar29.Value = minis[1];
-            comboBox26.Text = minis[2].ToString();
+            this.minis = p.parse(Properti.getPosition(this.comboBox2.Text));
+            if (this.minis == null)
+                return;
 
-            trackBar30.Value= minis[3];
-            comboBox27.Text = minis[4].ToString();
+            trackBar29.Value = minis[546];
+            label80.Text = minis[546].ToString();
+            comboBox26.Text = minis[547].ToString();
 
-            trackBar31.Value = minis[5];
-            comboBox28.Text = minis[6].ToString();
+            trackBar30.Value = minis[550];
+            label81.Text = minis[550].ToString();
+            comboBox27.Text = minis[551].ToString();
 
-            trackBar32.Value = minis[7];
-            comboBox29.Text = minis[8].ToString();
+            trackBar31.Value = minis[554];
+            label82.Text = minis[554].ToString();
+            comboBox28.Text = minis[555].ToString();
+
+            trackBar32.Value = minis[558];
+            label83.Text = minis[558].ToString();
+            comboBox29.Text = minis[559].ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            trackBar29.Value = minis[131];
-            comboBox26.Text = minis[132].ToString();
+            trackBar29.Value = s[546];
+            label80.Text = s[546].ToString();
+            adval(comboBox26, s[547]);
 
-            trackBar30.Value = minis[135];
-            comboBox27.Text = minis[136].ToString();
+            trackBar30.Value = s[550];
+            label81.Text = s[550].ToString();
+            adval(comboBox27, s[551]);
 
-            trackBar31.Value = minis[139];
-            comboBox28.Text = minis[140].ToString();
+            trackBar31.Value = s[554];
+            label82.Text = s[554].ToString();
+            adval(comboBox28, s[555]);
 
-            trackBar32.Value = minis[143];
-            comboBox29.Text = minis[144].ToString();
+            trackBar32.Value = s[558];
+            label83.Text = s[558].ToString();
+            adval(comboBox29, s[559]);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -586,9 +509,6 @@ namespace NFSU2CH
                 MessageBox.Show(resourceManager.GetString("fileNotSelected"));
                 return;
             }
-            this.minis = p.parse(Properti.getPosition(this.comboBox2.Text));
-            if (this.minis == null)
-                return;
         }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -756,44 +676,44 @@ namespace NFSU2CH
 
                 /* ЭКУ */
 
-                s[786] = Int32.Parse(textBox4.Text); // 1
+                s[786] = trackBar7.Value; // 1
                 s[787] = Int32.Parse(comboBox3.Text);
-                s[790] = Int32.Parse(textBox6.Text); // 2
+                s[790] = trackBar8.Value; // 2
                 s[791] = Int32.Parse(comboBox5.Text);
-                s[794] = Int32.Parse(textBox8.Text); // 3
+                s[794] = trackBar9.Value; // 3
                 s[795] = Int32.Parse(comboBox6.Text);
-                s[798] = Int32.Parse(textBox10.Text);// 4
+                s[798] = trackBar10.Value;// 4
                 s[799] = Int32.Parse(comboBox7.Text);
-                s[802] = Int32.Parse(textBox12.Text);// 5
+                s[802] = trackBar11.Value;// 5
                 s[803] = Int32.Parse(comboBox8.Text);
-                s[806] = Int32.Parse(textBox31.Text);// 6
+                s[806] = trackBar12.Value;// 6
                 s[807] = Int32.Parse(comboBox9.Text);
-                s[810] = Int32.Parse(textBox33.Text);// 7
+                s[810] = trackBar13.Value;// 7
                 s[811] = Int32.Parse(comboBox10.Text);
-                s[814] = Int32.Parse(textBox35.Text);// 8
+                s[814] = trackBar14.Value;// 8
                 s[815] = Int32.Parse(comboBox11.Text);
-                s[818] = Int32.Parse(textBox37.Text);// 9
+                s[818] = trackBar15.Value;// 9
                 s[819] = Int32.Parse(comboBox12.Text);
 
                 /* Турбо */
 
-                s[834] = Int32.Parse(textBox13.Text);// 1
+                s[834] = trackBar16.Value;// 1
                 s[835] = Int32.Parse(comboBox13.Text);
-                s[838] = Int32.Parse(textBox15.Text);// 2
+                s[838] = trackBar17.Value;// 2
                 s[839] = Int32.Parse(comboBox14.Text);
-                s[842] = Int32.Parse(textBox17.Text);// 3
+                s[842] = trackBar18.Value;// 3
                 s[843] = Int32.Parse(comboBox15.Text);
-                s[846] = Int32.Parse(textBox19.Text);// 4
+                s[846] = trackBar19.Value;// 4
                 s[847] = Int32.Parse(comboBox16.Text);
-                s[850] = Int32.Parse(textBox21.Text);// 5
+                s[850] = trackBar20.Value;// 5
                 s[851] = Int32.Parse(comboBox17.Text);
-                s[854] = Int32.Parse(textBox46.Text);// 6
+                s[854] = trackBar21.Value;// 6
                 s[855] = Int32.Parse(comboBox18.Text);
-                s[858] = Int32.Parse(textBox40.Text);// 7
+                s[858] = trackBar22.Value;// 7
                 s[859] = Int32.Parse(comboBox19.Text);
-                s[862] = Int32.Parse(textBox41.Text);// 8
+                s[862] = trackBar23.Value;// 8
                 s[863] = Int32.Parse(comboBox20.Text);
-                s[866] = Int32.Parse(textBox45.Text);// 9
+                s[866] = trackBar24.Value;// 9
                 s[867] = Int32.Parse(comboBox21.Text);
             #endregion
         }
