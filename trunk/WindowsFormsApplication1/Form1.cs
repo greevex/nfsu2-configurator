@@ -223,17 +223,17 @@ namespace NFSU2CH
 
                 /* Управление */
 
-                maskedTextBox3.Text = s[546].ToString();
-                maskedTextBox4.Text = s[547].ToString();
+                trackBar29.Value = s[546];
+                adval(comboBox26, s[547]);
 
-                maskedTextBox7.Text = s[550].ToString();
-                maskedTextBox8.Text = s[551].ToString();
+                trackBar30.Value = s[550];
+                adval(comboBox27, s[551]);
 
-                maskedTextBox11.Text = s[554].ToString();
-                maskedTextBox12.Text = s[555].ToString();
+                trackBar31.Value = s[554];
+                adval(comboBox28, s[555]);
 
-                maskedTextBox15.Text = s[558].ToString();
-                maskedTextBox16.Text = s[559].ToString();
+                trackBar32.Value = s[558];
+                adval(comboBox29, s[559]);
 
                 #endregion
 
@@ -275,51 +275,6 @@ namespace NFSU2CH
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             label14.Text = trackBar1.Value.ToString();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (p.main == null)
-            {
-                MessageBox.Show(resourceManager.GetString("nothingToSave"));
-                return;
-            }
-            //обновление int[] this.s
-            getUserConfigForCurrentCar();
-
-            this.progressBar1.Maximum = this.p.Total;
-            this.progressBar1.Value = 0;
-            this.t1 = new Thread(new ThreadStart(saveT));
-            Thread t = new Thread(new ThreadStart(this.prgs));
-            t1.Start();
-            t.Start();
-        }
-        #endregion
-        private void saveT()
-        {
-            if (this.p.save(this.currentCar, this.s))
-            {
-                MessageBox.Show(resourceManager.GetString("saveOk"));
-            }
-            else
-                MessageBox.Show(resourceManager.GetString("saveError"));
-            this.Invoke((MethodInvoker)(() => this.Activate()));
-        }
-
-        void prgs()
-        {
-            this.Invoke((MethodInvoker)(() => this.Enabled = false));
-            while (t1.IsAlive)
-            {
-                progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
-                Thread.Sleep(10);
-            }
-            this.Invoke((MethodInvoker)(() => this.Enabled = true));
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void trackBar7_Scroll(object sender, EventArgs e)
@@ -410,6 +365,87 @@ namespace NFSU2CH
         private void trackBar24_Scroll(object sender, EventArgs e)
         {
             textBox45.Text = trackBar24.Value.ToString();
+        }
+        private void trackBar25_Scroll(object sender, EventArgs e)
+        {
+            label63.Text = trackBar25.Value.ToString();
+        }
+
+        private void trackBar26_Scroll(object sender, EventArgs e)
+        {
+            label66.Text = trackBar26.Value.ToString();
+        }
+
+        private void trackBar27_Scroll(object sender, EventArgs e)
+        {
+            label72.Text = trackBar27.Value.ToString(); ;
+        }
+
+        private void trackBar28_Scroll(object sender, EventArgs e)
+        {
+            label70.Text = trackBar28.Value.ToString();
+        }
+
+        private void trackBar29_Scroll(object sender, EventArgs e)
+        {
+            label80.Text = trackBar29.Value.ToString();
+        }
+
+        private void trackBar30_Scroll(object sender, EventArgs e)
+        {
+            label81.Text = trackBar30.Value.ToString();
+        }
+
+        private void trackBar31_Scroll(object sender, EventArgs e)
+        {
+            label82.Text = trackBar31.Value.ToString();
+        }
+
+        private void trackBar32_Scroll(object sender, EventArgs e)
+        {
+            label83.Text = trackBar32.Value.ToString();
+        }
+
+        #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (p.main == null)
+            {
+                MessageBox.Show(resourceManager.GetString("nothingToSave"));
+                return;
+            }
+            //обновление int[] this.s
+            getUserConfigForCurrentCar();
+
+            this.progressBar1.Maximum = this.p.Total;
+            this.progressBar1.Value = 0;
+            this.t1 = new Thread(new ThreadStart(saveT));
+            Thread t = new Thread(new ThreadStart(this.prgs));
+            t1.Start();
+            t.Start();
+        }
+
+        private void saveT()
+        {
+            if (this.p.save(this.currentCar, this.s))
+            {
+                MessageBox.Show(resourceManager.GetString("saveOk"));
+            }
+            else
+                MessageBox.Show(resourceManager.GetString("saveError"));
+            this.Invoke((MethodInvoker)(() => this.Activate()));
+        }
+
+        void prgs()
+        {
+            this.Invoke((MethodInvoker)(() => this.Enabled = false));
+            while (t1.IsAlive)
+            {
+                progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
+                Thread.Sleep(10);
+            }
+            this.Invoke((MethodInvoker)(() => this.Enabled = true));
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -515,32 +551,32 @@ namespace NFSU2CH
 
         private void button3_Click(object sender, EventArgs e)
         {
-            maskedTextBox3.Text = minis[1].ToString();
-            maskedTextBox4.Text = minis[2].ToString();
+            trackBar29.Value = minis[1];
+            comboBox26.Text = minis[2].ToString();
 
-            maskedTextBox7.Text = minis[3].ToString();
-            maskedTextBox8.Text = minis[4].ToString();
+            trackBar30.Value= minis[3];
+            comboBox27.Text = minis[4].ToString();
 
-            maskedTextBox11.Text = minis[5].ToString();
-            maskedTextBox12.Text = minis[6].ToString();
+            trackBar31.Value = minis[5];
+            comboBox28.Text = minis[6].ToString();
 
-            maskedTextBox15.Text = minis[7].ToString();
-            maskedTextBox16.Text = minis[8].ToString();
+            trackBar32.Value = minis[7];
+            comboBox29.Text = minis[8].ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            maskedTextBox3.Text = s[131].ToString();
-            maskedTextBox4.Text = s[132].ToString();
+            trackBar29.Value = minis[131];
+            comboBox26.Text = minis[132].ToString();
 
-            maskedTextBox7.Text = s[135].ToString();
-            maskedTextBox8.Text = s[136].ToString();
+            trackBar30.Value = minis[135];
+            comboBox27.Text = minis[136].ToString();
 
-            maskedTextBox11.Text = s[139].ToString();
-            maskedTextBox12.Text = s[140].ToString();
+            trackBar31.Value = minis[139];
+            comboBox28.Text = minis[140].ToString();
 
-            maskedTextBox15.Text = s[143].ToString();
-            maskedTextBox16.Text = s[144].ToString();
+            trackBar32.Value = minis[143];
+            comboBox29.Text = minis[144].ToString();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -553,16 +589,6 @@ namespace NFSU2CH
             this.minis = p.parse(Properti.getPosition(this.comboBox2.Text));
             if (this.minis == null)
                 return;
-        }
-
-        private void trackBar25_Scroll(object sender, EventArgs e)
-        {
-            label63.Text = trackBar25.Value.ToString();
-        }
-
-        private void trackBar26_Scroll(object sender, EventArgs e)
-        {
-            label66.Text = trackBar26.Value.ToString();
         }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
@@ -706,17 +732,17 @@ namespace NFSU2CH
 
                 /* Управление */
                 //@ToDo: узнать как именно реагируют настройки....
-                s[546] = Int32.Parse(maskedTextBox3.Text);
-                s[547] = Int32.Parse(maskedTextBox4.Text);
+                s[546] = trackBar29.Value;
+                s[547] = Int32.Parse(comboBox26.Text);
 
-                s[550] = Int32.Parse(maskedTextBox7.Text);
-                s[551] = Int32.Parse(maskedTextBox8.Text);
+                s[550] = trackBar30.Value;
+                s[551] = Int32.Parse(comboBox27.Text);
 
-                s[554] = Int32.Parse(maskedTextBox11.Text);
-                s[555] = Int32.Parse(maskedTextBox12.Text);
+                s[554] = trackBar31.Value;
+                s[555] = Int32.Parse(comboBox28.Text);
 
-                s[558] = Int32.Parse(maskedTextBox15.Text);
-                s[559] = Int32.Parse(maskedTextBox16.Text);
+                s[558] = trackBar32.Value;
+                s[559] = Int32.Parse(comboBox29.Text);
 
                 /* Обороты */
                 s[770] = Int32.Parse(TextBox3.Text); // Нейтралка
@@ -805,16 +831,6 @@ namespace NFSU2CH
         private void Form1_Load_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void trackBar27_Scroll(object sender, EventArgs e)
-        {
-            label72.Text = trackBar27.Value.ToString(); ;
-        }
-
-        private void trackBar28_Scroll(object sender, EventArgs e)
-        {
-            label70.Text = trackBar28.Value.ToString();
         }
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
