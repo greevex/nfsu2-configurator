@@ -85,11 +85,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.label22 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -701,33 +696,6 @@
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
-            // linkLabel1
-            // 
-            resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            // 
-            // linkLabel2
-            // 
-            resources.ApplyResources(this.linkLabel2, "linkLabel2");
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.TabStop = true;
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
             // 
             // openFileDialog1
             // 
@@ -1860,6 +1828,7 @@
             // 
             resources.ApplyResources(this.closeGameToolStripMenuItem, "closeGameToolStripMenuItem");
             this.closeGameToolStripMenuItem.Name = "closeGameToolStripMenuItem";
+            this.closeGameToolStripMenuItem.Click += new System.EventHandler(this.closeGameToolStripMenuItem_Click);
             // 
             // label54
             // 
@@ -1886,12 +1855,7 @@
             this.Controls.Add(this.label55);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
             this.Controls.Add(this.textBox26);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.progressBar1);
@@ -1981,11 +1945,6 @@
         public System.Windows.Forms.GroupBox groupBox3;
         public System.Windows.Forms.TextBox textBox26;
         public System.Windows.Forms.Label label19;
-        public System.Windows.Forms.Label label20;
-        public System.Windows.Forms.LinkLabel linkLabel1;
-        public System.Windows.Forms.Label label21;
-        public System.Windows.Forms.LinkLabel linkLabel2;
-        public System.Windows.Forms.Label label22;
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.TabControl tabControl1;
