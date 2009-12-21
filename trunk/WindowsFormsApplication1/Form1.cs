@@ -23,7 +23,7 @@ namespace NFSU2CH
         private string LOGIN = "GreeveX";
         private string PASSWORD = "";
         private FormAuth fa;
-        private int currentCar;
+        private int currentCar, res_w=640, res_h=480;
         private bool authbuttonclick = false;
         OpenFileDialog openFileDialog2 = new OpenFileDialog();
         ResourceManager resourceManager = new ResourceManager(typeof(Form1));
@@ -105,27 +105,6 @@ namespace NFSU2CH
 
                 label13.Text = s[290].ToString();
                 label14.Text = s[386].ToString();
-
-                maskedTextBox5.Text = s[320].ToString();
-                maskedTextBox6.Text = s[321].ToString();
-                maskedTextBox9.Text = s[322].ToString();
-                maskedTextBox10.Text = s[323].ToString();
-
-                maskedTextBox19.Text = s[368].ToString();
-                maskedTextBox20.Text = s[369].ToString();
-                maskedTextBox21.Text = s[370].ToString();
-                maskedTextBox22.Text = s[371].ToString();
-
-                maskedTextBox27.Text = s[419].ToString();
-                maskedTextBox28.Text = s[432].ToString();
-                maskedTextBox29.Text = s[433].ToString();
-                maskedTextBox30.Text = s[434].ToString();
-
-                maskedTextBox35.Text = s[464].ToString();
-                maskedTextBox36.Text = s[465].ToString();
-                maskedTextBox37.Text = s[466].ToString();
-                maskedTextBox38.Text = s[467].ToString();
-
 
                 /* Обороты */
 
@@ -580,33 +559,13 @@ namespace NFSU2CH
                 /* Пыщ! */
 
                 s[290] = trackBar1.Value;
-                //s[338] = s[290];
+                s[338] = s[290];
                 s[386] = trackBar2.Value;
-                //s[434] = s[386];
+                s[434] = s[386];
                 s[354] = trackBar27.Value;
                 s[306] = trackBar27.Value;
                 s[450] = trackBar28.Value;
                 s[402] = trackBar28.Value;
-
-                s[320] = Int32.Parse(maskedTextBox5.Text);
-                s[321] = Int32.Parse(maskedTextBox6.Text);
-                s[322] = Int32.Parse(maskedTextBox9.Text);
-                s[323] = Int32.Parse(maskedTextBox10.Text);
-
-                s[368] = Int32.Parse(maskedTextBox19.Text);
-                s[369] = Int32.Parse(maskedTextBox20.Text);
-                s[370] = Int32.Parse(maskedTextBox21.Text);
-                s[371] = Int32.Parse(maskedTextBox22.Text);
-
-                s[419] = Int32.Parse(maskedTextBox27.Text);
-                s[420] = Int32.Parse(maskedTextBox28.Text);
-                s[421] = Int32.Parse(maskedTextBox29.Text);
-                s[422] = Int32.Parse(maskedTextBox30.Text);
-
-                s[464] = Int32.Parse(maskedTextBox35.Text);
-                s[465] = Int32.Parse(maskedTextBox36.Text);
-                s[466] = Int32.Parse(maskedTextBox37.Text);
-                s[467] = Int32.Parse(maskedTextBox38.Text);
 
                 /* Подвеска */
                 s[298] = Int32.Parse(maskedTextBox1.Text);
@@ -766,6 +725,19 @@ namespace NFSU2CH
         private void closeGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+            string[] res = toolStripComboBox1.Text.Split('x');
+            res_w = Int32.Parse(res[0]);
+            res_h = Int32.Parse(res[1]);
+            MessageBox.Show("resolution: " + res_w.ToString() + " x " + res_h.ToString());
+        }
+
+        private void setToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
