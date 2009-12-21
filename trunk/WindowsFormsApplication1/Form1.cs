@@ -727,17 +727,12 @@ namespace NFSU2CH
             
         }
 
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        private void setToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             string[] res = toolStripComboBox1.Text.Split('x');
-            res_w = Int32.Parse(res[0]);
-            res_h = Int32.Parse(res[1]);
-            MessageBox.Show("resolution: " + res_w.ToString() + " x " + res_h.ToString());
-        }
-
-        private void setToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            this.res_w = Int32.Parse(res[0]);
+            this.res_h = Int32.Parse(res[1]);
+            MessageBox.Show("resolution: " + this.res_w.ToString() + " x " + this.res_h.ToString());
         }
     }
 }

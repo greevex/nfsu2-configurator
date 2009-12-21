@@ -6694,11 +6694,29 @@ Width</value>
   <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="startGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
+  <data name="startWindowedToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
   </data>
-  <data name="startGameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Game</value>
+  <data name="startWindowedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start Windowed</value>
+  </data>
+  <data name="startToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start Normal</value>
+  </data>
+  <data name="closeGameToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="closeGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="closeGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close Game</value>
   </data>
   <data name="toolStripComboBox1.Items" xml:space="preserve">
     <value>176x132</value>
@@ -6784,11 +6802,17 @@ Width</value>
   <data name="setToolStripMenuItem.Text" xml:space="preserve">
     <value>Set</value>
   </data>
-  <data name="resolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+  <data name="reToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
   </data>
-  <data name="resolutionToolStripMenuItem.Text" xml:space="preserve">
+  <data name="reToolStripMenuItem.Text" xml:space="preserve">
     <value>Resolution</value>
+  </data>
+  <data name="startGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="startGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Game</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -6900,30 +6924,6 @@ Width</value>
   </data>
   <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
     <value>Knowledge base</value>
-  </data>
-  <data name="startWindowedToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
-  </data>
-  <data name="startWindowedToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start Windowed</value>
-  </data>
-  <data name="startToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
-  </data>
-  <data name="startToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start Normal</value>
-  </data>
-  <data name="closeGameToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="closeGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 22</value>
-  </data>
-  <data name="closeGameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close Game</value>
   </data>
   <data name="label54.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -7354,10 +7354,10 @@ Width</value>
   <data name="&gt;&gt;toolStripStatusLabel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;resolutionToolStripMenuItem.Name" xml:space="preserve">
-    <value>resolutionToolStripMenuItem</value>
+  <data name="&gt;&gt;reToolStripMenuItem.Name" xml:space="preserve">
+    <value>reToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;resolutionToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;reToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripComboBox1.Name" xml:space="preserve">

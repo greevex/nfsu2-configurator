@@ -219,7 +219,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.resolutionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.setToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
@@ -1480,8 +1480,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.менюToolStripMenuItem,
             this.помщьToolStripMenuItem,
-            this.startGameToolStripMenuItem,
-            this.resolutionToolStripMenuItem});
+            this.startGameToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -1590,7 +1589,8 @@
             this.startGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startWindowedToolStripMenuItem,
             this.startToolStripMenuItem,
-            this.closeGameToolStripMenuItem});
+            this.closeGameToolStripMenuItem,
+            this.reToolStripMenuItem});
             this.startGameToolStripMenuItem.Name = "startGameToolStripMenuItem";
             resources.ApplyResources(this.startGameToolStripMenuItem, "startGameToolStripMenuItem");
             // 
@@ -1645,16 +1645,17 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
             // 
-            // resolutionToolStripMenuItem
+            // reToolStripMenuItem
             // 
-            this.resolutionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1,
             this.setToolStripMenuItem});
-            this.resolutionToolStripMenuItem.Name = "resolutionToolStripMenuItem";
-            resources.ApplyResources(this.resolutionToolStripMenuItem, "resolutionToolStripMenuItem");
+            this.reToolStripMenuItem.Name = "reToolStripMenuItem";
+            resources.ApplyResources(this.reToolStripMenuItem, "reToolStripMenuItem");
             // 
             // toolStripComboBox1
             // 
+            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolStripComboBox1.Items.AddRange(new object[] {
             resources.GetString("toolStripComboBox1.Items"),
             resources.GetString("toolStripComboBox1.Items1"),
@@ -1688,7 +1689,7 @@
             // 
             this.setToolStripMenuItem.Name = "setToolStripMenuItem";
             resources.ApplyResources(this.setToolStripMenuItem, "setToolStripMenuItem");
-            this.setToolStripMenuItem.Click += new System.EventHandler(this.setToolStripMenuItem_Click);
+            this.setToolStripMenuItem.Click += new System.EventHandler(this.setToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -1969,7 +1970,7 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripMenuItem resolutionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reToolStripMenuItem;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.ToolStripMenuItem setToolStripMenuItem;
     }
