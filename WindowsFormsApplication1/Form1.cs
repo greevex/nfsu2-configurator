@@ -762,5 +762,10 @@ namespace NFSU2CH
         {
             Process.Start(Directory.GetParent(Directory.GetParent(p.filename).FullName).FullName + "\\Launcher.exe");
         }
+
+        private void closeGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
