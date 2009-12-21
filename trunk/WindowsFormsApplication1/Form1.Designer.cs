@@ -54,23 +54,14 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.trackBar15 = new System.Windows.Forms.TrackBar();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.trackBar14 = new System.Windows.Forms.TrackBar();
-            this.textBox37 = new System.Windows.Forms.TextBox();
             this.trackBar13 = new System.Windows.Forms.TrackBar();
             this.trackBar12 = new System.Windows.Forms.TrackBar();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
             this.trackBar11 = new System.Windows.Forms.TrackBar();
             this.trackBar10 = new System.Windows.Forms.TrackBar();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.trackBar9 = new System.Windows.Forms.TrackBar();
-            this.textBox33 = new System.Windows.Forms.TextBox();
             this.trackBar8 = new System.Windows.Forms.TrackBar();
             this.trackBar7 = new System.Windows.Forms.TrackBar();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label50 = new System.Windows.Forms.Label();
             this.comboBox21 = new System.Windows.Forms.ComboBox();
@@ -88,18 +79,9 @@
             this.trackBar21 = new System.Windows.Forms.TrackBar();
             this.trackBar20 = new System.Windows.Forms.TrackBar();
             this.trackBar19 = new System.Windows.Forms.TrackBar();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.trackBar18 = new System.Windows.Forms.TrackBar();
-            this.textBox46 = new System.Windows.Forms.TextBox();
             this.trackBar17 = new System.Windows.Forms.TrackBar();
-            this.textBox45 = new System.Windows.Forms.TextBox();
             this.trackBar16 = new System.Windows.Forms.TrackBar();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox26 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -415,23 +397,14 @@
             this.groupBox2.Controls.Add(this.comboBox4);
             this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Controls.Add(this.trackBar15);
-            this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.trackBar14);
-            this.groupBox2.Controls.Add(this.textBox37);
             this.groupBox2.Controls.Add(this.trackBar13);
             this.groupBox2.Controls.Add(this.trackBar12);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox35);
             this.groupBox2.Controls.Add(this.trackBar11);
             this.groupBox2.Controls.Add(this.trackBar10);
-            this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.trackBar9);
-            this.groupBox2.Controls.Add(this.textBox33);
             this.groupBox2.Controls.Add(this.trackBar8);
             this.groupBox2.Controls.Add(this.trackBar7);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox31);
-            this.groupBox2.Controls.Add(this.textBox4);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
@@ -516,117 +489,54 @@
             resources.ApplyResources(this.trackBar15, "trackBar15");
             this.trackBar15.Maximum = 255;
             this.trackBar15.Name = "trackBar15";
-            this.trackBar15.Scroll += new System.EventHandler(this.trackBar15_Scroll);
-            // 
-            // textBox12
-            // 
-            this.textBox12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
             // 
             // trackBar14
             // 
             resources.ApplyResources(this.trackBar14, "trackBar14");
             this.trackBar14.Maximum = 255;
             this.trackBar14.Name = "trackBar14";
-            this.trackBar14.Scroll += new System.EventHandler(this.trackBar14_Scroll);
-            // 
-            // textBox37
-            // 
-            this.textBox37.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox37, "textBox37");
-            this.textBox37.Name = "textBox37";
             // 
             // trackBar13
             // 
             resources.ApplyResources(this.trackBar13, "trackBar13");
             this.trackBar13.Maximum = 255;
             this.trackBar13.Name = "trackBar13";
-            this.trackBar13.Scroll += new System.EventHandler(this.trackBar13_Scroll);
             // 
             // trackBar12
             // 
             resources.ApplyResources(this.trackBar12, "trackBar12");
             this.trackBar12.Maximum = 255;
             this.trackBar12.Name = "trackBar12";
-            this.trackBar12.Scroll += new System.EventHandler(this.trackBar12_Scroll);
-            // 
-            // textBox10
-            // 
-            this.textBox10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
-            // 
-            // textBox35
-            // 
-            this.textBox35.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox35, "textBox35");
-            this.textBox35.Name = "textBox35";
             // 
             // trackBar11
             // 
             resources.ApplyResources(this.trackBar11, "trackBar11");
             this.trackBar11.Maximum = 255;
             this.trackBar11.Name = "trackBar11";
-            this.trackBar11.Scroll += new System.EventHandler(this.trackBar11_Scroll);
             // 
             // trackBar10
             // 
             resources.ApplyResources(this.trackBar10, "trackBar10");
             this.trackBar10.Maximum = 255;
             this.trackBar10.Name = "trackBar10";
-            this.trackBar10.Scroll += new System.EventHandler(this.trackBar10_Scroll);
-            // 
-            // textBox8
-            // 
-            this.textBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
             // 
             // trackBar9
             // 
             resources.ApplyResources(this.trackBar9, "trackBar9");
             this.trackBar9.Maximum = 255;
             this.trackBar9.Name = "trackBar9";
-            this.trackBar9.Scroll += new System.EventHandler(this.trackBar9_Scroll);
-            // 
-            // textBox33
-            // 
-            this.textBox33.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox33, "textBox33");
-            this.textBox33.Name = "textBox33";
             // 
             // trackBar8
             // 
             resources.ApplyResources(this.trackBar8, "trackBar8");
             this.trackBar8.Maximum = 255;
             this.trackBar8.Name = "trackBar8";
-            this.trackBar8.Scroll += new System.EventHandler(this.trackBar8_Scroll);
             // 
             // trackBar7
             // 
             resources.ApplyResources(this.trackBar7, "trackBar7");
             this.trackBar7.Maximum = 255;
             this.trackBar7.Name = "trackBar7";
-            this.trackBar7.Scroll += new System.EventHandler(this.trackBar7_Scroll);
-            // 
-            // textBox6
-            // 
-            this.textBox6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // textBox31
-            // 
-            this.textBox31.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox31, "textBox31");
-            this.textBox31.Name = "textBox31";
-            // 
-            // textBox4
-            // 
-            this.textBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
             // 
             // groupBox3
             // 
@@ -646,18 +556,9 @@
             this.groupBox3.Controls.Add(this.trackBar21);
             this.groupBox3.Controls.Add(this.trackBar20);
             this.groupBox3.Controls.Add(this.trackBar19);
-            this.groupBox3.Controls.Add(this.textBox21);
             this.groupBox3.Controls.Add(this.trackBar18);
-            this.groupBox3.Controls.Add(this.textBox46);
             this.groupBox3.Controls.Add(this.trackBar17);
-            this.groupBox3.Controls.Add(this.textBox45);
             this.groupBox3.Controls.Add(this.trackBar16);
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox19);
-            this.groupBox3.Controls.Add(this.textBox41);
-            this.groupBox3.Controls.Add(this.textBox15);
-            this.groupBox3.Controls.Add(this.textBox40);
-            this.groupBox3.Controls.Add(this.textBox17);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
@@ -735,117 +636,54 @@
             resources.ApplyResources(this.trackBar24, "trackBar24");
             this.trackBar24.Maximum = 255;
             this.trackBar24.Name = "trackBar24";
-            this.trackBar24.Scroll += new System.EventHandler(this.trackBar24_Scroll);
             // 
             // trackBar23
             // 
             resources.ApplyResources(this.trackBar23, "trackBar23");
             this.trackBar23.Maximum = 255;
             this.trackBar23.Name = "trackBar23";
-            this.trackBar23.Scroll += new System.EventHandler(this.trackBar23_Scroll);
             // 
             // trackBar22
             // 
             resources.ApplyResources(this.trackBar22, "trackBar22");
             this.trackBar22.Maximum = 255;
             this.trackBar22.Name = "trackBar22";
-            this.trackBar22.Scroll += new System.EventHandler(this.trackBar22_Scroll);
             // 
             // trackBar21
             // 
             resources.ApplyResources(this.trackBar21, "trackBar21");
             this.trackBar21.Maximum = 255;
             this.trackBar21.Name = "trackBar21";
-            this.trackBar21.Scroll += new System.EventHandler(this.trackBar21_Scroll);
             // 
             // trackBar20
             // 
             resources.ApplyResources(this.trackBar20, "trackBar20");
             this.trackBar20.Maximum = 255;
             this.trackBar20.Name = "trackBar20";
-            this.trackBar20.Scroll += new System.EventHandler(this.trackBar20_Scroll);
             // 
             // trackBar19
             // 
             resources.ApplyResources(this.trackBar19, "trackBar19");
             this.trackBar19.Maximum = 255;
             this.trackBar19.Name = "trackBar19";
-            this.trackBar19.Scroll += new System.EventHandler(this.trackBar19_Scroll);
-            // 
-            // textBox21
-            // 
-            this.textBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox21, "textBox21");
-            this.textBox21.Name = "textBox21";
             // 
             // trackBar18
             // 
             resources.ApplyResources(this.trackBar18, "trackBar18");
             this.trackBar18.Maximum = 255;
             this.trackBar18.Name = "trackBar18";
-            this.trackBar18.Scroll += new System.EventHandler(this.trackBar18_Scroll);
-            // 
-            // textBox46
-            // 
-            this.textBox46.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox46, "textBox46");
-            this.textBox46.Name = "textBox46";
             // 
             // trackBar17
             // 
             resources.ApplyResources(this.trackBar17, "trackBar17");
             this.trackBar17.Maximum = 255;
             this.trackBar17.Name = "trackBar17";
-            this.trackBar17.Scroll += new System.EventHandler(this.trackBar17_Scroll);
-            // 
-            // textBox45
-            // 
-            this.textBox45.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox45, "textBox45");
-            this.textBox45.Name = "textBox45";
             // 
             // trackBar16
             // 
             resources.ApplyResources(this.trackBar16, "trackBar16");
             this.trackBar16.Maximum = 255;
             this.trackBar16.Name = "trackBar16";
-            this.trackBar16.Scroll += new System.EventHandler(this.trackBar16_Scroll);
-            // 
-            // textBox13
-            // 
-            this.textBox13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
-            // 
-            // textBox19
-            // 
-            this.textBox19.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox19, "textBox19");
-            this.textBox19.Name = "textBox19";
-            // 
-            // textBox41
-            // 
-            this.textBox41.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox41, "textBox41");
-            this.textBox41.Name = "textBox41";
-            // 
-            // textBox15
-            // 
-            this.textBox15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox15, "textBox15");
-            this.textBox15.Name = "textBox15";
-            // 
-            // textBox40
-            // 
-            this.textBox40.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox40, "textBox40");
-            this.textBox40.Name = "textBox40";
-            // 
-            // textBox17
-            // 
-            this.textBox17.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            resources.ApplyResources(this.textBox17, "textBox17");
-            this.textBox17.Name = "textBox17";
             // 
             // progressBar1
             // 
@@ -2141,16 +1979,6 @@
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.GroupBox groupBox3;
-        public System.Windows.Forms.TextBox textBox12;
-        public System.Windows.Forms.TextBox textBox10;
-        public System.Windows.Forms.TextBox textBox8;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox21;
-        public System.Windows.Forms.TextBox textBox13;
-        public System.Windows.Forms.TextBox textBox19;
-        public System.Windows.Forms.TextBox textBox15;
-        public System.Windows.Forms.TextBox textBox17;
         public System.Windows.Forms.TextBox textBox26;
         public System.Windows.Forms.Label label19;
         public System.Windows.Forms.Label label20;
@@ -2160,14 +1988,6 @@
         public System.Windows.Forms.Label label22;
         public System.Windows.Forms.OpenFileDialog openFileDialog1;
         public System.Windows.Forms.ComboBox comboBox1;
-        public System.Windows.Forms.TextBox textBox37;
-        public System.Windows.Forms.TextBox textBox35;
-        public System.Windows.Forms.TextBox textBox33;
-        public System.Windows.Forms.TextBox textBox31;
-        public System.Windows.Forms.TextBox textBox46;
-        public System.Windows.Forms.TextBox textBox45;
-        public System.Windows.Forms.TextBox textBox41;
-        public System.Windows.Forms.TextBox textBox40;
         public System.Windows.Forms.TabControl tabControl1;
         public System.Windows.Forms.TabPage tabPage1;
         public System.Windows.Forms.TabPage tabPage2;
