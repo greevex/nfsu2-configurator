@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define ENABLE_AUTH
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +12,6 @@ using System.Threading;
 using System.IO;
 using System.Resources;
 using System.Diagnostics;
-
 namespace NFSU2CH
 {
     public partial class Form1 : Form
@@ -323,7 +324,7 @@ namespace NFSU2CH
         {
             if (p.main == null)
             {
-                MessageBox.Show(resourceManager.GetString("nothingToSave"));
+                this.toolStripStatusLabel1.Text = (resourceManager.GetString("nothingToSave"));
                 return;
             }
             //обновление int[] this.s
@@ -341,10 +342,10 @@ namespace NFSU2CH
         {
             if (this.p.save(this.currentCar, this.s))
             {
-                MessageBox.Show(resourceManager.GetString("saveOk"));
+                this.Invoke((MethodInvoker)(()=> this.toolStripStatusLabel1.Text = (resourceManager.GetString("saveOk"))));
             }
             else
-                MessageBox.Show(resourceManager.GetString("saveError"));
+               this.Invoke((MethodInvoker)(() => this.toolStripStatusLabel1.Text =(resourceManager.GetString("saveError"))));
             this.Invoke((MethodInvoker)(() => this.Activate()));
         }
 
@@ -358,9 +359,10 @@ namespace NFSU2CH
             }
             this.Invoke((MethodInvoker)(() => this.Enabled = true));
         }
-
+        #region авторизация
         private void Form1_Load(object sender, EventArgs e)
         {
+#if ENABLE_AUTH
             this.Enabled = false;
             this.fa = new FormAuth();
             fa.button1.Click +=new EventHandler(authclick);
@@ -368,6 +370,7 @@ namespace NFSU2CH
             //
             fa.Show();
             fa.Activate();
+#endif
         }
 
         void fa_FormClosed(object sender, FormClosedEventArgs e)
@@ -390,7 +393,7 @@ namespace NFSU2CH
                 fa.label3.Text = resourceManager.GetString("authError");
             }
         }
-
+        #endregion
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //if (s == getUserConfigForCurrentCar())
@@ -422,7 +425,7 @@ namespace NFSU2CH
                     }
                     else System.Windows.Forms.MessageBox.Show(resourceManager.GetString("badGlobalb"));
                 }
-                else System.Windows.Forms.MessageBox.Show(resourceManager.GetString("fileLoadOk"));
+                else this.toolStripStatusLabel1.Text = (resourceManager.GetString("fileLoadOk"));
             }
         }
 
@@ -506,7 +509,7 @@ namespace NFSU2CH
         {
             if (textBox26.Text == "")
             {
-                MessageBox.Show(resourceManager.GetString("fileNotSelected"));
+                this.toolStripStatusLabel1.Text = (resourceManager.GetString("fileNotSelected"));
                 return;
             }
         }
@@ -531,7 +534,6 @@ namespace NFSU2CH
                 DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year;
             saveFileDialog1.Filter = resourceManager.GetString("saveFileDialogFilter");
             saveFileDialog1.Title = resourceManager.GetString("saveFileDialogTitle");
-            saveFileDialog1.FileOk += new CancelEventHandler(saveFileDialog1_FileOk);
             saveFileDialog1.ShowDialog();
         }
 
@@ -541,14 +543,13 @@ namespace NFSU2CH
             {
                 getUserConfigForCurrentCar();
                 p.saveConfig(this.saveFileDialog1.FileName, this.s);
-                MessageBox.Show(resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
+                this.toolStripStatusLabel1.Text = (resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
         public void getUserConfigForCurrentCar()
         {
             #region Проверка данных
@@ -722,7 +723,6 @@ namespace NFSU2CH
         {
             openFileDialog2.Title = resourceManager.GetString("carFileOpen");
             openFileDialog2.Filter = resourceManager.GetString("saveFileDialogFilter");
-            openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
             openFileDialog2.ShowDialog();
         }
 
