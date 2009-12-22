@@ -17,7 +17,7 @@ namespace NFSU2CH
     public partial class Form1 : Form
     {
         private int[] s, minis = null;
-        private int[] loaded = new int[Properti.map.Length];
+        
         private Parser p;
         private Thread t1;
         private int currentCar, res_w=640, res_h=480;
@@ -455,6 +455,7 @@ namespace NFSU2CH
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox25.Text != null) comboBox25.Text = null;
             if (!button4.Enabled) button4.Enabled = true;
             if (!button2.Enabled) button2.Enabled = true;
             int pos = Properti.getPosition(this.comboBox1.Text);
@@ -463,7 +464,8 @@ namespace NFSU2CH
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.minis = p.parse(Properti.getPosition(this.comboBox2.Text));
+            Parser p2 = new Parser(p.filename);
+            this.minis = p2.parse(Properti.getPosition(this.comboBox2.Text));
             if (this.minis == null)
                 return;
 
@@ -486,21 +488,21 @@ namespace NFSU2CH
 
         private void button4_Click(object sender, EventArgs e)
         {
-            trackBar29.Value = s[546];
-            label80.Text = s[546].ToString();
-            adval(comboBox26, s[547]);
+            trackBar29.Value = p.main[546];
+            label80.Text = p.main[546].ToString();
+            adval(comboBox26, p.main[547]);
 
-            trackBar30.Value = s[550];
-            label81.Text = s[550].ToString();
-            adval(comboBox27, s[551]);
+            trackBar30.Value = p.main[550];
+            label81.Text = p.main[550].ToString();
+            adval(comboBox27, p.main[551]);
 
-            trackBar31.Value = s[554];
-            label82.Text = s[554].ToString();
-            adval(comboBox28, s[555]);
+            trackBar31.Value = p.main[554];
+            label82.Text = p.main[554].ToString();
+            adval(comboBox28, p.main[555]);
 
-            trackBar32.Value = s[558];
-            label83.Text = s[558].ToString();
-            adval(comboBox29, s[559]);
+            trackBar32.Value = p.main[558];
+            label83.Text = p.main[558].ToString();
+            adval(comboBox29, p.main[559]);
 
         }
 
@@ -699,6 +701,7 @@ namespace NFSU2CH
         {
             openFileDialog2.Title = resourceManager.GetString("carFileOpen");
             openFileDialog2.Filter = resourceManager.GetString("saveFileDialogFilter");
+            openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
             openFileDialog2.ShowDialog();
         }
 
@@ -781,6 +784,58 @@ namespace NFSU2CH
         private void проверитьОбновленияToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("http://nfsu2.googlecode.com");
+        }
+
+        private void comboBox25_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                switch(comboBox25.SelectedIndex) {
+                    case 0:
+                        assignArray(Properti.fwd, 1120);
+                    break;
+                    case 1:
+                        assignArray(Properti.allwd, 1120);
+                    break;
+                    case 2:
+                        assignArray(Properti.rwd, 1120);
+                    break;
+                }
+                MessageBox.Show("SAVED!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private int[] createArray(int[] array, int from, int to)
+        {
+            int[] ret = new int[to - from + 1];
+            int i = 0;
+            foreach(int r in ret) {
+                ret[i] = array[from];
+                from++;
+                i++;
+            }
+            return ret;
+        }
+
+        private bool assignArray(int[] array, int from)
+        {
+            try
+            {
+                foreach (int a in array)
+                {
+                    this.s[from] = a;
+                    from++;
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
