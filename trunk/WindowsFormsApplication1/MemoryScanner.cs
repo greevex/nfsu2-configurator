@@ -1116,23 +1116,27 @@ namespace NFSU2CH
                 //and write the memory with the given value.
                 if (records[i].type == DataType.Int16)
                 {
-                    writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int16)records[i].value), out bytesWritten);
+                    if(Process.GetProcessesByName("speed2").Length==1)
+                        writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int16)records[i].value), out bytesWritten);
                 }
                 //If the value type for the current address is 32 bit so take the Int32 out of the object,
                 //and write the memory with the given value.
                 if (records[i].type == DataType.Int32)
                 {
-                    writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int32)records[i].value), out bytesWritten);
+                    if (Process.GetProcessesByName("speed2").Length == 1)
+                        writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int32)records[i].value), out bytesWritten);
                 }
                 //If the value type for the current address is 64 bit so take the Int64 out of the object,
                 //and write the memory with the given value.
                 if (records[i].type == DataType.Int64)
                 {
-                    writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int64)records[i].value), out bytesWritten);
+                    if (Process.GetProcessesByName("speed2").Length == 1)
+                        writer.WriteProcessMemory((IntPtr)records[i].address, BitConverter.GetBytes((Int64)records[i].value), out bytesWritten);
                 }
             }
             //Close the handle to the process.
-            writer.CloseHandle();
+            if (Process.GetProcessesByName("speed2").Length == 1)
+                writer.CloseHandle();
         }
         #endregion
         #endregion

@@ -52,13 +52,11 @@ namespace NFSU2CH
             cb.Items.Clear();
             if (val == 0)
             {
+                //val = 62;
+                //cb.DropDownStyle = ComboBoxStyle.DropDown;
                 cb.Items.AddRange(new object[1] { val });
-                cb.DropDownStyle = ComboBoxStyle.DropDown;
-            }
-            else
-            {
-                cb.Items.AddRange(new object[3] { val - 1, val, val + 1 });
-            }
+            } else
+            cb.Items.AddRange(new object[3] { val - 1, val, val + 1 });
             cb.Text = val.ToString();
         }
 
