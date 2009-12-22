@@ -51,6 +51,7 @@ namespace NFSU2CH.Resources
             //RegistryKey rk = Registry.ClassesRoot.OpenSubKey(@"http\shell\open\command");
             //string browser = (string)rk.GetValue("");
             //browser = browser.Replace("%1", lbl.Text);
+            // ^^^что это за фигня?)
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -69,11 +70,6 @@ namespace NFSU2CH.Resources
         {
             LinkLabel lbl = sender as LinkLabel;
             Process.Start("mailto://"+lbl.Text);
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
