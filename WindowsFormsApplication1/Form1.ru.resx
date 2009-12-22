@@ -226,13 +226,10 @@
     <value>Помощь</value>
   </data>
   <data name="openMainFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 20</value>
+    <value>232, 20</value>
   </data>
   <data name="openMainFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Открыть файл конфигурации</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>875, 24</value>
+    <value>&gt;&gt; Открыть файл конфигурации &lt;&lt;</value>
   </data>
   <data name="label56.Location" type="System.Drawing.Point, System.Drawing">
     <value>297, 45</value>
@@ -246,9 +243,6 @@
   <data name="progressBar1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 16</value>
-  </data>
   <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 17</value>
   </data>
@@ -257,9 +251,6 @@
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 495</value>
-  </data>
-  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>875, 22</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 13</value>
