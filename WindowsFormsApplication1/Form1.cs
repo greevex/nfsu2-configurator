@@ -1,5 +1,4 @@
-﻿#define ENABLE_AUTH
-
+﻿//#define ENABLE_AUTH;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +11,7 @@ using System.Threading;
 using System.IO;
 using System.Resources;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 namespace NFSU2CH
 {
     public partial class Form1 : Form
@@ -19,7 +19,7 @@ namespace NFSU2CH
         private int[] s, minis = null;
         private int[] loaded = new int[Properti.map.Length];
         private Parser p;
-        private Thread t1;
+        private Thread t1, mft=null;
         private string LOGIN = "GreeveX";
         private string PASSWORD = "";
         private FormAuth fa;
@@ -27,6 +27,12 @@ namespace NFSU2CH
         private bool authbuttonclick = false;
         OpenFileDialog openFileDialog2 = new OpenFileDialog();
         ResourceManager resourceManager = new ResourceManager(typeof(Form1));
+        MemoryFreeze mf;
+        Process[] gameproc;
+        
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
         public Form1()
         {
@@ -56,13 +62,7 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
-            if (this.textBox26.Text == "")
-            {
-                MessageBox.Show(resourceManager.GetString("fileNotSelected"));
-                return;
-            }
             this.currentCar = pos;
-            this.p = new Parser(this.textBox26.Text);
             this.s = p.parse(pos);
             AddValToForm();
             // Теперь можно сохранять и загружать
@@ -254,7 +254,7 @@ namespace NFSU2CH
 
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
-            label14.Text = trackBar1.Value.ToString();
+            label14.Text = trackBar2 .Value.ToString();
         }
 
         private void trackBar25_Scroll(object sender, EventArgs e)
@@ -375,9 +375,7 @@ namespace NFSU2CH
         #endregion
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //if (s == getUserConfigForCurrentCar())
                 this.Close();
-            //else MessageBox.Show("Изменения сделаны, но не сохранены, вы уверены, что желаете выйти без сохранения изменений?", "Выход без сохранения изменений", MessageBoxButtons.YesNo);
         }
 
         private void checkFile(string filename)
@@ -404,7 +402,16 @@ namespace NFSU2CH
                     }
                     else System.Windows.Forms.MessageBox.Show(resourceManager.GetString("badGlobalb"));
                 }
-                else this.toolStripStatusLabel1.Text = (resourceManager.GetString("fileLoadOk"));
+                else
+                {
+                    this.toolStripStatusLabel1.Text = (resourceManager.GetString("fileLoadOk"));
+                    this.p = new Parser(this.textBox26.Text);
+                    p.filename = filename;
+                    startWindowedToolStripMenuItem.Enabled = true;
+                    button3.Enabled = true;
+                    comboBox1.Enabled = true;
+                    tabControl1.Enabled = true;
+                }
             }
         }
 
@@ -438,6 +445,8 @@ namespace NFSU2CH
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (!button4.Enabled) button4.Enabled = true;
+            if (!button2.Enabled) button2.Enabled = true;
             int pos = Properti.getPosition(this.comboBox1.Text);
             this.loadCnf(pos);
         }
@@ -557,7 +566,6 @@ namespace NFSU2CH
             #region получение настроек юзера
 
                 /* Пыщ! */
-
                 s[290] = trackBar1.Value;
                 s[338] = s[290];
                 s[386] = trackBar2.Value;
@@ -635,7 +643,6 @@ namespace NFSU2CH
                 s[775] = Int32.Parse(comboBox23.Text);
 
                 /* ЭКУ */
-
                 s[786] = trackBar7.Value; // 1
                 s[787] = Int32.Parse(comboBox3.Text);
                 s[790] = trackBar8.Value; // 2
@@ -656,7 +663,6 @@ namespace NFSU2CH
                 s[819] = Int32.Parse(comboBox12.Text);
 
                 /* Турбо */
-
                 s[834] = trackBar16.Value;// 1
                 s[835] = Int32.Parse(comboBox13.Text);
                 s[838] = trackBar17.Value;// 2
@@ -707,11 +713,6 @@ namespace NFSU2CH
             }
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(Directory.GetParent(Directory.GetParent(p.filename).FullName).FullName + "\\speed2.exe");
@@ -722,17 +723,38 @@ namespace NFSU2CH
             Process.Start(Directory.GetParent(Directory.GetParent(p.filename).FullName).FullName + "\\Launcher.exe");
         }
 
-        private void closeGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            setResolution();
         }
 
-        private void setToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void setResolution()
         {
-            string[] res = toolStripComboBox1.Text.Split('x');
+            try
+            {
+                this.mf.StopFreezing();
+            }
+            catch { }
+            this.mf = null;
+            string[] res = comboBox30.Text.Split('x');
             this.res_w = Int32.Parse(res[0]);
             this.res_h = Int32.Parse(res[1]);
-            MessageBox.Show("resolution: " + this.res_w.ToString() + " x " + this.res_h.ToString());
+            gameproc = Process.GetProcessesByName("speed2");
+            while (gameproc.Length != 1)
+            {
+                return;
+            }
+            this.mf = new MemoryFreeze(Process.GetProcessesByName("speed2")[0]);
+            this.mf.AddMemoryAddress(0x00870980, res_w);
+            this.mf.AddMemoryAddress(0x00870984, res_h);
+            this.mf.AddMemoryAddress(0x0086F870, res_w);
+            this.mf.AddMemoryAddress(0x0086F874, res_h);
+            this.mf.StartFreezing(10);
+        }
+
+        private void comboBox30_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(!button1.Enabled) button1.Enabled = true;
         }
     }
 }
