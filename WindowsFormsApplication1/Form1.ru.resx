@@ -143,6 +143,12 @@
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 33</value>
   </data>
+  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
+    <value>Меню</value>
+  </data>
   <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 22</value>
   </data>
@@ -171,11 +177,11 @@
   <data name="выходToolStripMenuItem.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
-  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
+  <data name="startGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
   </data>
-  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
-    <value>Меню</value>
+  <data name="startGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Игра</value>
   </data>
   <data name="startWindowedToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>212, 22</value>
@@ -189,11 +195,11 @@
   <data name="startToolStripMenuItem.Text" xml:space="preserve">
     <value>Запустить полноэкранно</value>
   </data>
-  <data name="startGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
+  <data name="помщьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
   </data>
-  <data name="startGameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Игра</value>
+  <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
+    <value>Помощь</value>
   </data>
   <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -219,12 +225,6 @@
   <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
     <value>Справка</value>
   </data>
-  <data name="помщьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
-  </data>
-  <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
-    <value>Помощь</value>
-  </data>
   <data name="openMainFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 20</value>
   </data>
@@ -240,6 +240,9 @@
   <data name="label56.Text" xml:space="preserve">
     <value>Внимание! Если выбрать другую машину, не сохранив изменения, все изменения будут потеряны!</value>
   </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 495</value>
+  </data>
   <data name="progressBar1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -249,8 +252,8 @@
   <data name="label54.Text" xml:space="preserve">
     <value>Не выбран файл настроек!</value>
   </data>
-  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 495</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Шиш*</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 13</value>
@@ -258,8 +261,17 @@
   <data name="label11.Text" xml:space="preserve">
     <value>* вкладка обязательна, хоть и бесполезна :D</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Шиш*</value>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Игровые настройки</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Рекордер</value>
+  </data>
+  <data name="tabPage8.Text" xml:space="preserve">
+    <value>Запись видео</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Горячие клавиши</value>
   </data>
   <data name="label87.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 95</value>
@@ -269,9 +281,6 @@
   </data>
   <data name="label87.Text" xml:space="preserve">
     <value>В следующих версиях!</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Горячие клавиши</value>
   </data>
   <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 13</value>
@@ -288,17 +297,20 @@
   <data name="label84.Text" xml:space="preserve">
     <value>Формат:</value>
   </data>
-  <data name="tabPage8.Text" xml:space="preserve">
-    <value>Запись видео</value>
-  </data>
   <data name="tabPage7.Text" xml:space="preserve">
     <value>Скриншоты</value>
   </data>
   <data name="tabPage6.Text" xml:space="preserve">
     <value>Настройки</value>
   </data>
-  <data name="groupBox11.Text" xml:space="preserve">
-    <value>Рекордер</value>
+  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 124</value>
+  </data>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 277</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Качество графики</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 90</value>
@@ -313,14 +325,11 @@
   <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 124</value>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 115</value>
   </data>
-  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 277</value>
-  </data>
-  <data name="groupBox10.Text" xml:space="preserve">
-    <value>Качество графики</value>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Графика</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 65</value>
@@ -353,14 +362,11 @@
   <data name="label20.Text" xml:space="preserve">
     <value>Разрешение экрана:</value>
   </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 115</value>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Расстановка колес</value>
   </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>Графика</value>
-  </data>
-  <data name="tabPage5.Text" xml:space="preserve">
-    <value>Игровые настройки</value>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Колеса</value>
   </data>
   <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 228</value>
@@ -622,11 +628,59 @@
     <value>Ширина
 передних колес</value>
   </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>Колеса</value>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Управление</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Расстановка колес</value>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="label79.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 175</value>
+  </data>
+  <data name="label79.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 13</value>
+  </data>
+  <data name="label79.Text" xml:space="preserve">
+    <value>Легче (лучше сцепление)</value>
+  </data>
+  <data name="label77.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 55</value>
+  </data>
+  <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="label77.Text" xml:space="preserve">
+    <value>Тяжелее</value>
+  </data>
+  <data name="label78.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 175</value>
+  </data>
+  <data name="label78.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 13</value>
+  </data>
+  <data name="label78.Text" xml:space="preserve">
+    <value>Легче (лучше сцепление)</value>
+  </data>
+  <data name="label76.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 55</value>
+  </data>
+  <data name="label76.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="label76.Text" xml:space="preserve">
+    <value>Тяжелее</value>
+  </data>
+  <data name="comboBox29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 31</value>
+  </data>
+  <data name="comboBox28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 31</value>
+  </data>
+  <data name="comboBox27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 31</value>
+  </data>
+  <data name="comboBox26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 31</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 52</value>
@@ -637,14 +691,50 @@
 для этого выберите ее из списка
 и нажмите "Применить"</value>
   </data>
+  <data name="label60.Location" type="System.Drawing.Point, System.Drawing">
+    <value>561, 15</value>
+  </data>
+  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="label60.Text" xml:space="preserve">
+    <value>Правая часть</value>
+  </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Сбросить</value>
+  </data>
+  <data name="label59.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 15</value>
+  </data>
+  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label59.Text" xml:space="preserve">
+    <value>Левая часть</value>
+  </data>
+  <data name="label58.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 15</value>
+  </data>
+  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label58.Text" xml:space="preserve">
+    <value>Задняя часть</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Применить</value>
   </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>Управление</value>
+  <data name="label57.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 15</value>
+  </data>
+  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="label57.Text" xml:space="preserve">
+    <value>Передняя часть</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Ведущий привод</value>
   </data>
   <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 104</value>
@@ -668,8 +758,8 @@
   <data name="comboBox25.Items2" xml:space="preserve">
     <value>Задний привод</value>
   </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>Ведущий привод</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Высота подвески</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 156</value>
@@ -724,9 +814,6 @@
   <data name="label7.Text" xml:space="preserve">
     <value>Ниже</value>
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>Высота подвески</value>
-  </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>337, 91</value>
   </data>
@@ -739,8 +826,11 @@
 Сайт пока находится в разработке, следите за новостями на
 http://nfsu2.googlecode.com</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Управление</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Движок</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
   </data>
   <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 117</value>
@@ -756,14 +846,14 @@ http://nfsu2.googlecode.com</value>
 игнорироваться. Так же как и
 числа больше 255.</value>
   </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>ВНИМАНИЕ!</value>
-  </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>321, 18</value>
   </data>
   <data name="label48.Text" xml:space="preserve">
     <value>ОБОРОТЫ ДВИГАТЕЛЯ, ЭКУ И ТУРБО</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Обороты</value>
   </data>
   <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 91</value>
@@ -795,8 +885,8 @@ http://nfsu2.googlecode.com</value>
   <data name="label1.Text" xml:space="preserve">
     <value>Максимально</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Обороты</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Эку</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
     <value>535, 26</value>
@@ -805,8 +895,8 @@ http://nfsu2.googlecode.com</value>
     <value>Скроллами (ползунками) изменяете тонкую настройку ЭКУ.
 А выбор над ползунком позволяет сильно увеличить мощность подачи топлива, что не рекомендуется.</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Эку</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Турбо</value>
   </data>
   <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
     <value>512, 26</value>
@@ -814,12 +904,6 @@ http://nfsu2.googlecode.com</value>
   <data name="label50.Text" xml:space="preserve">
     <value>Настройка ТУРБО аналогична настройке ЭКУ.
 Для более подробной информации обращайтесь к справке, которой пока что нет в программе %)))</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Турбо</value>
-  </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Движок</value>
   </data>
   <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
     <value>2, 62</value>
