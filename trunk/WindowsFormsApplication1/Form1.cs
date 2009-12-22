@@ -19,23 +19,31 @@ namespace NFSU2CH
         private int[] s, minis = null;
         private int[] loaded = new int[Properti.map.Length];
         private Parser p;
-        private Thread t1, mft=null;
-        private string LOGIN = "GreeveX";
-        private string PASSWORD = "";
-        private FormAuth fa;
+        private Thread t1;
         private int currentCar, res_w=640, res_h=480;
-        private bool authbuttonclick = false;
         OpenFileDialog openFileDialog2 = new OpenFileDialog();
-        ResourceManager resourceManager = new ResourceManager(typeof(Form1));
+        ResourceManager resourceManager;
         MemoryFreeze mf;
         Process[] gameproc;
-        
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
+#if ENABLE_AUTH
+        private FormAuth fa;
+        private string LOGIN = "GreeveX";
+        private string PASSWORD = "";
+        private bool authbuttonclick = false;
+#endif
+
         public Form1()
         {
+            if (CultureInfo.CurrentCulture.TwoLetterISOLanguageName == "ru" && File.Exists(".\\ru\\U2CarHacker.resources.dll"))
+                this.resourceManager = lang_ru.ResourceManager;
+            else
+            {
+                this.resourceManager = lang_eng.ResourceManager;
+            }
             InitializeComponent();
         }
 
@@ -204,15 +212,19 @@ namespace NFSU2CH
                 /* Управление */
 
                 trackBar29.Value = s[546];
+                label80.Text = s[546].ToString();
                 adval(comboBox26, s[547]);
 
                 trackBar30.Value = s[550];
+                label81.Text = s[550].ToString();
                 adval(comboBox27, s[551]);
 
                 trackBar31.Value = s[554];
+                label82.Text = s[554].ToString();
                 adval(comboBox28, s[555]);
 
                 trackBar32.Value = s[558];
+                label83.Text = s[558].ToString();
                 adval(comboBox29, s[559]);
 
                 #endregion
@@ -301,6 +313,7 @@ namespace NFSU2CH
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (label54.Visible) label54.Visible = false;
             if (p.main == null)
             {
                 this.toolStripStatusLabel1.Text = (resourceManager.GetString("nothingToSave"));
@@ -333,7 +346,7 @@ namespace NFSU2CH
             this.Invoke((MethodInvoker)(() => this.Enabled = false));
             while (t1.IsAlive)
             {
-                progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
+                progressBar1.ProgressBar.Invoke((MethodInvoker)(() => progressBar1.Value = this.p.Current));
                 Thread.Sleep(10);
             }
             this.Invoke((MethodInvoker)(() => this.Enabled = true));
@@ -351,7 +364,7 @@ namespace NFSU2CH
             fa.Activate();
 #endif
         }
-
+#if ENABLE_AUTH
         void fa_FormClosed(object sender, FormClosedEventArgs e)
         {
             if(this.authbuttonclick == false)
@@ -372,6 +385,7 @@ namespace NFSU2CH
                 fa.label3.Text = resourceManager.GetString("authError");
             }
         }
+#endif
         #endregion
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -411,6 +425,7 @@ namespace NFSU2CH
                     button3.Enabled = true;
                     comboBox1.Enabled = true;
                     tabControl1.Enabled = true;
+                    openMainFileToolStripMenuItem.Enabled = false;
                 }
             }
         }
@@ -422,11 +437,6 @@ namespace NFSU2CH
             openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog1.ShowDialog();
             checkFile(openFileDialog1.FileName);
-        }
-
-        private void открытьФайлНатсроекToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            openNewFileAndCheckIt();
         }
 
         void  openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -491,6 +501,7 @@ namespace NFSU2CH
             trackBar32.Value = s[558];
             label83.Text = s[558].ToString();
             adval(comboBox29, s[559]);
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -755,6 +766,21 @@ namespace NFSU2CH
         private void comboBox30_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(!button1.Enabled) button1.Enabled = true;
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = true;
+        }
+
+        private void openMainFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openNewFileAndCheckIt();
+        }
+
+        private void проверитьОбновленияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://nfsu2.googlecode.com");
         }
     }
 }

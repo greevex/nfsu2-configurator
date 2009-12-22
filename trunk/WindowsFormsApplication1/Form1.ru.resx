@@ -121,111 +121,524 @@
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 33</value>
+  </data>
   <data name="button2.Text" xml:space="preserve">
     <value>Сохранить</value>
-  </data>
-  <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label52.Text" xml:space="preserve">
-    <value>Здесь можно настроить на каких
-оборотах будет происходить
-переключение, какие обороты
-должны быть на нейтралке, при
-отпущенной педали газа, а так же
-максимальные обороты двигателя
-для текущей машины.</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Нейтралка</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Переключение</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Максимально</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Обороты</value>
-  </data>
-  <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label49.Text" xml:space="preserve">
-    <value>Скроллами (ползунками) изменяете тонкую настройку ЭКУ.
-А выбор над ползунком позволяет сильно увеличить мощность подачи топлива, что не рекомендуется.</value>
-  </data>
-  <data name="trackBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Эку</value>
-  </data>
-  <data name="label50.Text" xml:space="preserve">
-    <value>Настройка ТУРБО аналогична настройке ЭКУ.
-Для более подробной информации обращайтесь к справке, которой пока что нет в программе %)))</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Турбо</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 25</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>491, 13</value>
+  </data>
   <data name="label19.Text" xml:space="preserve">
-    <value>Выберите файл настроек машин, затем выберите машину, которую желаете отредактировать. Как закончите редактирование машины сохраните изменения.</value>
+    <value>Выберите файл настроек машин, затем выберите машину, которую желаете отредактировать.</value>
   </data>
-  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 33</value>
   </data>
-  <data name="linkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
   </data>
-  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
+    <value>Загрузить настройку для текущей машины</value>
   </data>
-  <data name="linkLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="сохранитьНастройкуТекущейМашиныToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
   </data>
-  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="сохранитьНастройкуТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сохранить настройку текущей машины</value>
   </data>
-  <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="сменитьПользователяToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="label53.Text" xml:space="preserve">
-    <value>Поля, предназначенные для
-ручного редактирования, то есть
-те поля, где вы можете сами
-вписывать значения, должны
-содержать ТОЛЬКО ЧИСЛА
-ОТ 0 ДО 255.
-Буквы и другие знаки будут
-игнорироваться. Так же как и
-числа больше 255.</value>
+  <data name="сменитьПользователяToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
   </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>ВНИМАНИЕ!</value>
+  <data name="сменитьПользователяToolStripMenuItem.Text" xml:space="preserve">
+    <value>Сменить пользователя</value>
   </data>
-  <data name="label48.Text" xml:space="preserve">
-    <value>ОБОРОТЫ ДВИГАТЕЛЯ, ЭКУ И ТУРБО</value>
+  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
   </data>
-  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Движок</value>
+  <data name="менюToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
   </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="startWindowedToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 22</value>
+  </data>
+  <data name="startWindowedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Запустить в окне</value>
+  </data>
+  <data name="startToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 22</value>
+  </data>
+  <data name="startToolStripMenuItem.Text" xml:space="preserve">
+    <value>Запустить полноэкранно</value>
+  </data>
+  <data name="startGameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="startGameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Игра</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе...</value>
+  </data>
+  <data name="проверитьОбновленияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="проверитьОбновленияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Проверить обновления...</value>
+  </data>
+  <data name="создателиИКонтактыToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="создателиИКонтактыToolStripMenuItem.Text" xml:space="preserve">
+    <value>Создатели и контакты</value>
+  </data>
+  <data name="справкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Справка</value>
+  </data>
+  <data name="помщьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="openMainFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 20</value>
+  </data>
+  <data name="openMainFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Открыть файл конфигурации</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 24</value>
+  </data>
+  <data name="label56.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 45</value>
+  </data>
+  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
+    <value>510, 13</value>
+  </data>
+  <data name="label56.Text" xml:space="preserve">
+    <value>Внимание! Если выбрать другую машину, не сохранив изменения, все изменения будут потеряны!</value>
+  </data>
+  <data name="progressBar1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 16</value>
+  </data>
+  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 17</value>
+  </data>
+  <data name="label54.Text" xml:space="preserve">
+    <value>Не выбран файл настроек!</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 495</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>875, 22</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>* вкладка обязательна, хоть и бесполезна :D</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Шиш*</value>
+  </data>
+  <data name="label87.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 95</value>
+  </data>
+  <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
+    <value>388, 39</value>
+  </data>
+  <data name="label87.Text" xml:space="preserve">
+    <value>В следующих версиях!</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Горячие клавиши</value>
+  </data>
+  <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="label86.Text" xml:space="preserve">
+    <value>Частота кадров:</value>
+  </data>
+  <data name="label85.Text" xml:space="preserve">
+    <value>Кодек:</value>
+  </data>
+  <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="label84.Text" xml:space="preserve">
+    <value>Формат:</value>
+  </data>
+  <data name="tabPage8.Text" xml:space="preserve">
+    <value>Запись видео</value>
+  </data>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>Скриншоты</value>
+  </data>
+  <data name="tabPage6.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Рекордер</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 90</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 78</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>В следующих
+версиях!</value>
+  </data>
+  <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="groupBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 124</value>
+  </data>
+  <data name="groupBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 277</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Качество графики</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 65</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>1. Запустите игру.
+2. Выберите любое разрешение из списка.
+3. Нажмите "Применить"
+
+Теперь в NFS U2 можно играть в любом разрешении экрана!</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 17</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="comboBox30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 19</value>
+  </data>
+  <data name="comboBox30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 21</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Разрешение экрана:</value>
+  </data>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 115</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Графика</value>
+  </data>
+  <data name="tabPage5.Text" xml:space="preserve">
+    <value>Игровые настройки</value>
+  </data>
+  <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 228</value>
+  </data>
+  <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
+    <value>416, 160</value>
+  </data>
+  <data name="label61.Text" xml:space="preserve">
+    <value>Ширина колес влияет на сцепление с дорогой,
+а расположение колес на управление и стабильность
+при вождении. Старайтесь избегать слишком широкого
+и узкого расположения для хорошего управления.
+
+Диаметр колес может быть логическим и физическим.
+Логический диаметр колес обрабатывается в игре,
+но с виду колеса обычные.
+Физический диаметр мы будем видеть, что колеса большие,
+но игра будет обрабатывать их как колеса обычного размера.</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 26</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Расположение
+предних колес</value>
+  </data>
+  <data name="label95.Location" type="System.Drawing.Point, System.Drawing">
+    <value>805, 364</value>
+  </data>
+  <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label95.Text" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="label93.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 364</value>
+  </data>
+  <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label93.Text" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="label75.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 230</value>
+  </data>
+  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label75.Text" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 90</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Шире</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Шире</value>
+  </data>
+  <data name="label74.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 230</value>
+  </data>
+  <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label74.Text" xml:space="preserve">
+    <value>Больше</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 90</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Шире</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Уже</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Уже</value>
+  </data>
+  <data name="trackBar34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 319</value>
+  </data>
+  <data name="trackBar28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 185</value>
+  </data>
+  <data name="trackBar6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 45</value>
+  </data>
+  <data name="label94.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 364</value>
+  </data>
+  <data name="label94.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label94.Text" xml:space="preserve">
+    <value>Меньше</value>
+  </data>
+  <data name="label92.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 364</value>
+  </data>
+  <data name="label92.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label92.Text" xml:space="preserve">
+    <value>Меньше</value>
+  </data>
+  <data name="label73.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 230</value>
+  </data>
+  <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label73.Text" xml:space="preserve">
+    <value>Меньше</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 90</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Уже</value>
+  </data>
+  <data name="trackBar33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 319</value>
+  </data>
+  <data name="trackBar27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 185</value>
+  </data>
+  <data name="trackBar4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 45</value>
+  </data>
+  <data name="label91.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 364</value>
+  </data>
+  <data name="label72.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 230</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 90</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 26</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Расположение
+задних колес</value>
+  </data>
+  <data name="label71.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 230</value>
+  </data>
+  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label71.Text" xml:space="preserve">
+    <value>Меньше</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 90</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Уже</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Шире</value>
+  </data>
+  <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 364</value>
+  </data>
+  <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 230</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 90</value>
+  </data>
+  <data name="label89.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 290</value>
+  </data>
+  <data name="label89.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 26</value>
+  </data>
+  <data name="label89.Text" xml:space="preserve">
+    <value>Диаметр передних колес.
+(только физический, не логический)</value>
+  </data>
+  <data name="label69.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 156</value>
+  </data>
+  <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 26</value>
+  </data>
+  <data name="label69.Text" xml:space="preserve">
+    <value>Диаметр задних колес.
+(только логический, не видно)</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 16</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 26</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Ширина
+задних колес</value>
+  </data>
+  <data name="label88.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 290</value>
+  </data>
+  <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 26</value>
+  </data>
+  <data name="label88.Text" xml:space="preserve">
+    <value>Диаметр передних колес.
+(только физический, не логический)</value>
+  </data>
+  <data name="label68.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 156</value>
+  </data>
+  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 26</value>
+  </data>
+  <data name="label68.Text" xml:space="preserve">
+    <value>Диаметр передних колес.
+(только логический, не видно)</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 16</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 26</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Ширина
+передних колес</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Колеса</value>
+  </data>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>Расстановка колес</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 52</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Можно "взять" управление
@@ -233,35 +646,17 @@
 для этого выберите ее из списка
 и нажмите "Применить"</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="button4.Text" xml:space="preserve">
     <value>Сбросить</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Применить</value>
   </data>
-  <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>Позже регулировать, изменяя значения вручную не придется,
-в будущей версии программы планируется сделать простую регулироваку
-ползунками для всего, что есть. Если у вас имеются какие-либо предложения,
-пишите нам, контакты найдете в разделе "Помощь".</value>
-  </data>
   <data name="groupBox7.Text" xml:space="preserve">
     <value>Управление</value>
   </data>
-  <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 104</value>
   </data>
   <data name="label51.Text" xml:space="preserve">
     <value>Ведущий привод определяет ведущую ось
@@ -285,11 +680,8 @@
   <data name="groupBox5.Text" xml:space="preserve">
     <value>Ведущий привод</value>
   </data>
-  <data name="trackBar26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="trackBar25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 156</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Изменения высоты подвески
@@ -305,20 +697,38 @@
 но в игре всё будет так,
 как вы задумали!</value>
   </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Задняя</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Передняя</value>
   </data>
+  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
   <data name="label64.Text" xml:space="preserve">
     <value>Выше</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Выше</value>
   </data>
+  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
   <data name="label65.Text" xml:space="preserve">
     <value>Ниже</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Ниже</value>
@@ -326,126 +736,105 @@
   <data name="groupBox4.Text" xml:space="preserve">
     <value>Высота подвески</value>
   </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 91</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Если у вас имеются какие-либо предложения,
+пишите нам, контакты найдете в разделе "Помощь".
+В следующей стабильной версии 1.0 планируется заменить все 
+СкроллБары (ползунки) на рисованые, как в игре.
+Будет это изменено или нет, решит голосование на сайте.
+Сайт пока находится в разработке, следите за новостями на
+http://nfsu2.googlecode.com</value>
+  </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Управление</value>
   </data>
-  <data name="label61.Text" xml:space="preserve">
-    <value>Ширина колес влияет на сцепление
-с дорогой, а расположение колес на
-управление и стабильность при вождении.
-Старайтесь избегать слишком широкого
-и узкого расположения, для хорошего
-управления.</value>
+  <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 117</value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>Расположение
-предних колес</value>
+  <data name="label53.Text" xml:space="preserve">
+    <value>Поля, предназначенные для
+ручного редактирования, то есть
+те поля, где вы можете сами
+вписывать значения, должны
+содержать ТОЛЬКО ЧИСЛА
+ОТ 0 ДО 255.
+Буквы и другие знаки будут
+игнорироваться. Так же как и
+числа больше 255.</value>
   </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>Шире</value>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
   </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>Шире</value>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>321, 18</value>
   </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>Шире</value>
+  <data name="label48.Text" xml:space="preserve">
+    <value>ОБОРОТЫ ДВИГАТЕЛЯ, ЭКУ И ТУРБО</value>
   </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>Уже</value>
+  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 91</value>
   </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>Уже</value>
+  <data name="label52.Text" xml:space="preserve">
+    <value>Здесь можно настроить на каких
+оборотах будет происходить
+переключение, какие обороты
+должны быть на нейтралке, при
+отпущенной педали газа, а так же
+максимальные обороты двигателя
+для текущей машины.</value>
   </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>Уже</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
   </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>Расположение
-задних колес</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Нейтралка</value>
   </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>Уже</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
   </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>Шире</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Переключение</value>
   </data>
-  <data name="label37.Text" xml:space="preserve">
-    <value>Ширина
-задних колес</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
   </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>Ширина
-передних колес</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Максимально</value>
   </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>Колеса</value>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Обороты</value>
   </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Расстановка колес</value>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>535, 26</value>
   </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Скроллами (ползунками) изменяете тонкую настройку ЭКУ.
+А выбор над ползунком позволяет сильно увеличить мощность подачи топлива, что не рекомендуется.</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>* вкладка обязательна, хоть и бесполезна :D</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Эку</value>
   </data>
-  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 26</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Настройка ТУРБО аналогична настройке ЭКУ.
+Для более подробной информации обращайтесь к справке, которой пока что нет в программе %)))</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Шиш*</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Турбо</value>
   </data>
-  <data name="открытьФайлНатсроекToolStripMenuItem.Text" xml:space="preserve">
-    <value>Открыть файл настроек...</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Движок</value>
   </data>
-  <data name="загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
-    <value>Загрузить настройку для текущей машины</value>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 62</value>
   </data>
-  <data name="сохранитьНастройкуТекущейМашиныToolStripMenuItem.Text" xml:space="preserve">
-    <value>Сохранить настройку текущей машины</value>
-  </data>
-  <data name="сменитьПользователяToolStripMenuItem.Text" xml:space="preserve">
-    <value>Сменить пользователя</value>
-  </data>
-  <data name="менюToolStripMenuItem.Text" xml:space="preserve">
-    <value>Меню</value>
-  </data>
-  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
-    <value>О программе...</value>
-  </data>
-  <data name="проверитьОбновленияToolStripMenuItem.Text" xml:space="preserve">
-    <value>Проверить обновления</value>
-  </data>
-  <data name="создателиИКонтактыToolStripMenuItem.Text" xml:space="preserve">
-    <value>Создатели и контакты</value>
-  </data>
-  <data name="справкаToolStripMenuItem.Text" xml:space="preserve">
-    <value>Справка</value>
-  </data>
-  <data name="помщьToolStripMenuItem.Text" xml:space="preserve">
-    <value>Помощь</value>
-  </data>
-  <data name="languageЯзыкToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language\Язык</value>
-  </data>
-  <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label54.Text" xml:space="preserve">
-    <value>Не выбран файл настроек!</value>
-  </data>
-  <data name="label55.Text" xml:space="preserve">
-    <value>Статус:</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>626, 13</value>
-  </data>
-  <data name="label56.Text" xml:space="preserve">
-    <value>Внимание! Если выбрать другую машину из списка, не сохранив сделанные изменения, все изменения будут потеряны!!</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>875, 517</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -602,65 +991,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="authError" xml:space="preserve">
-    <value>Ошибка!</value>
-  </data>
-  <data name="badGlobalb" xml:space="preserve">
-    <value>Неверный GlobalB.lzc! Невозможно починить, попробуйте поспрашивать у друзей или поискать в интернете. Оригинальный файл должен весить больше 7 мб!</value>
-  </data>
-  <data name="carFileOpen" xml:space="preserve">
-    <value>Загрузить настройку для текущей машины...</value>
-  </data>
-  <data name="file" xml:space="preserve">
-    <value>Файл</value>
-  </data>
-  <data name="fileLoadError" xml:space="preserve">
-    <value>Ошибка при загрузке файла</value>
-  </data>
-  <data name="fileLoadOk" xml:space="preserve">
-    <value>Файл успешно загружен!</value>
-  </data>
-  <data name="fileNotSelected" xml:space="preserve">
-    <value>Не выбран файл настроек! Выберите файл, нажав пункт Меню -&gt; Открыть файл настроек...!</value>
-  </data>
-  <data name="globalbRepaired" xml:space="preserve">
-    <value>У вас был неверный файл GlobalB.lzc! Мы исправили его, теперь можно пользоваться программой! =)</value>
-  </data>
-  <data name="loaded" xml:space="preserve">
-    <value>успешно загружен!</value>
-  </data>
-  <data name="loadedThenSelectCar" xml:space="preserve">
-    <value>Теперь выберите машину.</value>
-  </data>
-  <data name="nothingToSave" xml:space="preserve">
-    <value>Нечего сохранять!</value>
-  </data>
-  <data name="openFileDialogFilter" xml:space="preserve">
-    <value>NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc</value>
-  </data>
-  <data name="saved" xml:space="preserve">
-    <value>сохранен!</value>
-  </data>
-  <data name="saveError" xml:space="preserve">
-    <value>Ошибка сохранения файла!</value>
-  </data>
-  <data name="saveFileDialogFilter" xml:space="preserve">
-    <value>Машины NFSU2CH (*.car)|*.car</value>
-  </data>
-  <data name="saveFileDialogTitle" xml:space="preserve">
-    <value>Сохранить настройки машины...</value>
-  </data>
-  <data name="saveOk" xml:space="preserve">
-    <value>Файл сохранен!</value>
-  </data>
-  <data name="selectCar" xml:space="preserve">
-    <value>Выберите машину..</value>
-  </data>
-  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
   </data>
 </root>
