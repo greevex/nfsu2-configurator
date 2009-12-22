@@ -193,6 +193,10 @@
             this.label38 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьФайлНатсроекToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -212,16 +216,13 @@
             this.startGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startWindowedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.reToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.setToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar15)).BeginInit();
@@ -268,6 +269,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -684,6 +687,7 @@
             resources.GetString("comboBox1.AutoCompleteCustomSource4"),
             resources.GetString("comboBox1.AutoCompleteCustomSource5")});
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
@@ -717,7 +721,6 @@
             resources.GetString("comboBox1.Items28"),
             resources.GetString("comboBox1.Items29"),
             resources.GetString("comboBox1.Items30")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Sorted = true;
             this.comboBox1.Tag = "";
@@ -1471,9 +1474,72 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.groupBox9);
             resources.ApplyResources(this.tabPage5, "tabPage5");
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.button1);
+            this.groupBox9.Controls.Add(this.comboBox30);
+            this.groupBox9.Controls.Add(this.label20);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("comboBox30.AutoCompleteCustomSource"),
+            resources.GetString("comboBox30.AutoCompleteCustomSource1"),
+            resources.GetString("comboBox30.AutoCompleteCustomSource2"),
+            resources.GetString("comboBox30.AutoCompleteCustomSource3"),
+            resources.GetString("comboBox30.AutoCompleteCustomSource4"),
+            resources.GetString("comboBox30.AutoCompleteCustomSource5")});
+            this.comboBox30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            resources.GetString("comboBox30.Items"),
+            resources.GetString("comboBox30.Items1"),
+            resources.GetString("comboBox30.Items2"),
+            resources.GetString("comboBox30.Items3"),
+            resources.GetString("comboBox30.Items4"),
+            resources.GetString("comboBox30.Items5"),
+            resources.GetString("comboBox30.Items6"),
+            resources.GetString("comboBox30.Items7"),
+            resources.GetString("comboBox30.Items8"),
+            resources.GetString("comboBox30.Items9"),
+            resources.GetString("comboBox30.Items10"),
+            resources.GetString("comboBox30.Items11"),
+            resources.GetString("comboBox30.Items12"),
+            resources.GetString("comboBox30.Items13"),
+            resources.GetString("comboBox30.Items14"),
+            resources.GetString("comboBox30.Items15"),
+            resources.GetString("comboBox30.Items16"),
+            resources.GetString("comboBox30.Items17"),
+            resources.GetString("comboBox30.Items18"),
+            resources.GetString("comboBox30.Items19"),
+            resources.GetString("comboBox30.Items20"),
+            resources.GetString("comboBox30.Items21"),
+            resources.GetString("comboBox30.Items22"),
+            resources.GetString("comboBox30.Items23"),
+            resources.GetString("comboBox30.Items24")});
+            resources.ApplyResources(this.comboBox30, "comboBox30");
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.SelectedIndexChanged += new System.EventHandler(this.comboBox30_SelectedIndexChanged);
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
             // 
             // menuStrip1
             // 
@@ -1588,16 +1654,14 @@
             // 
             this.startGameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.startWindowedToolStripMenuItem,
-            this.startToolStripMenuItem,
-            this.closeGameToolStripMenuItem,
-            this.reToolStripMenuItem});
+            this.startToolStripMenuItem});
             this.startGameToolStripMenuItem.Name = "startGameToolStripMenuItem";
             resources.ApplyResources(this.startGameToolStripMenuItem, "startGameToolStripMenuItem");
             // 
             // startWindowedToolStripMenuItem
             // 
-            this.startWindowedToolStripMenuItem.Name = "startWindowedToolStripMenuItem";
             resources.ApplyResources(this.startWindowedToolStripMenuItem, "startWindowedToolStripMenuItem");
+            this.startWindowedToolStripMenuItem.Name = "startWindowedToolStripMenuItem";
             this.startWindowedToolStripMenuItem.Click += new System.EventHandler(this.startWindowedToolStripMenuItem_Click);
             // 
             // startToolStripMenuItem
@@ -1605,12 +1669,6 @@
             resources.ApplyResources(this.startToolStripMenuItem, "startToolStripMenuItem");
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
-            // 
-            // closeGameToolStripMenuItem
-            // 
-            resources.ApplyResources(this.closeGameToolStripMenuItem, "closeGameToolStripMenuItem");
-            this.closeGameToolStripMenuItem.Name = "closeGameToolStripMenuItem";
-            this.closeGameToolStripMenuItem.Click += new System.EventHandler(this.closeGameToolStripMenuItem_Click);
             // 
             // label54
             // 
@@ -1639,57 +1697,12 @@
             this.toolStripStatusLabel1});
             resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.SizingGrip = false;
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
-            // 
-            // reToolStripMenuItem
-            // 
-            this.reToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox1,
-            this.setToolStripMenuItem});
-            this.reToolStripMenuItem.Name = "reToolStripMenuItem";
-            resources.ApplyResources(this.reToolStripMenuItem, "reToolStripMenuItem");
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBox1.Items.AddRange(new object[] {
-            resources.GetString("toolStripComboBox1.Items"),
-            resources.GetString("toolStripComboBox1.Items1"),
-            resources.GetString("toolStripComboBox1.Items2"),
-            resources.GetString("toolStripComboBox1.Items3"),
-            resources.GetString("toolStripComboBox1.Items4"),
-            resources.GetString("toolStripComboBox1.Items5"),
-            resources.GetString("toolStripComboBox1.Items6"),
-            resources.GetString("toolStripComboBox1.Items7"),
-            resources.GetString("toolStripComboBox1.Items8"),
-            resources.GetString("toolStripComboBox1.Items9"),
-            resources.GetString("toolStripComboBox1.Items10"),
-            resources.GetString("toolStripComboBox1.Items11"),
-            resources.GetString("toolStripComboBox1.Items12"),
-            resources.GetString("toolStripComboBox1.Items13"),
-            resources.GetString("toolStripComboBox1.Items14"),
-            resources.GetString("toolStripComboBox1.Items15"),
-            resources.GetString("toolStripComboBox1.Items16"),
-            resources.GetString("toolStripComboBox1.Items17"),
-            resources.GetString("toolStripComboBox1.Items18"),
-            resources.GetString("toolStripComboBox1.Items19"),
-            resources.GetString("toolStripComboBox1.Items20"),
-            resources.GetString("toolStripComboBox1.Items21"),
-            resources.GetString("toolStripComboBox1.Items22"),
-            resources.GetString("toolStripComboBox1.Items23"),
-            resources.GetString("toolStripComboBox1.Items24")});
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            resources.ApplyResources(this.toolStripComboBox1, "toolStripComboBox1");
-            // 
-            // setToolStripMenuItem
-            // 
-            this.setToolStripMenuItem.Name = "setToolStripMenuItem";
-            resources.ApplyResources(this.setToolStripMenuItem, "setToolStripMenuItem");
-            this.setToolStripMenuItem.Click += new System.EventHandler(this.setToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -1710,7 +1723,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1769,6 +1782,9 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -1951,7 +1967,6 @@
         private System.Windows.Forms.ToolStripMenuItem startGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startWindowedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem closeGameToolStripMenuItem;
         private System.Windows.Forms.TrackBar trackBar32;
         private System.Windows.Forms.TrackBar trackBar31;
         private System.Windows.Forms.TrackBar trackBar30;
@@ -1970,9 +1985,11 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripMenuItem reToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripMenuItem setToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox9;
+        public System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
