@@ -790,16 +790,15 @@ namespace NFSU2CH
             {
                 switch(comboBox25.SelectedIndex) {
                     case 0:
-                        assignArray(Properti.fwd, 1120);
+                        assignArray(Properti.fwd, 960);
                     break;
                     case 1:
-                        assignArray(Properti.allwd, 1120);
+                        assignArray(Properti.allwd, 960);
                     break;
                     case 2:
-                        assignArray(Properti.rwd, 1120);
+                        assignArray(Properti.rwd, 960);
                     break;
                 }
-                MessageBox.Show("SAVED!");
             }
             catch (Exception ex)
             {
@@ -834,6 +833,36 @@ namespace NFSU2CH
             {
                 return false;
             }
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StreamWriter s = new StreamWriter(textBox4.Text);
+            int[] array = createArray(p.main, Int32.Parse(textBox6.Text), Int32.Parse(textBox7.Text));
+            s.Write("int[] " + textBox5.Text + " = new int[" + array.Length + "] {\n");
+            int c = 0;
+            foreach (int z in array)
+            {
+                s.Write(z);
+                c++;
+                if (c != array.Length)
+                {
+                    s.Write(", ");
+                }
+            }
+            s.Write("\n};");
+            s.Close();
+            MessageBox.Show(textBox4.Text + " with name " + textBox5.Text + " saved!");
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+            groupBox13.Visible = true;
         }
     }
 }
