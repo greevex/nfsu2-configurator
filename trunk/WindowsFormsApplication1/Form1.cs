@@ -705,7 +705,7 @@ namespace NFSU2CH
 
         private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
         {
-            if(Path.GetExtension(openFileDialog2.FileName).ToLower() == "car")
+            if(Path.GetExtension(openFileDialog2.FileName).ToLower() == ".car")
                 this.s = p.loadConfig(openFileDialog2.FileName, this.currentCar);
             else
             {
