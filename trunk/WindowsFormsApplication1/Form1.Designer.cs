@@ -38,7 +38,6 @@
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изФайлаНастроекcarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fromU2cfgFileu2cfgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.изФайлаGlobalBlzcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьНастройкуТекущейМашиныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сменитьПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -251,14 +250,14 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.label97 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -415,7 +414,6 @@
             // 
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.изФайлаНастроекcarToolStripMenuItem,
-            this.fromU2cfgFileu2cfgToolStripMenuItem,
             this.изФайлаGlobalBlzcToolStripMenuItem});
             resources.ApplyResources(this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem, "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem");
             this.загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Name = "загрузитьНастройкуДляТекущейМашиныToolStripMenuItem";
@@ -425,11 +423,6 @@
             this.изФайлаНастроекcarToolStripMenuItem.Name = "изФайлаНастроекcarToolStripMenuItem";
             resources.ApplyResources(this.изФайлаНастроекcarToolStripMenuItem, "изФайлаНастроекcarToolStripMenuItem");
             this.изФайлаНастроекcarToolStripMenuItem.Click += new System.EventHandler(this.изФайлаНастроекcarToolStripMenuItem_Click);
-            // 
-            // fromU2cfgFileu2cfgToolStripMenuItem
-            // 
-            resources.ApplyResources(this.fromU2cfgFileu2cfgToolStripMenuItem, "fromU2cfgFileu2cfgToolStripMenuItem");
-            this.fromU2cfgFileu2cfgToolStripMenuItem.Name = "fromU2cfgFileu2cfgToolStripMenuItem";
             // 
             // изФайлаGlobalBlzcToolStripMenuItem
             // 
@@ -1991,10 +1984,35 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // label98
+            // 
+            resources.ApplyResources(this.label98, "label98");
+            this.label98.Name = "label98";
+            // 
+            // label97
+            // 
+            resources.ApplyResources(this.label97, "label97");
+            this.label97.Name = "label97";
+            // 
+            // label99
+            // 
+            resources.ApplyResources(this.label99, "label99");
+            this.label99.Name = "label99";
+            // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
             this.label55.Name = "label55";
+            // 
+            // textBox7
+            // 
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
+            // 
+            // textBox6
+            // 
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
             // 
             // textBox5
             // 
@@ -2007,31 +2025,6 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_2);
-            // 
-            // label97
-            // 
-            resources.ApplyResources(this.label97, "label97");
-            this.label97.Name = "label97";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // label98
-            // 
-            resources.ApplyResources(this.label98, "label98");
-            this.label98.Name = "label98";
-            // 
-            // label99
-            // 
-            resources.ApplyResources(this.label99, "label99");
-            this.label99.Name = "label99";
             // 
             // Form1
             // 
@@ -2132,7 +2125,6 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-
         }
 
         #endregion
@@ -2160,7 +2152,6 @@
         private System.Windows.Forms.ToolStripMenuItem startGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem startWindowedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fromU2cfgFileu2cfgToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         public System.Windows.Forms.TabPage tabPage2;

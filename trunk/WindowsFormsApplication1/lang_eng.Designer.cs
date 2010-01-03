@@ -97,6 +97,15 @@ namespace NFSU2CH {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на All supported formats (*.car, *.u2cfg)|*.car;*.u2cfg|NFSU2 Configurator files (*.car)|*.car|NFS-DataEd Files (*.u2cfg)|*.u2cfg.
+        /// </summary>
+        internal static string FileDialogFilter {
+            get {
+                return ResourceManager.GetString("FileDialogFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на File loading error!.
         /// </summary>
         internal static string fileLoadError {
