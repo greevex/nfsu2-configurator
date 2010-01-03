@@ -17,7 +17,6 @@ namespace NFSU2CH
     public partial class Form1 : Form
     {
         private int[] s, minis = null;
-        
         private Parser p;
         private Thread t1;
         private int currentCar, res_w=640, res_h=480;
@@ -25,6 +24,7 @@ namespace NFSU2CH
         ResourceManager resourceManager;
         MemoryFreeze mf;
         Process[] gameproc;
+        U2cfg u2c = new U2cfg();
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -699,23 +699,20 @@ namespace NFSU2CH
         private void изФайлаНастроекcarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog2.Title = resourceManager.GetString("carFileOpen");
-            openFileDialog2.Filter = resourceManager.GetString("saveFileDialogFilter");
+            openFileDialog2.Filter = resourceManager.GetString("FileDialogFilter");
             openFileDialog2.ShowDialog();
         }
 
         private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
         {
-                int[] xx;
-                xx = p.loadConfig(openFileDialog2.FileName, this.currentCar);
-                if (xx == null)
-                {
-                    MessageBox.Show("Нахрен исправить алерт");
-                }
-                else
-                    this.s = xx;
-                xx = null;
-            //сюда дописать обновление формы
-                GC.Collect();
+            if(Path.GetExtension(openFileDialog2.FileName).ToLower() == "car")
+                this.s = p.loadConfig(openFileDialog2.FileName, this.currentCar);
+            else
+            {
+                u2c.load(openFileDialog2.FileName);
+                this.s = u2c.convert();
+            }
+            AddValToForm();
         }
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)

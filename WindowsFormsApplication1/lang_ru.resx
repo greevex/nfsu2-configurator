@@ -171,4 +171,7 @@
   <data name="selectCar" xml:space="preserve">
     <value>Выберите машину..</value>
   </data>
+  <data name="FileDialogFilter" xml:space="preserve">
+    <value>Все поддерживаемые форматы (*.car, *.u2cfg)|*.car;*.u2cfg|Машины NFSU2CH (*.car)|*.car|Машины NFS-DataEd (*.u2cfg)|*.u2cfg</value>
+  </data>
 </root>

@@ -112,12 +112,13 @@ namespace NFSU2CH
                 conf = Converter.Decode(config);
                 config = null; //это нам тоже уже не нужно
                 cara = null; //и это как не страно тоже не нужно
+                GC.Collect();
                 return conf;
             }
             catch (Exception e)
             {
                 System.Windows.Forms.MessageBox.Show(e.Message);
-                return null;
+                return this.main;
             }
         }
         public bool save(int position, int[] newconf)
