@@ -45,6 +45,7 @@ namespace NFSU2CH
                 this.resourceManager = lang_eng.ResourceManager;
             }
             InitializeComponent();
+            openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
         }
 
         private void adval(System.Windows.Forms.ComboBox cb, int val)
@@ -541,7 +542,7 @@ namespace NFSU2CH
             try
             {
                 getUserConfigForCurrentCar();
-                p.saveConfig(this.saveFileDialog1.FileName, this.s);
+                p.saveConfig(this.saveFileDialog1.FileName, this.s, this.currentCar);
                 this.toolStripStatusLabel1.Text = (resourceManager.GetString("file") + " " + saveFileDialog1.FileName + " " + resourceManager.GetString("saved"));
             }
             catch (Exception ex)
@@ -699,30 +700,22 @@ namespace NFSU2CH
         {
             openFileDialog2.Title = resourceManager.GetString("carFileOpen");
             openFileDialog2.Filter = resourceManager.GetString("saveFileDialogFilter");
-            openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
             openFileDialog2.ShowDialog();
         }
 
         private void openFileDialog2_FileOk(object sender, CancelEventArgs e)
         {
-            try
-            {
-                int key = 0;
-                Stream fr = new StreamReader(openFileDialog2.FileName).BaseStream;
-                while (true)
+                int[] xx;
+                xx = p.loadConfig(openFileDialog2.FileName, this.currentCar);
+                if (xx == null)
                 {
-                    int rb = fr.ReadByte();
-                    if (rb == -1)
-                        break;
-                    s[key] = rb;
-                    key++;
+                    MessageBox.Show("Нахрен исправить алерт");
                 }
-                AddValToForm();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(resourceManager.GetString("fileLoadError") + " " + openFileDialog2.FileName + " !\n"+ex.Message);
-            }
+                else
+                    this.s = xx;
+                xx = null;
+            //сюда дописать обновление формы
+                GC.Collect();
         }
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
