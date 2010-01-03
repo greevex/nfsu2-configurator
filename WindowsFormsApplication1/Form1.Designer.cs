@@ -895,6 +895,7 @@
             // 
             // trackBar2
             // 
+            this.trackBar2.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.trackBar2, "trackBar2");
             this.trackBar2.Maximum = 255;
             this.trackBar2.Name = "trackBar2";
@@ -926,6 +927,7 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.trackBar1, "trackBar1");
             this.trackBar1.Maximum = 255;
             this.trackBar1.Name = "trackBar1";
