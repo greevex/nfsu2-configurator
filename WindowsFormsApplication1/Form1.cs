@@ -25,6 +25,8 @@ namespace NFSU2CH
         MemoryFreeze mf;
         Process[] gameproc;
         U2cfg u2c = new U2cfg();
+        List<TrackBar> tracks = new List<TrackBar>();
+        List<int> tracks_v = new List<int>();
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -77,11 +79,130 @@ namespace NFSU2CH
             загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Enabled = true;
         }
 
+        public int maxt = 0, mint = 0;
+        private void addToTrack(TrackBar t, int val1, int val2) {
+            int val = Convert.ToInt32("0x" + val2.ToString("X2") + val1.ToString("X2"), 16);
+            if (val > 0 && val < this.mint)
+                this.mint = val;
+            else if (val > this.maxt)
+                this.maxt = val;
+            t.Maximum = val;
+            t.Value = val;
+            // добавление трекбара в коллекцию.
+            this.tracks.Add(t);
+        }
+
+        public void setTrackbarsMinMax()
+        {
+            int i = 0;
+            foreach (TrackBar tt in this.tracks)
+            {
+                tt.Maximum = this.maxt;
+                tt.Minimum = this.mint;
+                i++;
+            }
+        }
+
         private bool AddValToForm()
         {
             try
             {
-                #region добавление в текстбоксы
+                #region добавление значений в гуй
+
+                /* Обороты */
+
+                TextBox3.Text = s[770].ToString(); // Нейтралка
+                adval(comboBox24, s[771]);
+
+                TextBox1.Text = s[778].ToString(); // Максимально
+                adval(comboBox22, s[779]);
+
+                TextBox2.Text = s[774].ToString(); // Переключение
+                adval(comboBox23, s[775]);
+
+                /* ЭКУ */
+
+                // 1
+                addToTrack(trackBar7, s[786], s[787]);
+
+                // 2
+                addToTrack(trackBar8, s[790], s[791]);
+
+                // 3
+                addToTrack(trackBar9, s[794], s[795]);
+
+                // 4
+                addToTrack(trackBar10, s[798], s[799]);
+
+                // 5
+                addToTrack(trackBar11, s[802], s[803]);
+
+                // 6
+                addToTrack(trackBar12, s[806], s[807]);
+
+                // 7
+                addToTrack(trackBar13, s[810], s[811]);
+
+                // 8
+                addToTrack(trackBar14, s[814], s[815]);
+
+                // 9
+                addToTrack(trackBar15, s[818], s[819]);
+
+                /* Турбо */
+
+                // 1
+                addToTrack(trackBar16, s[834], s[835]);
+
+                // 2
+                addToTrack(trackBar17, s[838], s[839]);
+
+                // 3
+                addToTrack(trackBar18, s[842], s[843]);
+
+                // 4
+                addToTrack(trackBar19, s[846], s[847]);
+
+                // 5
+                addToTrack(trackBar20, s[850], s[851]);
+
+                // 6
+                addToTrack(trackBar21, s[854], s[855]);
+
+                // 7
+                addToTrack(trackBar22, s[858], s[859]);
+
+                // 8
+                addToTrack(trackBar23, s[862], s[863]);
+
+                // 9
+                addToTrack(trackBar24, s[866], s[867]);
+
+                /* Подвеска */
+                maskedTextBox1.Text = s[298].ToString();
+                trackBar25.Value = s[299];
+                label63.Text = trackBar25.Value.ToString();
+                maskedTextBox2.Text = s[394].ToString();
+                trackBar26.Value = s[395];
+                label66.Text = trackBar26.Value.ToString();
+
+                /* Управление */
+
+                trackBar29.Value = s[546];
+                label80.Text = s[546].ToString();
+                adval(comboBox26, s[547]);
+
+                trackBar30.Value = s[550];
+                label81.Text = s[550].ToString();
+                adval(comboBox27, s[551]);
+
+                trackBar31.Value = s[554];
+                label82.Text = s[554].ToString();
+                adval(comboBox28, s[555]);
+
+                trackBar32.Value = s[558];
+                label83.Text = s[558].ToString();
+                adval(comboBox29, s[559]);
 
                 /* Колеса */
 
@@ -113,126 +234,15 @@ namespace NFSU2CH
                 label13.Text = s[290].ToString();
                 label14.Text = s[386].ToString();
 
-                /* Обороты */
-
-                TextBox3.Text = s[770].ToString(); // Нейтралка
-                adval(comboBox24, s[771]);
-
-                TextBox1.Text = s[778].ToString(); // Максимально
-                adval(comboBox22, s[779]);
-
-                TextBox2.Text = s[774].ToString(); // Переключение
-                adval(comboBox23, s[775]);
-
-                /* ЭКУ */
-
-                // 1
-                trackBar7.Value = s[786];
-                adval(comboBox3, s[787]);
-
-                // 2
-                trackBar8.Value = s[790];
-                adval(comboBox5, s[791]);
-
-                // 3
-                trackBar9.Value = s[794];
-                adval(comboBox6, s[795]);
-
-                // 4
-                trackBar10.Value = s[798];
-                adval(comboBox7, s[799]);
-
-                // 5
-                trackBar11.Value = s[802];
-                adval(comboBox8, s[803]);
-
-                // 6
-                trackBar12.Value = s[806];
-                adval(comboBox9, s[807]);
-
-                // 7
-                trackBar13.Value = s[810];
-                adval(comboBox10, s[811]);
-
-                // 8
-                trackBar14.Value = s[814];
-                adval(comboBox11, s[815]);
-
-                // 9
-                trackBar15.Value = s[818];
-                adval(comboBox12, s[819]);
-
-                /* Турбо */
-
-                // 1
-                trackBar16.Value = s[834];
-                adval(comboBox13, s[835]);
-
-                // 2
-                trackBar17.Value = s[838];
-                adval(comboBox14, s[839]);
-
-                // 3
-                trackBar18.Value = s[842];
-                adval(comboBox15, s[843]);
-
-                // 4
-                trackBar19.Value = s[846];
-                adval(comboBox16, s[847]);
-
-                // 5
-                trackBar20.Value = s[850];
-                adval(comboBox17, s[851]);
-
-                // 6
-                trackBar21.Value = s[854];
-                adval(comboBox18, s[855]);
-
-                // 7
-                trackBar22.Value = s[858];
-                adval(comboBox19, s[859]);
-
-                // 8
-                trackBar23.Value = s[862];
-                adval(comboBox20, s[863]);
-
-                // 9
-                trackBar24.Value = s[866];
-                adval(comboBox21, s[867]);
-
-                /* Подвеска */
-                maskedTextBox1.Text = s[298].ToString();
-                trackBar25.Value = s[299];
-                label63.Text = trackBar25.Value.ToString();
-                maskedTextBox2.Text = s[394].ToString();
-                trackBar26.Value = s[395];
-                label66.Text = trackBar26.Value.ToString();
-
-                /* Управление */
-
-                trackBar29.Value = s[546];
-                label80.Text = s[546].ToString();
-                adval(comboBox26, s[547]);
-
-                trackBar30.Value = s[550];
-                label81.Text = s[550].ToString();
-                adval(comboBox27, s[551]);
-
-                trackBar31.Value = s[554];
-                label82.Text = s[554].ToString();
-                adval(comboBox28, s[555]);
-
-                trackBar32.Value = s[558];
-                label83.Text = s[558].ToString();
-                adval(comboBox29, s[559]);
-
                 #endregion
+
+                setTrackbarsMinMax();
 
                 return true;
             }
             catch (Exception e)
             {
-                System.Windows.Forms.MessageBox.Show(e.Message);
+                System.Windows.Forms.MessageBox.Show("!!!!!!!!!" + e.Message);
                 return false;
             }
 
