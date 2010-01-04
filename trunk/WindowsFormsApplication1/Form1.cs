@@ -12,6 +12,7 @@ using System.IO;
 using System.Resources;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using Microsoft.Win32;
 namespace NFSU2CH
 {
     public partial class Form1 : Form
@@ -19,6 +20,7 @@ namespace NFSU2CH
         private int[] s, minis = null;
         private Parser p;
         private Thread t1;
+        string GAME_PATH = null;
         private int currentCar, res_w=640, res_h=480;
         OpenFileDialog openFileDialog2 = new OpenFileDialog();
         ResourceManager resourceManager;
@@ -48,6 +50,26 @@ namespace NFSU2CH
             }
             InitializeComponent();
             openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
+            #region проверка реестра
+            RegistryKey r = Registry.CurrentUser.OpenSubKey("NFSU2Configurator");
+            if (r == null)
+            {
+                MessageBox.Show("Переустановите программу!");
+            }
+            else
+            {
+                object s = r.GetValue("GamePath");
+                if (s != null)
+                    this.GAME_PATH = s.ToString();
+                else
+                {
+                    MessageBox.Show("Первый запуск");
+                }
+                s = null;
+                r.SetValue("Path", AppDomain.CurrentDomain.BaseDirectory);
+                r.Close();
+            }
+            #endregion
         }
 
         private void adval(System.Windows.Forms.ComboBox cb, int val)
