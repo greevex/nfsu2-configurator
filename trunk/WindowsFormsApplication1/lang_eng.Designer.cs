@@ -169,7 +169,7 @@ namespace NFSU2CH {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc.
+        ///   Ищет локализованную строку, похожую на NFS U2 exe file ( speed2.exe )|speed2.exe.
         /// </summary>
         internal static string openFileDialogFilter {
             get {

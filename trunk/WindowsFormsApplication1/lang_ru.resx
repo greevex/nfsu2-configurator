@@ -151,7 +151,7 @@
     <value>Нечего сохранять!</value>
   </data>
   <data name="openFileDialogFilter" xml:space="preserve">
-    <value>NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc</value>
+    <value>Запускной файл NFSU2 ( speed2.exe )|speed2.exe</value>
   </data>
   <data name="saved" xml:space="preserve">
     <value>сохранен!</value>
