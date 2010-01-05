@@ -29,6 +29,7 @@ namespace NFSU2CH
         U2cfg u2c = new U2cfg();
         List<TrackBar> tracks = new List<TrackBar>();
         List<int> tracks_v = new List<int>();
+        public RegistryKey r = Registry.CurrentUser.OpenSubKey("NFSU2Configurator", true);
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -49,9 +50,11 @@ namespace NFSU2CH
                 this.resourceManager = lang_eng.ResourceManager;
             }
             InitializeComponent();
+            openFileDialog1.FileName = "speed2.exe";
+            openFileDialog1.Filter = resourceManager.GetString("openFileDialogFilter");
+            openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog2.FileOk += new CancelEventHandler(openFileDialog2_FileOk);
             #region проверка реестра
-            RegistryKey r = Registry.CurrentUser.OpenSubKey("NFSU2Configurator");
             if (r == null)
             {
                 MessageBox.Show("Переустановите программу!");
@@ -59,15 +62,23 @@ namespace NFSU2CH
             else
             {
                 object s = r.GetValue("GamePath");
+                object s2 = r.GetValue("LastCar");
                 if (s != null)
-                    this.GAME_PATH = s.ToString();
+                {
+                    this.GAME_PATH = s.ToString() + "\\GLOBAL\\GlobalB.lzc";
+                    checkFile(this.GAME_PATH);
+                    openFileDialog1.FileName = this.GAME_PATH;
+                    if (s2 != null)
+                    {
+                        comboBox1.SelectedIndex(comboBox1.FindString(s2.ToString()));
+                    }
+                }
                 else
                 {
-                    MessageBox.Show("Первый запуск");
+                    openNewFileAndCheckIt();
                 }
                 s = null;
-                r.SetValue("Path", AppDomain.CurrentDomain.BaseDirectory);
-                r.Close();
+                s2 = null;
             }
             #endregion
         }
@@ -264,12 +275,14 @@ namespace NFSU2CH
             }
             catch (Exception e)
             {
-                System.Windows.Forms.MessageBox.Show("!!!!!!!!!" + e.Message);
+                System.Windows.Forms.MessageBox.Show(e.Message);
                 return false;
             }
 
         }
+
         #region event handlers
+
         private void trackBar4_Scroll(object sender, EventArgs e)
         {
             label10.Text = trackBar4.Value.ToString();
@@ -463,20 +476,18 @@ namespace NFSU2CH
 
         private void openNewFileAndCheckIt()
         {
-            openFileDialog1.FileName = "GlobalB.lzc";
-            openFileDialog1.Filter = resourceManager.GetString("openFileDialogFilter");
-            openFileDialog1.FileOk += new CancelEventHandler(openFileDialog1_FileOk);
             openFileDialog1.ShowDialog();
-            checkFile(openFileDialog1.FileName);
         }
 
-        void  openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             try
             {
-                textBox26.Text = openFileDialog1.FileName.ToString();
-                label54.Text = resourceManager.GetString("loadedThenSelectCar");
-                comboBox1.Text = resourceManager.GetString("selectCar");
+                checkFile(Directory.GetParent(openFileDialog1.FileName) + "\\GLOBAL\\GlobalB.lzc");
+                r.SetValue("GamePath", Directory.GetParent(openFileDialog1.FileName));
+                r.SetValue("Path", AppDomain.CurrentDomain.BaseDirectory);
+                openFileDialog1.FileName = Directory.GetParent(openFileDialog1.FileName) + "\\GLOBAL\\GlobalB.lzc";
+                MessageBox.Show("Первый запуск программы...ОК!\n\nВерсия программы: " + r.GetValue("InstalledVersion"));
             }
             catch (Exception ex)
             {
@@ -857,11 +868,6 @@ namespace NFSU2CH
             }
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             StreamWriter s = new StreamWriter(textBox4.Text);
@@ -885,6 +891,12 @@ namespace NFSU2CH
         private void button5_Click_2(object sender, EventArgs e)
         {
             groupBox13.Visible = true;
+        }
+
+        private void form_closing(object sender, FormClosingEventArgs e)
+        {
+            r.SetValue("LastCar", comboBox1.Text);
+            r.Close();
         }
     }
 }

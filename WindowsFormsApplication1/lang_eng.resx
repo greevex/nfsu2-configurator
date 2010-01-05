@@ -151,7 +151,7 @@
     <value>Nothing to save!</value>
   </data>
   <data name="openFileDialogFilter" xml:space="preserve">
-    <value>NFSU2 GlobalB.lzc ( GLOBAL\GlobalB.lzc )|GlobalB.lzc</value>
+    <value>NFS U2 exe file ( speed2.exe )|speed2.exe</value>
   </data>
   <data name="saved" xml:space="preserve">
     <value>saved!</value>
