@@ -28,9 +28,9 @@ namespace NFSU2CH
         Process[] gameproc;
         U2cfg u2c = new U2cfg();
         List<TrackBar> tracks = new List<TrackBar>();
-        List<int> tracks_v = new List<int>();
+        List<TrackBar> tracks_eng = new List<TrackBar>();
         public RegistryKey r = Registry.CurrentUser.OpenSubKey("NFSU2Configurator", true);
-        public int maxt = -1, mint = -1;
+        public int maxt = -1, mint = -1, maxg = -1, ming = -1;
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -107,6 +107,8 @@ namespace NFSU2CH
             /* Загрузка */
             this.maxt = -1;
             this.mint = -1;
+            this.maxg = -1;
+            this.ming = -1;
             this.currentCar = pos;
             this.s = p.parse(pos);
             AddValToForm();
@@ -167,14 +169,72 @@ namespace NFSU2CH
             this.tracks.Add(t);
         }
 
+        private void addToTrackEngine(TrackBar t, int val1, int val2)
+        {
+            int val = Convert.ToInt32("0x" + val2.ToString("X2") + val1.ToString("X2"), 16);
+            if (this.maxg == -1 && this.ming == -1)
+            {
+                this.ming = val;
+                this.maxg = val;
+            }
+            if (val == 0)
+            {
+                t.Enabled = false;
+            }
+            else
+            {
+                t.Enabled = true;
+                if (val < this.ming)
+                    this.ming = val;
+                else if (val > this.maxg)
+                    this.maxg = val;
+                t.Maximum = val;
+                t.Value = val;
+            }
+            // добавление трекбара в коллекцию.
+            this.tracks_eng.Add(t);
+        }
+
+        private void addToTrackEngine(TrackBar t, int val1, int val2, MaskedTextBox mtb)
+        {
+            int val = Convert.ToInt32("0x" + val2.ToString("X2") + val1.ToString("X2"), 16);
+            mtb.Text = val.ToString();
+            if (this.maxg == -1 && this.ming == -1)
+            {
+                this.ming = val;
+                this.maxg = val;
+            }
+            if (val == 0)
+            {
+                t.Enabled = false;
+                t.Value = 0;
+                t.Maximum = 0;
+            }
+            else
+            {
+                t.Enabled = true;
+                if (val < this.ming)
+                    this.ming = val;
+                else if (val > this.maxg)
+                    this.maxg = val;
+                t.Maximum = val;
+                t.Value = val;
+            }
+            // добавление трекбара в коллекцию.
+            this.tracks_eng.Add(t);
+        }
+
         public void setTrackbarsMinMax()
         {
-            int i = 0;
+            foreach (TrackBar t in this.tracks_eng)
+            {
+                t.Maximum = this.maxg + 50;
+                t.Minimum = this.ming - 50;
+            }
             foreach (TrackBar tt in this.tracks)
             {
                 tt.Maximum = this.maxt+50;
                 tt.Minimum = this.mint;
-                i++;
             }
         }
 
@@ -186,14 +246,11 @@ namespace NFSU2CH
 
                 /* Обороты */
 
-                TextBox3.Text = s[770].ToString(); // Нейтралка
-                adval(comboBox24, s[771]);
+                addToTrackEngine(trackBar35, s[778], s[779], TextBox1); // Максимально
 
-                TextBox1.Text = s[778].ToString(); // Максимально
-                adval(comboBox22, s[779]);
+                addToTrackEngine(trackBar36, s[774], s[775], TextBox2); // Переключение
 
-                TextBox2.Text = s[774].ToString(); // Переключение
-                adval(comboBox23, s[775]);
+                addToTrackEngine(trackBar37, s[770], s[771], TextBox3); // Нейтралка
 
                 /* ЭКУ */
 
@@ -730,14 +787,14 @@ namespace NFSU2CH
                 s[559] = Int32.Parse(comboBox29.Text);
 
                 /* Обороты */
-                s[770] = Int32.Parse(TextBox3.Text); // Нейтралка
-                s[771] = Int32.Parse(comboBox24.Text);
+                s[778] = splitHex(trackBar35.Value)[1]; // Максимально
+                s[779] = splitHex(trackBar35.Value)[0];
 
-                s[778] = Int32.Parse(TextBox1.Text); // Максимально
-                s[779] = Int32.Parse(comboBox22.Text);
+                s[774] = splitHex(trackBar36.Value)[1]; // Переключение
+                s[775] = splitHex(trackBar36.Value)[0];
 
-                s[774] = Int32.Parse(TextBox2.Text); // Переключение
-                s[775] = Int32.Parse(comboBox23.Text);
+                s[770] = splitHex(trackBar37.Value)[1]; // Нейтралка
+                s[771] = splitHex(trackBar37.Value)[0];
 
                 /* ЭКУ */
                 s[786] = splitHex(trackBar7.Value)[1]; // 1
@@ -920,31 +977,6 @@ namespace NFSU2CH
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            StreamWriter s = new StreamWriter(textBox4.Text);
-            int[] array = createArray(p.main, Int32.Parse(textBox6.Text), Int32.Parse(textBox7.Text));
-            s.Write("int[] " + textBox5.Text + " = new int[" + array.Length + "] {\n");
-            int c = 0;
-            foreach (int z in array)
-            {
-                s.Write(z);
-                c++;
-                if (c != array.Length)
-                {
-                    s.Write(", ");
-                }
-            }
-            s.Write("\n};");
-            s.Close();
-            MessageBox.Show(textBox4.Text + " with name " + textBox5.Text + " saved!");
-        }
-
-        private void button5_Click_2(object sender, EventArgs e)
-        {
-            groupBox13.Visible = true;
-        }
-
         private void form_closing(object sender, FormClosingEventArgs e)
         {
             r.SetValue("LastCar", comboBox1.Text);
@@ -1045,6 +1077,21 @@ namespace NFSU2CH
         {
             TrackBar tb = sender as TrackBar;
             tb.Focus();
+        }
+
+        private void trackBar35_Scroll(object sender, EventArgs e)
+        {
+            TextBox1.Text = trackBar35.Value.ToString();
+        }
+
+        private void trackBar36_Scroll(object sender, EventArgs e)
+        {
+            TextBox2.Text = trackBar36.Value.ToString();
+        }
+
+        private void trackBar37_Scroll(object sender, EventArgs e)
+        {
+            TextBox3.Text = trackBar37.Value.ToString();
         }
     }
 }
