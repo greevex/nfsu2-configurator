@@ -520,7 +520,7 @@
     <value>256, 17</value>
   </metadata>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>384, 17</value>
+    <value>0, 496</value>
   </metadata>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 16</value>
@@ -4374,222 +4374,6 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
   <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="comboBox12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 318</value>
-  </data>
-  <data name="comboBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox12.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;comboBox12.Name" xml:space="preserve">
-    <value>comboBox12</value>
-  </data>
-  <data name="&gt;&gt;comboBox12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox12.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox12.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboBox11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 318</value>
-  </data>
-  <data name="comboBox11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;comboBox11.Name" xml:space="preserve">
-    <value>comboBox11</value>
-  </data>
-  <data name="&gt;&gt;comboBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox11.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox11.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBox10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 318</value>
-  </data>
-  <data name="comboBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox10.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;comboBox10.Name" xml:space="preserve">
-    <value>comboBox10</value>
-  </data>
-  <data name="&gt;&gt;comboBox10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox10.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox10.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="comboBox9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 318</value>
-  </data>
-  <data name="comboBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Name" xml:space="preserve">
-    <value>comboBox9</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox9.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="comboBox8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 318</value>
-  </data>
-  <data name="comboBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Name" xml:space="preserve">
-    <value>comboBox8</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox8.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBox7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 318</value>
-  </data>
-  <data name="comboBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Name" xml:space="preserve">
-    <value>comboBox7</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox7.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="comboBox6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>147, 318</value>
-  </data>
-  <data name="comboBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Name" xml:space="preserve">
-    <value>comboBox6</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox6.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="comboBox5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 318</value>
-  </data>
-  <data name="comboBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Name" xml:space="preserve">
-    <value>comboBox5</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox5.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="comboBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 318</value>
-  </data>
-  <data name="comboBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Name" xml:space="preserve">
-    <value>comboBox3</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.Parent" xml:space="preserve">
-    <value>tabPage10</value>
-  </data>
-  <data name="&gt;&gt;comboBox3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="trackBar15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -4600,7 +4384,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar15.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4615,7 +4399,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar15.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>1</value>
   </data>
   <data name="trackBar14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4627,7 +4411,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar14.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4642,7 +4426,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar14.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="trackBar13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4654,7 +4438,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar13.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4669,7 +4453,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar13.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>3</value>
   </data>
   <data name="trackBar12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4681,7 +4465,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar12.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -4696,7 +4480,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar12.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>4</value>
   </data>
   <data name="trackBar11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4708,7 +4492,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar11.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4723,7 +4507,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar11.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>5</value>
   </data>
   <data name="trackBar10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4735,7 +4519,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar10.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4750,7 +4534,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar10.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>6</value>
   </data>
   <data name="trackBar9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4762,7 +4546,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar9.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4777,7 +4561,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar9.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>7</value>
   </data>
   <data name="trackBar8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4789,7 +4573,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar8.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4804,7 +4588,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar8.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>8</value>
   </data>
   <data name="trackBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4816,7 +4600,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar7.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4831,7 +4615,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar7.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>9</value>
   </data>
   <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -4893,222 +4677,6 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
   <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="comboBox21.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 318</value>
-  </data>
-  <data name="comboBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox21.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;comboBox21.Name" xml:space="preserve">
-    <value>comboBox21</value>
-  </data>
-  <data name="&gt;&gt;comboBox21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox21.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox21.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboBox20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>496, 318</value>
-  </data>
-  <data name="comboBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox20.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;comboBox20.Name" xml:space="preserve">
-    <value>comboBox20</value>
-  </data>
-  <data name="&gt;&gt;comboBox20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox20.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox20.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBox19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 318</value>
-  </data>
-  <data name="comboBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox19.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;comboBox19.Name" xml:space="preserve">
-    <value>comboBox19</value>
-  </data>
-  <data name="&gt;&gt;comboBox19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox19.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox19.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="comboBox18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>356, 318</value>
-  </data>
-  <data name="comboBox18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox18.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;comboBox18.Name" xml:space="preserve">
-    <value>comboBox18</value>
-  </data>
-  <data name="&gt;&gt;comboBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox18.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox18.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="comboBox17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 318</value>
-  </data>
-  <data name="comboBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox17.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;comboBox17.Name" xml:space="preserve">
-    <value>comboBox17</value>
-  </data>
-  <data name="&gt;&gt;comboBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox17.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox17.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBox16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 318</value>
-  </data>
-  <data name="comboBox16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox16.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;comboBox16.Name" xml:space="preserve">
-    <value>comboBox16</value>
-  </data>
-  <data name="&gt;&gt;comboBox16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox16.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox16.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="comboBox15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 318</value>
-  </data>
-  <data name="comboBox15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox15.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;comboBox15.Name" xml:space="preserve">
-    <value>comboBox15</value>
-  </data>
-  <data name="&gt;&gt;comboBox15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox15.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox15.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="comboBox14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 318</value>
-  </data>
-  <data name="comboBox14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox14.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;comboBox14.Name" xml:space="preserve">
-    <value>comboBox14</value>
-  </data>
-  <data name="&gt;&gt;comboBox14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox14.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox14.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="comboBox13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="comboBox13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 318</value>
-  </data>
-  <data name="comboBox13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="comboBox13.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;comboBox13.Name" xml:space="preserve">
-    <value>comboBox13</value>
-  </data>
-  <data name="&gt;&gt;comboBox13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox13.Parent" xml:space="preserve">
-    <value>tabPage11</value>
-  </data>
-  <data name="&gt;&gt;comboBox13.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="trackBar24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -5119,7 +4687,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar24.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -5134,7 +4702,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar24.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>1</value>
   </data>
   <data name="trackBar23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5146,7 +4714,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar23.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -5161,7 +4729,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar23.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="trackBar22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5173,7 +4741,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar22.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5188,7 +4756,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar22.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>3</value>
   </data>
   <data name="trackBar21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5200,7 +4768,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar21.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -5215,7 +4783,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar21.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>4</value>
   </data>
   <data name="trackBar20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5227,7 +4795,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar20.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -5242,7 +4810,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar20.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>5</value>
   </data>
   <data name="trackBar19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5254,7 +4822,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar19.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -5269,7 +4837,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar19.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>6</value>
   </data>
   <data name="trackBar18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5281,7 +4849,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar18.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -5296,7 +4864,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar18.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>7</value>
   </data>
   <data name="trackBar17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5308,7 +4876,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar17.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -5323,7 +4891,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar17.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>8</value>
   </data>
   <data name="trackBar16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -5335,7 +4903,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 279</value>
+    <value>45, 306</value>
   </data>
   <data name="trackBar16.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -5350,7 +4918,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar16.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>9</value>
   </data>
   <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
