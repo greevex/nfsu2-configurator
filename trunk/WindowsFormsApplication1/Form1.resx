@@ -4340,6 +4340,195 @@ our contacts and e-mail you will find in the "Help" section.</value>
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="maskedTextBox12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 321</value>
+  </data>
+  <data name="maskedTextBox12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox12.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Name" xml:space="preserve">
+    <value>maskedTextBox12</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="maskedTextBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 321</value>
+  </data>
+  <data name="maskedTextBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox9.Name" xml:space="preserve">
+    <value>maskedTextBox9</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox9.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox9.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="maskedTextBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 321</value>
+  </data>
+  <data name="maskedTextBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox6.Name" xml:space="preserve">
+    <value>maskedTextBox6</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox6.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maskedTextBox11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 321</value>
+  </data>
+  <data name="maskedTextBox11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox11.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Name" xml:space="preserve">
+    <value>maskedTextBox11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="maskedTextBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 321</value>
+  </data>
+  <data name="maskedTextBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Name" xml:space="preserve">
+    <value>maskedTextBox8</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox8.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="maskedTextBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 321</value>
+  </data>
+  <data name="maskedTextBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox5.Name" xml:space="preserve">
+    <value>maskedTextBox5</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox5.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="maskedTextBox10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 321</value>
+  </data>
+  <data name="maskedTextBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox10.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox10.Name" xml:space="preserve">
+    <value>maskedTextBox10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox10.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox10.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="maskedTextBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 321</value>
+  </data>
+  <data name="maskedTextBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Name" xml:space="preserve">
+    <value>maskedTextBox7</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox7.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="maskedTextBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 321</value>
+  </data>
+  <data name="maskedTextBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Name" xml:space="preserve">
+    <value>maskedTextBox4</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.Parent" xml:space="preserve">
+    <value>tabPage10</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="label49.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -4372,7 +4561,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
   <data name="trackBar15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4384,7 +4573,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar15.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4399,7 +4588,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar15.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="trackBar14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4411,7 +4600,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar14.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4426,7 +4615,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar14.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="trackBar13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4438,7 +4627,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar13.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4453,7 +4642,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar13.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>12</value>
   </data>
   <data name="trackBar12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4465,7 +4654,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar12.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -4480,7 +4669,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar12.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>13</value>
   </data>
   <data name="trackBar11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4492,7 +4681,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar11.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4507,7 +4696,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar11.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
   <data name="trackBar10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4519,7 +4708,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar10.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4534,7 +4723,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar10.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>15</value>
   </data>
   <data name="trackBar9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4546,7 +4735,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar9.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4561,7 +4750,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar9.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="trackBar8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4573,7 +4762,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar8.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4588,7 +4777,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar8.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="trackBar7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4600,7 +4789,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 281</value>
   </data>
   <data name="trackBar7.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4615,7 +4804,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage10</value>
   </data>
   <data name="&gt;&gt;trackBar7.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>18</value>
   </data>
   <data name="tabPage10.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -4643,6 +4832,195 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
   </data>
   <data name="&gt;&gt;tabPage10.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="maskedTextBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 309</value>
+  </data>
+  <data name="maskedTextBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox21.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox21.Name" xml:space="preserve">
+    <value>maskedTextBox21</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox21.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox21.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="maskedTextBox18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>353, 309</value>
+  </data>
+  <data name="maskedTextBox18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox18.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox18.Name" xml:space="preserve">
+    <value>maskedTextBox18</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox18.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox18.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="maskedTextBox15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 309</value>
+  </data>
+  <data name="maskedTextBox15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox15.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Name" xml:space="preserve">
+    <value>maskedTextBox15</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maskedTextBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>493, 309</value>
+  </data>
+  <data name="maskedTextBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox20.Name" xml:space="preserve">
+    <value>maskedTextBox20</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox20.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox20.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="maskedTextBox17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>283, 309</value>
+  </data>
+  <data name="maskedTextBox17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox17.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox17.Name" xml:space="preserve">
+    <value>maskedTextBox17</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox17.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="maskedTextBox14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 309</value>
+  </data>
+  <data name="maskedTextBox14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox14.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox14.Name" xml:space="preserve">
+    <value>maskedTextBox14</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox14.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox14.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="maskedTextBox19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 309</value>
+  </data>
+  <data name="maskedTextBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox19.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox19.Name" xml:space="preserve">
+    <value>maskedTextBox19</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox19.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox19.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="maskedTextBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 309</value>
+  </data>
+  <data name="maskedTextBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Name" xml:space="preserve">
+    <value>maskedTextBox16</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox16.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="maskedTextBox13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 309</value>
+  </data>
+  <data name="maskedTextBox13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="maskedTextBox13.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox13.Name" xml:space="preserve">
+    <value>maskedTextBox13</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox13.Parent" xml:space="preserve">
+    <value>tabPage11</value>
+  </data>
+  <data name="&gt;&gt;maskedTextBox13.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="label50.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4675,7 +5053,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
   <data name="trackBar24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4687,7 +5065,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar24.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -4702,7 +5080,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar24.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>10</value>
   </data>
   <data name="trackBar23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4714,7 +5092,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar23.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4729,7 +5107,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar23.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="trackBar22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4741,7 +5119,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar22.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4756,7 +5134,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar22.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>12</value>
   </data>
   <data name="trackBar21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4768,7 +5146,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar21.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -4783,7 +5161,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar21.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>13</value>
   </data>
   <data name="trackBar20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4795,7 +5173,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar20.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -4810,7 +5188,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar20.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
   <data name="trackBar19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4822,7 +5200,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar19.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -4837,7 +5215,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar19.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>15</value>
   </data>
   <data name="trackBar18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4849,7 +5227,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar18.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -4864,7 +5242,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar18.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="trackBar17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4876,7 +5254,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar17.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -4891,7 +5269,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar17.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="trackBar16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4903,7 +5281,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>Vertical</value>
   </data>
   <data name="trackBar16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 306</value>
+    <value>45, 270</value>
   </data>
   <data name="trackBar16.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -4918,7 +5296,7 @@ allows to increase strongly capacity of giving of fuel that is not recommended s
     <value>tabPage11</value>
   </data>
   <data name="&gt;&gt;trackBar16.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>18</value>
   </data>
   <data name="tabPage11.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
