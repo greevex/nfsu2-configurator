@@ -182,6 +182,15 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.trackBar15 = new System.Windows.Forms.TrackBar();
             this.trackBar14 = new System.Windows.Forms.TrackBar();
@@ -193,6 +202,15 @@
             this.trackBar8 = new System.Windows.Forms.TrackBar();
             this.trackBar7 = new System.Windows.Forms.TrackBar();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.maskedTextBox21 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox15 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox16 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.trackBar24 = new System.Windows.Forms.TrackBar();
             this.trackBar23 = new System.Windows.Forms.TrackBar();
@@ -240,24 +258,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox7 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox9 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox10 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox11 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox12 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox13 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox14 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox15 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox16 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox17 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox18 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox19 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox20 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox21 = new System.Windows.Forms.MaskedTextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -904,6 +904,7 @@
             this.trackBar2.Maximum = 255;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            this.trackBar2.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label74
             // 
@@ -929,6 +930,7 @@
             this.trackBar5.Name = "trackBar5";
             this.trackBar5.Value = 50;
             this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll_1);
+            this.trackBar5.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar1
             // 
@@ -937,6 +939,7 @@
             this.trackBar1.Maximum = 255;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.trackBar1.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label31
             // 
@@ -957,6 +960,7 @@
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Value = 50;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll_1);
+            this.trackBar3.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label32
             // 
@@ -970,6 +974,7 @@
             this.trackBar34.Maximum = 255;
             this.trackBar34.Name = "trackBar34";
             this.trackBar34.Scroll += new System.EventHandler(this.trackBar28_Scroll);
+            this.trackBar34.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar28
             // 
@@ -978,6 +983,7 @@
             this.trackBar28.Maximum = 255;
             this.trackBar28.Name = "trackBar28";
             this.trackBar28.Scroll += new System.EventHandler(this.trackBar28_Scroll);
+            this.trackBar28.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar6
             // 
@@ -986,6 +992,7 @@
             this.trackBar6.Maximum = 255;
             this.trackBar6.Name = "trackBar6";
             this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll_1);
+            this.trackBar6.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label94
             // 
@@ -1014,6 +1021,7 @@
             this.trackBar33.Maximum = 255;
             this.trackBar33.Name = "trackBar33";
             this.trackBar33.Scroll += new System.EventHandler(this.trackBar27_Scroll);
+            this.trackBar33.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar27
             // 
@@ -1022,6 +1030,7 @@
             this.trackBar27.Maximum = 255;
             this.trackBar27.Name = "trackBar27";
             this.trackBar27.Scroll += new System.EventHandler(this.trackBar27_Scroll);
+            this.trackBar27.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar4
             // 
@@ -1030,6 +1039,7 @@
             this.trackBar4.Maximum = 255;
             this.trackBar4.Name = "trackBar4";
             this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
+            this.trackBar4.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label18
             // 
@@ -1265,6 +1275,7 @@
             this.trackBar32.Maximum = 255;
             this.trackBar32.Name = "trackBar32";
             this.trackBar32.Scroll += new System.EventHandler(this.trackBar32_Scroll);
+            this.trackBar32.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar31
             // 
@@ -1273,6 +1284,7 @@
             this.trackBar31.Maximum = 255;
             this.trackBar31.Name = "trackBar31";
             this.trackBar31.Scroll += new System.EventHandler(this.trackBar31_Scroll);
+            this.trackBar31.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar30
             // 
@@ -1281,6 +1293,7 @@
             this.trackBar30.Maximum = 255;
             this.trackBar30.Name = "trackBar30";
             this.trackBar30.Scroll += new System.EventHandler(this.trackBar30_Scroll);
+            this.trackBar30.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar29
             // 
@@ -1289,6 +1302,7 @@
             this.trackBar29.Maximum = 255;
             this.trackBar29.Name = "trackBar29";
             this.trackBar29.Scroll += new System.EventHandler(this.trackBar29_Scroll);
+            this.trackBar29.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label4
             // 
@@ -1437,6 +1451,7 @@
             this.trackBar26.Maximum = 63;
             this.trackBar26.Name = "trackBar26";
             this.trackBar26.Scroll += new System.EventHandler(this.trackBar26_Scroll);
+            this.trackBar26.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar25
             // 
@@ -1445,6 +1460,7 @@
             this.trackBar25.Maximum = 63;
             this.trackBar25.Name = "trackBar25";
             this.trackBar25.Scroll += new System.EventHandler(this.trackBar25_Scroll);
+            this.trackBar25.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // label9
             // 
@@ -1551,6 +1567,51 @@
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
+            // maskedTextBox12
+            // 
+            resources.ApplyResources(this.maskedTextBox12, "maskedTextBox12");
+            this.maskedTextBox12.Name = "maskedTextBox12";
+            // 
+            // maskedTextBox9
+            // 
+            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
+            this.maskedTextBox9.Name = "maskedTextBox9";
+            // 
+            // maskedTextBox6
+            // 
+            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            // 
+            // maskedTextBox11
+            // 
+            resources.ApplyResources(this.maskedTextBox11, "maskedTextBox11");
+            this.maskedTextBox11.Name = "maskedTextBox11";
+            // 
+            // maskedTextBox8
+            // 
+            resources.ApplyResources(this.maskedTextBox8, "maskedTextBox8");
+            this.maskedTextBox8.Name = "maskedTextBox8";
+            // 
+            // maskedTextBox5
+            // 
+            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            // 
+            // maskedTextBox10
+            // 
+            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
+            this.maskedTextBox10.Name = "maskedTextBox10";
+            // 
+            // maskedTextBox7
+            // 
+            resources.ApplyResources(this.maskedTextBox7, "maskedTextBox7");
+            this.maskedTextBox7.Name = "maskedTextBox7";
+            // 
+            // maskedTextBox4
+            // 
+            resources.ApplyResources(this.maskedTextBox4, "maskedTextBox4");
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            // 
             // label49
             // 
             resources.ApplyResources(this.label49, "label49");
@@ -1562,6 +1623,8 @@
             resources.ApplyResources(this.trackBar15, "trackBar15");
             this.trackBar15.Maximum = 255;
             this.trackBar15.Name = "trackBar15";
+            this.trackBar15.Scroll += new System.EventHandler(this.trackBar15_Scroll);
+            this.trackBar15.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar14
             // 
@@ -1569,6 +1632,8 @@
             resources.ApplyResources(this.trackBar14, "trackBar14");
             this.trackBar14.Maximum = 255;
             this.trackBar14.Name = "trackBar14";
+            this.trackBar14.Scroll += new System.EventHandler(this.trackBar14_Scroll);
+            this.trackBar14.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar13
             // 
@@ -1576,6 +1641,8 @@
             resources.ApplyResources(this.trackBar13, "trackBar13");
             this.trackBar13.Maximum = 255;
             this.trackBar13.Name = "trackBar13";
+            this.trackBar13.Scroll += new System.EventHandler(this.trackBar13_Scroll);
+            this.trackBar13.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar12
             // 
@@ -1583,6 +1650,8 @@
             resources.ApplyResources(this.trackBar12, "trackBar12");
             this.trackBar12.Maximum = 255;
             this.trackBar12.Name = "trackBar12";
+            this.trackBar12.Scroll += new System.EventHandler(this.trackBar12_Scroll);
+            this.trackBar12.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar11
             // 
@@ -1590,6 +1659,8 @@
             resources.ApplyResources(this.trackBar11, "trackBar11");
             this.trackBar11.Maximum = 255;
             this.trackBar11.Name = "trackBar11";
+            this.trackBar11.Scroll += new System.EventHandler(this.trackBar11_Scroll);
+            this.trackBar11.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar10
             // 
@@ -1597,6 +1668,8 @@
             resources.ApplyResources(this.trackBar10, "trackBar10");
             this.trackBar10.Maximum = 255;
             this.trackBar10.Name = "trackBar10";
+            this.trackBar10.Scroll += new System.EventHandler(this.trackBar10_Scroll);
+            this.trackBar10.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar9
             // 
@@ -1604,6 +1677,8 @@
             resources.ApplyResources(this.trackBar9, "trackBar9");
             this.trackBar9.Maximum = 255;
             this.trackBar9.Name = "trackBar9";
+            this.trackBar9.Scroll += new System.EventHandler(this.trackBar9_Scroll);
+            this.trackBar9.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar8
             // 
@@ -1611,6 +1686,8 @@
             resources.ApplyResources(this.trackBar8, "trackBar8");
             this.trackBar8.Maximum = 255;
             this.trackBar8.Name = "trackBar8";
+            this.trackBar8.Scroll += new System.EventHandler(this.trackBar8_Scroll);
+            this.trackBar8.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar7
             // 
@@ -1618,6 +1695,8 @@
             resources.ApplyResources(this.trackBar7, "trackBar7");
             this.trackBar7.Maximum = 255;
             this.trackBar7.Name = "trackBar7";
+            this.trackBar7.Scroll += new System.EventHandler(this.trackBar7_Scroll);
+            this.trackBar7.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // tabPage11
             // 
@@ -1645,6 +1724,51 @@
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // maskedTextBox21
+            // 
+            resources.ApplyResources(this.maskedTextBox21, "maskedTextBox21");
+            this.maskedTextBox21.Name = "maskedTextBox21";
+            // 
+            // maskedTextBox18
+            // 
+            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
+            this.maskedTextBox18.Name = "maskedTextBox18";
+            // 
+            // maskedTextBox15
+            // 
+            resources.ApplyResources(this.maskedTextBox15, "maskedTextBox15");
+            this.maskedTextBox15.Name = "maskedTextBox15";
+            // 
+            // maskedTextBox20
+            // 
+            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
+            this.maskedTextBox20.Name = "maskedTextBox20";
+            // 
+            // maskedTextBox17
+            // 
+            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
+            this.maskedTextBox17.Name = "maskedTextBox17";
+            // 
+            // maskedTextBox14
+            // 
+            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
+            this.maskedTextBox14.Name = "maskedTextBox14";
+            // 
+            // maskedTextBox19
+            // 
+            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
+            this.maskedTextBox19.Name = "maskedTextBox19";
+            // 
+            // maskedTextBox16
+            // 
+            resources.ApplyResources(this.maskedTextBox16, "maskedTextBox16");
+            this.maskedTextBox16.Name = "maskedTextBox16";
+            // 
+            // maskedTextBox13
+            // 
+            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
+            this.maskedTextBox13.Name = "maskedTextBox13";
+            // 
             // label50
             // 
             resources.ApplyResources(this.label50, "label50");
@@ -1656,6 +1780,8 @@
             resources.ApplyResources(this.trackBar24, "trackBar24");
             this.trackBar24.Maximum = 255;
             this.trackBar24.Name = "trackBar24";
+            this.trackBar24.Scroll += new System.EventHandler(this.trackBar24_Scroll);
+            this.trackBar24.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar23
             // 
@@ -1663,6 +1789,8 @@
             resources.ApplyResources(this.trackBar23, "trackBar23");
             this.trackBar23.Maximum = 255;
             this.trackBar23.Name = "trackBar23";
+            this.trackBar23.Scroll += new System.EventHandler(this.trackBar23_Scroll);
+            this.trackBar23.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar22
             // 
@@ -1670,6 +1798,8 @@
             resources.ApplyResources(this.trackBar22, "trackBar22");
             this.trackBar22.Maximum = 255;
             this.trackBar22.Name = "trackBar22";
+            this.trackBar22.Scroll += new System.EventHandler(this.trackBar22_Scroll);
+            this.trackBar22.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar21
             // 
@@ -1677,6 +1807,8 @@
             resources.ApplyResources(this.trackBar21, "trackBar21");
             this.trackBar21.Maximum = 255;
             this.trackBar21.Name = "trackBar21";
+            this.trackBar21.Scroll += new System.EventHandler(this.trackBar21_Scroll);
+            this.trackBar21.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar20
             // 
@@ -1684,6 +1816,8 @@
             resources.ApplyResources(this.trackBar20, "trackBar20");
             this.trackBar20.Maximum = 255;
             this.trackBar20.Name = "trackBar20";
+            this.trackBar20.Scroll += new System.EventHandler(this.trackBar20_Scroll);
+            this.trackBar20.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar19
             // 
@@ -1691,6 +1825,8 @@
             resources.ApplyResources(this.trackBar19, "trackBar19");
             this.trackBar19.Maximum = 255;
             this.trackBar19.Name = "trackBar19";
+            this.trackBar19.Scroll += new System.EventHandler(this.trackBar19_Scroll);
+            this.trackBar19.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar18
             // 
@@ -1698,6 +1834,8 @@
             resources.ApplyResources(this.trackBar18, "trackBar18");
             this.trackBar18.Maximum = 255;
             this.trackBar18.Name = "trackBar18";
+            this.trackBar18.Scroll += new System.EventHandler(this.trackBar18_Scroll);
+            this.trackBar18.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar17
             // 
@@ -1705,6 +1843,8 @@
             resources.ApplyResources(this.trackBar17, "trackBar17");
             this.trackBar17.Maximum = 255;
             this.trackBar17.Name = "trackBar17";
+            this.trackBar17.Scroll += new System.EventHandler(this.trackBar17_Scroll);
+            this.trackBar17.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // trackBar16
             // 
@@ -1712,6 +1852,8 @@
             resources.ApplyResources(this.trackBar16, "trackBar16");
             this.trackBar16.Maximum = 255;
             this.trackBar16.Name = "trackBar16";
+            this.trackBar16.Scroll += new System.EventHandler(this.trackBar16_Scroll);
+            this.trackBar16.MouseEnter += new System.EventHandler(MouseOnTrackBar);
             // 
             // groupBox6
             // 
@@ -1941,96 +2083,6 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click_2);
-            // 
-            // maskedTextBox4
-            // 
-            resources.ApplyResources(this.maskedTextBox4, "maskedTextBox4");
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            // 
-            // maskedTextBox5
-            // 
-            resources.ApplyResources(this.maskedTextBox5, "maskedTextBox5");
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            // 
-            // maskedTextBox6
-            // 
-            resources.ApplyResources(this.maskedTextBox6, "maskedTextBox6");
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            // 
-            // maskedTextBox7
-            // 
-            resources.ApplyResources(this.maskedTextBox7, "maskedTextBox7");
-            this.maskedTextBox7.Name = "maskedTextBox7";
-            // 
-            // maskedTextBox8
-            // 
-            resources.ApplyResources(this.maskedTextBox8, "maskedTextBox8");
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            // 
-            // maskedTextBox9
-            // 
-            resources.ApplyResources(this.maskedTextBox9, "maskedTextBox9");
-            this.maskedTextBox9.Name = "maskedTextBox9";
-            // 
-            // maskedTextBox10
-            // 
-            resources.ApplyResources(this.maskedTextBox10, "maskedTextBox10");
-            this.maskedTextBox10.Name = "maskedTextBox10";
-            // 
-            // maskedTextBox11
-            // 
-            resources.ApplyResources(this.maskedTextBox11, "maskedTextBox11");
-            this.maskedTextBox11.Name = "maskedTextBox11";
-            // 
-            // maskedTextBox12
-            // 
-            resources.ApplyResources(this.maskedTextBox12, "maskedTextBox12");
-            this.maskedTextBox12.Name = "maskedTextBox12";
-            // 
-            // maskedTextBox13
-            // 
-            resources.ApplyResources(this.maskedTextBox13, "maskedTextBox13");
-            this.maskedTextBox13.Name = "maskedTextBox13";
-            // 
-            // maskedTextBox14
-            // 
-            resources.ApplyResources(this.maskedTextBox14, "maskedTextBox14");
-            this.maskedTextBox14.Name = "maskedTextBox14";
-            // 
-            // maskedTextBox15
-            // 
-            resources.ApplyResources(this.maskedTextBox15, "maskedTextBox15");
-            this.maskedTextBox15.Name = "maskedTextBox15";
-            // 
-            // maskedTextBox16
-            // 
-            resources.ApplyResources(this.maskedTextBox16, "maskedTextBox16");
-            this.maskedTextBox16.Name = "maskedTextBox16";
-            // 
-            // maskedTextBox17
-            // 
-            resources.ApplyResources(this.maskedTextBox17, "maskedTextBox17");
-            this.maskedTextBox17.Name = "maskedTextBox17";
-            // 
-            // maskedTextBox18
-            // 
-            resources.ApplyResources(this.maskedTextBox18, "maskedTextBox18");
-            this.maskedTextBox18.Name = "maskedTextBox18";
-            // 
-            // maskedTextBox19
-            // 
-            resources.ApplyResources(this.maskedTextBox19, "maskedTextBox19");
-            this.maskedTextBox19.Name = "maskedTextBox19";
-            // 
-            // maskedTextBox20
-            // 
-            resources.ApplyResources(this.maskedTextBox20, "maskedTextBox20");
-            this.maskedTextBox20.Name = "maskedTextBox20";
-            // 
-            // maskedTextBox21
-            // 
-            resources.ApplyResources(this.maskedTextBox21, "maskedTextBox21");
-            this.maskedTextBox21.Name = "maskedTextBox21";
             // 
             // Form1
             // 
