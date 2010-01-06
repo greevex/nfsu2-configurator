@@ -128,10 +128,38 @@ namespace NFSU2CH
             }
             else
             {
+                t.Enabled = true;
                 if (val < this.mint)
                     this.mint = val;
                 else if (val > this.maxt)
-                    this.maxt = val+50  ; 
+                    this.maxt = val; 
+                t.Maximum = val;
+                t.Value = val;
+            }
+            // добавление трекбара в коллекцию.
+            this.tracks.Add(t);
+        }
+
+        private void addToTrack(TrackBar t, int val1, int val2, MaskedTextBox mtb)
+        {
+            int val = Convert.ToInt32("0x" + val2.ToString("X2") + val1.ToString("X2"), 16);
+            mtb.Text = val.ToString();
+            if (this.maxt == -1 && this.mint == -1)
+            {
+                this.mint = val;
+                this.maxt = val;
+            }
+            if (val == 0)
+            {
+                t.Enabled = false;
+            }
+            else
+            {
+                t.Enabled = true;
+                if (val < this.mint)
+                    this.mint = val;
+                else if (val > this.maxt)
+                    this.maxt = val;
                 t.Maximum = val;
                 t.Value = val;
             }
@@ -144,7 +172,7 @@ namespace NFSU2CH
             int i = 0;
             foreach (TrackBar tt in this.tracks)
             {
-                tt.Maximum = this.maxt;
+                tt.Maximum = this.maxt+50;
                 tt.Minimum = this.mint;
                 i++;
             }
@@ -170,60 +198,60 @@ namespace NFSU2CH
                 /* ЭКУ */
 
                 // 1
-                addToTrack(trackBar7, s[786], s[787]);
+                addToTrack(trackBar7, s[786], s[787], maskedTextBox4);
 
                 // 2
-                addToTrack(trackBar8, s[790], s[791]);
+                addToTrack(trackBar8, s[790], s[791], maskedTextBox5);
 
                 // 3
-                addToTrack(trackBar9, s[794], s[795]);
+                addToTrack(trackBar9, s[794], s[795], maskedTextBox6);
 
                 // 4
-                addToTrack(trackBar10, s[798], s[799]);
+                addToTrack(trackBar10, s[798], s[799], maskedTextBox7);
 
                 // 5
-                addToTrack(trackBar11, s[802], s[803]);
+                addToTrack(trackBar11, s[802], s[803], maskedTextBox8);
 
                 // 6
-                addToTrack(trackBar12, s[806], s[807]);
+                addToTrack(trackBar12, s[806], s[807], maskedTextBox9);
 
                 // 7
-                addToTrack(trackBar13, s[810], s[811]);
+                addToTrack(trackBar13, s[810], s[811], maskedTextBox10);
 
                 // 8
-                addToTrack(trackBar14, s[814], s[815]);
+                addToTrack(trackBar14, s[814], s[815], maskedTextBox11);
 
                 // 9
-                addToTrack(trackBar15, s[818], s[819]);
+                addToTrack(trackBar15, s[818], s[819], maskedTextBox12);
 
                 /* Турбо */
 
                 // 1
-                addToTrack(trackBar16, s[834], s[835]);
+                addToTrack(trackBar16, s[834], s[835], maskedTextBox13);
 
                 // 2
-                addToTrack(trackBar17, s[838], s[839]);
+                addToTrack(trackBar17, s[838], s[839], maskedTextBox14);
 
                 // 3
-                addToTrack(trackBar18, s[842], s[843]);
+                addToTrack(trackBar18, s[842], s[843], maskedTextBox15);
 
                 // 4
-                addToTrack(trackBar19, s[846], s[847]);
+                addToTrack(trackBar19, s[846], s[847], maskedTextBox16);
 
                 // 5
-                addToTrack(trackBar20, s[850], s[851]);
+                addToTrack(trackBar20, s[850], s[851], maskedTextBox17);
 
                 // 6
-                addToTrack(trackBar21, s[854], s[855]);
+                addToTrack(trackBar21, s[854], s[855], maskedTextBox18);
 
                 // 7
-                addToTrack(trackBar22, s[858], s[859]);
+                addToTrack(trackBar22, s[858], s[859], maskedTextBox19);
 
                 // 8
-                addToTrack(trackBar23, s[862], s[863]);
+                addToTrack(trackBar23, s[862], s[863], maskedTextBox20);
 
                 // 9
-                addToTrack(trackBar24, s[866], s[867]);
+                addToTrack(trackBar24, s[866], s[867], maskedTextBox21);
 
                 /* Подвеска */
                 maskedTextBox1.Text = s[298].ToString();
@@ -756,12 +784,10 @@ namespace NFSU2CH
         private int[] splitHex(int val)
         {
             int[] rv = new int[2] {
-                Int32.Parse(Convert.ToInt32("0x" + val.ToString("X2"), 16).ToString().Substring
-                    (0, 2)),
-                Int32.Parse(Convert.ToInt32("0x" + val.ToString("X2"), 16).ToString().Substring
-                    (2, 2))
+                Convert.ToInt32("0x" + val.ToString("X2").Substring(0, 2), 16),
+                Convert.ToInt32("0x" + val.ToString("X2").Substring(2, 2), 16)
             };
-            //System.Windows.Forms.MessageBox.Show(rv[1].ToString() + " | " + rv[0].ToString());
+            //System.Windows.Forms.MessageBox.Show("1: " + val.ToString("X4").Substring(0, 2) + "\n2: " + val.ToString("X4").Substring(2, 2));
             return rv;
         }
 
