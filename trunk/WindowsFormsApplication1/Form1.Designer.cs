@@ -183,15 +183,6 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.label49 = new System.Windows.Forms.Label();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.trackBar15 = new System.Windows.Forms.TrackBar();
             this.trackBar14 = new System.Windows.Forms.TrackBar();
             this.trackBar13 = new System.Windows.Forms.TrackBar();
@@ -203,15 +194,6 @@
             this.trackBar7 = new System.Windows.Forms.TrackBar();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label50 = new System.Windows.Forms.Label();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.trackBar24 = new System.Windows.Forms.TrackBar();
             this.trackBar23 = new System.Windows.Forms.TrackBar();
             this.trackBar22 = new System.Windows.Forms.TrackBar();
@@ -899,7 +881,7 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.BackColor = System.Drawing.Color.Black;
+            this.trackBar2.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar2, "trackBar2");
             this.trackBar2.Maximum = 255;
             this.trackBar2.Name = "trackBar2";
@@ -922,7 +904,7 @@
             // 
             // trackBar5
             // 
-            this.trackBar5.BackColor = System.Drawing.Color.Black;
+            this.trackBar5.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar5, "trackBar5");
             this.trackBar5.Maximum = 180;
             this.trackBar5.Minimum = 50;
@@ -932,7 +914,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.BackColor = System.Drawing.Color.Black;
+            this.trackBar1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar1, "trackBar1");
             this.trackBar1.Maximum = 255;
             this.trackBar1.Name = "trackBar1";
@@ -950,7 +932,7 @@
             // 
             // trackBar3
             // 
-            this.trackBar3.BackColor = System.Drawing.Color.Black;
+            this.trackBar3.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar3, "trackBar3");
             this.trackBar3.Maximum = 180;
             this.trackBar3.Minimum = 50;
@@ -973,7 +955,7 @@
             // 
             // trackBar28
             // 
-            this.trackBar28.BackColor = System.Drawing.Color.Black;
+            this.trackBar28.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar28, "trackBar28");
             this.trackBar28.Maximum = 255;
             this.trackBar28.Name = "trackBar28";
@@ -981,7 +963,7 @@
             // 
             // trackBar6
             // 
-            this.trackBar6.BackColor = System.Drawing.Color.Black;
+            this.trackBar6.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar6, "trackBar6");
             this.trackBar6.Maximum = 255;
             this.trackBar6.Name = "trackBar6";
@@ -1017,7 +999,7 @@
             // 
             // trackBar27
             // 
-            this.trackBar27.BackColor = System.Drawing.Color.Black;
+            this.trackBar27.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar27, "trackBar27");
             this.trackBar27.Maximum = 255;
             this.trackBar27.Name = "trackBar27";
@@ -1025,7 +1007,7 @@
             // 
             // trackBar4
             // 
-            this.trackBar4.BackColor = System.Drawing.Color.Black;
+            this.trackBar4.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar4, "trackBar4");
             this.trackBar4.Maximum = 255;
             this.trackBar4.Name = "trackBar4";
@@ -1260,7 +1242,7 @@
             // 
             // trackBar32
             // 
-            this.trackBar32.BackColor = System.Drawing.Color.Black;
+            this.trackBar32.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar32, "trackBar32");
             this.trackBar32.Maximum = 255;
             this.trackBar32.Name = "trackBar32";
@@ -1268,7 +1250,7 @@
             // 
             // trackBar31
             // 
-            this.trackBar31.BackColor = System.Drawing.Color.Black;
+            this.trackBar31.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar31, "trackBar31");
             this.trackBar31.Maximum = 255;
             this.trackBar31.Name = "trackBar31";
@@ -1276,7 +1258,7 @@
             // 
             // trackBar30
             // 
-            this.trackBar30.BackColor = System.Drawing.Color.Black;
+            this.trackBar30.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar30, "trackBar30");
             this.trackBar30.Maximum = 255;
             this.trackBar30.Name = "trackBar30";
@@ -1284,7 +1266,7 @@
             // 
             // trackBar29
             // 
-            this.trackBar29.BackColor = System.Drawing.Color.Black;
+            this.trackBar29.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar29, "trackBar29");
             this.trackBar29.Maximum = 255;
             this.trackBar29.Name = "trackBar29";
@@ -1432,7 +1414,7 @@
             // 
             // trackBar26
             // 
-            this.trackBar26.BackColor = System.Drawing.Color.Black;
+            this.trackBar26.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar26, "trackBar26");
             this.trackBar26.Maximum = 63;
             this.trackBar26.Name = "trackBar26";
@@ -1440,7 +1422,7 @@
             // 
             // trackBar25
             // 
-            this.trackBar25.BackColor = System.Drawing.Color.Black;
+            this.trackBar25.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar25, "trackBar25");
             this.trackBar25.Maximum = 63;
             this.trackBar25.Name = "trackBar25";
@@ -1529,15 +1511,6 @@
             // 
             this.tabPage10.BackColor = System.Drawing.Color.White;
             this.tabPage10.Controls.Add(this.label49);
-            this.tabPage10.Controls.Add(this.comboBox12);
-            this.tabPage10.Controls.Add(this.comboBox11);
-            this.tabPage10.Controls.Add(this.comboBox10);
-            this.tabPage10.Controls.Add(this.comboBox9);
-            this.tabPage10.Controls.Add(this.comboBox8);
-            this.tabPage10.Controls.Add(this.comboBox7);
-            this.tabPage10.Controls.Add(this.comboBox6);
-            this.tabPage10.Controls.Add(this.comboBox5);
-            this.tabPage10.Controls.Add(this.comboBox3);
             this.tabPage10.Controls.Add(this.trackBar15);
             this.tabPage10.Controls.Add(this.trackBar14);
             this.tabPage10.Controls.Add(this.trackBar13);
@@ -1556,128 +1529,65 @@
             resources.ApplyResources(this.label49, "label49");
             this.label49.Name = "label49";
             // 
-            // comboBox12
-            // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox12, "comboBox12");
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Name = "comboBox12";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox11, "comboBox11");
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Name = "comboBox11";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox10, "comboBox10");
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Name = "comboBox10";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox9, "comboBox9");
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Name = "comboBox9";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox8, "comboBox8");
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Name = "comboBox8";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox7, "comboBox7");
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Name = "comboBox7";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox6, "comboBox6");
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Name = "comboBox6";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox5, "comboBox5");
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Name = "comboBox5";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox3, "comboBox3");
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Name = "comboBox3";
-            // 
             // trackBar15
             // 
-            this.trackBar15.BackColor = System.Drawing.Color.Black;
+            this.trackBar15.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar15, "trackBar15");
             this.trackBar15.Maximum = 255;
             this.trackBar15.Name = "trackBar15";
             // 
             // trackBar14
             // 
-            this.trackBar14.BackColor = System.Drawing.Color.Black;
+            this.trackBar14.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar14, "trackBar14");
             this.trackBar14.Maximum = 255;
             this.trackBar14.Name = "trackBar14";
             // 
             // trackBar13
             // 
-            this.trackBar13.BackColor = System.Drawing.Color.Black;
+            this.trackBar13.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar13, "trackBar13");
             this.trackBar13.Maximum = 255;
             this.trackBar13.Name = "trackBar13";
             // 
             // trackBar12
             // 
-            this.trackBar12.BackColor = System.Drawing.Color.Black;
+            this.trackBar12.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar12, "trackBar12");
             this.trackBar12.Maximum = 255;
             this.trackBar12.Name = "trackBar12";
             // 
             // trackBar11
             // 
-            this.trackBar11.BackColor = System.Drawing.Color.Black;
+            this.trackBar11.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar11, "trackBar11");
             this.trackBar11.Maximum = 255;
             this.trackBar11.Name = "trackBar11";
             // 
             // trackBar10
             // 
-            this.trackBar10.BackColor = System.Drawing.Color.Black;
+            this.trackBar10.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar10, "trackBar10");
             this.trackBar10.Maximum = 255;
             this.trackBar10.Name = "trackBar10";
             // 
             // trackBar9
             // 
-            this.trackBar9.BackColor = System.Drawing.Color.Black;
+            this.trackBar9.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar9, "trackBar9");
             this.trackBar9.Maximum = 255;
             this.trackBar9.Name = "trackBar9";
             // 
             // trackBar8
             // 
-            this.trackBar8.BackColor = System.Drawing.Color.Black;
+            this.trackBar8.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar8, "trackBar8");
             this.trackBar8.Maximum = 255;
             this.trackBar8.Name = "trackBar8";
             // 
             // trackBar7
             // 
-            this.trackBar7.BackColor = System.Drawing.Color.Black;
+            this.trackBar7.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar7, "trackBar7");
             this.trackBar7.Maximum = 255;
             this.trackBar7.Name = "trackBar7";
@@ -1686,15 +1596,6 @@
             // 
             this.tabPage11.BackColor = System.Drawing.Color.White;
             this.tabPage11.Controls.Add(this.label50);
-            this.tabPage11.Controls.Add(this.comboBox21);
-            this.tabPage11.Controls.Add(this.comboBox20);
-            this.tabPage11.Controls.Add(this.comboBox19);
-            this.tabPage11.Controls.Add(this.comboBox18);
-            this.tabPage11.Controls.Add(this.comboBox17);
-            this.tabPage11.Controls.Add(this.comboBox16);
-            this.tabPage11.Controls.Add(this.comboBox15);
-            this.tabPage11.Controls.Add(this.comboBox14);
-            this.tabPage11.Controls.Add(this.comboBox13);
             this.tabPage11.Controls.Add(this.trackBar24);
             this.tabPage11.Controls.Add(this.trackBar23);
             this.tabPage11.Controls.Add(this.trackBar22);
@@ -1713,128 +1614,65 @@
             resources.ApplyResources(this.label50, "label50");
             this.label50.Name = "label50";
             // 
-            // comboBox21
-            // 
-            this.comboBox21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox21, "comboBox21");
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Name = "comboBox21";
-            // 
-            // comboBox20
-            // 
-            this.comboBox20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox20, "comboBox20");
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Name = "comboBox20";
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox19, "comboBox19");
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Name = "comboBox19";
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox18, "comboBox18");
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Name = "comboBox18";
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox17, "comboBox17");
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Name = "comboBox17";
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox16, "comboBox16");
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Name = "comboBox16";
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox15, "comboBox15");
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Name = "comboBox15";
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox14, "comboBox14");
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Name = "comboBox14";
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox13, "comboBox13");
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Name = "comboBox13";
-            // 
             // trackBar24
             // 
-            this.trackBar24.BackColor = System.Drawing.Color.Black;
+            this.trackBar24.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar24, "trackBar24");
             this.trackBar24.Maximum = 255;
             this.trackBar24.Name = "trackBar24";
             // 
             // trackBar23
             // 
-            this.trackBar23.BackColor = System.Drawing.Color.Black;
+            this.trackBar23.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar23, "trackBar23");
             this.trackBar23.Maximum = 255;
             this.trackBar23.Name = "trackBar23";
             // 
             // trackBar22
             // 
-            this.trackBar22.BackColor = System.Drawing.Color.Black;
+            this.trackBar22.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar22, "trackBar22");
             this.trackBar22.Maximum = 255;
             this.trackBar22.Name = "trackBar22";
             // 
             // trackBar21
             // 
-            this.trackBar21.BackColor = System.Drawing.Color.Black;
+            this.trackBar21.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar21, "trackBar21");
             this.trackBar21.Maximum = 255;
             this.trackBar21.Name = "trackBar21";
             // 
             // trackBar20
             // 
-            this.trackBar20.BackColor = System.Drawing.Color.Black;
+            this.trackBar20.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar20, "trackBar20");
             this.trackBar20.Maximum = 255;
             this.trackBar20.Name = "trackBar20";
             // 
             // trackBar19
             // 
-            this.trackBar19.BackColor = System.Drawing.Color.Black;
+            this.trackBar19.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar19, "trackBar19");
             this.trackBar19.Maximum = 255;
             this.trackBar19.Name = "trackBar19";
             // 
             // trackBar18
             // 
-            this.trackBar18.BackColor = System.Drawing.Color.Black;
+            this.trackBar18.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar18, "trackBar18");
             this.trackBar18.Maximum = 255;
             this.trackBar18.Name = "trackBar18";
             // 
             // trackBar17
             // 
-            this.trackBar17.BackColor = System.Drawing.Color.Black;
+            this.trackBar17.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar17, "trackBar17");
             this.trackBar17.Maximum = 255;
             this.trackBar17.Name = "trackBar17";
             // 
             // trackBar16
             // 
-            this.trackBar16.BackColor = System.Drawing.Color.Black;
+            this.trackBar16.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.trackBar16, "trackBar16");
             this.trackBar16.Maximum = 255;
             this.trackBar16.Name = "trackBar16";
@@ -2365,15 +2203,6 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage10;
         public System.Windows.Forms.Label label49;
-        public System.Windows.Forms.ComboBox comboBox12;
-        public System.Windows.Forms.ComboBox comboBox11;
-        public System.Windows.Forms.ComboBox comboBox10;
-        public System.Windows.Forms.ComboBox comboBox9;
-        public System.Windows.Forms.ComboBox comboBox8;
-        public System.Windows.Forms.ComboBox comboBox7;
-        public System.Windows.Forms.ComboBox comboBox6;
-        public System.Windows.Forms.ComboBox comboBox5;
-        public System.Windows.Forms.ComboBox comboBox3;
         public System.Windows.Forms.TrackBar trackBar15;
         public System.Windows.Forms.TrackBar trackBar14;
         public System.Windows.Forms.TrackBar trackBar13;
@@ -2385,15 +2214,6 @@
         public System.Windows.Forms.TrackBar trackBar7;
         private System.Windows.Forms.TabPage tabPage11;
         public System.Windows.Forms.Label label50;
-        public System.Windows.Forms.ComboBox comboBox21;
-        public System.Windows.Forms.ComboBox comboBox20;
-        public System.Windows.Forms.ComboBox comboBox19;
-        public System.Windows.Forms.ComboBox comboBox18;
-        public System.Windows.Forms.ComboBox comboBox17;
-        public System.Windows.Forms.ComboBox comboBox16;
-        public System.Windows.Forms.ComboBox comboBox15;
-        public System.Windows.Forms.ComboBox comboBox14;
-        public System.Windows.Forms.ComboBox comboBox13;
         public System.Windows.Forms.TrackBar trackBar24;
         public System.Windows.Forms.TrackBar trackBar23;
         public System.Windows.Forms.TrackBar trackBar22;

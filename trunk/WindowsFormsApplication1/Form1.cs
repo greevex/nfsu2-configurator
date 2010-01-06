@@ -30,6 +30,7 @@ namespace NFSU2CH
         List<TrackBar> tracks = new List<TrackBar>();
         List<int> tracks_v = new List<int>();
         public RegistryKey r = Registry.CurrentUser.OpenSubKey("NFSU2Configurator", true);
+        public int maxt = -1, mint = -1;
 
         [DllImport("user32.dll", SetLastError = true)]
         static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
@@ -70,7 +71,7 @@ namespace NFSU2CH
                     openFileDialog1.FileName = this.GAME_PATH;
                     if (s2 != null)
                     {
-                        comboBox1.SelectedIndex(comboBox1.FindString(s2.ToString()));
+                        comboBox1.SelectedIndex = comboBox1.FindString(s2.ToString()) ;
                     }
                 }
                 else
@@ -104,6 +105,8 @@ namespace NFSU2CH
         private void loadCnf(int pos)
         {
             /* Загрузка */
+            this.maxt = -1;
+            this.mint = -1;
             this.currentCar = pos;
             this.s = p.parse(pos);
             AddValToForm();
@@ -112,15 +115,26 @@ namespace NFSU2CH
             загрузитьНастройкуДляТекущейМашиныToolStripMenuItem.Enabled = true;
         }
 
-        public int maxt = 0, mint = 0;
         private void addToTrack(TrackBar t, int val1, int val2) {
             int val = Convert.ToInt32("0x" + val2.ToString("X2") + val1.ToString("X2"), 16);
-            if (val > 0 && val < this.mint)
+            if (this.maxt == -1 && this.mint == -1)
+            {
                 this.mint = val;
-            else if (val > this.maxt)
                 this.maxt = val;
-            t.Maximum = val;
-            t.Value = val;
+            }
+            if (val == 0)
+            {
+                t.Enabled = false;
+            }
+            else
+            {
+                if (val < this.mint)
+                    this.mint = val;
+                else if (val > this.maxt)
+                    this.maxt = val+50  ; 
+                t.Maximum = val;
+                t.Value = val;
+            }
             // добавление трекбара в коллекцию.
             this.tracks.Add(t);
         }
@@ -698,45 +712,57 @@ namespace NFSU2CH
                 s[775] = Int32.Parse(comboBox23.Text);
 
                 /* ЭКУ */
-                s[786] = trackBar7.Value; // 1
-                s[787] = Int32.Parse(comboBox3.Text);
-                s[790] = trackBar8.Value; // 2
-                s[791] = Int32.Parse(comboBox5.Text);
-                s[794] = trackBar9.Value; // 3
-                s[795] = Int32.Parse(comboBox6.Text);
-                s[798] = trackBar10.Value;// 4
-                s[799] = Int32.Parse(comboBox7.Text);
-                s[802] = trackBar11.Value;// 5
-                s[803] = Int32.Parse(comboBox8.Text);
-                s[806] = trackBar12.Value;// 6
-                s[807] = Int32.Parse(comboBox9.Text);
-                s[810] = trackBar13.Value;// 7
-                s[811] = Int32.Parse(comboBox10.Text);
-                s[814] = trackBar14.Value;// 8
-                s[815] = Int32.Parse(comboBox11.Text);
-                s[818] = trackBar15.Value;// 9
-                s[819] = Int32.Parse(comboBox12.Text);
+                s[786] = splitHex(trackBar7.Value)[1]; // 1
+                s[787] = splitHex(trackBar7.Value)[0];
+                s[790] = splitHex(trackBar8.Value)[1]; // 2
+                s[791] = splitHex(trackBar8.Value)[0];
+                s[794] = splitHex(trackBar9.Value)[1]; // 3
+                s[795] = splitHex(trackBar9.Value)[0];
+                s[798] = splitHex(trackBar10.Value)[1];// 4
+                s[799] = splitHex(trackBar10.Value)[0];
+                s[802] = splitHex(trackBar11.Value)[1];// 5
+                s[803] = splitHex(trackBar11.Value)[0];
+                s[806] = splitHex(trackBar12.Value)[1];// 6
+                s[807] = splitHex(trackBar12.Value)[0];
+                s[810] = splitHex(trackBar13.Value)[1];// 7
+                s[811] = splitHex(trackBar13.Value)[0];
+                s[814] = splitHex(trackBar14.Value)[1];// 8
+                s[815] = splitHex(trackBar14.Value)[0];
+                s[818] = splitHex(trackBar15.Value)[1];// 9
+                s[819] = splitHex(trackBar15.Value)[0];
 
                 /* Турбо */
-                s[834] = trackBar16.Value;// 1
-                s[835] = Int32.Parse(comboBox13.Text);
-                s[838] = trackBar17.Value;// 2
-                s[839] = Int32.Parse(comboBox14.Text);
-                s[842] = trackBar18.Value;// 3
-                s[843] = Int32.Parse(comboBox15.Text);
-                s[846] = trackBar19.Value;// 4
-                s[847] = Int32.Parse(comboBox16.Text);
-                s[850] = trackBar20.Value;// 5
-                s[851] = Int32.Parse(comboBox17.Text);
-                s[854] = trackBar21.Value;// 6
-                s[855] = Int32.Parse(comboBox18.Text);
-                s[858] = trackBar22.Value;// 7
-                s[859] = Int32.Parse(comboBox19.Text);
-                s[862] = trackBar23.Value;// 8
-                s[863] = Int32.Parse(comboBox20.Text);
-                s[866] = trackBar24.Value;// 9
-                s[867] = Int32.Parse(comboBox21.Text);
+                s[834] = splitHex(trackBar16.Value)[1];// 1
+                s[835] = splitHex(trackBar16.Value)[0];
+                s[838] = splitHex(trackBar17.Value)[1];// 2
+                s[839] = splitHex(trackBar17.Value)[0];
+                s[842] = splitHex(trackBar18.Value)[1];// 3
+                s[843] = splitHex(trackBar18.Value)[0];
+                s[846] = splitHex(trackBar19.Value)[1];// 4
+                s[847] = splitHex(trackBar19.Value)[0];
+                s[850] = splitHex(trackBar20.Value)[1];// 5
+                s[851] = splitHex(trackBar20.Value)[0];
+                s[854] = splitHex(trackBar21.Value)[1];// 6
+                s[855] = splitHex(trackBar21.Value)[0];
+                s[858] = splitHex(trackBar22.Value)[1];// 7
+                s[859] = splitHex(trackBar22.Value)[0];
+                s[862] = splitHex(trackBar23.Value)[1];// 8
+                s[863] = splitHex(trackBar23.Value)[0];
+                s[866] = splitHex(trackBar24.Value)[1];// 9
+                s[867] = splitHex(trackBar24.Value)[0];
             #endregion
+        }
+
+        private int[] splitHex(int val)
+        {
+            int[] rv = new int[2] {
+                Int32.Parse(Convert.ToInt32("0x" + val.ToString("X2"), 16).ToString().Substring
+                    (0, 2)),
+                Int32.Parse(Convert.ToInt32("0x" + val.ToString("X2"), 16).ToString().Substring
+                    (2, 2))
+            };
+            //System.Windows.Forms.MessageBox.Show(rv[1].ToString() + " | " + rv[0].ToString());
+            return rv;
         }
 
         private void изФайлаНастроекcarToolStripMenuItem_Click(object sender, EventArgs e)
