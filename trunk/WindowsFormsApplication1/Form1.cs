@@ -452,6 +452,110 @@ namespace NFSU2CH
             label83.Text = trackBar32.Value.ToString();
         }
 
+        private void trackBar7_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox4.Text = this.trackBar7.Value.ToString();
+        }
+
+        private void trackBar8_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox5.Text = this.trackBar8.Value.ToString();
+        }
+
+        private void trackBar9_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox6.Text = this.trackBar9.Value.ToString();
+        }
+
+        private void trackBar10_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox7.Text = this.trackBar10.Value.ToString();
+        }
+
+        private void trackBar11_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox8.Text = this.trackBar11.Value.ToString();
+        }
+
+        private void trackBar12_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox9.Text = this.trackBar12.Value.ToString();
+        }
+
+        private void trackBar13_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox10.Text = this.trackBar13.Value.ToString();
+        }
+
+        private void trackBar14_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox11.Text = this.trackBar14.Value.ToString();
+        }
+
+        private void trackBar15_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox12.Text = this.trackBar15.Value.ToString();
+        }
+
+        private void trackBar16_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox13.Text = this.trackBar16.Value.ToString();
+        }
+
+        private void trackBar17_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox14.Text = this.trackBar17.Value.ToString();
+        }
+
+        private void trackBar18_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox15.Text = this.trackBar18.Value.ToString();
+        }
+
+        private void trackBar19_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox16.Text = this.trackBar19.Value.ToString();
+        }
+
+        private void trackBar20_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox17.Text = this.trackBar20.Value.ToString();
+        }
+
+        private void trackBar21_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox18.Text = this.trackBar21.Value.ToString();
+        }
+
+        private void trackBar22_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox19.Text = this.trackBar22.Value.ToString();
+        }
+
+        private void trackBar23_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox20.Text = this.trackBar23.Value.ToString();
+        }
+
+        private void trackBar24_Scroll(object sender, EventArgs e)
+        {
+            this.maskedTextBox21.Text = this.trackBar24.Value.ToString();
+        }
+
+        private void trackBar35_Scroll(object sender, EventArgs e)
+        {
+            TextBox1.Text = trackBar35.Value.ToString();
+        }
+
+        private void trackBar36_Scroll(object sender, EventArgs e)
+        {
+            TextBox2.Text = trackBar36.Value.ToString();
+        }
+
+        private void trackBar37_Scroll(object sender, EventArgs e)
+        {
+            TextBox3.Text = trackBar37.Value.ToString();
+        }
         #endregion
 
         private void button2_Click(object sender, EventArgs e)
@@ -774,6 +878,7 @@ namespace NFSU2CH
 
                 /* Управление */
                 //@ToDo: узнать как именно реагируют настройки....
+                // потому что мне нихрена не понятно..
                 s[546] = trackBar29.Value;
                 s[547] = Int32.Parse(comboBox26.Text);
 
@@ -982,116 +1087,11 @@ namespace NFSU2CH
             r.SetValue("LastCar", comboBox1.Text);
             r.Close();
         }
-        #region update masked text box
-        private void trackBar7_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox4.Text = this.trackBar7.Value.ToString();
-        }
 
-        private void trackBar8_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox5.Text = this.trackBar8.Value.ToString();
-        }
-
-        private void trackBar9_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox6.Text = this.trackBar9.Value.ToString();
-        }
-
-        private void trackBar10_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox7.Text = this.trackBar10.Value.ToString();
-        }
-
-        private void trackBar11_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox8.Text = this.trackBar11.Value.ToString();
-        }
-
-        private void trackBar12_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox9.Text = this.trackBar12.Value.ToString();
-        }
-
-        private void trackBar13_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox10.Text = this.trackBar13.Value.ToString();
-        }
-
-        private void trackBar14_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox11.Text = this.trackBar14.Value.ToString();
-        }
-
-        private void trackBar15_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox12.Text = this.trackBar15.Value.ToString();
-        }
-
-        private void trackBar16_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox13.Text = this.trackBar16.Value.ToString();
-        }
-
-        private void trackBar17_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox14.Text = this.trackBar17.Value.ToString();
-        }
-
-        private void trackBar18_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox15.Text = this.trackBar18.Value.ToString();
-        }
-
-        private void trackBar19_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox16.Text = this.trackBar19.Value.ToString();
-        }
-
-        private void trackBar20_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox17.Text = this.trackBar20.Value.ToString();
-        }
-
-        private void trackBar21_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox18.Text = this.trackBar21.Value.ToString();
-        }
-
-        private void trackBar22_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox19.Text = this.trackBar22.Value.ToString();
-        }
-
-        private void trackBar23_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox20.Text = this.trackBar23.Value.ToString();
-        }
-
-        private void trackBar24_Scroll(object sender, EventArgs e)
-        {
-            this.maskedTextBox21.Text = this.trackBar24.Value.ToString();
-        }
-        #endregion
         void MouseOnTrackBar(object sender, EventArgs e)
         {
             TrackBar tb = sender as TrackBar;
             tb.Focus();
-        }
-
-        private void trackBar35_Scroll(object sender, EventArgs e)
-        {
-            TextBox1.Text = trackBar35.Value.ToString();
-        }
-
-        private void trackBar36_Scroll(object sender, EventArgs e)
-        {
-            TextBox2.Text = trackBar36.Value.ToString();
-        }
-
-        private void trackBar37_Scroll(object sender, EventArgs e)
-        {
-            TextBox3.Text = trackBar37.Value.ToString();
         }
     }
 }
