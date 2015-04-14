@@ -1,4 +1,4 @@
-= NFS U2 Car Hacker =
+= NFS U2 Configurator =
 
 ----
 
