@@ -1,14 +1,8 @@
 NFS U2 Configurator
 ===
 
-Авторизация в программе
----
-
   * Login: GreeveX
   * Password:  (empty - пустой)
-
-История изменений
----
 
 v0.8
 -
